@@ -1,6 +1,7 @@
  //importaciones
  @use "./components/navbar/navBar.scss";
  @use "./components/index/_MainCarousel";
+ @use "./components/footer/_footer";
 
  //Letras
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
@@ -23,6 +24,9 @@
 
  li {
      list-style: none;
+ }
+ img{
+    width: 100%;
  }
 
  .paginasContainer {

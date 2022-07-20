@@ -1,0 +1,64 @@
+$backgroundFondo: linear-gradient(180deg, #F5FFFE 0%, #F5FFFE 47.71%, rgba(255, 255, 255, 0) 100%);
+$backgroundFooter: linear-gradient(0deg, rgba(230, 255, 232, 0.9976365546218487) 11%, rgba(194, 237, 204, 0.49343487394957986) 78%, rgba(230, 255, 232, 0.07326680672268904) 100%);
+$letraLinkColorHover: rgb(49, 245, 255);
+
+//imports
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto+Mono:wght@700&display=swap');
+
+.footerPadre {
+    position: absolute;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.footer { 
+    position: absolute; 
+    width: 100%;
+    padding-bottom: 60px;
+    z-index: 1; 
+    background: linear-gradient(0deg, rgba(21,170,58, 1) 12%, rgba(21,170,58, 1) 80%,rgba(21,170,58,0.4) 82%,rgba(21,170,58,0.3) 83%,  rgba(3,191,19,0.2) 90%,rgba(3,191,19,0) 100%);
+
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.h3Footer {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 0;
+    color: yellow;
+ 
+}
+
+.footerLink {
+    display: flex;
+    flex-direction: column;
+    a{
+        color: white;
+        &:hover {
+            color: $letraLinkColorHover;
+        }
+    }
+}
+
+.imageFooter {
+    z-index: -1;
+    width: 100%;
+    margin-bottom: -80px;
+}
+
+.degradadoFooter {
+    position: absolute;
+    z-index: 1;
+    background: $backgroundFondo;
+    width: 100%;
+    height: 200px;
+}
