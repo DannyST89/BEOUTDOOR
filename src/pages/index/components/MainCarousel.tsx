@@ -4,45 +4,85 @@ import * as images from "../../../assets/images/Images";
 export const MainCarousel = () => {
   return (
     <Carousel>
-      <Carousel.Item interval={3000}>
+      <Carousel.Item interval={5000}>
         <img
-          className="d-block w-100"
+          className="carousel-img d-block w-100"
           src={images.volcanArenal01}
-          alt="First slide"
+          alt="Volcan Arenal"
         />
         <Carousel.Caption>
-          <h3>Volcan Arenal</h3>
-          <button>See more...</button>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          
+          <h3 className="carousel-h3 animate-charcter">Volcan Arenal</h3>
+          <div className="card">
+            <h1>
+              La Fortuna is
+              <div className="scroller">
+                <span>
+                  Cool
+                  <br />
+                  Nature
+                  <br />
+                  Relaxing
+                  <br />
+                  Adventure
+                </span>
+              </div>
+            </h1>
+          </div>
+          <button className="carousel-button">See more...</button>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={3000}>
+      <Carousel.Item interval={5000}>
         <img
-          className="d-block w-100"
+          className="carousel-img d-block w-100"
           src={images.lagoArenal01}
-          alt="Second slide"
+          alt="Lago Arenal"
         />
         <Carousel.Caption>
-          <h3>Lago Arenal</h3>
-          <button>See more...</button>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          
+          <h3 className="carousel-h3 animate-charcter">Lago Arenal</h3>
+          <div className="card">
+            <h1>
+              La Fortuna is
+              <div className="scroller">
+                <span>
+                  Cool
+                  <br />
+                  Nature
+                  <br />
+                  Relaxing
+                  <br />
+                  Adventure
+                </span>
+              </div>
+            </h1>
+          </div>
+          <button className="carousel-button">See more...</button>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={3000}>
+      <Carousel.Item interval={5000}>
         <img
-          className="d-block w-100"
+          className="carousel-img d-block w-100"
           src={images.rioCeleste01}
-          alt="Third slide"
+          alt="Rio Celeste"
         />
         <Carousel.Caption>
-          <h3>Rio Celeste</h3>
-          <button>See more...</button>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-          
+          <h3 className="carousel-h3 animate-charcter">Rio Celeste</h3>
+          <div className="card">
+            <h1>
+              La Fortuna is
+              <div className="scroller">
+                <span>
+                  Cool
+                  <br />
+                  Nature
+                  <br />
+                  Relaxing
+                  <br />
+                  Adventure
+                </span>
+              </div>
+            </h1>
+          </div>
+          <button className="carousel-button">See more...</button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
