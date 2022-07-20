@@ -25,8 +25,7 @@
         } 
      } 
     
-} 
-
+}  
  
  .offcanvas.nav-link{
     color: white !important;
@@ -94,8 +93,15 @@
 }  
  
 .dropdown-menu{
-    background-color: $navHover !important; 
+    background-color: rgba($navHover,0.8) !important;   
 } 
 .dropdown-item{
     color: black !important;
 } 
+ .dropdown:hover .dropdown-menu{
+    display: block !important;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}

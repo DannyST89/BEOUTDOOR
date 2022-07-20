@@ -1,8 +1,6 @@
-import {
-    BrowserRouter,
+import { 
     NavLink
-} from 'react-router-dom';
-import { RouterNav } from './components/RouterNav';
+} from 'react-router-dom'; 
 import { Nav } from 'reactstrap';
 
 
@@ -11,7 +9,7 @@ export const Navbar = () => {
 
     return (
         <div className=''>
-            <BrowserRouter>
+            
                 <Nav className='navbar navbar-expand-lg backgroundNav fixed-top '>
                     <div className='container-fluid container justify-content-between'>
                         
@@ -78,14 +76,13 @@ export const Navbar = () => {
                     </div>
                 </Nav>
 
-
-                <div className='paginasContainer'>
-                    {/* componente para mostrar las las paginas */}
-                    <RouterNav />
+                {/* Este div hace que las paginas se coloquen un poco 
+                    abajo para que no afecten el diseño del navbar */}
+                <div className='paginasContainer'> 
                 </div>
 
 
-            </BrowserRouter>
+             
         </div>
     )
 }
