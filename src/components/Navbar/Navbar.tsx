@@ -27,6 +27,7 @@ export const Navbar = () => {
                             </div>
 
                             {/* informacion que se mostrara en celular */}
+
                             <div className="offcanvas-body ">
                                 <div className='logo'>
                                      
@@ -60,6 +61,7 @@ export const Navbar = () => {
                                                 About
                                             </a>
 
+
                                             <ul className='dropdown-menu'>
                                                 <li data-bs-dismiss="offcanvas"><NavLink className="dropdown-item" to="/aboutTheCompany">About the Company</NavLink> </li>
                                                 <li data-bs-dismiss="offcanvas"><NavLink className="dropdown-item" to="/aboutTheFortuna">About the Fortuna</NavLink> </li>
@@ -73,10 +75,12 @@ export const Navbar = () => {
                     </div>
                 </Nav>
 
+
                 <div className='paginasContainer container'>
                     {/* componente para mostrar las las paginas */}
                     <RouterNav />
                 </div>
+
 
             </BrowserRouter>
         </div>
