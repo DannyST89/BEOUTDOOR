@@ -1,41 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto+Mono:wght@700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto+Mono:wght@700&display=swap');
-
-$h3-color: rgb(240, 240, 51);
+$h3-color: rgb(255, 255, 255);
 $button-color: rgb(255, 255, 255);
-$button-hover: rgb(223, 213, 213);
-img {
-    height: 500px;
+$button-hover: rgb(255, 255, 255, 0.3);
+
+.carousel-img {
+  height: 700px;
 }
-h3 {
-    color: $h3-color;
-    font-size: 6rem;
-    font-family: 'Amatic SC', cursive;
-    font-weight: bold;
-    display:flex;
-    padding-bottom: 5rem;
+.carousel-h3 {
+  color: $h3-color;
+  font-family: inherit;
+  font-weight: bold;
+  display: flex;
+  padding-bottom: 5rem;
+  
+  background-image: url("../../assets/images/rioCeleste01.jpg");;
 }
-button {
-    display: block;
-    border: 2px solid $button-color;
-    background:  transparent;
-    padding: 10px 15px;
-    color: $button-color;
-    font-size: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    cursor: pointer;
-    outline: none;
-    transition: background 1s, color 1s;
+.carousel-button {
+  display: block;
+  border: 2px solid $button-color;
+  background: transparent;
+  padding: 10px 15px;
+  color: $button-color;
+  font-size: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background 1s, color 1s;
 }
-button:hover {
-    background: $button-hover;
-    color: $button-hover;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+.carousel-button:hover {
+  background: $button-hover;
+  color: $button-hover;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.carousel-p {
+
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+      font-size: 100px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+h1 {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgba(43,171,217,1) 0%, rgba(0,130,200,1) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.cardCarousel {
+  border-radius: 1.5em;
+  min-width: 600px;
+  max-width: 1170px;
+  width: 30%;
+  padding: 2.6em 3.8em;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  
+  // top: 50%;
+  // left: 40%;
+  
+  // box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 
+  //   0 8px 8px rgba(0, 0, 0, 0.1),
+  //   0 16px 16px rgba(0, 0, 0, 0.1), 
+  //   0 32px 32px rgba(0, 0, 0, 0.15),
+  //   0 64px 64px rgba(0, 0, 0, 0.15);
+
+  //   background: rgba(255, 255, 255, 0.2);
+  //   border-radius: 16px;
+  //   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  //   backdrop-filter: blur(5px);
+  //   -webkit-backdrop-filter: blur(5px);
+  //   border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+.note::after {
+  content: '';
+  width: 20%;
+  height: 2px;
+  border-radius: 999px;
+  background-color: #AFAFAF;
+  background: linear-gradient(135deg, rgba(43,171,217,1) 0%, rgba(0,130,200,1) 100%);
+  position: absolute;
+  top: -1.8em;
+  left: 0;
+}
+.note {
+  font-size: 0.8em;
+  color: #8A8A8A;
+  position: relative;
+  margin-top: 4em;
+}
+
+/* Scroller styling */
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 10em;
+}
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 10s infinite;
+  font-weight: bold;
+  
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
 }
 
 @media screen and (max-width: 575px) {
-    h3 {
-      padding-bottom: 3rem;
-    }
+    .carousel-h3 {
+    padding-bottom: 3rem;
   }
+  .animate-charcter {
+    font-size: 70px;
+  }
+}
+
