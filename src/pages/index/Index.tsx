@@ -1,6 +1,5 @@
 import React from 'react'
-import { MainCarousel } from './components/MainCarousel'
-import '../../styles/components/index/_MainCarousel.scss'
+import { MainCarousel } from './components/MainCarousel' 
 
 
 export const Index = () => {
