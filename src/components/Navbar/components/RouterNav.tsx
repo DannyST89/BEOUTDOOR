@@ -2,11 +2,11 @@ import {
     Routes,
     Route, 
 } from 'react-router-dom';
-import App from '../../../App';
+import { Index } from '../../../pages/index/Index';
 export const RouterNav = () => {
   return (
     <Routes>
-       <Route path="/" element={<App />} />
+       <Route path="/" element={<Index />} />
     </Routes>
   )
 }

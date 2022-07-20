@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto+Mono:wght@700&display=swap');
+
+$h3-color: rgb(240, 240, 51);
+$button-color: rgb(255, 255, 255);
+$button-hover: rgb(223, 213, 213);
+img {
+    height: 500px;
+}
+h3 {
+    color: $h3-color;
+    font-size: 6rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    display:flex;
+    padding-bottom: 5rem;
+}
+button {
+    display: block;
+    border: 2px solid $button-color;
+    background:  transparent;
+    padding: 10px 15px;
+    color: $button-color;
+    font-size: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background 1s, color 1s;
+}
+button:hover {
+    background: $button-hover;
+    color: $button-hover;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@media screen and (max-width: 575px) {
+    h3 {
+      padding-bottom: 3rem;
+    }
+  }
