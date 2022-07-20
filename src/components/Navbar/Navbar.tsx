@@ -76,7 +76,7 @@ export const Navbar = () => {
                 </Nav>
 
 
-                <div className='paginasContainer container'>
+                <div className='paginasContainer'>
                     {/* componente para mostrar las las paginas */}
                     <RouterNav />
                 </div>
