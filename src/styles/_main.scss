@@ -1,14 +1,19 @@
+ //importaciones
  @use "./components/navbar/navBar.scss";
 
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
- 
+  
+
+ //Variables
+ $backgroundSuaveCaida: linear-gradient(180deg, #F5FFFE 0%, #F5FFFE 47.71%, rgba(255, 255, 255, 0) 100%);
+
 *{
     padding:0;
     margin:0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+} 
+ 
 a{
     text-decoration: none;
     color: black;
@@ -16,4 +21,10 @@ a{
 
 li{
     list-style: none;
-}
+} 
+
+.paginasContainer{
+    margin: 60px auto 0 ;
+ }
+
+ .carousel-indicators button { color: transparent; }
