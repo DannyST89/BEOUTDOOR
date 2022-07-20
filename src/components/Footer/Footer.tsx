@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom"
 import * as images from "../../assets/images/Images";
+import { SocialNetwork } from "../SocialNetworks/SocialNetwork";
 
 export const Footer = () => {
-    return (
-        // style={{top: "100vh"}}
-        <footer className="footerPadre" >
+
+    return (     
+        <footer className="footerPadre " >
 
             {/* degradado */}
             <div className="degradadoFooter">
@@ -14,7 +15,7 @@ export const Footer = () => {
             {/* imagen */}
             <div className="imageFooter">
                 <img className="imageFooter-img" src={images.imageFooter} alt="Volcan arenal" />
-                
+
             </div>
 
             {/* footer */}
@@ -54,7 +55,8 @@ export const Footer = () => {
 
                     </div>
                     <div className="footer-content-paginas">
-                        <h1>paginas</h1>
+                    <h3 className="h3Footer">Social Networks</h3>
+                        <SocialNetwork classNameSocial={""} size={"40px"}/> 
                     </div>
                 </div>
             </div>

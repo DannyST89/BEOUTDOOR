@@ -17,11 +17,11 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Navbar />
 
       {/* Contenido */}
-      <ContentPage />
-      <Index />
+      <ContentPage /> 
 
-      {/* Footer */}
+      {/* Footer */} 
       <Footer />
+       
 
     </BrowserRouter>
   </React.StrictMode>
