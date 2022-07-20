@@ -59,7 +59,7 @@
 
 //tableta
 @media screen and (max-width: 990px){ 
-     .offcanvas-body ul li a{
+    .offcanvas-body ul li a{
         color: black !important;
      }
      .nav-item{
@@ -98,10 +98,4 @@
 } 
 .dropdown-item{
     color: black !important;
-}
-
-
- .carousel-item{
-    margin: 0 !important;
-    position: inherit !important;
- }
+} 

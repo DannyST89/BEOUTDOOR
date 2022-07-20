@@ -2,8 +2,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client' 
 import { Navbar } from './components/Navbar/Navbar';
-import "./styles/_main.scss"; 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./styles/_main.scss";  
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
