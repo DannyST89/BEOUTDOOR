@@ -37,7 +37,7 @@ export const MainCarousel = () => {
             <Carousel.Caption>
               <h3 className="carousel-h3 animate-charcter">{item.titleAnimate}</h3>
               <div className="cardCarousel">
-                <h1> 
+                <h1 className="carousel-h1"> 
                   {item.title}
                   <div className="scroller">
                     <span>
