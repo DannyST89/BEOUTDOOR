@@ -5,7 +5,7 @@ $button-color: rgb(255, 255, 255);
 $button-hover: rgb(255, 255, 255, 0.3);
 
 .carousel-img {
-  height: 100vh;
+  height: 80vh;
 }
 .carousel-h3 {  
   color: $h3-color;
@@ -104,6 +104,7 @@ $button-hover: rgb(255, 255, 255, 0.3);
   animation: slide 12s infinite;
   font-weight: bold;
 }
+
 @keyframes slide {
   0% {
     top: 0;
@@ -118,12 +119,32 @@ $button-hover: rgb(255, 255, 255, 0.3);
     top: -3.6em;
   }
 }
+//Tableta
+@media (max-width: 768px) {
 
-@media screen and (max-width: 575px) {
+  .carousel-img {
+    height: 80vh;
+  }
+  .cardCarousel {
+    padding: 1.6em 2.8em;  
+  }
+  .carousel-h1 {
+    font-size: 1.5em;
+  }
+}
+//Celular
+@media (max-width: 576px) {
+
+  .carousel-img {
+    height: 60vh;
+  }
   .carousel-h3 {
     padding-bottom: 3rem;
   }
   .animate-charcter {
-    font-size: 70px;
+    font-size: 30px;
+  }
+  .cardCarousel {
+    padding: 0.6em 1.8em;
   }
 }
