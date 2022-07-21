@@ -60,9 +60,7 @@ export const Navbar = () => {
                                         <li className="nav-item dropdown">
                                             <a className="nav-link dropdown-toggle" href="about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 About
-                                            </a>
-
-
+                                            </a> 
                                             <ul className='dropdown-menu'>
                                                 <li data-bs-dismiss="offcanvas"><NavLink className="dropdown-item" to="/aboutTheCompany">About the Company</NavLink> </li>
                                                 <li data-bs-dismiss="offcanvas"><NavLink className="dropdown-item" to="/aboutTheFortuna">About the Fortuna</NavLink> </li>

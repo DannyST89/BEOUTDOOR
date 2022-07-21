@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Footer } from './components/Footer/Footer';
 import { ContentPage } from './components/Navbar/components/ContentPage';
 import { Navbar } from './components/Navbar/Navbar';
+import { Index } from './pages/index/Index';
 import "./styles/_main.scss";
 
 
@@ -16,10 +17,11 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Navbar />
 
       {/* Contenido */}
-      <ContentPage />
+      <ContentPage /> 
 
-      {/* Footer */}
+      {/* Footer */} 
       <Footer />
+       
 
     </BrowserRouter>
   </React.StrictMode>

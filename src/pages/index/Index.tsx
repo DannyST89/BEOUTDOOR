@@ -1,5 +1,7 @@
-import React from "react";
-import { MainCarousel } from "./components/MainCarousel";
+
+import React from 'react'
+import { MainCarousel } from './components/MainCarousel'  
+
 
 export const Index = () => {
   return (
