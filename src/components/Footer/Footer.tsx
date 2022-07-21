@@ -3,7 +3,7 @@ import * as images from "../../assets/images/Images";
 import { SocialNetwork } from "../SocialNetworks/SocialNetwork";
 
 export const Footer = () => {
-
+ 
     return (     
         <footer className="footerPadre " >
 
@@ -24,33 +24,33 @@ export const Footer = () => {
                     <div className="footer-content-menu">
                         <h3 className="h3Footer">Menu</h3>
                         <div className="footerLink">
-                            <NavLink className="" to="/">Inicio</NavLink>
-                            <NavLink className="" to="contactUs">Contact us</NavLink>
+                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="" to="/">Inicio</NavLink>
+                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="" to="contactUs">Contact us</NavLink>
                         </div>
                     </div>
                     <div className="footer-content-adventures">
                         <h3 className="h3Footer">Adventures</h3>
                         <div className="footerLink">
-                            <NavLink className=" " to="/rafting">Rafting</NavLink>
-                            <NavLink className=" " to="/safari">Safari</NavLink>
+                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/rafting">Rafting</NavLink>
+                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/safari">Safari</NavLink>
                         </div>
 
                     </div>
                     <div className="footer-content-hikings">
                         <h3 className="h3Footer">Hikings</h3>
                         <div className="footerLink">
-                            <NavLink className=" " to="/rioCeleste">Rio Celeste</NavLink>
-                            <NavLink className=" " to="/arenalVolcano">Arenal Volcano</NavLink>
-                            <NavLink className=" " to="/laFortunaWaterfall">La Fortuna Waterfall</NavLink>
-                            <NavLink className=" " to="/hangingBridges">Hanging Bridges</NavLink>
-                            <NavLink className=" " to="/combinationTours">Combination Tours</NavLink>
+                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/rioCeleste">Rio Celeste</NavLink>
+                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/arenalVolcano">Arenal Volcano</NavLink>
+                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/laFortunaWaterfall">La Fortuna Waterfall</NavLink>
+                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/hangingBridges">Hanging Bridges</NavLink>
+                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/combinationTours">Combination Tours</NavLink>
                         </div>
                     </div>
                     <div className="footer-content-about">
                         <h3 className="h3Footer">About</h3>
                         <div className="footerLink">
-                            <NavLink className=" " to="/aboutTheCompany">About the Company</NavLink>
-                            <NavLink className=" " to="/aboutTheFortuna">About the Fortuna</NavLink>
+                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/aboutTheCompany">About the Company</NavLink>
+                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/aboutTheFortuna">About the Fortuna</NavLink>
                         </div>
 
                     </div>
