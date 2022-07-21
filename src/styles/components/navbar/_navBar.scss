@@ -1,6 +1,6 @@
 /*Variables*/
  $navHover: rgba(165, 245, 184, 0.463);
- $navBackground: rgb(21, 170, 58);
+ $navBackground: #006414;
  $dropdownBackground: rgba(223, 255, 205, 0.942);
  $borderNav: 1px solid rgba(103, 101, 101, 0.075); 
   
@@ -8,6 +8,9 @@
 .backgroundNav{
     background-color: $navBackground;
     box-shadow: 2px 9px 12px -10px rgba(0,0,0,0.4);  
+}
+.logo {
+    color: white;
 }
 
 .navbar-nav li{ 

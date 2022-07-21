@@ -5,14 +5,16 @@ $button-color: rgb(255, 255, 255);
 $button-hover: rgb(255, 255, 255, 0.3);
 
 .carousel-img {
-  height: 100vh;
+  height: 700px;
 }
-.carousel-h3 {  
+.carousel-h3 {
   color: $h3-color;
   font-family: inherit;
-  font-weight: bolder;
+  font-weight: bold;
   display: flex;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
+  
+  background-image: url("../../assets/images/rioCeleste01.jpg");;
 }
 .carousel-button {
   display: block;
@@ -32,8 +34,12 @@ $button-hover: rgb(255, 255, 255, 0.3);
   color: $button-hover;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.animate-charcter {
-  text-transform: uppercase;
+.btn-carousel-link {
+    color: #fff;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
@@ -49,9 +55,9 @@ $button-hover: rgb(255, 255, 255, 0.3);
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 8s linear infinite;
+  animation: textclip 4s linear infinite;
   display: inline-block;
-  font-size: 60px;
+      font-size: 100px;
 }
 
 @keyframes textclip {
@@ -65,27 +71,42 @@ $button-hover: rgb(255, 255, 255, 0.3);
   max-width: 1170px;
   width: 30%;
   padding: 2.6em 3.8em;
+<<<<<<< HEAD
+  cursor: pointer;
   transform: translate(-50%, -50%);
-  margin-left: 5rem;
+=======
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 40%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 
+    0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1), 
+    0 32px 32px rgba(0, 0, 0, 0.15),
+    0 64px 64px rgba(0, 0, 0, 0.15);
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    
+
+>>>>>>> 88888ed (Carousel)
 }
 .note::after {
-  content: "";
+  content: '';
   width: 20%;
   height: 2px;
   border-radius: 999px;
-  background-color: #afafaf;
-  background: linear-gradient(
-    135deg,
-    rgba(43, 171, 217, 1) 0%,
-    rgba(0, 130, 200, 1) 100%
-  );
+  background-color: #AFAFAF;
+  background: linear-gradient(135deg, rgba(43,171,217,1) 0%, rgba(0,130,200,1) 100%);
   position: absolute;
   top: -1.8em;
   left: 0;
 }
 .note {
   font-size: 0.8em;
-  color: #8a8a8a;
+  color: #8A8A8A;
   position: relative;
   margin-top: 4em;
 }
@@ -96,13 +117,14 @@ $button-hover: rgb(255, 255, 255, 0.3);
   line-height: 1.2em;
   position: relative;
   overflow: hidden;
-  width: 14em;
+  width: 10em;
 }
 .scroller > span {
   position: absolute;
   top: 0;
-  animation: slide 12s infinite;
+  animation: slide 10s infinite;
   font-weight: bold;
+  
 }
 @keyframes slide {
   0% {
@@ -120,10 +142,11 @@ $button-hover: rgb(255, 255, 255, 0.3);
 }
 
 @media screen and (max-width: 575px) {
-  .carousel-h3 {
+    .carousel-h3 {
     padding-bottom: 3rem;
   }
   .animate-charcter {
     font-size: 70px;
   }
 }
+

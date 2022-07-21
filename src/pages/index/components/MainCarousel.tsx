@@ -7,35 +7,33 @@ export const MainCarousel = () => {
     urlImage: images.volcanArenal01,
     titleAnimate: "Volcan Arenal",
     title: "La Fortuna is",
-    scroller: ["Cool", "Nature", "Relaxing", "Adventure"],
+    scroller: ["Cool","Relaxing", "Adventure","Amazing"],
     buttonInfo: "See more...",
   },
   {
     urlImage: images.lagoArenal01,
     titleAnimate: "Lago Arenal",
     title: "La Fortuna is",
-    scroller: ["Cool", "Nature", "Relaxing", "Adventure"],
+    scroller: ["Cool","Relaxing", "Adventure","Amazing"],
     buttonInfo: "See more...",
   },
   {
     urlImage: images.rioCeleste01,
     titleAnimate: "Rio Celeste",
     title: "La Fortuna is",
-    scroller: ["Cool", "Nature", "Relaxing", "Adventure"],
+    scroller: ["Cool","Relaxing", "Adventure","Amazing"],
     buttonInfo: "See more...",
   }]
 
   return (
-    <Carousel>
-
+    <Carousel controls={false}>
       {
         dataCarousel.map((item) => (
-          <Carousel.Item key={item.urlImage} interval={5000}>
+          <Carousel.Item key={item.urlImage} interval={10000}>
             <img
               className="carousel-img d-block w-100"
               src={item.urlImage}
-              alt={item.titleAnimate}
-            />
+            />            
             <Carousel.Caption>
               <h3 className="carousel-h3 animate-charcter">{item.titleAnimate}</h3>
               <div className="cardCarousel">
