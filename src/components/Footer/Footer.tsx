@@ -5,10 +5,10 @@ import { Button } from '../Button/Button';
 import { adventures, hikings, about } from "../../data/navegacion";
 
 export const Footer = () => {
-    
+
     return (
         <footer className="footerPadre " >
-
+           
             {/* degradado */}
             <div className="degradadoFooter">
 
