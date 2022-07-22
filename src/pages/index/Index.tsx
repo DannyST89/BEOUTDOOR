@@ -8,7 +8,7 @@ export const Index = () => {
   return (
     <div>
       <MainCarousel />
- 	  <Cards/>
+   <Cards/>
     </div>
   );
 };
