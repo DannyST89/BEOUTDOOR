@@ -3,7 +3,8 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaHiking } from 'react-icons/fa';
+import { FaHiking } from "react-icons/fa";
+import { Button } from "../../../components/Button/Button";
 
 export default class ToursCarousel extends Component {
   render() {
@@ -30,11 +31,21 @@ export default class ToursCarousel extends Component {
         <Slider {...settings}>
           <div>
             <h3>
-              <img className="slider-image" src={images.volcanArenal01} alt="" />
+              <img
+                className="slider-image"
+                src={images.volcanArenal01}
+                alt=""
+              />
             </h3>
             <p className="slider-text">Rio Celeste Hike</p>
-            <span><FaHiking/></span>
-            <button>See more...</button>
+            <span>
+              <FaHiking />
+            </span>
+            <Button
+              className={"tour-carousel-bottom "}
+              redirection={"/tour"}
+              text={"See more..."}
+            />
           </div>
           <div>
             <h3>
@@ -42,19 +53,35 @@ export default class ToursCarousel extends Component {
             </h3>
             <p className="slider-text">Arenal Volcano Hike</p>
             <span>1</span>
-            <button>See more...</button>
+            <Button
+              className={"tour-carousel-bottom "}
+              redirection={"/tour"}
+              text={"See more..."}
+            />
           </div>
           <div>
             <h3>
-              <img className="slider-image" src={images.volcanArenal01} alt="" />
+              <img
+                className="slider-image"
+                src={images.volcanArenal01}
+                alt=""
+              />
             </h3>
             <p className="slider-text">La Fortuna WaterFall</p>
             <span>1</span>
-            <button>See more...</button>
+            <Button
+              className={"tour-carousel-bottom "}
+              redirection={"/tour"}
+              text={"See more..."}
+            />
           </div>
           <div>
             <h3>
-              <img className="slider-image" src={images.volcanArenal01} alt="" />
+              <img
+                className="slider-image"
+                src={images.volcanArenal01}
+                alt=""
+              />
             </h3>
             <p className="slider-text">Hanging Bridges</p>
             <span>1</span>
@@ -62,19 +89,35 @@ export default class ToursCarousel extends Component {
           </div>
           <div>
             <h3>
-              <img className="slider-image" src={images.volcanArenal01} alt="" />
+              <img
+                className="slider-image"
+                src={images.volcanArenal01}
+                alt=""
+              />
             </h3>
             <p className="slider-text">Cobination Tour</p>
             <span>1</span>
-            <button>See more...</button>
+            <Button
+              className={"tour-carousel-bottom "}
+              redirection={"/tour"}
+              text={"See more..."}
+            />
           </div>
           <div>
             <h3>
-              <img className="slider-image" src={images.volcanArenal01} alt="" />
+              <img
+                className="slider-image"
+                src={images.volcanArenal01}
+                alt=""
+              />
             </h3>
             <p className="slider-text">hello world</p>
             <span>1</span>
-            <button>See more...</button>
+            <Button
+              className={"tour-carousel-bottom "}
+              redirection={"/tour"}
+              text={"See more..."}
+            />
           </div>
         </Slider>
       </div>
