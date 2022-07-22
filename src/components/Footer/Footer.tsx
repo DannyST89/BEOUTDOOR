@@ -35,7 +35,7 @@ export const Footer = () => {
                         <div className="footerLink">
                             {
                                 adventures.map((adventures, index) => (
-                                    <Button className='' redirection={adventures.replace(/ /g, "")} text={adventures} scrollTop={true} ></Button>
+                                    <Button key={adventures.replace(/ /g, "")} className='' redirection={adventures.replace(/ /g, "")} text={adventures} scrollTop={true} ></Button>
                                 ))
                             }
                         </div>
@@ -46,7 +46,7 @@ export const Footer = () => {
                         <div className="footerLink">
                             {
                                 hikings.map((hikings, index) => (
-                                    <Button className='' redirection={hikings.replace(/ /g, "")} text={hikings} scrollTop={true} ></Button>
+                                    <Button key={hikings.replace(/ /g, "")} className='' redirection={hikings.replace(/ /g, "")} text={hikings} scrollTop={true} ></Button>
                                 ))
                             }
                         </div>
@@ -56,7 +56,7 @@ export const Footer = () => {
                         <div className="footerLink">
                             {
                                 about.map((about, index) => (
-                                    <Button className='' redirection={about.replace(/ /g, "")} text={about} scrollTop={true} ></Button>
+                                    <Button key={about.replace(/ /g, "")} className='' redirection={about.replace(/ /g, "")} text={about} scrollTop={true} ></Button>
                                 ))
                             }
                         </div>

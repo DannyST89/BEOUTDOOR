@@ -7,8 +7,7 @@ import { ContentPage } from './components/Navbar/components/ContentPage';
 import { Navbar } from './components/Navbar/Navbar';
 import { Index } from './pages/index/Index';
 import "./styles/_main.scss";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+ 
 
 
 

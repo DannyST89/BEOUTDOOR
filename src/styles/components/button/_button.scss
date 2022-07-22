@@ -17,7 +17,7 @@
 
 }
 
-.buttonBase{
+.buttonBase {
     display: inline-flex;
     background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
     padding: 15px 35px;
@@ -33,8 +33,6 @@
     @media screen and (max-width: 576px) {
         width: 100%;
     }
-<<<<<<< HEAD
-=======
 }
 
 .tour-carousel-bottom {
@@ -49,5 +47,4 @@
     justify-content: center;
     text-align: center;
     letter-spacing: 1px;
->>>>>>> Danny/feat-tours-carousel
 }
