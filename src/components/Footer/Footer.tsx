@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom"
 import * as images from "../../assets/images/Images";
 import { SocialNetwork } from "../SocialNetworks/SocialNetwork";
+import { Button } from '../Button/Button';
+import { adventures, hikings, about } from "../../data/navegacion";
 
 export const Footer = () => {
- 
-    return (     
+
+    return (
         <footer className="footerPadre " >
 
             {/* degradado */}
@@ -24,39 +26,45 @@ export const Footer = () => {
                     <div className="footer-content-menu">
                         <h3 className="h3Footer">Menu</h3>
                         <div className="footerLink">
-                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="" to="/">Inicio</NavLink>
-                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="" to="contactUs">Contact us</NavLink>
+                            <Button className='' redirection="/" text="Inicio" scrollTop={true} ></Button>
+                            <Button className='' redirection="ContactUs" text="Contact us" scrollTop={true} ></Button>
                         </div>
                     </div>
                     <div className="footer-content-adventures">
                         <h3 className="h3Footer">Adventures</h3>
                         <div className="footerLink">
-                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/rafting">Rafting</NavLink>
-                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/safari">Safari</NavLink>
+                            {
+                                adventures.map((adventures, index) => (
+                                    <Button className='' redirection={adventures.replace(/ /g, "")} text={adventures} scrollTop={true} ></Button>
+                                ))
+                            }
                         </div>
 
                     </div>
                     <div className="footer-content-hikings">
                         <h3 className="h3Footer">Hikings</h3>
                         <div className="footerLink">
-                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/rioCeleste">Rio Celeste</NavLink>
-                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/arenalVolcano">Arenal Volcano</NavLink>
-                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/laFortunaWaterfall">La Fortuna Waterfall</NavLink>
-                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/hangingBridges">Hanging Bridges</NavLink>
-                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/combinationTours">Combination Tours</NavLink>
+                            {
+                                hikings.map((hikings, index) => (
+                                    <Button className='' redirection={hikings.replace(/ /g, "")} text={hikings} scrollTop={true} ></Button>
+                                ))
+                            }
                         </div>
                     </div>
                     <div className="footer-content-about">
                         <h3 className="h3Footer">About</h3>
                         <div className="footerLink">
-                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/aboutTheCompany">About the Company</NavLink>
-                            <NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className=" " to="/aboutTheFortuna">About the Fortuna</NavLink>
+                            {
+                                about.map((about, index) => (
+                                    <Button className='' redirection={about.replace(/ /g, "")} text={about} scrollTop={true} ></Button>
+                                ))
+                            }
                         </div>
 
                     </div>
                     <div className="footer-content-paginas">
-                    <h3 className="h3Footer">Social Networks</h3>
-                        <SocialNetwork classNameSocial={""} size={"40px"}/> 
+                        <h3 id="pruebaFooterSocialeNetwork" className="h3Footer">Social Networks</h3>
+                        <SocialNetwork classNameSocial={""} size={"40px"} />
                     </div>
                 </div>
             </div>
