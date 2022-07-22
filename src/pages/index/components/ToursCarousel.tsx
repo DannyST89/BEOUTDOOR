@@ -4,9 +4,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-type sliderData = {
-    urlImaga: images.volcanareanl;
-};
 export default class ToursCarousel extends Component {
   render() {
     var settings = {
@@ -20,48 +17,62 @@ export default class ToursCarousel extends Component {
     };
     return (
       <div className="container">
-        <h2>Pause On Hover</h2>
+        <div className="mainText">
+          <h1>Your are not sure what to do?</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non
+            atque adipisci est, recusandae aperiam, ullam minima quos nostrum
+            animi voluptas sequi. At repellendus fuga reiciendis accusantium,
+            dolor suscipit repellat?
+          </p>
+        </div>
         <Slider {...settings}>
+          <div>
+            <h3>
+              <img src={images.volcanArenal01} alt="" />
+            </h3>
+            <p className="slider-text">Rio Celeste Hike</p>
+            <span>1</span>
+            <button>See more...</button>
+          </div>
           <div>
             <h3>
               <img src={images.rana} alt="" />
             </h3>
-            <p>Rio Celeste Hike</p>
+            <p className="slider-text">Arenal Volcano Hike</p>
+            <span>1</span>
             <button>See more...</button>
           </div>
           <div>
             <h3>
               <img src={images.volcanArenal01} alt="" />
             </h3>
-            <p>Arenal Volcano Hike</p>
+            <p className="slider-text">La Fortuna WaterFall</p>
+            <span>1</span>
             <button>See more...</button>
           </div>
           <div>
             <h3>
               <img src={images.volcanArenal01} alt="" />
             </h3>
-            <p>La Fortuna WaterFall</p>
+            <p className="slider-text">Hanging Bridges</p>
+            <span>1</span>
             <button>See more...</button>
           </div>
           <div>
             <h3>
               <img src={images.volcanArenal01} alt="" />
             </h3>
-            <p>Hanging Bridges</p>
+            <p className="slider-text">Cobination Tour</p>
+            <span>1</span>
             <button>See more...</button>
           </div>
           <div>
             <h3>
               <img src={images.volcanArenal01} alt="" />
             </h3>
-            <p>Cobination Tour</p>
-            <button>See more...</button>
-          </div>
-          <div>
-            <h3>
-              <img src={images.volcanArenal01} alt="" />
-            </h3>
-            <p>hello world</p>
+            <p className="slider-text">hello world</p>
+            <span>1</span>
             <button>See more...</button>
           </div>
         </Slider>
