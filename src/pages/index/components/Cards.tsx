@@ -35,7 +35,7 @@ export const Cards = () => {
                             
                             {/* <Button redirection='/' text='READ MORE'  icon={{src:"https://cdn-icons-png.flaticon.com/512/16/16410.png", width:'20px', className:"prueba"}} scrollTop={true}></Button>  */}
                             
-                            <Button redirection='/' text='READ MORE'  icon={{src:"https://cdn-icons-png.flaticon.com/512/16/16410.png", width:'20px', className:"prueba"}} scrollTop={true}></Button> 
+                            <Button redirection='/' text='READ MORE'scrollTop={true}></Button> 
                         </div>
                     </div>
                 </div>
