@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom';
-import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap'
+import { useState } from 'react' 
 import * as images from '../../../assets/images/Images';
+import { Button } from '../../../components/Button/Button';
 
 export const Cards = () => {
     const [date, setDate] = useState<Date>(new Date());
+
     return (
         <div className='container '>
 
@@ -32,7 +32,10 @@ export const Cards = () => {
                                     dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?
                                 </div>
                             </div>
-                            <NavLink className="blog-slider__button" to="/">READ MORE</NavLink>
+                            
+                            {/* <Button redirection='/' text='READ MORE'  icon={{src:"https://cdn-icons-png.flaticon.com/512/16/16410.png", width:'20px', className:"prueba"}} scrollTop={true}></Button>  */}
+                            
+                            <Button redirection='/' text='READ MORE'  icon={{src:"https://cdn-icons-png.flaticon.com/512/16/16410.png", width:'20px', className:"prueba"}} scrollTop={true}></Button> 
                         </div>
                     </div>
                 </div>

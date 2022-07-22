@@ -1,0 +1,22 @@
+
+import React from 'react'
+<<<<<<< HEAD
+import { Button } from '../../components/Button/Button';
+=======
+import { Cards } from './components/Cards';
+>>>>>>> f3e5fb2 (Card todavia en proceso)
+import { MainCarousel } from './components/MainCarousel'  
+
+
+export const Index = () => {
+  return (
+    <div>
+<<<<<<< HEAD
+      <MainCarousel /> 
+=======
+      <MainCarousel />
+      <Cards/>
+>>>>>>> f3e5fb2 (Card todavia en proceso)
+    </div>
+  );
+};
