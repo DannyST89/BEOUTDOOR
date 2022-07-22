@@ -3,9 +3,12 @@ import {
 } from 'react-router-dom';
 import { Nav } from 'reactstrap';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { Button } from '../Button/Button';
+import {adventures,hikings,about} from "../../data/navegacion";
 
 
 export const Navbar = () => { 
+
     return (
         <div className=''>
             <div id='invisible'>
@@ -20,7 +23,7 @@ export const Navbar = () => {
                     </div>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span className=""><GiHamburgerMenu color='white' size={"30px"}/></span>
+                        <span className=""><GiHamburgerMenu color='white' size={"30px"} /></span>
                     </button>
 
                     <div className="offcanvas offcanvas-end " tabIndex={-1} id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -37,14 +40,19 @@ export const Navbar = () => {
                             </div>
                             <div className='offcanvas-body'>
                                 <ul className='navbar-nav '>
-                                    <li data-bs-dismiss="offcanvas" className='nav-item'><NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="nav-link" to="/">Inicio</NavLink></li>
+                                    <li data-bs-dismiss="offcanvas" className='nav-item'><Button className='nav-link' redirection="/" text="Inicio" scrollTop={true} ></Button></li>
                                     <li className="nav-item dropdown" >
                                         <a className="nav-link dropdown-toggle" href="adventures" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Adventures
                                         </a>
                                         <ul className='dropdown-menu'>
-                                            <li data-bs-dismiss="offcanvas"><NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="dropdown-item" to="/rafting">Rafting</NavLink> </li>
-                                            <li data-bs-dismiss="offcanvas"><NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="dropdown-item" to="/safari">Safari</NavLink> </li>
+                                            {
+                                                adventures.map((adventures, index) => (
+                                                    <li key={adventures.replace(/ /g, "")} data-bs-dismiss="offcanvas">
+                                                        <Button className='dropdown-item' redirection={adventures.replace(/ /g, "")} text={adventures} scrollTop={true} ></Button>
+                                                    </li>
+                                                ))
+                                            }  
                                         </ul>
                                     </li>
                                     <li className='nav-item dropdown'>
@@ -52,11 +60,13 @@ export const Navbar = () => {
                                             Hikings
                                         </a>
                                         <ul className='dropdown-menu'>
-                                            <li data-bs-dismiss="offcanvas"><NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="dropdown-item" to="/rioCeleste">Rio Celeste</NavLink> </li>
-                                            <li data-bs-dismiss="offcanvas"><NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="dropdown-item" to="/arenalVolcano">Arenal Volcano</NavLink> </li>
-                                            <li data-bs-dismiss="offcanvas"><NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="dropdown-item" to="/laFortunaWaterfall">La Fortuna Waterfall</NavLink> </li>
-                                            <li data-bs-dismiss="offcanvas"><NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="dropdown-item" to="/hangingBridges">Hanging Bridges</NavLink> </li>
-                                            <li data-bs-dismiss="offcanvas"><NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="dropdown-item" to="/combinationTours">Combination Tours</NavLink> </li>
+                                            {
+                                                hikings.map((hiking, index) => (
+                                                    <li key={hiking.replace(/ /g, "")} data-bs-dismiss="offcanvas">
+                                                        <Button className='dropdown-item' redirection={hiking.replace(/ /g, "")} text={hiking} scrollTop={true} ></Button>
+                                                    </li>
+                                                ))
+                                            }
                                         </ul>
                                     </li>
                                     <li className="nav-item dropdown">
@@ -64,11 +74,16 @@ export const Navbar = () => {
                                             About
                                         </a>
                                         <ul className='dropdown-menu'>
-                                            <li data-bs-dismiss="offcanvas"><NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="dropdown-item" to="/aboutTheCompany">About the Company</NavLink> </li>
-                                            <li data-bs-dismiss="offcanvas"><NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="dropdown-item" to="/aboutTheFortuna">About the Fortuna</NavLink> </li>
+                                            {
+                                                about.map((about, index) => (
+                                                    <li key={about.replace(/ /g, "")} data-bs-dismiss="offcanvas">
+                                                        <Button className='dropdown-item' redirection={about.replace(/ /g, "")} text={about} scrollTop={true} ></Button>
+                                                    </li>
+                                                ))
+                                            }
                                         </ul>
                                     </li>
-                                    <li data-bs-dismiss="offcanvas" className='nav-item'><NavLink onClick={()=>document.getElementById("invisible")?.scrollIntoView(true)} className="nav-link" to="/contactUs">Contact us</NavLink> </li>
+                                    <li data-bs-dismiss="offcanvas" className='nav-item'><Button className='nav-link' redirection="ContactUs" text="Contact us" scrollTop={true} ></Button> </li>
                                 </ul>
                             </div>
                         </div>
