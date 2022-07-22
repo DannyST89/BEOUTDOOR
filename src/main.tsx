@@ -9,6 +9,7 @@ import { Index } from './pages/index/Index';
 import "./styles/_main.scss";
 
 
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
