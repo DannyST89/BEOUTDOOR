@@ -1,7 +1,14 @@
  //importaciones
+ //navBar
  @use "./components/navbar/navBar.scss";
+ //index
  @use "./components/index/_MainCarousel";
+ @use "./components/index/_card.scss";
+
+ //footer
  @use "./components/footer/_footer";
+
+ //socialNetwork
  @use "./components/SocialNetwork/_socialNetwork.scss";
 
  //Letras
@@ -11,6 +18,9 @@
  //Variables
  $backgroundSuaveCaida: linear-gradient(180deg, #F5FFFE 0%, #F5FFFE 47.71%, rgba(255, 255, 255, 0) 100%);
 
+ body{
+    background: $backgroundSuaveCaida;
+ }
  * {
      padding: 0;
      margin: 0;
