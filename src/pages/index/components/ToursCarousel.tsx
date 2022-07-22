@@ -20,7 +20,7 @@ export default class ToursCarousel extends Component {
     return (
       <div className="container">
         <div className="mainText">
-          <h1>Your are not sure what to do?</h1>
+          <h1>Your are not sure what to do? adios!!</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non
             atque adipisci est, recusandae aperiam, ullam minima quos nostrum
