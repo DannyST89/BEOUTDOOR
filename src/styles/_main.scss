@@ -4,8 +4,7 @@
  //index
  @use "./components/index/_MainCarousel";
  @use "./components/index/_card.scss";
-
- //footer
+ @use "./components/index/ToursCarousel";
  @use "./components/footer/_footer";
 
  //socialNetwork
