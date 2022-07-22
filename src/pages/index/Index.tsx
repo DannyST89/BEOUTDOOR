@@ -1,13 +1,14 @@
 
 import React from 'react'
-import { Button } from '../../components/Button/Button';
+import { Cards } from './components/Cards';
 import { MainCarousel } from './components/MainCarousel'  
 
 
 export const Index = () => {
   return (
     <div>
-      <MainCarousel /> 
+      <MainCarousel />
+   <Cards/>
     </div>
   );
 };
