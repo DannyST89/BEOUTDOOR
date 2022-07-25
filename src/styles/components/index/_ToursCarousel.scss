@@ -1,25 +1,48 @@
-.slider-size {
-    height: 600px;
+$background-card: #0A9E88;
+$main-text-color: #003414;
+
+.slick-slide > div {
+  margin: 0 0.625rem;
 }
-.mainText{
-    padding: 10px;
-    text-align: center;
-    /*font-size: 30px;*/
-    color: rgb(0, 0, 0);
+.slck-list {
+  margin: 0 -0.625rem;
 }
-.mainText h1{
-    font-size: 50px;
+.tour-carousel-main-title {
+  text-align: center;
+  color: $main-text-color;
+  font-size: 3rem;
 }
-.mainText p{
-    width: 60%;
-    padding: 5px;
-    margin: auto;
-    line-height: 30px;
+.tour-carousel-card {
+  border: 0.0625rem;
+  background: $background-card;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 25rem;
+  color: white;  
+}
+.card-top h1 {
+    font-size: 1rem;
+    margin: 0.625rem 1.25rem;
+  }
+  .card-top > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-bottom {
+    margin: 0.625rem 1.25rem;
+  }  
+.nextArrow {
+    font-size: 1rem;
+    color:  #000000;
+    background: red;
+}
+.card-top img:hover {
+    filter: blur(0.10px) brightness(70%);
 }
 
-.slider-text {
-    text-align: center;
-}
-.slider-image {
-    padding: .25rem;
+@media (max-width: 768px) {
+    .tour-carousel-card {
+        height: 25rem;
+    }
 }

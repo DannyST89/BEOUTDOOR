@@ -13,7 +13,7 @@ export const Cards = () => {
                     <div className="blog-slider__item swiper-slide">
                         <div className="blog-slider__img">
                             <div className="card">
-                                <img src={images.rafting1} className="card-img rounded" alt="..." />
+                                <img src={images.rafting2} className="card-img rounded" alt="..." />
                                 <div className="card-img-overlay blog-slider__card">
                                     <h1 className="card-title tituloImageCard ">Adventure is waiting</h1>
                                     <p className="card-text"></p>
