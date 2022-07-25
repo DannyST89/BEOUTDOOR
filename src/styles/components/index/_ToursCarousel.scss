@@ -1,25 +1,33 @@
-.slider-size {
-    height: 600px;
-}
-.mainText{
-    padding: 10px;
-    text-align: center;
-    /*font-size: 30px;*/
-    color: rgb(0, 0, 0);
-}
-.mainText h1{
-    font-size: 50px;
-}
-.mainText p{
-    width: 60%;
-    padding: 5px;
-    margin: auto;
-    line-height: 30px;
-}
+$background-card: #003414;
 
-.slider-text {
-    text-align: center;
+.container-carousel {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 3.125rem;
 }
-.slider-image {
-    padding: .25rem;
+.slick-slide > div {
+  margin: 0 0.625rem;
 }
+.slck-list {
+  margin: 0 -0.625rem;
+}
+.tour-carousel-card {
+  border: 0.0625rem;
+  background: $background-card;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 25rem;
+  color: white;  
+}
+.card-top h1 {
+    font-size: 1rem;
+    margin: 0.625rem 1.25rem;
+  }
+  .card-top > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-bottom {
+    margin: 0.625rem 1.25rem;
+  }  

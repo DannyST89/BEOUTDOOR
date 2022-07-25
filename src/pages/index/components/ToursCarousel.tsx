@@ -3,124 +3,119 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaHiking } from "react-icons/fa";
+import { AiFillDollarCircle } from "react-icons/ai";
 import { Button } from "../../../components/Button/Button";
+const sliderData = [
+  {
+    id: 1,
+    title: "Volcan Arenal Hike",
+    price: "$100",
+    urlImage: images.rioCeleste01,
+    description: "detalles",
+  },
+  {
+    id: 1,
+    title: "Rio Celeste Hike",
+    price: "$70",
+    urlImage: images.rioCeleste01,
+    description: "detalles",
+  },
+  {
+    id: 1,
+    title: "Hanging Bridges",
+    price: "$50",
+    urlImage: images.rioCeleste01,
+    description: "detalles",
+  },
+  {
+    id: 1,
+    title: "Fortuna Waterfall",
+    price: "$80",
+    urlImage: images.rioCeleste01,
+    description: "detalles",
+  },
+];
 
-export default class ToursCarousel extends Component {
-  render() {
-    var settings = {
+function SampleNextArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "red" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props: any) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "green" }}
+      onClick={onClick}
+    />
+  );
+}
+export default function ToursCarousel() {
+
+    const settings = {
       dots: true,
-      infinite: true,
+      infinite: false,
+      speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      pauseOnHover: true,
+      slidesToScroll: 3,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     };
+
     return (
-      <div className="container">
-        <div className="mainText">
-          <h1>Your are not sure what to do? adios!!</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non
-            atque adipisci est, recusandae aperiam, ullam minima quos nostrum
-            animi voluptas sequi. At repellendus fuga reiciendis accusantium,
-            dolor suscipit repellat?
-          </p>
-        </div>
+      <div className="container-carousel">
         <Slider {...settings}>
-          <div>
-            <h3>
-              <img
-                className="slider-image"
-                src={images.volcanArenal01}
-                alt=""
-              />
-            </h3>
-            <p className="slider-text">Rio Celeste Hike</p>
-            <span>
-              <FaHiking />
-            </span>
-            <Button
-              className={"tour-carousel-bottom "}
-              redirection={"/tour"}
-              text={"See more..."}
-            />
-          </div>
-          <div>
-            <h3>
-              <img className="slider-image" src={images.rana} alt="" />
-            </h3>
-            <p className="slider-text">Arenal Volcano Hike</p>
-            <span>1</span>
-            <Button
-              className={"tour-carousel-bottom "}
-              redirection={"/tour"}
-              text={"See more..."}
-            />
-          </div>
-          <div>
-            <h3>
-              <img
-                className="slider-image"
-                src={images.volcanArenal01}
-                alt=""
-              />
-            </h3>
-            <p className="slider-text">La Fortuna WaterFall</p>
-            <span>1</span>
-            <Button
-              className={"tour-carousel-bottom "}
-              redirection={"/tour"}
-              text={"See more..."}
-            />
-          </div>
-          <div>
-            <h3>
-              <img
-                className="slider-image"
-                src={images.volcanArenal01}
-                alt=""
-              />
-            </h3>
-            <p className="slider-text">Hanging Bridges</p>
-            <span>1</span>
-            <button>See more...</button>
-          </div>
-          <div>
-            <h3>
-              <img
-                className="slider-image"
-                src={images.volcanArenal01}
-                alt=""
-              />
-            </h3>
-            <p className="slider-text">Cobination Tour</p>
-            <span>1</span>
-            <Button
-              className={"tour-carousel-bottom "}
-              redirection={"/tour"}
-              text={"See more..."}
-            />
-          </div>
-          <div>
-            <h3>
-              <img
-                className="slider-image"
-                src={images.volcanArenal01}
-                alt=""
-              />
-            </h3>
-            <p className="slider-text">hello world</p>
-            <span>1</span>
-            <Button
-              className={"tour-carousel-bottom "}
-              redirection={"/tour"}
-              text={"See more..."}
-            />
-          </div>
+          {sliderData.map((item) => (
+            <div className="tour-carousel-card">
+              <div className="card-top">
+                <img src={item.urlImage} alt={item.title} />
+                <h2>{item.title}</h2>
+              </div>
+              <div className="card-bottom">
+                <h3>{item.price}</h3>
+                <p className="card-description">{item.description}</p>
+                <Button
+                  text="See more.."
+                  redirection=""
+                  className="tour-carousel-bottom"
+                ></Button>
+              </div>
+            </div>
+          ))}
         </Slider>
       </div>
     );
   }
-}
+
