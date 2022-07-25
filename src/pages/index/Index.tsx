@@ -10,8 +10,8 @@ export const Index = () => {
   return (
     <div>
       <MainCarousel />
-      <Cards/>
       <Explore />
+      <Cards/>    
       <ToursCarousel/>
     </div>
   );

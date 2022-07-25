@@ -125,7 +125,7 @@ export default function ToursCarousel() {
 
   return (
     <div className="container">
-      <h1>hello</h1>
+      <h1 className="tour-carousel-main-title" >Popular Tours</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nesciunt
         quaerat ad! Sequi assumenda doloremque autem nihil aut totam atque

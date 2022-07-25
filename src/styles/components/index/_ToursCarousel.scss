@@ -1,10 +1,16 @@
-$background-card: #003414;
+$background-card: #0A9E88;
+$main-text-color: #003414;
 
 .slick-slide > div {
   margin: 0 0.625rem;
 }
 .slck-list {
   margin: 0 -0.625rem;
+}
+.tour-carousel-main-title {
+  text-align: center;
+  color: $main-text-color;
+  font-size: 3rem;
 }
 .tour-carousel-card {
   border: 0.0625rem;
