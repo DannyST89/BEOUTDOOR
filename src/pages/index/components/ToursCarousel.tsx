@@ -9,62 +9,49 @@ import * as icons from "../../../assets/icons/icons";
 /*this sliderData is created to store the slider data them with a map we go over the array positions*/
 const sliderData = [
   {
-    id: 1,
     title: "Volcan Arenal Hike",
     price: "100",
-    dollarIcon: (
-      <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
-    ),
-    urlImage: images.rioCeleste01,
+    dollarIcon: <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
+   ,
+    urlImage: images.volcanArenal01,
     description: "detalles",
   },
   {
-    id: 1,
     title: "Rio Celeste Hike",
     price: "100",
-    dollarIcon: (
-      <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
-    ),
-    urlImage: images.rioCeleste01,
+    dollarIcon: <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />,
+    urlImage: images.rioCeleste02,
     description: "detalles",
   },
   {
-    id: 1,
     title: "Hanging Bridges",
-    price: "100",
-    dollarIcon: (
-      <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
-    ),
+    price: "80",
+    dollarIcon: <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
+    ,
+    urlImage: images.hangingBridges,
+    description: "detalles",
+  },
+  {
+    title: "Fortuna Waterfall",
+    price: "70",
+    dollarIcon: <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
+    ,
     urlImage: images.rioCeleste01,
     description: "detalles",
   },
   {
-    id: 1,
     title: "Fortuna Waterfall",
-    price: "100",
-    dollarIcon: (
-      <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
-    ),
+    price: "80",
+    dollarIcon: <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
+    ,
     urlImage: images.rioCeleste01,
     description: "detalles",
   },
   {
-    id: 1,
     title: "Fortuna Waterfall",
-    price: "100",
-    dollarIcon: (
-      <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
-    ),
-    urlImage: images.rioCeleste01,
-    description: "detalles",
-  },
-  {
-    id: 1,
-    title: "Fortuna Waterfall",
-    price: "100",
-    dollarIcon: (
-      <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
-    ),
+    price: "80",
+    dollarIcon: <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
+    ,
     urlImage: images.rioCeleste01,
     description: "detalles",
   },
@@ -94,7 +81,7 @@ export default function ToursCarousel() {
     infinite: true,
     focusOnSelect: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 5000,
@@ -129,11 +116,12 @@ export default function ToursCarousel() {
   };
 
   return (
-    <div className="container-carousel">
+    <div className="container">
       <Slider {...settings}>
         {sliderData.map((item) => (
           <div className="tour-carousel-card">
             <div className="card-top">
+            <h1>{item.title}</h1>
               <img src={item.urlImage} alt={item.title} />
               <h1>{item.title}</h1>
             </div>

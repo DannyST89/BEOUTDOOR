@@ -2,27 +2,31 @@ import React, { Component } from "react";
 import * as images from "../../../assets/images/Images";
 import * as icons from "../../../assets/icons/icons";
 import { NavLink } from "react-router-dom";
+import { GiLightBackpack, GiMountaintop, GiSuspensionBridge } from "react-icons/gi";
+import { MdFamilyRestroom } from "react-icons/md"
+import { BsFillHouseDoorFill } from "react-icons/bs";
+
 
 const sliderData = [
   {
-    title: "Amazing Hikings",
-    urlImage: icons.backpacking,
+    title: "Hikings",
+    urlImage: <GiMountaintop />,
   },
   {
-    title: "Anywhere",
-    urlImage: icons.customisedTrip,
+    title: "Airbnb house",
+    urlImage: <BsFillHouseDoorFill />,
   },
   {
-    title: "Family Tours",
-    urlImage: icons.trip,
-  },
-  {
-    title: "Family Tours",
-    urlImage: icons.trip,
+    title: "Hanging Bridges",
+    urlImage: <GiSuspensionBridge />,
   },
   {
     title: "Family Tours",
-    urlImage: icons.trip,
+    urlImage: <GiLightBackpack />,
+  },
+  {
+    title: "Family Tours",
+    urlImage: <MdFamilyRestroom />,
   },
 ];
 
@@ -42,7 +46,7 @@ export default function Explore() {
           {sliderData.map((item, index) => {
             return (
               <div key={index} className="explore__container--inner-card">
-                <img src={item.urlImage} alt="item" />
+                <span className="exploreIconSize">{item.urlImage}</span>
                 <h2>{item.title}</h2>
               </div>
             );
