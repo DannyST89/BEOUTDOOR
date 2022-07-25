@@ -31,6 +31,9 @@ $background-card: #003414;
     color:  #000000;
     background: red;
 }
+.card-top img:hover {
+    filter: blur(0.10px) brightness(70%);
+}
 
 @media (max-width: 768px) {
     .tour-carousel-card {

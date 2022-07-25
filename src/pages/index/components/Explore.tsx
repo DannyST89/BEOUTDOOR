@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import * as images from "../../../assets/images/Images";
 import * as icons from "../../../assets/icons/icons";
 import { NavLink } from "react-router-dom";
-import { GiLightBackpack, GiMountaintop, GiSuspensionBridge } from "react-icons/gi";
+import { GiLightBackpack, GiMountaintop, GiOffshorePlatform, GiSuspensionBridge } from "react-icons/gi";
 import { MdFamilyRestroom } from "react-icons/md"
 import { BsFillHouseDoorFill } from "react-icons/bs";
 
@@ -27,6 +27,9 @@ const sliderData = [
   {
     title: "Family Tours",
     urlImage: <MdFamilyRestroom />,
+  }, {
+    title: "Zipline",
+    urlImage: <GiOffshorePlatform />,
   },
 ];
 
