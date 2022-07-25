@@ -1,0 +1,5 @@
+export { default as leftArrow } from '../../assets/icons/left-arrow.svg'
+export { default as rightArrow } from '../../assets/icons/right-arrow.svg'
+export { default as backpacking } from '../../assets/icons/backpacking-trips.svg'
+export { default as trip } from '../../assets/icons/corporate-trips.svg'
+export { default as customisedTrip } from '../../assets/icons/customised-trips.svg'
