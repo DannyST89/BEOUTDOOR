@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Gallery = () => {
 
@@ -20,12 +20,15 @@ export const Gallery = () => {
     const pageWidth = document.documentElement.scrollWidth;
     const pageHeight = document.documentElement.scrollHeight;
 
-    console.log("screenWidth: " + screenWidth);
-    console.log("screenHeight: " + screenHeight);
-    console.log("windowWidth: " + windowWidth);
-    console.log("windowHeight: " + windowHeight);
+    // console.log("screenWidth: " + screenWidth);
+    // console.log("screenHeight: " + screenHeight);
+    // console.log("windowWidth: " + windowWidth);
+    // console.log("windowHeight: " + windowHeight);
 
 
+    const [tamano, settamano] = useState(document.documentElement.scrollWidth)
+ 
+    console.log("windowWidth: " + tamano);
 
     return (
         <div>
