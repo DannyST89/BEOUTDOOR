@@ -6,10 +6,12 @@ import { BiDollar } from "react-icons/bi";
 import { Button } from "../../../components/Button/Button";
 import * as icons from "../../../assets/icons/icons";
 import { NavLink } from "react-router-dom";
+import React from "react";
 
 /*this sliderData is created to store the slider data them with a map we go over the array positions*/
 const sliderData = [
   {
+    id: 1,
     title: "Volcan Arenal Hike",
     priceDetails: "Price per person",
     price: "100",
@@ -20,6 +22,7 @@ const sliderData = [
     description: "description for the arenal volcan hike very short",
   },
   {
+    id: 2,
     title: "Rio Celeste Hike",
     priceDetails: "Price per person",
     price: "100",
@@ -30,6 +33,7 @@ const sliderData = [
     description: "description for the arenal volcan hike very short",
   },
   {
+    id: 3,
     title: "Hanging Bridges",
     priceDetails: "Price per person",
     price: "80",
@@ -40,6 +44,7 @@ const sliderData = [
     description: "description for the arenal volcan hike very short",
   },
   {
+    id: 4,
     title: "Fortuna Waterfall",
     priceDetails: "Price per person",
     price: "70",
@@ -50,6 +55,7 @@ const sliderData = [
     description: "description for the arenal volcan hike very short",
   },
   {
+    id: 5,
     title: "Safari Float and Wild Life Arenal",
     priceDetails: "Price per person",
     price: "80",
@@ -60,6 +66,7 @@ const sliderData = [
     description: "description for the arenal volcan hike very short",
   },
   {
+    id: 6,
     title: "Rafting",
     priceDetails: "Price per person",
     price: "80",
@@ -71,24 +78,7 @@ const sliderData = [
   },
 ];
 
-/*Now we create the function that contain the bottoms to change between cards */
-const SlickArrowRight = ({
-  currentSlide,
-  slideCount,
-  ...props
-}: {
-  currentSlide?: number;
-  slideCount?: number;
-}) => <img src={icons.rightArrow} alt="prevArrow" {...props} />;
 
-const SlickArrowLeft = ({
-  currentSlide,
-  slideCount,
-  ...props
-}: {
-  currentSlide?: number;
-  slideCount?: number;
-}) => <img src={icons.leftArrow} alt="nextArrow" {...props} />;
 export default function ToursCarousel() {
   const settings = {
     dots: true,
@@ -99,8 +89,6 @@ export default function ToursCarousel() {
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 5000,
-    nextArrow: <SlickArrowRight />,
-    prevArrow: <SlickArrowLeft />,
     responsive: [
       {
         breakpoint: 1024,
@@ -132,31 +120,27 @@ export default function ToursCarousel() {
   return (
     <div className="container mt-5">
       <h1 className="tour-carousel-main-title" >Popular Tours</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nesciunt
-        quaerat ad! Sequi assumenda doloremque autem nihil aut totam atque
-        fugiat minima, accusamus dolore recusandae ab quos molestias non
-        architecto.
-      </p>
       <Slider {...settings}>
-        {sliderData.map((item) => (
-          <div className="tour-carousel-card">
-            <div className="card-top">
-              <h1>{item.title}</h1>
-              <img src={item.urlImage} alt={item.title} className="card-top-img"/>
-              <h1>{item.priceDetails}</h1>
+        {
+          React.Children.toArray(
+          sliderData.map((item) => (
+            <div className="tour-carousel-card">
+              <div className="card-top">
+                <h1>{item.title}</h1>
+                <img src={item.urlImage} alt={item.title} className="card-top-img"/>
+                <h1>{item.priceDetails}</h1>
+              </div>
+              <div className="card-bottom">
+                <h3 className="card-bottom-price">
+                  <span className="card-bottom-price-span">{item.dollarIcon}{item.price}</span>                   
+                </h3>
+                <p className="card-description">{item.description}</p>               
+                <a href="tour" className="btn-flip" data-back="Have Fun" data-front="se more..."></a>                
+              </div>
             </div>
-            <div className="card-bottom">
-              <h3 className="card-bottom-price">
-                <span className="card-bottom-price-span">{item.dollarIcon}{item.price}</span>                   
-              </h3>
-              <p className="card-description">{item.description}</p>
-              <NavLink to={"/tours"}>
-              <a href="#" className="btn-flip" data-back="Have Fun" data-front="se more..."></a>
-              </NavLink>
-            </div>
-          </div>
-        ))}
+          ))
+          )
+        }
       </Slider>
     </div>
   );
