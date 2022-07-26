@@ -6,7 +6,8 @@ import { Footer } from './components/Footer/Footer';
 import { ContentPage } from './components/Navbar/components/ContentPage';
 import { Navbar } from './components/Navbar/Navbar'; 
 import "./styles/_main.scss";
-import 'animate.css';
+import 'animate.css'; 
+
  
 
 
@@ -23,7 +24,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 
       {/* Footer */} 
       <Footer />
-       
 
     </BrowserRouter>
   </React.StrictMode>
