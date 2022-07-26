@@ -2,7 +2,7 @@ import * as images from "../../../assets/images/Images";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { AiFillDollarCircle } from "react-icons/ai";
+import { BiDollar } from "react-icons/bi";
 import { Button } from "../../../components/Button/Button";
 import * as icons from "../../../assets/icons/icons";
 import { NavLink } from "react-router-dom";
@@ -11,57 +11,63 @@ import { NavLink } from "react-router-dom";
 const sliderData = [
   {
     title: "Volcan Arenal Hike",
+    priceDetails: "Price per person",
     price: "100",
     dollarIcon: (
-      <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
+      <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
     ),
     urlImage: images.volcanArenal01,
-    description: "detalles",
+    description: "description for the arenal volcan hike very short",
   },
   {
     title: "Rio Celeste Hike",
+    priceDetails: "Price per person",
     price: "100",
     dollarIcon: (
-      <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
+      <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
     ),
     urlImage: images.rioCeleste02,
-    description: "detalles",
+    description: "description for the arenal volcan hike very short",
   },
   {
     title: "Hanging Bridges",
+    priceDetails: "Price per person",
     price: "80",
     dollarIcon: (
-      <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
+      <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
     ),
     urlImage: images.hangingBridges,
-    description: "detalles",
+    description: "description for the arenal volcan hike very short",
   },
   {
     title: "Fortuna Waterfall",
+    priceDetails: "Price per person",
     price: "70",
     dollarIcon: (
-      <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
+      <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
     ),
     urlImage: images.rioCeleste01,
-    description: "detalles",
+    description: "description for the arenal volcan hike very short",
   },
   {
     title: "Safari Float and Wild Life Arenal",
+    priceDetails: "Price per person",
     price: "80",
     dollarIcon: (
-      <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
+      <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
     ),
     urlImage: images.safariFloatWildLifeArenal,
-    description: "detalles",
+    description: "description for the arenal volcan hike very short",
   },
   {
     title: "Rafting",
+    priceDetails: "Price per person",
     price: "80",
     dollarIcon: (
-      <AiFillDollarCircle style={{ color: "#FFFFFF", fontSize: "2rem" }} />
+      <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
     ),
     urlImage: images.rafting2,
-    description: "detalles",
+    description: "description for the arenal volcan hike very short",
   },
 ];
 
@@ -137,21 +143,16 @@ export default function ToursCarousel() {
           <div className="tour-carousel-card">
             <div className="card-top">
               <h1>{item.title}</h1>
-              <img src={item.urlImage} alt={item.title} />
-              <h1>{item.title}</h1>
+              <img src={item.urlImage} alt={item.title} className="card-top-img"/>
+              <h1>{item.priceDetails}</h1>
             </div>
             <div className="card-bottom">
-              <h3>
-                {item.dollarIcon}
-                {item.price}
+              <h3 className="card-bottom-price">
+                <span className="card-bottom-price-span">{item.dollarIcon}{item.price}</span>                   
               </h3>
               <p className="card-description">{item.description}</p>
               <NavLink to={"/tours"}>
-                <Button
-                  text="See more.."
-                  redirection=""
-                  className="tour-carousel-bottom"
-                ></Button>
+              <a href="#" className="btn-flip" data-back="Have Fun" data-front="se more..."></a>
               </NavLink>
             </div>
           </div>

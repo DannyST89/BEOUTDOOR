@@ -12,6 +12,7 @@ $main-text-color: #003414;
   color: $main-text-color;
   font-size: 3rem;
 }
+
 .tour-carousel-card {
   border: 0.0625rem;
   background: $background-card;
@@ -26,7 +27,7 @@ $main-text-color: #003414;
   }
   .card-top > img {
     width: 100%;
-    height: 100%;
+    height: 10rem;
     object-fit: cover;
   }
   .card-bottom {
@@ -40,6 +41,31 @@ $main-text-color: #003414;
 .card-top img:hover {
     filter: blur(0.10px) brightness(70%);
 }
+.card-bottom-price span {
+  background: #FC6B1D;  
+  border-radius: 0.5rem;
+  padding-right: 1rem;
+}
+.card-top {
+  width: 300px;
+  margin: 0 auto;
+  }
+   img{
+  height: 100px;
+  width: 300px;
+  margin: 15px 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  }
+  img:hover {
+  height: 133px;
+  width: 400px;
+  margin-left: -50px;
+  }
+
+
 
 @media (max-width: 768px) {
     .tour-carousel-card {
