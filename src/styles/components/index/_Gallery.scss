@@ -1,0 +1,89 @@
+ ///gallery
+ /// 
+ .containerGallery {
+     box-sizing: border-box;
+     display: flex;
+     flex-flow: column wrap;
+     height: 80vh;
+     margin-bottom: 5vh;
+     text-align: center;
+     text-transform: uppercase;
+     width: 100%;
+ }
+
+
+
+
+
+ .cardGallery {
+     align-items: center;
+     background: white;
+     background-size: cover;
+     background-position: center;
+     border: 5px solid white;
+     box-sizing: border-box;
+     color: white;
+     display: flex;
+     flex-grow: 0;
+     font-family: sans-serif;
+     font-size: 30px;
+     font-weight: bold;
+     height: 50%;
+     justify-content: center;
+     outline: 5px solid white;
+     text-shadow: 0 0 5px black;
+     position: relative;
+
+     // Setting the heights of the elements so they meet
+     // nicely at the bottom of the container
+     &:nth-child(6n - 5) {
+         height: 25%;
+     }
+
+     &:nth-child(6n-4) {
+         height: 75%;
+     }
+
+     &:nth-child(6n-3) {
+         height: 50%;
+     }
+
+     &:nth-child(6n-2) {
+         height: 50%;
+     }
+
+     &:nth-child(6n-1) {
+         height: 66.666%;
+     }
+
+     &:nth-child(6n) {
+         height: 33.333%;
+     }
+ }
+
+
+ #navbarNav {
+     justify-content: flex-end;
+ }
+
+ .navbarGallery {
+
+     li { 
+        transition: all 0.3s ease-in-out;
+          &:hover {  
+              transform: translateY(-2px);
+
+              &::after{
+                content: "";
+                position: absolute;
+                background-color: black;
+                padding: 1px;
+                width: 100%;
+              }
+          }
+     }
+ }
+
+ .nav-item .nav-link {
+     color: black !important;
+ }
