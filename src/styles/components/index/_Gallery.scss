@@ -1,5 +1,10 @@
- ///gallery
- /// 
+ ///gallery 
+ .backgroundGallery {
+     overflow: hidden;
+     transition: all 0.3s ease-in-out;
+     
+ }
+
  .containerGallery {
      box-sizing: border-box;
      display: flex;
@@ -10,12 +15,9 @@
      text-transform: uppercase;
      width: 100%;
      overflow: hidden;
-
-     .animate__animated.animate__bounceInUp {
-         --animate-duration: .8s;
-     }
-
+     transition: all 0.3s ease-in-out;   
  }
+
 
  @media screen and (max-width: 576px) {
 
@@ -36,13 +38,6 @@
      }
  }
 
-
-
-
-
-
-
-
  .cardGallery {
      align-items: center;
      background: white;
@@ -59,17 +54,14 @@
      justify-content: center;
      text-shadow: 0 0 5px black;
      position: relative;
-
+     transition: all 0.3s ease-in-out;
 
      border: 1px solid white;
-     //outline: 1px solid white;
      border-radius: 10px;
-
-
+ 
 
      // Setting the heights of the elements so they meet
      // nicely at the bottom of the container
-
      //primera columna
      &:nth-child(6n - 5) {
          height: 25%;
@@ -109,11 +101,11 @@
      .nav-item {
          transition: all 0.3s ease-in-out;
          cursor: pointer;
-     }
- }
 
- .nav-item .nav-link {
-     color: black !important;
+         .nav-link {
+             color: black !important;
+         }
+     }
  }
 
  .aGallery {
@@ -131,7 +123,6 @@
      }
  }
 
-
  .modalImage {
      display: flex;
      justify-content: center;
@@ -147,118 +138,105 @@
  }
 
 
- //---------------------------------------------------------------------------------------------------
-
- .video-gallery {
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-     grid-gap: 15px;
-     max-width: 1100px;
-     padding: 15px;
-     margin: 0 auto;
-     box-sizing: border-box;
- }
-
- .gallery-item {
-     position: relative;
-     width: 100%;
-     height: 300px;
-     background: #000;
-     cursor: pointer;
-     overflow: hidden;
- }
-
- .imgGalleryItem {
-     position: relative;
-     display: block;
-     width: 115%;
-     height: 300px;
-     object-fit: cover;
-     opacity: .5;
-     /*transition: opacity .35s, transform .35s;*/
-     transition: all 350ms ease-in-out;
-     transform: translate3d(-23px, 0, 0);
-     /*backface-visibility: hidden;*/
- }
-
- .north-cascades-img {
-     object-position: 50% 30%;
- }
-
+ //MANEJO DE EL TEXTO DE LA IMAGEN
+ //acomodar el texto en la posicion deseada como la image
  .gallery-item-caption {
-     padding: 32px;
+     padding: 24px;
      font-size: 1em;
      color: #fff;
      text-transform: uppercase;
- }
+     transition: all 0.3s ease;
 
- .gallery-item-caption,
- .gallery-item-caption>a {
      position: absolute;
      top: 0;
      left: 0;
      width: 100%;
      height: 100%;
+
+     text-align: left;
+
+     &:hover {
+         background-color: rgba(0, 0, 0, 0.225);
+         cursor: pointer;
+         border-radius: 10px;
+
+         //Esto es para cuando se haga hover en el div se aparezca el texto
+         .textGallery {
+             opacity: 1;
+             transform: translate3d(0, 0, 0);
+         }
+
+         .titleGallery:after {
+             transform: translate3d(0, 0, 0);
+         }
+     }
+
+
+     @media screen and (max-width: 576px) {
+         padding: 0;
+
+         &:hover {
+
+             //Esto es para cuando se haga hover en el div se aparezca el texto
+             .textGallery {
+                 opacity: 0;
+             }
+
+             .titleGallery:after {
+                 opacity: 0;
+             }
+         }
+     }
+
  }
 
- #titleGallery {
+ .titleGallery {
      font-weight: 300;
      overflow: hidden;
      padding: 12px 0;
- }
 
- #textGallery,
- #titleGallery {
+     //--
      position: relative;
      margin: 0;
      z-index: 1;
      pointer-events: none;
+
+     &:after {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 15%;
+         height: 1px;
+         background: #fff;
+         transition: transform 0.3s;
+         transform: translate3d(-110%, 0, 0);
+     }
+
+     @media screen and (max-width: 576px) {
+         font-size: 1rem;
+         margin-top: 10%;
+         text-align: center;
+
+         &:after {
+             opacity: 0;
+         }
+     }
+
+
  }
 
- #textGallery {
+ .textGallery {
      letter-spacing: 1px;
      font-size: 12px;
      padding: 12px 0;
      opacity: 0;
      transition: opacity 0.35s, transform 0.35s;
      transform: translate3d(10%, 0, 0);
- }
 
- .gallery-item:hover {
-     .imgGalleryItem {
-         opacity: 0.3;
-         transform: translate3d(0, 0, 0);
-     }
- }
-
-
- .gallery-item,
- .gallery-item-caption {
-     text-align: left;
- }
-
- #titleGallery:after {
-     content: "";
-     position: absolute;
-     bottom: 0;
-     left: 0;
-     width: 15%;
-     height: 1px;
-     background: #fff;
-     transition: transform 0.3s;
-     transform: translate3d(-100%, 0, 0);
- }
-
- .gallery-item:hover {
-     #titleGallery:after {
-         transform: translate3d(0, 0, 0);
-     }
- }
-
- .gallery-item:hover {
-
-     #textGallery {
-         opacity: 1;
-         transform: translate3d(0, 0, 0);
-     }
+     //--
+     position: relative;
+     margin: 0;
+     z-index: 1;
+     pointer-events: none;
  }

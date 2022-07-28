@@ -1,166 +1,94 @@
-import { useEffect, useState } from "react";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-export const Gallery = () => {
+import React, { useEffect, useRef, useState } from "react";
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
+import { galleryLizard, galleryAll, gallerySnake,navGallery } from "../data/data";
+import { LoadImages } from "./LoadImages";
 
-    const [images, setImages] = useState(0);
+export const Gallery = ( ) => {
 
-    const [active, setActive] = useState("all");
+    const [navImages, setNavImages] = useState(0);
+
+    const [active, setActive] = useState("All");
 
     const [modal, setModal] = useState(false);
 
     const toggle = () => setModal(!modal);
 
-    const closeBtn = <button className="close" onClick={toggle}>&times;</button>;
-
-    //=========================================================
-
-    // Get the size of the device screen
-    var screenWidth = screen.width;
-    var screenHeight = screen.height;
-
-    // Get the browser window size
-    var windowWidth = window.innerWidth;
-    var windowHeight = window.innerHeight;
-
-    // Get the size of the entire webpage
-    const pageWidth = document.documentElement.scrollWidth;
-    const pageHeight = document.documentElement.scrollHeight;
-
-    // console.log("screenWidth: " + screenWidth);
-    // console.log("screenHeight: " + screenHeight);
-    // console.log("windowWidth: " + windowWidth);
-    // console.log("windowHeight: " + windowHeight);
-
     const [url, setUrl] = useState("")
 
-    const [tamano, settamano] = useState(document.documentElement.scrollWidth)
-
-    console.log("windowWidth: " + tamano);
-
     const openModal = (url: string) => {
-        setUrl(url);
+        setUrl(url); 
         toggle();
+    }    
+
+    //Aqui se meten el arreglo de imagenes metiendole el metodo para que
+    //se pueda abrir el modal, se hace aqui porque aqui se encuentra el modal, 
+    //y no en el componente LoadImages, cuando se envia la data no se puede colocar
+    //porque es informacion extra que no se puede manejar desde la data
+    for (let i = 0; i < galleryAll.length; i++) {
+        galleryAll[i].openModal = openModal;
+    }
+    for (let i = 0; i < gallerySnake.length; i++) {
+        gallerySnake[i].openModal = openModal;
+    }
+    for (let i = 0; i < galleryLizard.length; i++) {
+        galleryLizard[i].openModal = openModal;
     }
 
     return (
         <div>
+            {/* Navegacion para la seccion de galeria */}
             <nav className="container navbar navbar-expand-lg mt-5">
                 <div className="container-fluid">
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav navbarGallery">
-                            <li className="nav-item" onClick={() => setImages(0)}>
-                                <a
-                                    className={active === 'all' ? 'aGallery nav-link' : 'nav-link'}
-                                    onClick={(e) => { e.preventDefault(); setActive('all') }}
-                                >All</a>
-                            </li>
-                            <li className="nav-item" onClick={() => setImages(1)}>
-                                <a
-                                    className={active === 'snake' ? 'aGallery nav-link' : 'nav-link'}
-                                    onClick={(e) => { e.preventDefault(); setActive('snake') }}
-                                >Snake</a>
-                            </li>
-                            <li className="nav-item " onClick={() => setImages(2)}>
-                                <a
-                                    className={active === 'lizard' ? 'aGallery nav-link' : 'nav-link'}
-                                    onClick={(e) => { e.preventDefault(); setActive('lizard') }}
-                                >Lizard</a>
-                            </li>
+                            {
+                                navGallery.map((item, index) => (
+                                    <li key={item} className="nav-item" onClick={() => setNavImages(index)}>
+                                        <a
+                                            className={active === item ? 'aGallery nav-link' : 'nav-link'}
+                                            onClick={(e) => { e.preventDefault(); setActive(item) }}
+                                        >{item}</a>
+                                    </li>
+                                ))
+                            }
                         </ul>
                     </div>
                 </div>
             </nav>
 
+            {/* seccion de las imagenes carga que se selecciono de la navegacion */}
             <section>
-                <div className="backgroundGallery">
-                    <div className=""  >
-
-                        {
-                            images === 0 ?
-
-                                <div className="containerGallery animate__animated animate__bounceInUp"  >
-
-                                    <div onClick={() => openModal("https://source.unsplash.com/random/1")} className="cardGallery " style={{ backgroundImage: "url('https://source.unsplash.com/random/1')" }}></div>
-                                    <div onClick={() => openModal("https://source.unsplash.com/random/2")} className="cardGallery " style={{ backgroundImage: "url('https://source.unsplash.com/random/2')" }}></div>
-                                    <div onClick={() => openModal("https://source.unsplash.com/random/3")} className="cardGallery " style={{ backgroundImage: "url('https://source.unsplash.com/random/3')" }}></div>
-                                    <div onClick={() => openModal("https://source.unsplash.com/random/4")} className="cardGallery " style={{ backgroundImage: "url('https://source.unsplash.com/random/4')" }}></div>
-                                    <div onClick={() => openModal("https://source.unsplash.com/random/5")} className="cardGallery " style={{ backgroundImage: "url('https://source.unsplash.com/random/5')" }}></div>
-                                    <div onClick={() => openModal("https://source.unsplash.com/random/6")} className="cardGallery " style={{ backgroundImage: "url('https://source.unsplash.com/random/6')" }}></div>
-                                </div>
-                                : null
-                        }
-
-                        {
-                            images === 1 ?
-
-                                <div className="containerGallery animate__animated animate__bounceInUp"  >
-                                    <div className="cardGallery animate__animated" style={{ backgroundImage: "url('https://source.unsplash.com/random/6')" }}></div>
-                                    <div className="cardGallery" style={{ backgroundImage: "url('https://source.unsplash.com/random/4')" }}></div>
-                                    <div className="cardGallery" style={{ backgroundImage: "url('https://source.unsplash.com/random/5')" }}></div>
-                                </div>
-                                : null
-                        }
-
-                        {
-                            images === 2
-                                ?
-
-                                <div className="containerGallery animate__animated animate__bounceInUp"  >
-                                    <div className="content"> {/*No hace nada este div */}
-                                        <div className="video-gallery"> {/*No hace nada este div */}
-                                            <div className="gallery-item ">
-                                                <div onClick={() => openModal("url('https://source.unsplash.com/random/1')")} className="" style={{ backgroundImage: "url('https://source.unsplash.com/random/1')", height:'300px' }}></div>
-                                                <div className="gallery-item-caption">
-                                                    <h2>Mount Rainier</h2>
-                                                    <p>14410 feet of adventure</p> 
-                                                </div>
-                                            </div> 
-                                            <div className="gallery-item ">
-                                                <div onClick={() => openModal("url('https://source.unsplash.com/random/1')")} className="" style={{ backgroundImage: "url('https://source.unsplash.com/random/1')", height:'300px' }}></div>
-                                                <div className="gallery-item-caption">
-                                                    <h2 id="titleGallery" >Mount Rainier</h2>
-                                                    <p id="textGallery" >14410 feet of adventure</p> 
-                                                </div>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                    <div onClick={() => openModal("url('https://source.unsplash.com/random/1')")} className="cardGallery" style={{ backgroundImage: "url('https://source.unsplash.com/random/1')" }}></div>
-                                    <div onClick={() => openModal("url('https://source.unsplash.com/random/3')")} className="cardGallery" style={{ backgroundImage: "url('https://source.unsplash.com/random/3')" }}></div>
-                                    <div onClick={() => openModal("url('https://source.unsplash.com/random/2')")} className="cardGallery" style={{ backgroundImage: "url('https://source.unsplash.com/random/2')" }}></div>
-                                </div>
-
-                                : null
-                        }
-                    </div>
+                <div className="backgroundGallery animate__animated animate__flipInX">
+                    {
+                        navImages === 0
+                            ?
+                            <LoadImages {...galleryAll} />
+                            : null
+                    }
+                    {
+                        navImages === 1
+                            ?
+                            <LoadImages {...gallerySnake} />
+                            : null
+                    }
+                    {
+                        navImages === 2
+                            ?
+                            <LoadImages {...galleryLizard} />
+                            : null
+                    }
                 </div>
             </section>
 
-            <section>
-                <div className="content">
-                    <div className="video-gallery">
-                        <div className="gallery-item ">
-                            <img className="imgGalleryItem" src="https://assets.codepen.io/156905/rainier.jpg" alt="Mount Rainier" />
-                            <div className="gallery-item-caption">
-                                <h2>Mount Rainier</h2>
-                                <p>14410 feet of adventure</p>
-                                <a className="vimeo-popup" href="https://vimeo.com/179049611"></a>
-                            </div>
-                        </div>
+            {/* modal para el uso de la galeria para verla la imagen mas completa */}
+            <Modal size="xl" centered isOpen={modal} toggle={toggle} className="modal-contentGallery">
+                <ModalHeader toggle={toggle}></ModalHeader>
+                <ModalBody>
+                    <div className="modalImage">
+                        <img src={url} alt="" />
                     </div>
-                </div>
-            </section>
-
-
-            <section>
-                <Modal size="xl" className="modal-contentGallery" centered isOpen={modal} toggle={toggle} >
-                    <ModalHeader toggle={toggle}></ModalHeader>
-                    <ModalBody>
-                        <div className="modalImage">
-                            <img src={url} alt="" />
-                        </div>
-                    </ModalBody>
-                </Modal>
-            </section>
+                </ModalBody>
+            </Modal>
 
 
         </div>
