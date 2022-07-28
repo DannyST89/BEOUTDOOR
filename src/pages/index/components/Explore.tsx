@@ -40,7 +40,7 @@ export default function Explore() {
           {
           sliderData.map((item, index) => {
             return (
-              <div key={index} className="explore__container--inner-card">
+              <div id={item.title.replace(/ /g,"")} key={index} className="explore__container--inner-card">
                 <span className="exploreIconSize">{item.urlImage}</span>
                 <h2>{item.title}</h2>
               </div>
