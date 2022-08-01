@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { Formulario } from '../../components/Formulario/Formulario';
 import { Cards } from './components/Cards';
 import Explore from './components/Explore';
 import { MainCarousel } from './components/MainCarousel'  
@@ -12,7 +13,7 @@ export const Index = () => {
       <MainCarousel />
       <Explore />
       <Cards/>    
-      <ToursCarousel/>
+      <ToursCarousel/> 
     </div>
   );
 };
