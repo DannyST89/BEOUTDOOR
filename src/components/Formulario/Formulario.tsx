@@ -4,28 +4,7 @@ import { useState } from 'react';
 
 import Swal from 'sweetalert2'
 
-type propsMessage = {
-    error: string[]
-}
-
-const Result = () => {
-
-    const messageSent = Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Message sent successfully',
-        showConfirmButton: false,
-        timer: 1500
-    })
-
-    return (
-        { messageSent }
-    )
-}
-
-export const Formulario = () => {
-
-    const [messageError, setMessageError] = useState<string[]>([""]);
+export const Formulario = () => { 
 
     //botonCheck para cambiar del theme de la pagina
     const [checked, setchecked] = useState(false)
@@ -35,31 +14,44 @@ export const Formulario = () => {
     }
     else {
         document.documentElement.setAttribute('data-theme', 'light');
-    }//fin if checked
-
-
+    }//fin if checked 
 
     const [result, showResult] = useState(false);
-
-    const [messageSend, setMessageSend] = useState(false)
 
     const sendEmail = (e: any) => {
 
         emailjs.sendForm('service_me15gui', 'template_2szv0zx', e.target, 'eC4OmJ2eUhxjv88cY')
             .then((result) => {
                 console.log(result.text);
+
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Message sent successfully',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                e.target.reset();
+
             }, (error) => {
                 console.log(error.text);
-            });
 
-        e.target.reset();
-        showResult(true);
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'A ocurrido un error inesperado, inentelo de nuevo',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+
+            });
     };
 
     const comprobarErrores = (target: any) => {
 
         const { name, telephone, email, message } = target;
 
+        var cantidadErrores = 0;
         // setTimeout(function () {
 
         // }, 3000);
@@ -70,6 +62,7 @@ export const Formulario = () => {
             name.setAttribute('title', "NOMBRE MUY CORTO");
             name.placeholder = "El nombre debe ser mayor de 3 caracteres";
             name.focus();
+            cantidadErrores++;
         } else {
             name.className = "form-control";
             name.removeAttribute('data-bs-toggle');
@@ -83,22 +76,12 @@ export const Formulario = () => {
             telephone.setAttribute('title', "DEBEN SER NUMEROS");
             telephone.placeholder = "Deben ser solo numeros y mayor a 7 caracteres";
             telephone.focus();
+            cantidadErrores++;
         } else {
             telephone.className = "form-control";
             telephone.removeAttribute('data-bs-toggle');
             telephone.removeAttribute('title');
             telephone.placeholder = "Your Telephone Number"
-            
-
-            //datos de prueba
-            Swal.fire({
-                position: 'center',
-                icon: 'success',
-                title: 'Message sent successfully',
-                showConfirmButton: false,
-                timer: 1500
-            });
-            target.reset();
 
         }
 
@@ -108,14 +91,21 @@ export const Formulario = () => {
             email.setAttribute('title', "DEBE SER UN CORREO ELECTRONICO VALIDO");
             email.placeholder = "El email debe ser un correo electronico valido";
             email.focus();
+            cantidadErrores++;
         } else {
             email.className = "form-control";
             email.removeAttribute('data-bs-toggle');
             email.removeAttribute('title');
-            email.placeholder = "Your Email"  
+            email.placeholder = "Your Email"
         }
 
-        
+        if (cantidadErrores != 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+
     }
 
 
@@ -123,9 +113,10 @@ export const Formulario = () => {
         e.preventDefault();
         const { name, telephone, email, message } = e.target;
 
-        comprobarErrores(e.target); 
 
-         
+        if (!comprobarErrores(e.target)) {
+            //sendEmail(e);  
+        }
     }
 
 
@@ -201,7 +192,7 @@ export const Formulario = () => {
                             />
 
                             <button className='btn-flip' type="submit" id="submit" name="submit">Send</button>
-                        </form> 
+                        </form>
                     </div>
                 </div>
             </div>
