@@ -1,67 +1,37 @@
 $exploreIconBottom: #0A9E88;
-
-.explore__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 1.875rem;
-
-    .explore__container--title {
-        font-family: 'Rochester', cursive;
-        text-transform: capitalize;
-        font-size: 5rem;
-        font-weight: 600;
-        color: rgb(10, 158, 136);
-        margin: 3.125rem 0;
-        transition: all ease-in-out .2s;
-        &:hover{
-            transform: translateY(-0.5rem);
-        }
-    }
-    
-
-    &--inner {
-        width: 80%;
-        padding: 0.3125rem;
-        display: block;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-        &-card {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            // justify-content: center;
-            img {
-                width: 80px;
-                height: 5vw;
-            }
-
-            h2 {
-                width: 10vw;
-                font-size: 1.2vw;
-                font-weight: 600;
-                color: rgb(58, 58, 58);
-                text-transform: uppercase;
-                text-align: center;
-            }
-
-            transition: all .1s ease;
-
-            &:hover {
-                transform: scale(1.05); 
-            }
-        }
+.explore_container {
+    margin-top: 3rem;
+}
+.explore_container {   
+ 
+    color: $exploreIconBottom;
+    text-align: center;
+    .explore-container-title-p {
+        color: #000;
     }
 }
+.exploreIconsContainer {
+    display:flex;
+    font-size: 5rem;
+    background: red;
+   
+}
 
-.exploreIconSize {
-    font-size: 4rem;
+.exploreIcons > span {
     color: $exploreIconBottom;
+}
+
+.exploreIcons > h2 {
+    font-size: 1rem;
+}
+@media (max-width: 768px){
+    .exploreIconsContainer {
+        font-size: 3rem;
+        display:inline-block;
+    }
+}
+@media (max-width: 475px){
+    .exploreIconsContainer {
+        
+    }
 }
