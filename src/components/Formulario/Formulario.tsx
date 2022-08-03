@@ -2,18 +2,48 @@ import { Form, Row, Col, FormGroup, Label, Input, Button } from 'reactstrap';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 
+import Swal from 'sweetalert2'
+
+type propsMessage = {
+    error: string[]
+}
+
 const Result = () => {
+
+    const messageSent = Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Message sent successfully',
+        showConfirmButton: false,
+        timer: 1500
+    })
+
     return (
-        <p>Your Message has been succefully sent</p>
+        { messageSent }
     )
 }
 
 export const Formulario = () => {
 
+    const [messageError, setMessageError] = useState<string[]>([""]);
+
+    //botonCheck para cambiar del theme de la pagina
+    const [checked, setchecked] = useState(false)
+
+    if (checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }//fin if checked
+
+
+
     const [result, showResult] = useState(false);
 
+    const [messageSend, setMessageSend] = useState(false)
+
     const sendEmail = (e: any) => {
-        e.preventDefault();
 
         emailjs.sendForm('service_me15gui', 'template_2szv0zx', e.target, 'eC4OmJ2eUhxjv88cY')
             .then((result) => {
@@ -26,79 +56,78 @@ export const Formulario = () => {
         showResult(true);
     };
 
+    const comprobarErrores = (target: any) => {
+
+        const { name, telephone, email, message } = target;
+
+        // setTimeout(function () {
+
+        // }, 3000);
+
+        if (name.value.length < 3) {
+            name.className = "form-control is-invalid errorInput";
+            name.setAttribute('data-bs-toggle', 'tooltip');
+            name.setAttribute('title', "NOMBRE MUY CORTO");
+            name.placeholder = "El nombre debe ser mayor de 3 caracteres";
+            name.focus();
+        } else {
+            name.className = "form-control";
+            name.removeAttribute('data-bs-toggle');
+            name.removeAttribute('title');
+            name.placeholder = "Your Full Name"
+        }
+
+        if (telephone.value.length < 8 || isNaN(parseInt(telephone.value))) {
+            telephone.className = "form-control is-invalid errorInput";
+            telephone.setAttribute('data-bs-toggle', 'tooltip');
+            telephone.setAttribute('title', "DEBEN SER NUMEROS");
+            telephone.placeholder = "Deben ser solo numeros y mayor a 7 caracteres";
+            telephone.focus();
+        } else {
+            telephone.className = "form-control";
+            telephone.removeAttribute('data-bs-toggle');
+            telephone.removeAttribute('title');
+            telephone.placeholder = "Your Telephone Number"
+            
+
+            //datos de prueba
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Message sent successfully',
+                showConfirmButton: false,
+                timer: 1500
+            });
+            target.reset();
+
+        }
+
+        if (!email.value.includes("@") && !email.value.includes(".")) {
+            email.className = "form-control is-invalid errorInput";
+            email.setAttribute('data-bs-toggle', 'tooltip');
+            email.setAttribute('title', "DEBE SER UN CORREO ELECTRONICO VALIDO");
+            email.placeholder = "El email debe ser un correo electronico valido";
+            email.focus();
+        } else {
+            email.className = "form-control";
+            email.removeAttribute('data-bs-toggle');
+            email.removeAttribute('title');
+            email.placeholder = "Your Email"  
+        }
+
+        
+    }
+
 
     const onSubmit = async (e: any) => {
         e.preventDefault();
-        const { name, email, message } = e.target;
+        const { name, telephone, email, message } = e.target;
 
+        comprobarErrores(e.target); 
+
+         
     }
 
-    //----------------------------------------------
-
-    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-    const [checked, setchecked] = useState(false)
-
-    if (checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    }
-    else {
-        document.documentElement.setAttribute('data-theme', 'light');
-    }
-
-
-    //toggleSwitch != undefined && toggleSwitch.addEventListener('change', switchTheme, false);
-
-
-    const name = document.getElementById('name') as HTMLElement;
-    const email = document.getElementById('email') as HTMLElement;
-    const message = document.getElementById('message') as HTMLElement;
-    const contactForm = document.getElementById('contact-form') as HTMLElement;
-    const errorElement = document.getElementById('error') as HTMLElement;
-    const successMsg = document.getElementById('success-msg') as HTMLElement;
-    const submitBtn = document.getElementById('submit') as HTMLButtonElement;
-
-    const validate = (e: any) => {
-        e.preventDefault();
-
-        if (e.name.value.length < 3) {
-            e.errorElement.innerHTML = 'Your name should be at least 3 characters long.';
-            return false;
-        }
-
-        if (!(e.email.value.includes('.') && (e.mail.value.includes('@')))) {
-            e.errorElement.innerHTML = 'Please enter a valid email address.';
-            return false;
-        }
-
-        if (!emailIsValid(e.email.value)) {
-            e.errorElement.innerHTML = 'Please enter a valid email address.';
-            return false;
-        }
-
-        if (e.message.value.length < 15) {
-            e.errorElement.innerHTML = 'Please write a longer message.';
-            return false;
-        }
-
-        e.errorElement.innerHTML = '';
-        e.successMsg.innerHTML = 'Thank you! I will get back to you as soon as possible.';
-
-        e.preventDefault();
-        setTimeout(function () {
-            e.successMsg.innerHTML = '';
-            e.document.getElementById('contact-form').reset();
-        }, 6000);
-
-        return true;
-
-    }
-
-    const emailIsValid = (email: any) => {
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    }
-
-    //submitBtn.addEventListener('click', validate); 
 
 
     return (
@@ -119,7 +148,6 @@ export const Formulario = () => {
                                 <Input checked={checked} onChange={() => { setchecked(!checked) }} type="checkbox" id="checkbox" />
                                 <div className="slider round"></div>
                             </Label>
-
                             <div className="description">Dark Mode</div>
                         </div>
 
@@ -137,8 +165,8 @@ export const Formulario = () => {
                                 id="name"
                                 name="name"
                                 type="text"
-                                required
                             />
+
                             <Label for="telephone">
                                 Telephone
                             </Label>
@@ -148,7 +176,6 @@ export const Formulario = () => {
                                 id="telephone"
                                 name="telephone"
                                 type="tel"
-                                required
                             />
 
                             <Label for="email">
@@ -160,7 +187,6 @@ export const Formulario = () => {
                                 id="email"
                                 name="email"
                                 type="email"
-                                required
                             />
 
                             <Label for="message">
@@ -172,17 +198,13 @@ export const Formulario = () => {
                                 id="message"
                                 name="message"
                                 type="textarea"
-                                required
                             />
 
-                            <button type="submit" id="submit" name="submit">Send</button>
-                        </form>
-                        <div id="error"></div>
-                        <div id="success-msg"></div>
+                            <button className='btn-flip' type="submit" id="submit" name="submit">Send</button>
+                        </form> 
                     </div>
                 </div>
             </div>
-
         </div >
     )
 }
