@@ -1,10 +1,10 @@
-import React from 'react'
-import { Formulario } from '../../components/Formulario/Formulario'
+import React from 'react' 
+import { Formulario } from './components/Formulario'
 
 export const ContactUs = () => {
   return (
     <div>
-        <Formulario/>
+        <Formulario/> 
     </div>
   )
 }

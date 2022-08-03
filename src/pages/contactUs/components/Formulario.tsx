@@ -2,9 +2,11 @@ import { Form, Row, Col, FormGroup, Label, Input, Button } from 'reactstrap';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 
+import '../../../styles/components/contactUs/_Formulario.scss';
 import Swal from 'sweetalert2'
+import { ContactInfo } from './ContactInfo';
 
-export const Formulario = () => { 
+export const Formulario = () => {
 
     //botonCheck para cambiar del theme de la pagina
     const [checked, setchecked] = useState(false)
@@ -129,7 +131,7 @@ export const Formulario = () => {
                 <div className='backgroundForm'>
 
                     <div className="left-col">
-                        <img className="logo" src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/logo.png" />
+                        <img className="logoForm" src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/logo.png" />
                     </div>
 
 
@@ -142,15 +144,19 @@ export const Formulario = () => {
                             <div className="description">Dark Mode</div>
                         </div>
 
-                        <h1>Contact us</h1>
-                        <p>Planning to visit Indonesia soon? Get insider tips on where to go, things to do and find best deals for your next adventure.</p>
+                        <h1 className='h1Form'>Contact us</h1>
+                        <p className='textForm'>
+                            Planning to visit Indonesia soon? Get insider tips on where to go, things to do and find best
+                            deals for your next adventure.
+                        </p>
 
                         <form onSubmit={onSubmit} id="contact-form" method="post">
 
-                            <Label for="name">
+                            <Label className='labelForm' for="name">
                                 Full name
                             </Label>
                             <Input
+                                className='inputForm'
                                 rows={6}
                                 placeholder="Your Full Name"
                                 id="name"
@@ -158,10 +164,11 @@ export const Formulario = () => {
                                 type="text"
                             />
 
-                            <Label for="telephone">
+                            <Label className='labelForm' for="telephone">
                                 Telephone
                             </Label>
                             <Input
+                                className='inputForm'
                                 rows={6}
                                 placeholder="Your Telephone Number"
                                 id="telephone"
@@ -169,10 +176,11 @@ export const Formulario = () => {
                                 type="tel"
                             />
 
-                            <Label for="email">
+                            <Label className='labelForm' for="email">
                                 Email
                             </Label>
                             <Input
+                                className='inputForm'
                                 rows={6}
                                 placeholder="Your Email Address"
                                 id="email"
@@ -180,10 +188,11 @@ export const Formulario = () => {
                                 type="email"
                             />
 
-                            <Label for="message">
+                            <Label className='labelForm' for="message">
                                 Message
                             </Label>
                             <Input
+                                className='inputForm textAreaForm'
                                 rows={5}
                                 placeholder="Your Message"
                                 id="message"
@@ -191,8 +200,9 @@ export const Formulario = () => {
                                 type="textarea"
                             />
 
-                            <button className='btn-flip' type="submit" id="submit" name="submit">Send</button>
+                            <button className='btnForm btn-flip' type="submit" id="submit" name="submit">Send</button>
                         </form>
+                        <ContactInfo/>
                     </div>
                 </div>
             </div>

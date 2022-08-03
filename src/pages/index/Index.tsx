@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Formulario } from '../../components/Formulario/Formulario';
+import { Formulario } from '../contactUs/components/Formulario';
 import { Cards } from './components/Cards';
 import Explore from './components/Explore';
 import { MainCarousel } from './components/MainCarousel'  
