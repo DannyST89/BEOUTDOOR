@@ -1,11 +1,53 @@
+$primary-color: #010712;
+$secondary-color: #818386;
+$bg-color: #FCFDFD;
+$button-color: #3B3636;
+$h1-color: #3F444C;
+$link-color: #0042ac;
+
+[data-theme="dark"] { 
+    $h1-color: #FCFDFD;
+    $link-color: #5a94f3;
+
+    .h1FormInfo {
+        color: $h1-color;
+    }
+
+    .contactInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    
+    
+        &__section { 
+    
+            svg {
+                color: $h1-color;
+            }
+    
+            &-text { 
+                color: $h1-color;
+    
+                a { 
+                    color: $link-color; 
+                }
+            }
+        }
+    }
+
+}
+
+
 .contactInfoPadre {
     margin-top: 1rem;
     text-align: center;
 }
-.h1FormInfo{
+
+.h1FormInfo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: rgb(91, 91, 91);
+    color: $h1-color;
 }
 
 .contactInfo {
@@ -24,18 +66,17 @@
         margin-bottom: 30px;
 
 
-
+        svg {
+            color: $h1-color;
+        }
 
         &-text {
-            margin-top: 30px;
+            margin-top: 10px;
             font-weight: bold;
+            color: $h1-color;
 
-            a {
-                font-size: large;
-                font-weight: normal;
-                color: blue;
-                text-decoration: underline;
-                cursor: pointer;
+            a { 
+                color: $link-color; 
             }
         }
     }
@@ -45,10 +86,11 @@
 @media screen and (max-width: 576px) {
 
 
-    .contactInfo {  
+    .contactInfo {
         margin-top: 0;
+
         &__section {
-            
+
             width: 100%;
             display: flex;
             align-items: center;
@@ -56,7 +98,7 @@
             flex-direction: column;
             margin-bottom: 30px;
 
-            svg{
+            svg {
                 width: 50px;
                 height: 50px;
             }
@@ -69,7 +111,7 @@
                 a {
                     font-size: large;
                     font-weight: normal;
-                    color: blue;
+                    color: $link-color;
                     text-decoration: underline;
                     cursor: pointer;
                 }
