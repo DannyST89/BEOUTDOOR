@@ -47,124 +47,125 @@ export const Navbar = () => {
 
 
             <Nav className='navbar navbar-expand-lg backgroundNav fixed-top '>
-                <div className='container-fluid container justify-content-end'>
+              <div className='container-fluid container justify-content-end'>
 
-            <div className="offcanvas-body ">
-              <div className="logo"></div>
-              <div className="offcanvas-body">
-                <ul className="navbar-nav ">
-                  <li data-bs-dismiss="offcanvas" className="nav-item">
-                    <Button
-                      className="nav-link"
-                      redirection="/"
-                      text="Inicio"
-                      scrollTop={true}
-                    ></Button>
-                  </li>
-                  <li className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="adventures"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Adventures
-                    </a>
-                    <ul className="dropdown-menu">
-                      {adventures.map((adventures, index) => (
-                        <li
-                          key={adventures.replace(/ /g, "")}
-                          data-bs-dismiss="offcanvas"
+                <div className="offcanvas-body ">
+                  <div className="logo"></div>
+                  <div className="offcanvas-body">
+                    <ul className="navbar-nav ">
+                      <li data-bs-dismiss="offcanvas" className="nav-item">
+                        <Button
+                          className="nav-link"
+                          redirection="/"
+                          text="Inicio"
+                          scrollTop={true}
+                        ></Button>
+                      </li>
+                      <li className="nav-item dropdown">
+                        <a
+                          className="nav-link dropdown-toggle"
+                          href="adventures"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
                         >
-                          <Button
-                            className="dropdown-item"
-                            redirection={adventures.replace(/ /g, "")}
-                            text={adventures}
-                            scrollTop={true}
-                          ></Button>
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                  <li className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="hikings"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Hikings
-                    </a>
-                    <ul className="dropdown-menu">
-                      {hikings.map((hiking, index) => (
-                        <li
-                          key={hiking.replace(/ /g, "")}
-                          data-bs-dismiss="offcanvas"
+                          Adventures
+                        </a>
+                        <ul className="dropdown-menu">
+                          {adventures.map((adventures, index) => (
+                            <li
+                              key={adventures.replace(/ /g, "")}
+                              data-bs-dismiss="offcanvas"
+                            >
+                              <Button
+                                className="dropdown-item"
+                                redirection={adventures.replace(/ /g, "")}
+                                text={adventures}
+                                scrollTop={true}
+                              ></Button>
+                            </li>
+                          ))}
+                        </ul>
+                      </li>
+                      <li className="nav-item dropdown">
+                        <a
+                          className="nav-link dropdown-toggle"
+                          href="hikings"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
                         >
-                          <Button
-                            className="dropdown-item"
-                            redirection={hiking.replace(/ /g, "")}
-                            text={hiking}
-                            scrollTop={true}
-                          ></Button>
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                  <li className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="about"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      About
-                    </a>
-                    <ul className="dropdown-menu">
-                      {about.map((about, index) => (
-                        <li
-                          key={about.replace(/ /g, "")}
-                          data-bs-dismiss="offcanvas"
+                          Hikings
+                        </a>
+                        <ul className="dropdown-menu">
+                          {hikings.map((hiking, index) => (
+                            <li
+                              key={hiking.replace(/ /g, "")}
+                              data-bs-dismiss="offcanvas"
+                            >
+                              <Button
+                                className="dropdown-item"
+                                redirection={hiking.replace(/ /g, "")}
+                                text={hiking}
+                                scrollTop={true}
+                              ></Button>
+                            </li>
+                          ))}
+                        </ul>
+                      </li>
+                      <li className="nav-item dropdown">
+                        <a
+                          className="nav-link dropdown-toggle"
+                          href="about"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
                         >
-                          <Button
-                            className="dropdown-item"
-                            redirection={about.replace(/ /g, "")}
-                            text={about}
-                            scrollTop={true}
-                          ></Button>
-                        </li>
-                      ))}
+                          About
+                        </a>
+                        <ul className="dropdown-menu">
+                          {about.map((about, index) => (
+                            <li
+                              key={about.replace(/ /g, "")}
+                              data-bs-dismiss="offcanvas"
+                            >
+                              <Button
+                                className="dropdown-item"
+                                redirection={about.replace(/ /g, "")}
+                                text={about}
+                                scrollTop={true}
+                              ></Button>
+                            </li>
+                          ))}
+                        </ul>
+                      </li>
+                      <li data-bs-dismiss="offcanvas" className="nav-item">
+                        <Button
+                          className="nav-link"
+                          redirection="ContactUs"
+                          text="Contact us"
+                          scrollTop={true}
+                        ></Button>{" "}
+                      </li>
+                      <li data-bs-dismiss="offcanvas" className="nav-item">
+                        <Button
+                          className="nav-link"
+                          redirection="House"
+                          text="Airbnb House"
+                          scrollTop={true}
+                        ></Button>{" "}
+                      </li>
                     </ul>
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="nav-item">
-                    <Button
-                      className="nav-link"
-                      redirection="ContactUs"
-                      text="Contact us"
-                      scrollTop={true}
-                    ></Button>{" "}
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="nav-item">
-                    <Button
-                      className="nav-link"
-                      redirection="House"
-                      text="Airbnb House"
-                      scrollTop={true}
-                    ></Button>{" "}
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
-            </div>
+            </Nav>
           </div>
         </div>
       </Nav>
 
-      {/* Este div hace que las paginas se coloquen un poco 
-                    abajo para que no afecten el diseño del navbar */}
       <div className="paginasContainer"></div>
+
     </div>
   );
 };
