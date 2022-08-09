@@ -19,28 +19,29 @@ const sliderData = [
   {
     title: "Family Tours",
     urlImage: <MdFamilyRestroom />,
-  }, {
+  }, 
+  {
     title: "Zipline",
     urlImage: <GiOffshorePlatform />,
-  },
+  }
 ];
 
 export default function Explore() {
   return (
     <div className="container">
-      <div className="explore__container">
-        <h1 className="explore__container--title">Explore</h1>
-        <p>
+      <div className="explore_container">
+        <h1 className="explore_container_title">Explore</h1>
+        <p className="explore-container-title-p">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, alias
           aspernatur. Odit harum praesentium odio recusandae error quasi
           nesciunt eos ad! Dolorum ipsum voluptatibus fugit quis animi explicabo
           quod labore.
         </p>
-        <div className="explore__container--inner">
+        <div className="exploreIconsContainer">
           {
           sliderData.map((item, index) => {
             return (
-              <div key={index} className="explore__container--inner-card">
+              <div id={item.title.replace(/ /g,"")} key={index} className="explore__container--inner-card">
                 <span className="exploreIconSize">{item.urlImage}</span>
                 <h2>{item.title}</h2>
               </div>
