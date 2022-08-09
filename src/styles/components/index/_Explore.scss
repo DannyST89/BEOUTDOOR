@@ -54,7 +54,9 @@ $exploreIconBottom: #0A9E88;
                 text-align: center;
             }
 
-            transition: all .1s ease;
+.exploreIcons > span {
+    color: $exploreIconBottom;
+}
 
             &:hover {
                 transform: scale(1.05);
@@ -85,10 +87,6 @@ $exploreIconBottom: #0A9E88;
 
         }
 
-    }
-}
 
-.exploreIconSize {
-    font-size: 4rem;
-    color: $exploreIconBottom;
+    }
 }

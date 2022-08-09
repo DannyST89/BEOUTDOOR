@@ -6,6 +6,7 @@
  @use "./components/index/_card.scss";
  @use "./components/index/ToursCarousel";
  @use "./components/footer/_footer";
+ @use "./components/Home/House";
 
  //socialNetwork
  @use "./components/SocialNetwork/_socialNetwork.scss";
@@ -13,6 +14,7 @@
  //button
  @use "./components/button/_button.scss";
  @use "./components/index/Explore.scss";
+ @use "./components/Map/GoogleMap.scss";
 
  //Letras
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
