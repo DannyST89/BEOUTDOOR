@@ -45,7 +45,9 @@ export const Navbar = () => {
               ></button>
             </div>
 
-            {/* informacion que se mostrara en celular */}
+
+            <Nav className='navbar navbar-expand-lg backgroundNav fixed-top '>
+                <div className='container-fluid container justify-content-end'>
 
             <div className="offcanvas-body ">
               <div className="logo"></div>

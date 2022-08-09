@@ -1,4 +1,7 @@
  //importaciones
+
+ 
+
  //navBar
  @use "./components/navbar/navBar.scss";
  //index
@@ -15,6 +18,12 @@
  @use "./components/button/_button.scss";
  @use "./components/index/Explore.scss";
  @use "./components/Map/GoogleMap.scss";
+
+//Contact us
+@use "./components/contactUs/_ContactInfo.scss"; 
+
+
+
 
  //Letras
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');

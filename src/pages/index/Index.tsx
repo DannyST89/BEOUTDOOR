@@ -1,6 +1,7 @@
 
 import React from 'react'
 import DescriptionCard from '../House/components/DescriptionCard';
+
 import { Cards } from './components/Cards';
 import Explore from './components/Explore';
 import { MainCarousel } from './components/MainCarousel'  
