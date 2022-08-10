@@ -1,6 +1,7 @@
 
 import React from 'react'
 import DescriptionCard from '../House/components/DescriptionCard';
+import { HomeAside } from '../House/components/HomeAside';
 
 import { Cards } from './components/Cards';
 import Explore from './components/Explore';
@@ -13,12 +14,13 @@ import ToursCarousel from './components/ToursCarousel';
 export const Index = () => {
   return (
     <div>
-      <MainCarousel />
+      <MainCarousel />      
       <Explore />
       <Cards/>    
       {/* <ToursCarousel/> */}
       <Gallery/>
       <ToursCarousel/>
+      <HomeAside/>
       <DescriptionCard/>
     </div>
   );

@@ -11,6 +11,7 @@
  @use "./components/footer/_footer";
  @use "./components/index/_Gallery";
  @use "./components/Home/House";
+ @use "./components/Home/HomeAside.scss";
 
  //socialNetwork
  @use "./components/SocialNetwork/_socialNetwork.scss";
@@ -18,7 +19,7 @@
  //button
  @use "./components/button/_button.scss";
  @use "./components/index/Explore.scss";
- @use "./components/Map/GoogleMap.scss";
+
 
 //Contact us
 @use "./components/contactUs/_ContactInfo.scss"; 
