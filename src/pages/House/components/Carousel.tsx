@@ -74,35 +74,11 @@ const sliderData = [
     },
 ];
 
-
-
 export const CarouselHome = () => {
 
 
     const [urlImage, setUrlImage] = useState(sliderData[0].urlImage);
-
-    const dataCarousel = [{
-        urlImage: images.volcanArenal01,
-        titleAnimate: "Volcan Arenal",
-        title: "La Fortuna is",
-        scroller: ["Cool", "Relaxing", "Adventure", "Amazing"],
-        buttonInfo: "See more...",
-    },
-    {
-        urlImage: images.lagoArenal01,
-        titleAnimate: "Lago Arenal",
-        title: "La Fortuna is",
-        scroller: ["Cool", "Relaxing", "Adventure", "Amazing"],
-        buttonInfo: "See more...",
-    },
-    {
-        urlImage: images.rioCeleste01,
-        titleAnimate: "Rio Celeste",
-        title: "La Fortuna is",
-        scroller: ["Cool", "Relaxing", "Adventure", "Amazing"],
-        buttonInfo: "See more...",
-    }]
-
+ 
     const settings = {
         dots: false,
         infinite: false, 
@@ -139,15 +115,15 @@ export const CarouselHome = () => {
 
 
     return (
-        <div className="container mt-5">
+        <div className="containerHouse">
+            <h2>Informacion sobre nuestra casa</h2>
             <div className="carouselHouse">
                 <div className="carouselHouse__image">
-                    <img className="carouselHouse__image-img" src={urlImage} alt="img" />
+                    <img className="carouselHouse__image-img animate__animated animate__fadeIn" src={urlImage} alt="img" />
                 </div>
             </div>
 
-
-            <div className="container mt-5">
+            <div className="mt-3">
 
                 <Slider {...settings} className='carouselHouse'>
                     {
@@ -155,7 +131,7 @@ export const CarouselHome = () => {
                             sliderData.map((item) => (
                                 <div className="">
                                     <div onClick={() => { setUrlImage(item.urlImage) }} className="carouselHouse__imageSmall">
-                                        <img className="carouselHouse__imageSmall-img animate__animated animate__fadeIn" src={item.urlImage} alt={item.title}/>
+                                        <img className="carouselHouse__imageSmall-img " src={item.urlImage} alt={item.title}/>
                                     </div>
                                 </div>
                             ))
