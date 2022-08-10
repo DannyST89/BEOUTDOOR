@@ -10,7 +10,7 @@ export const Navbar = () => {
       <div id="invisible"></div>
 
       <Nav className="navbar navbar-expand-lg backgroundNav fixed-top ">
-        <div className="container-fluid container justify-content-between">
+        <div className="container-fluid container justify-content-end">
           <div className="logo">
             <h4>BEOUTDOORS</h4>
           </div>

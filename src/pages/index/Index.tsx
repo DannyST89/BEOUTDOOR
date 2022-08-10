@@ -15,8 +15,7 @@ export const Index = () => {
       <MainCarousel />
       <Explore />
       <Cards/>    
-      <ToursCarousel/>
-      <DescriptionCard/>
+      <ToursCarousel/> 
     </div>
   );
 };
