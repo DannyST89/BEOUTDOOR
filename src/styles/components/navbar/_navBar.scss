@@ -1,132 +1,126 @@
 /*Variables*/
- $navHover: rgba(165, 245, 184, 0.463);
- $navBackground: #003414;
- $dropdownBackground: rgba(223, 255, 205, 0.942);
- $borderNav: 1px solid rgba(103, 101, 101, 0.075); 
+$navHover: rgba(165, 245, 184, 0.463);
 
+$navBackground: #003414;
 
- .paginasContainer{
-       height: 3px;
- }
-  
+$dropdownBackground: rgba(223, 255, 205, 0.942);
+$borderNav: 1px solid rgba(103, 101, 101, 0.075); 
+ 
 #invisible{
-    position: absolute;
-    top: 0;
-    transition: all 0.5s ease-in-out;
+   position: absolute;
+   top: 0;
+   transition: all 0.5s ease-in-out;
 }
 
 .backgroundNav{
-    background-color: $navBackground;
-    box-shadow: 2px 9px 12px -10px rgba(0,0,0,0.4);  
+   background-color: $navBackground;
+   box-shadow: 2px 9px 12px -10px rgba(0,0,0,0.4);  
 }
 .logo {
-    color: white;
+   color: white;
 }
 .navbar-toggler{ 
-    border-radius: 20%;  
-    border-color: white; 
+   border-radius: 20%;  
+   border-color: white;
+   //background-color: white;
 }
 
 .navbar-nav li{ 
-    border-radius: 5px;  
- } 
-
- @media screen and (max-width: 992px) {
-    .logo {
-        display: none;
-    }  
- }
-     
-
+   border-radius: 5px;  
+} 
 @media screen and (max-width: 768px){
-     
-    .navbar-nav li{ 
-        
-        &:hover{ 
-            background-color: $navHover; 
-        } 
-        ul{
-            border:none;
-        } 
-     }  
     
+   .navbar-nav li{ 
+       
+       &:hover{ 
+           background-color: $navHover; 
+       } 
+       ul{
+           border:none;
+       } 
+    } 
+   
 }  
- 
- .offcanvas.nav-link{
-    color: white !important;
- }
- .offcanvas{
-    
-    a{
-        &:hover{
-            background-color: $navHover ;
-        }
-    }
- }
 
- /*Nav Item*/
- .nav-item{ 
-    border: 1px solid transparent; 
-    &:hover{ 
-        background-color: $navHover;
-        border: $borderNav; 
-    }  
-    .nav-link{
-        color: white !important;
-    }
- } 
+.offcanvas.nav-link{
+   color: white !important;
+}
+.offcanvas{
+   
+   a{
+       &:hover{
+           background-color: $navHover ;
+       }
+   }
+}
 
- .offcanvas-body{
-    display: flex;
-    justify-content: space-between; 
+/*Nav Item*/
+.nav-item{ 
+   border: 1px solid transparent; 
+   &:hover{ 
+       background-color: $navHover;
+       border: $borderNav; 
+   }  
+   .nav-link{
+       color: white !important;
+   }
+} 
+
+.offcanvas-body{
+   display: flex;
+   justify-content: space-between; 
 }
 
 //tableta
-@media screen and (max-width: 990px){ 
+@media screen and (max-width: 992px){ 
+    .offcanvas-body{
+        flex-direction: column-reverse;  
+        justify-content: flex-end !important;
+    }
     .offcanvas-body ul li a{
-        color: black !important;
-     }
-     .nav-item{
-         .nav-link{
-            color: black !important;
-        }
-     }
-     .navbar-nav{
-        align-items: center;
-       .nav-item{
-        width: 100%;
-        text-align: center;
-       }
-     }
-
-     .offcanvas-body{
-        display: flex;
-        justify-content: center;
-       .navbar-nav{
-        width: 100%;
-        text-align: center;
+       color: black !important;
+    }
+    .nav-item{
+        .nav-link{
+           color: black !important;
        }
     }
- 
+    .navbar-nav{
+       align-items: center;
+      .nav-item{
+       width: 100%;
+       text-align: center;
+      }
+    }
+
+    .offcanvas-body{
+       display: flex;
+       justify-content: center;
+      .navbar-nav{
+       width: 100%;
+       text-align: center;
+      }
+   }
+
 } 
 
 
 .dropdown-item.active, .dropdown-item:active{
-    background: $dropdownBackground !important;
-    background-color: rgba(0, 0, 0, 0.049) !important;
-    color: rgb(0, 0, 0) !important;
+   background: $dropdownBackground !important;
+   background-color: rgba(0, 0, 0, 0.049) !important;
+   color: rgb(0, 0, 0) !important;
 }  
- 
+
 .dropdown-menu{
-    background-color: rgba($navHover,0.8) !important;   
+   background-color: rgba($navHover,0.8) !important;   
 } 
 .dropdown-item{
-    color: black !important;
+   color: black !important;
 } 
- .dropdown:hover .dropdown-menu{
-    display: block !important;
+.dropdown:hover .dropdown-menu{
+   display: block !important;
 }
 
 .dropdown-toggle::after{
-    display: none;
+   display: none;
 }
