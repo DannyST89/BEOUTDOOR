@@ -1,1 +1,54 @@
- 
+ .carouselHouse {
+
+     &__image {
+         height: 70vh;
+
+         &-img {
+             transition: all 0.3s ease-in-out;
+             width: 100%;
+             height: 100%;
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+         }
+     }
+
+     &__imageSmall {
+         width: 100%;
+         height: 100%;
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+
+         &-img {
+             width: 100%;
+             height: 100%;
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+         }
+     }
+
+
+     //esto es para el slider acomodarlo como se desee
+     .slick-list {
+         height: 12rem;
+
+         .slick-track {
+             height: 100%;
+         }
+     }
+
+     .slick-next,
+     .slick-prev {
+         &:before {
+             text-align: center;
+             justify-content: center;
+             color: rgb(93, 90, 90);
+             margin: 0 auto;
+             padding: auto;
+         }
+     }
+
+
+ }

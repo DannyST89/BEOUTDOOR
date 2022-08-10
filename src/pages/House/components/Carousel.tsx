@@ -1,7 +1,85 @@
 import Carousel from "react-bootstrap/Carousel";
 import * as images from "../../../assets/images/Images";
+import Slider from "react-slick";
+import React, { useState } from "react";
+import { BiDollar } from "react-icons/bi";
+
+
+const sliderData = [
+    {
+        id: 1,
+        title: "Volcan Arenal Hike",
+        priceDetails: "Price per person",
+        price: "100",
+        dollarIcon: (
+            <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
+        ),
+        urlImage: images.volcanArenal01,
+        description: "description for the arenal volcan hike very short",
+    },
+    {
+        id: 2,
+        title: "Rio Celeste Hike",
+        priceDetails: "Price per person",
+        price: "100",
+        dollarIcon: (
+            <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
+        ),
+        urlImage: images.rioCeleste02,
+        description: "description for the arenal volcan hike very short",
+    },
+    {
+        id: 3,
+        title: "Hanging Bridges",
+        priceDetails: "Price per person",
+        price: "80",
+        dollarIcon: (
+            <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
+        ),
+        urlImage: images.hangingBridges,
+        description: "description for the arenal volcan hike very short",
+    },
+    {
+        id: 4,
+        title: "Fortuna Waterfall",
+        priceDetails: "Price per person",
+        price: "70",
+        dollarIcon: (
+            <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
+        ),
+        urlImage: images.rioCeleste01,
+        description: "description for the arenal volcan hike very short",
+    },
+    {
+        id: 5,
+        title: "Safari Float and Wild Life Arenal",
+        priceDetails: "Price per person",
+        price: "80",
+        dollarIcon: (
+            <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
+        ),
+        urlImage: images.safariFloatWildLifeArenal,
+        description: "description for the arenal volcan hike very short",
+    },
+    {
+        id: 6,
+        title: "Rafting",
+        priceDetails: "Price per person",
+        price: "80",
+        dollarIcon: (
+            <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
+        ),
+        urlImage: images.rafting2,
+        description: "description for the arenal volcan hike very short",
+    },
+];
+
+
 
 export const CarouselHome = () => {
+
+
+    const [urlImage, setUrlImage] = useState(sliderData[0].urlImage);
 
     const dataCarousel = [{
         urlImage: images.volcanArenal01,
@@ -25,24 +103,65 @@ export const CarouselHome = () => {
         buttonInfo: "See more...",
     }]
 
+    const settings = {
+        dots: false,
+        infinite: false, 
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 0, 
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: false,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+
+
     return (
-        <div className="container">
-            <div className="carousel">
-                <div className="carousel__image">
-                    <img className="carousel__image--img" src={dataCarousel[0].urlImage} alt="img" />
+        <div className="container mt-5">
+            <div className="carouselHouse">
+                <div className="carouselHouse__image">
+                    <img className="carouselHouse__image-img" src={urlImage} alt="img" />
                 </div>
-                <div className="carousel__imageSmall">
-                    <button className="" onClick={()=>{}}> {'<='} </button>
-                    <div className="carousel__imageSmall--card">
-                        <div className="carousel__imageSmall--card-img">imagen1</div>
-                        <div className="carousel__imageSmall--card-img">imagen2</div>
-                        <div className="carousel__imageSmall--card-img">imagen3</div>
-                        <div className="carousel__imageSmall--card-img">imagen4</div>
-                        <div className="carousel__imageSmall--card-img">imagen5</div>
-                        <div className="carousel__imageSmall--card-img">imagen6</div>
-                    </div>
-                    <button> {'=>'} </button>
-                </div>
+            </div>
+
+
+            <div className="container mt-5">
+
+                <Slider {...settings} className='carouselHouse'>
+                    {
+                        React.Children.toArray(
+                            sliderData.map((item) => (
+                                <div className="">
+                                    <div onClick={() => { setUrlImage(item.urlImage) }} className="carouselHouse__imageSmall">
+                                        <img className="carouselHouse__imageSmall-img animate__animated animate__fadeIn" src={item.urlImage} alt={item.title}/>
+                                    </div>
+                                </div>
+                            ))
+                        )
+                    }
+                </Slider>
             </div>
         </div>
     )

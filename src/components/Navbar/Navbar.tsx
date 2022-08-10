@@ -90,7 +90,7 @@ export const Navbar = () => {
                       redirection="House"
                       text="Airbnb House"
                       scrollTop={true}
-                    ></Button>{" "}
+                    ></Button>
                   </li>
                 </ul>
               </div>
