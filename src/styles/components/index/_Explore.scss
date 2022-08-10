@@ -4,31 +4,35 @@ $exploreIconBottom: #0A9E88;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     margin-bottom: 1.875rem;
 
     .explore__container--title {
+        font-family: 'Rochester', cursive;
         text-transform: capitalize;
-        font-size: 2.2vw;
+        font-size: 5rem;
         font-weight: 600;
         color: rgb(10, 158, 136);
         margin: 3.125rem 0;
         transition: all ease-in-out .2s;
-        &:hover{
+
+        &:hover {
             transform: translateY(-0.5rem);
         }
     }
-    
+
 
     &--inner {
-        width: 80%;
+        width: 100%;
         padding: 0.3125rem;
         display: block;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
+
+
 
         &-card {
             width: 100%;
@@ -36,15 +40,14 @@ $exploreIconBottom: #0A9E88;
             flex-direction: column;
             align-items: center;
 
-            // justify-content: center;
             img {
                 width: 80px;
                 height: 5vw;
             }
 
             h2 {
-                width: 10vw;
-                font-size: 1.2vw;
+                width: 100%;
+                font-size: 1rem;
                 font-weight: 600;
                 color: rgb(58, 58, 58);
                 text-transform: uppercase;
@@ -54,9 +57,34 @@ $exploreIconBottom: #0A9E88;
             transition: all .1s ease;
 
             &:hover {
-                transform: scale(1.05); 
+                transform: scale(1.05);
             }
         }
+
+
+
+        @media screen and (max-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+
+            &-card {  
+                h2{ 
+                    margin: 0; 
+                }
+                span { 
+                    svg{
+                        height: 100%;
+                    } 
+                } 
+
+                &:last-child{
+                    grid-column: 1 / 3;
+                    grid-row: 3;
+                } 
+            } 
+
+        }
+
     }
 }
 

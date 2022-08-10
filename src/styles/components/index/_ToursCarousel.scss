@@ -1,5 +1,9 @@
+
+
+
+
 $background-card: #0A9E88;
-$main-text-color: #003414;
+$main-text-color: rgb(10, 158, 136);;
 
 .slick-slide > div {
   margin: 0 0.625rem;
@@ -10,8 +14,13 @@ $main-text-color: #003414;
 .tour-carousel-main-title {
   text-align: center;
   color: $main-text-color;
-  font-size: 3rem;
+  font-size: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-family: 'Rochester', cursive;
+  font-weight: bold;
 }
+
 .tour-carousel-card {
   border: 0.0625rem;
   background: $background-card;
@@ -26,19 +35,41 @@ $main-text-color: #003414;
   }
   .card-top > img {
     width: 100%;
-    height: 100%;
+    height: 10rem;
     object-fit: cover;
   }
   .card-bottom {
     margin: 0.625rem 1.25rem;
-  }  
-.nextArrow {
-    font-size: 1rem;
-    color:  #000000;
-    background: red;
-}
+  }
 .card-top img:hover {
     filter: blur(0.10px) brightness(70%);
+}
+.card-bottom-price span {
+  background: #FC6B1D;  
+  border-radius: 0.5rem;
+  padding-right: 1rem;
+}
+.card-top {
+  width: 300px;
+  margin: 0 auto;
+  }
+  .card-top img{
+  margin: 15px 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  }
+  .card-top img:hover {
+  height: 8.3125rem;
+  width: 25rem;
+  margin-left: -50px;
+  }
+
+//carousel bottom styles
+.carousel-bottom-slider {
+  color: red;
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
