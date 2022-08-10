@@ -29,13 +29,13 @@ export const MainCarousel = () => {
     <Carousel controls={false}>
       {
         dataCarousel.map((item) => (
-          <Carousel.Item key={item.urlImage} interval={10000}>
+          <Carousel.Item key={item.urlImage} interval={8000}>
             <img
               className="carousel-img d-block w-100"
               src={item.urlImage}
             />            
             <Carousel.Caption>
-              <h3 className="carousel-h3 animate-charcter">{item.titleAnimate}</h3>
+              {/* <h3 className="carousel-h3 animate-charcter">{item.titleAnimate}</h3> */}
               <div className="cardCarousel">
                 <h1 className="carousel-h1"> 
                   {item.title}
@@ -52,8 +52,7 @@ export const MainCarousel = () => {
                     </span>
                   </div>
                 </h1>
-              </div>
-              <button className="carousel-button">{item.buttonInfo}</button>
+              </div> 
             </Carousel.Caption>
           </Carousel.Item>
         ))

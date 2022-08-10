@@ -199,8 +199,7 @@ export const Formulario = () => {
                                 name="message"
                                 type="textarea"
                             />
-
-                            <button className='btnForm btn-flip' type="submit" id="submit" name="submit">Send</button>
+                            <a className='btn-flip' type="submit" id="submit" data-back="Thank you" data-front="Submit" />
                         </form>
                         <ContactInfo/>
                     </div>

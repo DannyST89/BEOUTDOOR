@@ -4,7 +4,7 @@ import { GiGraveFlowers } from "react-icons/gi";
 import { FaMountain, FaWifi } from "react-icons/fa";
 import { TbToolsKitchen2 } from "react-icons/tb";
 import { AiFillCar } from "react-icons/ai";
-
+import { formatCurrency } from "../../../utilities/formatCurrency";
 
 const DescriptionCard = () => {
   return (
@@ -13,16 +13,17 @@ const DescriptionCard = () => {
         <div className="card card-bordered">
           <div className="card-body">
             <div className="title card-header">
-              <h4 className="text-danger">USD $69.96 per night </h4>
-            </div>
-            <div>
-              <h4 className="card-text mt-4 mb-4">
-                <span> {<ImLocation2 />} </span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                nesciunt sit perferendis harum adipisci, aperiam incidunt
-              </h4>
-            </div>
-            <hr />
+              <h4 className="text-danger">{formatCurrency(45.96)} per night </h4>
+              <div className="description mt-2">
+                <h4>some description here</h4>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.                  
+                </p>
+              </div>
+            </div> 
+
             <div>
               <div className="description mt-5">
                 <h3>Description</h3>
@@ -90,9 +91,7 @@ const DescriptionCard = () => {
                 </div>
               </div>
             </div>
-            <a href="#" className="btn btn-primary">
-              Go More....
-            </a>
+            <a href="#" className="btn-flip" data-back="Get in touch" data-front="Get in touch" />    
           </div>
         </div>
       </div>

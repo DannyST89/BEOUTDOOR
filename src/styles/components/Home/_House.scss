@@ -1,10 +1,12 @@
 
 $card-Background: rgb(201, 206, 205);
 $house-facilites-icons: rgb(10, 158, 136);
+$card-header-text: rgb(255, 255, 255);
 
 .card-header {
-    height: 8rem; 
-
+    height: 12rem; 
+    background-color: #323237;
+    color: $card-header-text;
 }
 .description {
 
@@ -15,7 +17,6 @@ $house-facilites-icons: rgb(10, 158, 136);
         display: flex;
         align-items: stretch;
         justify-content: center;
-
         span {
             font-size: 2rem;
             color: $house-facilites-icons;            
