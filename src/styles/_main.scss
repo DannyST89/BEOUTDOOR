@@ -4,14 +4,17 @@
 
  //navBar
  @use "./components/navbar/navBar.scss";
- //index
+ 
+ //Página web index
  @use "./components/index/_MainCarousel";
  @use "./components/index/_card.scss";
  @use "./components/index/ToursCarousel";
  @use "./components/footer/_footer";
  @use "./components/index/_Gallery";
+
+ //Página Web Home
  @use "./components/Home/House";
- @use "./components/Home/HomeAside.scss";
+ @use "./components/Home/_HomeAside.scss";
 
  //socialNetwork
  @use "./components/SocialNetwork/_socialNetwork.scss";

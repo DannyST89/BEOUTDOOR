@@ -1,8 +1,4 @@
 
-import React from 'react'
-import DescriptionCard from '../House/components/DescriptionCard';
-import { HomeAside } from '../House/components/HomeAside';
-
 import { Cards } from './components/Cards';
 import Explore from './components/Explore';
 import { Gallery } from './components/Gallery';
@@ -18,10 +14,8 @@ export const Index = () => {
       <Explore />
       <Cards/>    
       {/* <ToursCarousel/> */}
-      <Gallery/>
-      <ToursCarousel/>
-      <HomeAside/>
-      <DescriptionCard/>
+      <ToursCarousel/>  
+      <Gallery/>         
     </div>
   );
 };

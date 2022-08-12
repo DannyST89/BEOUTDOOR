@@ -5,5 +5,10 @@
     margin-left: 0.9375rem;
     float: right;
     font-style: italic;
-    background-color: lightgray;
+    .aside-card-header{
+      height: 3rem;
+    }
+    .aside-card-body {
+      width: 100%;
+    }
   }
