@@ -1,48 +1,32 @@
-import { Form, Input } from "reactstrap";
+import { Card, Input } from "reactstrap";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 import "../../../styles/components/contactUs/_Formulario.scss";
 
 export const HomeAside = () => {
   return (
     <aside className="home-aside">
-      <form action="">
-        <div>
-          <p className="textForm">Leave your message here</p>
-        </div>
-        <div>
-          <Input
-            className="inputForm"
-            rows={6}
-            placeholder="Your Name"
-            id="name"
-            name="name"
-            type="text"
-          />
-          <Input
-            className="inputForm"
-            rows={6}
-            placeholder="Your Email"
-            id="name"
-            name="name"
-            type="text"
-          />
-          <Input
-            className="inputForm"
-            rows={6}
-            placeholder="Your Phone Number"
-            id="name"
-            name="name"
-            type="text"
-          />
-        </div>
-        <div>
+      <Form>
+        <Form.Group className="mb-3 w-50" controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Text className="text-muted">
+            We'll never share your email with anyone else.
+          </Form.Text>
+        </Form.Group>
+        <Form.Group className="mb-3 w-50" controlId="formBasicPassword">
+          <Form.Label>Password</Form.Label>
+          <Form.Control type="text" placeholder="" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <a
             href="tour"
             className="btn-flip"
-            data-back="Have Fun"
-            data-front="se more..."
+            data-back="Submit"
+            data-front="Submit"
           ></a>
-        </div>
-      </form>
+        </Form.Group>
+      </Form>
     </aside>
   );
 };
