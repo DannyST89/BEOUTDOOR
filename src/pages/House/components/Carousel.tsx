@@ -1,4 +1,3 @@
-import Carousel from "react-bootstrap/Carousel";
 import * as images from "../../../assets/images/Images";
 import Slider from "react-slick";
 import React, { useState } from "react";
@@ -74,41 +73,17 @@ const sliderData = [
     },
 ];
 
-
-
 export const CarouselHome = () => {
 
 
     const [urlImage, setUrlImage] = useState(sliderData[0].urlImage);
 
-    const dataCarousel = [{
-        urlImage: images.volcanArenal01,
-        titleAnimate: "Volcan Arenal",
-        title: "La Fortuna is",
-        scroller: ["Cool", "Relaxing", "Adventure", "Amazing"],
-        buttonInfo: "See more...",
-    },
-    {
-        urlImage: images.lagoArenal01,
-        titleAnimate: "Lago Arenal",
-        title: "La Fortuna is",
-        scroller: ["Cool", "Relaxing", "Adventure", "Amazing"],
-        buttonInfo: "See more...",
-    },
-    {
-        urlImage: images.rioCeleste01,
-        titleAnimate: "Rio Celeste",
-        title: "La Fortuna is",
-        scroller: ["Cool", "Relaxing", "Adventure", "Amazing"],
-        buttonInfo: "See more...",
-    }]
-
     const settings = {
         dots: false,
-        infinite: false, 
+        infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        initialSlide: 0, 
+        initialSlide: 0,
         responsive: [
             {
                 breakpoint: 1024,
@@ -139,15 +114,15 @@ export const CarouselHome = () => {
 
 
     return (
-        <div className="container mt-5">
+        <div className="containerHouse">
+            <h2 className="containerHouse__h2">Airbnb</h2>
             <div className="carouselHouse">
                 <div className="carouselHouse__image">
-                    <img className="carouselHouse__image-img" src={urlImage} alt="img" />
+                    <img className="carouselHouse__image-img animate__animated animate__fadeIn" src={urlImage} alt="img" />
                 </div>
             </div>
 
-
-            <div className="container mt-5">
+            <div className="">
 
                 <Slider {...settings} className='carouselHouse'>
                     {
@@ -155,7 +130,7 @@ export const CarouselHome = () => {
                             sliderData.map((item) => (
                                 <div className="">
                                     <div onClick={() => { setUrlImage(item.urlImage) }} className="carouselHouse__imageSmall">
-                                        <img className="carouselHouse__imageSmall-img animate__animated animate__fadeIn" src={item.urlImage} alt={item.title}/>
+                                        <img className="carouselHouse__imageSmall-img " src={item.urlImage} alt={item.title} />
                                     </div>
                                 </div>
                             ))
