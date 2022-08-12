@@ -1,16 +1,18 @@
 {
   "name": "beoutdoors",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "animate.css": "^4.1.1",
     "@emailjs/browser": "^3.6.2",
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.2.0",
+    "gh-pages": "^4.0.0",
     "magnific-popup": "^1.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
