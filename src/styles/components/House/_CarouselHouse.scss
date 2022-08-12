@@ -23,7 +23,7 @@
     height: 70vh;
 
     @media screen and (max-width: 992px) {
-        height: 50%; 
+        height: 50%;
         height: 100%;
     }
 
@@ -32,9 +32,14 @@
         margin: 0 auto;
         height: 100%;
         width: 80%;
+
+        cursor: pointer;
+        
         @media screen and (max-width: 992px) {
             height: 70%;
             width: 100%;
+            
+            height: 80vw;
         }
 
         &-img {
@@ -56,53 +61,39 @@
     box-shadow: -3px 10px 25px -15px rgba(0, 0, 0, 0.47);
     border-radius: 0;
     border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-right-radius: 1rem; 
+ 
     
-    &__image {
-        overflow: hidden;
-        margin: 0 auto;
-        height: 100%;
-        width: 80%;
-        
-
-        &-img {
-            transition: all 0.3s ease-in-out;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        @media screen and (max-width: 992px) {
-            height: 70%;
-            width: 100%;
-        }
-    }
-
     &__imageSmall {
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         overflow: hidden;
-
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;  
+        
         &:hover {
-            transform: scale(1.03);
-        }
-
+            transform: scale(1.04); 
+         }
+         
         &-img {
-            //transform: translateY(-50%);
+            align-items: center;
             width: 100%;
             height: 100%;
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat; 
+           
         }
     }
 
     //esto es para el slider acomodarlo como se desee
 
-    .slick-slide {
-        width: 100%;
-        height: 100%;
+    .slick-slide{
+        display: flex; 
+        align-items: center;
     }
 
     .slick-list {
@@ -115,19 +106,19 @@
     .slick-arrow {
         &:first-child {
             z-index: 1;
-            margin-left: 15px;
+            margin-left: 12px;
         }
         &:last-child {
             z-index: 1;
-            margin-right: 30px;
+            margin-right: 40px;
         }
     }
 
     .slick-next,
     .slick-prev {
         &:before {
-            font-size: 2rem;
-            color: rgb(93, 90, 90);
+            font-size: 3rem;
+            color: rgb(0, 164, 0);  
         }
 
         @media screen and (max-width: 992px) {
@@ -137,3 +128,4 @@
         }
     }
 }
+ 

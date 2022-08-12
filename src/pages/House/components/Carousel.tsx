@@ -72,8 +72,9 @@ export const CarouselHome = () => {
                         React.Children.toArray(
                             sliderData.map((item) => (
                                 <div className="">
-                                    <div onClick={() => { setUrlImage(item) }} className="carouselHouse__imageSmall">
-                                        <img className="carouselHouse__imageSmall-img " src={item} alt='Image House' />
+                                    <div 
+                                     onClick={() => { setUrlImage(item) }} className="carouselHouseSlider__imageSmall">
+                                        <img className="carouselHouseSlider__imageSmall-img" src={item} alt='Image House' />
                                     </div>
                                 </div>
                             ))
