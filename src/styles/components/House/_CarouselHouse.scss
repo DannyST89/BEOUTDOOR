@@ -1,97 +1,139 @@
- .containerHouse {
-     margin: 0 auto;
-     max-width: 1300px;
-     width: 99%;
-     padding: 10px;
+.containerHouse {
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 99%;
+    padding: 10px;
 
-     &__h2 {
-         display: flex;
-         text-align: center;
-         justify-content: center;
-         font-size: 2.5rem;
-         font-weight: bold;
-         cursor: pointer;
-         overflow: hidden;
-     }
+    &__h2 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        overflow: hidden;
+    }
+}
 
- }
+.carouselHouse {
+    padding: 10px 10px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: -2px 0px 10px -7px rgba(0, 0, 0, 0.47);
+    height: 70vh;
 
- .carouselHouse {
-    padding: 10px 10px 0; 
-    border-radius: 10px;
-    box-shadow: -2px 0px 25px -7px rgba(0, 0, 0, 0.47);
-     &:last-child {
-         padding: 10px 0;
-         border-left: 1px solid rgba(128, 128, 128, 0.096);
-         border-right: 1px solid rgba(128, 128, 128, 0.096);
-         border-bottom: 1px solid rgba(128, 128, 128, 0.096);
-         box-shadow: -2px 0px 25px -7px rgba(0, 0, 0, 0.47);
-     }
+    @media screen and (max-width: 992px) {
+        height: 50%; 
+        height: 100%;
+    }
 
+    &__image {
+        overflow: hidden;
+        margin: 0 auto;
+        height: 100%;
+        width: 80%;
+        @media screen and (max-width: 992px) {
+            height: 70%;
+            width: 100%;
+        }
 
-     &__image {
+        &-img {
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
 
-         height: 70vh;
+.carouselHouseSlider {
+    padding: 10px 0;
+    border-left: 1px solid rgba(128, 128, 128, 0.096);
+    border-right: 1px solid rgba(128, 128, 128, 0.096);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.096);
+    box-shadow: -3px 10px 25px -15px rgba(0, 0, 0, 0.47);
+    border-radius: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+    &__image {
+        overflow: hidden;
+        margin: 0 auto;
+        height: 100%;
+        width: 80%;
+        
 
-         border-radius: 0.6rem;
-       
+        &-img {
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @media screen and (max-width: 992px) {
+            height: 70%;
+            width: 100%;
+        }
+    }
 
-         &-img {
-             transition: all 0.3s ease-in-out;
-             width: 100%;
-             height: 100%;
-             background-size: cover;
-             background-position: center;
-             background-repeat: no-repeat;
+    &__imageSmall {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
 
-             
-         }
-     }
+        &:hover {
+            transform: scale(1.03);
+        }
 
-     &__imageSmall {
-         width: 100%;
-         height: 100%;
-         background-size: cover;
-         background-position: center;
-         background-repeat: no-repeat;
-         border-radius: 0.6rem;
-         cursor: pointer;
+        &-img {
+            //transform: translateY(-50%);
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
 
-         transition: all 0.3s ease-in-out;
+    //esto es para el slider acomodarlo como se desee
 
-         &:hover {
-             transform: scale(1.03);
-             background: rgba(64, 64, 64, 0.073);
-         }  
+    .slick-slide {
+        width: 100%;
+        height: 100%;
+    }
 
-         &-img {
-             box-shadow: -2px 35px 13px -7px rgba(0, 0, 0, 0.47);
-             width: 100%;
-             height: 100%;
-             background-size: cover;
-             background-position: center;
-             background-repeat: no-repeat;
-         }
-     }
+    .slick-list {
+        height: 18rem;
+        .slick-track {
+            height: 100%;
+        }
+    }
 
+    .slick-arrow {
+        &:first-child {
+            z-index: 1;
+            margin-left: 15px;
+        }
+        &:last-child {
+            z-index: 1;
+            margin-right: 30px;
+        }
+    }
 
-     //esto es para el slider acomodarlo como se desee
-     .slick-list {
-         height: 12rem;
+    .slick-next,
+    .slick-prev {
+        &:before {
+            font-size: 2rem;
+            color: rgb(93, 90, 90);
+        }
 
-         .slick-track {
-             height: 100%;
-         }
-     }
-
-     .slick-next,
-     .slick-prev {
-         &:before {
-             text-align: center;
-             justify-content: center;
-             color: rgb(93, 90, 90);
-             margin: 0 auto;
-             padding: auto;
-         }
-     }
- }
+        @media screen and (max-width: 992px) {
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
