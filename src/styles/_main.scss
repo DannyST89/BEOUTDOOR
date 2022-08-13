@@ -8,13 +8,18 @@
  @use "./components/index/_MainCarousel";
  @use "./components/index/_card.scss";
  @use "./components/index/ToursCarousel";
-
-
  @use "./components/footer/_footer";
 
- @use "./components/House/House";
- @use "./components/House/CarouselHouse";
- @use "./components/index/_Gallery"; 
+ //index
+ @use "../../src/styles/components/index/Gallery";
+
+ //House
+ @use "../styles/components/House/House.scss";
+ @use "../styles/components/house/HouseAside.module";
+ @use "../styles/components/house/DescriptionCard";
+ @use "./components/house/CarouselHouse";
+
+ 
 
  //socialNetwork
  @use "./components/SocialNetwork/_socialNetwork.scss";
@@ -22,7 +27,7 @@
  //button
  @use "./components/button/_button.scss";
  @use "./components/index/Explore.scss";
- @use "./components/Map/GoogleMap.scss";
+ 
 
 //Contact us
 @use "./components/contactUs/_ContactInfo.scss"; 

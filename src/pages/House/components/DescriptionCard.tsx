@@ -90,9 +90,7 @@ const DescriptionCard = () => {
                 </div>
               </div>
             </div>
-            <a href="#" className="btn btn-primary">
-              Go More....
-            </a>
+            <a href="tour" className="btn-flip" data-back="Have Fun" data-front="se more..."></a>
           </div>
         </div>
       </div>
