@@ -8,14 +8,14 @@ import { adventures, hikings, about } from "../../data/navegacion";
 
 
 export const Navbar = () => {
-
+ 
   return (
     <div className=''>
       <div id='invisible'>
 
       </div>
 
-      <Nav className='navbar navbar-expand-lg backgroundNav fixed-top '>
+      <Nav id='navbar' className='navbar navbar-expand-lg backgroundNav'>
         <div className='container-fluid container justify-content-between'>
 
           <div className='logo'>
@@ -40,7 +40,7 @@ export const Navbar = () => {
               </div>
               <div className='offcanvas-body'>
                 <ul className='navbar-nav '>
-                  <li data-bs-dismiss="offcanvas" className='nav-item'><Button className='nav-link' redirection="/" text="Inicio" scrollTop={true} ></Button></li>
+                  <li data-bs-dismiss="offcanvas" className='nav-item'><Button className='nav-link' redirection="" text="Inicio" scrollTop={true} ></Button></li>
                   <li className="nav-item dropdown" >
                     <a className="nav-link dropdown-toggle" href="adventures" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Adventures

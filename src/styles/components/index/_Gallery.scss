@@ -1,242 +1,247 @@
- ///gallery 
- .backgroundGallery {
-     overflow: hidden;
-     transition: all 0.3s ease-in-out;
-     
- }
+///gallery
+.backgroundGallery {
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
 
- .containerGallery {
-     box-sizing: border-box;
-     display: flex;
-     flex-flow: column wrap;
-     height: 80vh;
-     margin-bottom: 5vh;
-     text-align: center;
-     text-transform: uppercase;
-     width: 100%;
-     overflow: hidden;
-     transition: all 0.3s ease-in-out;   
- }
+.containerGallery {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    height: 80vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
 
+@media screen and (max-width: 576px) {
+    .gallery-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+    }
 
- @media screen and (max-width: 576px) {
+    .item {
+        flex: calc(100% / 6);
+        height: calc(100% / 6);
+        background-position: center;
+        background-size: cover;
+        background-repeat: none;
+        transition: flex 0.8s ease;
+    }
+}
 
-     .gallery-wrap {
-         display: flex;
-         flex-direction: column;
-         width: 100%;
-         height: 70vh;
-     }
+.cardGallery {
+    align-items: center;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-grow: 0;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    height: 50%;
+    justify-content: center;
+    text-shadow: 0 0 5px black;
+    position: relative;
+    transition: all 0.3s ease-in-out;
 
-     .item {
-         flex: calc(100% / 6);
-         height: calc(100% / 6);
-         background-position: center;
-         background-size: cover;
-         background-repeat: none;
-         transition: flex 0.8s ease;
-     }
- }
+    border: 1px solid white;
+    border-radius: 10px;
 
- .cardGallery {
-     align-items: center;
-     background: white;
-     background-size: cover;
-     background-position: center;
-     box-sizing: border-box;
-     color: white;
-     display: flex;
-     flex-grow: 0;
-     font-family: sans-serif;
-     font-size: 30px;
-     font-weight: bold;
-     height: 50%;
-     justify-content: center;
-     text-shadow: 0 0 5px black;
-     position: relative;
-     transition: all 0.3s ease-in-out;
+    // Setting the heights of the elements so they meet
+    // nicely at the bottom of the container
+    //primera columna
+    &:nth-child(6n - 5) {
+        height: 25%;
+    }
 
-     border: 1px solid white;
-     border-radius: 10px;
- 
+    &:nth-child(6n-4) {
+        height: 75%;
+    }
 
-     // Setting the heights of the elements so they meet
-     // nicely at the bottom of the container
-     //primera columna
-     &:nth-child(6n - 5) {
-         height: 25%;
-     }
+    //segunda columna
+    &:nth-child(6n-3) {
+        height: 50%;
+    }
 
-     &:nth-child(6n-4) {
-         height: 75%;
-     }
+    &:nth-child(6n-2) {
+        height: 50%;
+    }
 
-     //segunda columna
-     &:nth-child(6n-3) {
-         height: 50%;
-     }
+    //tercera columna
+    &:nth-child(6n-1) {
+        height: 66.666%;
+    }
 
-     &:nth-child(6n-2) {
-         height: 50%;
-     }
+    &:nth-child(6n) {
+        height: 33.333%;
+    }
+}
 
-     //tercera columna
-     &:nth-child(6n-1) {
-         height: 66.666%;
-     }
+#navbarNav {
+    justify-content: flex-end;
+}
 
-     &:nth-child(6n) {
-         height: 33.333%;
-     }
+.navbarGallery {
+    .nav-item {
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
 
- }
+        .nav-link {
+            color: black !important;
+        }
+    }
+}
 
+.aGallery {
+    border-bottom: 2px solid rgb(140, 211, 117);
+}
 
- #navbarNav {
-     justify-content: flex-end;
- }
+.modal-contentGallery {
+    .modal-content {
+        background-color: rgba(0, 0, 0, 0.028);
+    }
 
- .navbarGallery {
+    div {
+        border: none;
+        padding: 0;
+    }
+}
+.modal-header{
+    .btn-close {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        background-color: #fff;
+        color: white;
+        font-size: 1rem; 
+        transition: all 0.3s ease-in-out;
+    }
+}
+.modal-open{
+    width: 100%;
+    //height: 100vh;;  
+}
 
-     .nav-item {
-         transition: all 0.3s ease-in-out;
-         cursor: pointer;
+.modalImage {
+    display: flex;
+    justify-content: center;
+    max-height: 85%;
+    overflow: hidden;
+    position: relative;
+    width: 98%;
 
-         .nav-link {
-             color: black !important;
-         }
-     }
- }
+    img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover; //cover, contain, fill, none, scale-down
+    }
+    @media screen and (max-width: 992px) {
+        max-height: 85vh;
+    }
+}
 
- .aGallery {
-     border-bottom: 2px solid rgb(140, 211, 117);
- }
+//MANEJO DE EL TEXTO DE LA IMAGEN
+//acomodar el texto en la posicion deseada como la image
+.gallery-item-caption {
+    padding: 24px;
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
 
- .modal-contentGallery {
-     .modal-content {
-         background-color: rgba(0, 0, 0, 0.028);
-     }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-     div {
-         border: none;
-         padding: 0;
-     }
- }
+    text-align: left;
 
- .modalImage {
-     display: flex;
-     justify-content: center;
-     max-height: 85vh;
-     overflow: hidden;
-     position: relative;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.225);
+        cursor: pointer;
+        border-radius: 10px;
 
-     img {
-         max-height: 100%;
-         max-width: 100%;
-         object-fit: cover; //cover, contain, fill, none, scale-down
-     }
- }
+        //Esto es para cuando se haga hover en el div se aparezca el texto
+        .textGallery {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
 
+        .titleGallery:after {
+            transform: translate3d(0, 0, 0);
+        }
+    }
 
- //MANEJO DE EL TEXTO DE LA IMAGEN
- //acomodar el texto en la posicion deseada como la image
- .gallery-item-caption {
-     padding: 24px;
-     font-size: 1em;
-     color: #fff;
-     text-transform: uppercase;
-     transition: all 0.3s ease;
+    @media screen and (max-width: 576px) {
+        padding: 0;
 
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
+        &:hover {
+            //Esto es para cuando se haga hover en el div se aparezca el texto
+            .textGallery {
+                opacity: 0;
+            }
 
-     text-align: left;
+            .titleGallery:after {
+                opacity: 0;
+            }
+        }
+    }
+}
 
-     &:hover {
-         background-color: rgba(0, 0, 0, 0.225);
-         cursor: pointer;
-         border-radius: 10px;
+.titleGallery {
+    font-weight: 300;
+    overflow: hidden;
+    padding: 12px 0;
 
-         //Esto es para cuando se haga hover en el div se aparezca el texto
-         .textGallery {
-             opacity: 1;
-             transform: translate3d(0, 0, 0);
-         }
+    //--
+    position: relative;
+    margin: 0;
+    z-index: 1;
+    pointer-events: none;
 
-         .titleGallery:after {
-             transform: translate3d(0, 0, 0);
-         }
-     }
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 15%;
+        height: 1px;
+        background: #fff;
+        transition: transform 0.3s;
+        transform: translate3d(-110%, 0, 0);
+    }
 
+    @media screen and (max-width: 576px) {
+        font-size: 1rem;
+        margin-top: 10%;
+        text-align: center;
 
-     @media screen and (max-width: 576px) {
-         padding: 0;
+        &:after {
+            opacity: 0;
+        }
+    }
+}
 
-         &:hover {
+.textGallery {
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 12px 0;
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(10%, 0, 0);
 
-             //Esto es para cuando se haga hover en el div se aparezca el texto
-             .textGallery {
-                 opacity: 0;
-             }
-
-             .titleGallery:after {
-                 opacity: 0;
-             }
-         }
-     }
-
- }
-
- .titleGallery {
-     font-weight: 300;
-     overflow: hidden;
-     padding: 12px 0;
-
-     //--
-     position: relative;
-     margin: 0;
-     z-index: 1;
-     pointer-events: none;
-
-     &:after {
-         content: "";
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         width: 15%;
-         height: 1px;
-         background: #fff;
-         transition: transform 0.3s;
-         transform: translate3d(-110%, 0, 0);
-     }
-
-     @media screen and (max-width: 576px) {
-         font-size: 1rem;
-         margin-top: 10%;
-         text-align: center;
-
-         &:after {
-             opacity: 0;
-         }
-     }
-
-
- }
-
- .textGallery {
-     letter-spacing: 1px;
-     font-size: 12px;
-     padding: 12px 0;
-     opacity: 0;
-     transition: opacity 0.35s, transform 0.35s;
-     transform: translate3d(10%, 0, 0);
-
-     //--
-     position: relative;
-     margin: 0;
-     z-index: 1;
-     pointer-events: none;
- }
+    //--
+    position: relative;
+    margin: 0;
+    z-index: 1;
+    pointer-events: none;
+}

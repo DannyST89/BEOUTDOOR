@@ -1,8 +1,9 @@
 import * as images from "../../../assets/images/Images";
 import Slider from "react-slick";
 import React, { useState } from "react";
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
-const sliderData = [ 
+const sliderData = [
     images.house1,
     //images.house2,
     //images.house3,
@@ -19,6 +20,15 @@ export const CarouselHome = () => {
 
 
     const [urlImage, setUrlImage] = useState(sliderData[0]);
+
+    const [modal, setModal] = useState(false);
+
+    const toggle = () => setModal(!modal);
+
+    const openModal = (url: string) => {
+        setUrlImage(url);
+        toggle();
+    }
 
     const settings = {
         dots: false,
@@ -59,9 +69,9 @@ export const CarouselHome = () => {
 
     return (
         <div className="containerHouse">
-            <h2 className="containerHouse__h2">Airbnb</h2>
+            {/* <h2 className="containerHouse__h2">Airbnb</h2> */}
             <div className="carouselHouse">
-                <div className="carouselHouse__image">
+                <div onClick={() => { openModal(urlImage) }} className="carouselHouse__image">
                     <img className="carouselHouse__image-img animate__animated animate__fadeIn" src={urlImage} alt="img" /> 
                 </div>
             </div>
@@ -72,8 +82,8 @@ export const CarouselHome = () => {
                         React.Children.toArray(
                             sliderData.map((item) => (
                                 <div className="">
-                                    <div 
-                                     onClick={() => { setUrlImage(item) }} className="carouselHouseSlider__imageSmall">
+                                    <div
+                                        onClick={() => { setUrlImage(item) }} className="carouselHouseSlider__imageSmall">
                                         <img className="carouselHouseSlider__imageSmall-img" src={item} alt='Image House' />
                                     </div>
                                 </div>
@@ -82,6 +92,17 @@ export const CarouselHome = () => {
                     }
                 </Slider>
             </div>
+
+            {/* modal para el uso de la galeria para verla la imagen mas completa */}
+            <Modal size="xl" centered isOpen={modal} toggle={toggle} className="modal-contentGallery">
+                <ModalHeader toggle={toggle}></ModalHeader>
+                <ModalBody>
+                    <div className="modalImage">
+                        <img src={urlImage} alt="" />
+                    </div>
+                </ModalBody>
+            </Modal>
+
         </div>
     )
 }
