@@ -34,12 +34,12 @@
         width: 80%;
 
         cursor: pointer;
-        
+
         @media screen and (max-width: 992px) {
             height: 70%;
             width: 100%;
-            
-            height: 80vw;
+
+            height: 90vw;
         }
 
         &-img {
@@ -49,7 +49,8 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-        }  
+            border-radius: 10px; 
+        }
     }
 }
 
@@ -62,8 +63,12 @@
     border-radius: 0;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem; 
- 
-    
+
+    @media screen and (max-width: 576px) {
+        max-height: 12rem;
+        //overflow: hidden; 
+    } 
+
     &__imageSmall {
         cursor: pointer;
         transition: all 0.3s ease-in-out;
@@ -72,28 +77,30 @@
         height: 100%;
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat;  
-        
+        background-repeat: no-repeat;
+
         &:hover {
-            transform: scale(1.04); 
-         }
-         
+            transform: scale(1.04);
+        }
+
         &-img {
-            
             align-items: center;
             width: 100%;
             height: 100%;
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat; 
-            object-fit: cover;   
+            background-repeat: no-repeat;
+            object-fit: cover;
         }
     }
 
+   
+
+
     //esto es para el slider acomodarlo como se desee
 
-    .slick-slide{
-        display: flex; 
+    .slick-slide {
+        display: flex;
         align-items: center;
     }
 
@@ -101,7 +108,10 @@
         height: 18rem;
         .slick-track {
             height: 100%;
-        }
+        } 
+        @media screen and (max-width: 576px) {
+            max-height: 10rem;
+        } 
     }
 
     .slick-arrow {
@@ -119,11 +129,12 @@
     .slick-prev {
         &:before {
             font-size: 3rem;
-            color: rgb(255, 255, 255);  
+            color: rgb(255, 255, 255);
             background-color: black;
             padding-top: 6px;
             border-radius: 5px;
         }
+       
 
         @media screen and (max-width: 992px) {
             &:before {
@@ -132,4 +143,3 @@
         }
     }
 }
- 

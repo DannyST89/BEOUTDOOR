@@ -125,11 +125,11 @@
         transition: all 0.3s ease-in-out;
     }
 }
-.modal-open{
-    width: 100%;
-    //height: 100vh;;  
-}
-
+ 
+.modal-body{
+    //padding: 0 !important;
+    width: 99%;
+} 
 .modalImage {
     display: flex;
     justify-content: center;
