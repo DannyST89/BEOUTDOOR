@@ -8,7 +8,12 @@
  @use "./components/index/_MainCarousel";
  @use "./components/index/_card.scss";
  @use "./components/index/ToursCarousel";
+
+
  @use "./components/footer/_footer";
+
+ @use "./components/House/House";
+ @use "./components/House/CarouselHouse";
  @use "./components/index/_Gallery";
  @use "./components/Home/House";
 

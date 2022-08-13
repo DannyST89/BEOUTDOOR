@@ -1,11 +1,13 @@
-import { Fragment } from "react"
+import { CarouselHome } from "./components/Carousel"
+ 
 import DescriptionCard from "./components/DescriptionCard"
 
 
 export const House = () => {
   return (
-    <Fragment>
+    <>
+        <CarouselHome/>
         <DescriptionCard/>
-    </Fragment>
+    </>
   )
 }
