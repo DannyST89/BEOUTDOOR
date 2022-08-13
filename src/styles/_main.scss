@@ -12,9 +12,10 @@
 
  @use "./components/footer/_footer";
 
-
  @use "./components/House/House";
  @use "./components/House/CarouselHouse";
+ @use "./components/index/_Gallery";
+ @use "./components/Home/House";
 
  //socialNetwork
  @use "./components/SocialNetwork/_socialNetwork.scss";

@@ -12,7 +12,7 @@ export const Cards = () => {
                 <div className="blog-slider__wrp swiper-wrapper">
                     <div className="blog-slider__item swiper-slide">
                         <div className="blog-slider__img">
-                            <div className="card">
+                            <div className="cardIndex">
                                 <img src={images.rafting1} className="card-img rounded" alt="..." />
                                 <div className="card-img-overlay blog-slider__card">
                                     <h1 className="card-title tituloImageCard ">Adventure is waiting</h1>
@@ -44,7 +44,7 @@ export const Cards = () => {
                     <div className="blog-slider__item swiper-slide">
 
                         <div className="blog-slider__img secondCardImage">
-                            <div className="card">
+                            <div className="cardIndex">
                                 <img src={images.hikings2} className="card-img rounded" alt="Fortuna Waterfall" />
                                 <div className="card-img-overlay blog-slider__card">
                                     <h1 className="card-title tituloImageCard ">It's Not The Mountain We Conquer</h1>
