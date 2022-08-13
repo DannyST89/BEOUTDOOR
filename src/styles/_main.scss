@@ -13,8 +13,9 @@
  @use "./components/index/_Gallery";
 
  //Página Web Home
- @use "./components/Home/House";
- @use "./components/Home/_HomeAside.scss";
+ @use "../styles/components/House/House.scss";
+ @use "./components/House/_HouseAside.module.scss";
+ @use "./components/House/DescriptionCard";
 
  //socialNetwork
  @use "./components/SocialNetwork/_socialNetwork.scss";
@@ -25,7 +26,8 @@
 
 
 //Contact us
-@use "./components/contactUs/_ContactInfo.scss"; 
+@use "./components/contactUs/ContactInfo"; 
+@use "./components/contactUs/Formulario"; 
 
 
 

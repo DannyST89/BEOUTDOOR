@@ -1,12 +1,15 @@
 .home-aside {
-    width: 20%;
-    height: 30rem;
+    width: 30%;
+    height: 20rem;
     padding-left: 0.9375rem;
     margin-left: 0.9375rem;
     float: right;
-    font-style: italic;
     .aside-card-header{
       height: 3rem;
+      background-color: #2D2D2D;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
     }
     .aside-card-body {
       width: 100%;
