@@ -1,0 +1,22 @@
+import { CarouselHome } from "./components/Carousel"
+ 
+import DescriptionCard from "./components/DescriptionCard"
+import { HouseAside } from "./components/HouseAside"
+
+
+export const House = () => {
+  return (
+<<<<<<< HEAD
+    <>
+        <CarouselHome/>
+        <DescriptionCard/>
+    </>
+=======
+    <div className="house-container">
+
+        <HouseAside />
+        
+    </div>
+>>>>>>> origin/Danny/feat-home-aside
+  )
+}
