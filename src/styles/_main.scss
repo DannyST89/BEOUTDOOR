@@ -14,7 +14,7 @@
  @use "../../src/styles/components/index/Gallery";
 
  //House
- @use "../styles/components/House/House.scss";
+ @use "../styles/components/House/House.module";
  @use "../styles/components/house/HouseAside.module";
  @use "../styles/components/house/DescriptionCard";
  @use "./components/house/CarouselHouse";

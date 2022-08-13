@@ -8,7 +8,7 @@ import { AiFillCar } from "react-icons/ai";
 
 const DescriptionCard = () => {
   return (
-    <div className="container">
+    <div className="containerCardHouse">
       <div className="col-lg-12 col-md-12 mt-5">
         <div className="card card-bordered">
           <div className="card-body">
