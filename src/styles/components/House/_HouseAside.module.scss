@@ -1,17 +1,29 @@
 .home-aside {
-    width: 25%;
-    height: 20rem;
-    padding-left: 0.9375rem;
-    margin-left: 0.9375rem;
-    float: right;
-    .aside-card-header{
-      height: 3rem;
-      background-color: #2D2D2D;
-      color: #fff;
-      text-align: center;
-      text-transform: uppercase;
-    }
-    .aside-card-body {
-      width: 100%;
-    }
+  margin: 0;
+  margin-top: 3%;
+  margin-right: 10px;
+  width: 100%;
+  padding-left: 0.9375rem;
+  margin-left: 0.9375rem;
+  //float: right;
+  .aside-card-header {
+    height: 3rem;
+    background-color: #2d2d2d;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
   }
+  .aside-card-body {
+    width: 100%;
+  }
+  @media screen and (max-width: 992px) {
+    margin-top: 3%;
+    padding-right: 1%;
+    margin: 0 auto;
+    
+  }
+}
+.botonHouseForm{
+  width: 100% !important;
+  background-color: #2d2d2d;
+}

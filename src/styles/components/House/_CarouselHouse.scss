@@ -1,9 +1,9 @@
 .containerHouse {
-    margin: 0 auto;
+    // margin: 0 auto;
     max-width: 75%;
-    width: 99%;
-    padding: 10px;
-
+    width: 75%;
+    // padding: 10px;
+    margin-top: 1%;
     &__h2 {
         display: flex;
         text-align: center;
@@ -12,6 +12,11 @@
         font-weight: bold;
         cursor: pointer;
         overflow: hidden;
+    }
+    @media screen and (max-width: 992px) {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
 
