@@ -24,6 +24,20 @@ $borderNav: 1px solid rgba(103, 101, 101, 0.075);
    border-color: white;
    //background-color: white;
 }
+#navbar{
+   z-index: 3;
+   width: 100vw; 
+   height: 60px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 5%;
+   box-sizing: border-box;
+   transition: 0.5s;
+} 
 
 .navbar-nav li{ 
    border-radius: 5px;  

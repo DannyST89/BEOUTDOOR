@@ -35,7 +35,7 @@ export const Button = ({ className, redirection, text, scrollId, scrollTop, clas
                     : () => { }
             }
             className={(className == undefined) ? "button" : className}
-            to={redirection}>
+            to={redirection === 'BEOUTDOOR' ? `${redirection}`: `BEOUTDOOR/${redirection}`}>
             <div className={classNameIcon}>
 
                 {text +" "}
