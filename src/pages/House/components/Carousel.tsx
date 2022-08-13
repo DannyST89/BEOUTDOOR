@@ -62,7 +62,7 @@ export const CarouselHome = () => {
             <h2 className="containerHouse__h2">Airbnb</h2>
             <div className="carouselHouse">
                 <div className="carouselHouse__image">
-                    <img className="carouselHouse__image-img animate__animated animate__fadeIn" src={urlImage} alt="img" />
+                    <img className="carouselHouse__image-img animate__animated animate__fadeIn" src={urlImage} alt="img" /> 
                 </div>
             </div>
 

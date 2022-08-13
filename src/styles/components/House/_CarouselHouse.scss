@@ -118,7 +118,10 @@
     .slick-prev {
         &:before {
             font-size: 3rem;
-            color: rgb(0, 164, 0);  
+            color: rgb(255, 255, 255);  
+            background-color: black;
+            padding-top: 6px;
+            border-radius: 5px;
         }
 
         @media screen and (max-width: 992px) {
