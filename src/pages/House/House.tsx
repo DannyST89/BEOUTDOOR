@@ -7,10 +7,11 @@ export const House = () => {
   return (
     <>
       <div className={styles["home-container"]}>
-          <CarouselHome />
+        <CarouselHome />
         <HouseAside />
       </div>
-          <DescriptionCard />
+
+      {/* <DescriptionCard /> */}
 
     </>
   )

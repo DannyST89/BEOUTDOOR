@@ -2,6 +2,7 @@ import * as images from "../../../assets/images/Images";
 import Slider from "react-slick";
 import React, { useState } from "react";
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
+import DescriptionCard from "./DescriptionCard";
 
 const sliderData = [
     images.house1,
@@ -72,7 +73,7 @@ export const CarouselHome = () => {
             {/* <h2 className="containerHouse__h2">Airbnb</h2> */}
             <div className="carouselHouse">
                 <div onClick={() => { openModal(urlImage) }} className="carouselHouse__image">
-                    <img className="carouselHouse__image-img animate__animated animate__fadeIn" src={urlImage} alt="img" /> 
+                    <img className="carouselHouse__image-img animate__animated animate__fadeIn" src={urlImage} alt="img" />
                 </div>
             </div>
 
@@ -102,6 +103,12 @@ export const CarouselHome = () => {
                     </div>
                 </ModalBody>
             </Modal>
+
+            {/* aqui se coloca para cuando se haga el responsive aparezca
+            la informacion importante antes que el aside 
+            tambien es un complemtento de este componentente*/}
+            <DescriptionCard />
+
 
         </div>
     )
