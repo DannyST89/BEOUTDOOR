@@ -7,90 +7,78 @@ import { AiFillCar } from "react-icons/ai";
 
 
 const DescriptionCard = () => {
+
+  const icons = [{
+    icon: <GiGraveFlowers />,
+    text: "Beautiful gardens"
+  }, {
+    icon: <FaMountain />,
+    text: "Mountain views"
+  },
+  {
+    icon: <TbToolsKitchen2 />,
+    text: "Kitchen Accessories"
+  },
+  {
+    icon: <FaWifi />,
+    text: "WiFi"
+  },
+  {
+    icon: <AiFillCar />,
+    text: "Parking"
+  }
+  ]
+
   return (
     <div className="containerCardHouse">
       <div className="col-lg-12 col-md-12 mt-5">
         <div className="card card-bordered">
           <div className="card-body">
-            <div className="title card-header">
-              <h4 className="text-danger">USD $69.96 per night </h4>
-            </div>
             <div>
-              <h4 className="card-text mt-4 mb-4">
+              <h4 className="card-text mt-2 mb-4">
                 <span> {<ImLocation2 />} </span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                nesciunt sit perferendis harum adipisci, aperiam incidunt
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </h4>
             </div>
+
             <hr />
-            <div>
-              <div className="description mt-5">
-                <h3>Description</h3>
+
+            <div className="descripcion">
+
+              <div className="descripcion__right">
+                <div className="descripcion__title">
+                  <h2>Description</h2>
+                </div>
+                <div className="descripcion__texto">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque, quia? Laborum, maxime perspiciatis! Aut iusto
+                    voluptatem repellat provident, perspiciatis eum est a vero
+                  </p>
+                  <h4 className="text-danger">USD $69.96 per night </h4>
+                </div>
               </div>
-              <div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Itaque, quia? Laborum, maxime perspiciatis! Aut iusto
-                  voluptatem repellat provident, perspiciatis eum est a vero
-                </p>
-              </div>
-              <div>
-                <h1>House Facilities</h1>
-                <div className="row">
-                  <div className="house-facilites">
-                    <div className="house-facilites-span-div">
-                      <span>
-                        <GiGraveFlowers />
-                      </span>
-                    </div>
-                    <div>
-                      <p className="text-center">Beautiful gardens</p>
-                    </div>
-                  </div>
-                  <div className="house-facilites">
-                    <div className="house-facilites-span-div">
-                      <span className="">
-                        <FaMountain />
-                      </span>
-                    </div>
-                    <div>
-                      <p className="text-center">Mountain views</p>
-                    </div>
-                  </div>
-                  <div className="house-facilites">
-                    <div className="house-facilites-span-div">
-                      <span className="">
-                        <TbToolsKitchen2 />
-                      </span>
-                    </div>
-                    <div>
-                      <p className="text-center">Kitchen Accessories</p>
-                    </div>
-                  </div>
-                  <div className="house-facilites">
-                    <div className="house-facilites-span-div">
-                      <span className="">
-                        <FaWifi />
-                      </span>
-                    </div>
-                    <div>
-                      <p className="text-center">WiFi</p>
-                    </div>
-                  </div>
-                  <div className="house-facilites">
-                    <div className="house-facilites-span-div">
-                      <span className="">
-                        <AiFillCar />
-                      </span>
-                    </div>
-                    <div>
-                      <p className="text-center">Parking</p>
-                    </div>
-                  </div>
+
+              <div className="descripcion__left">
+                <h2 className="descripcion__title">House Facilities</h2>
+                <div className="descripcion__icon house-facilites">
+                  {
+                    icons.map(icon => (
+                      <div className="house-facilites-span-div">
+                        <span>
+                          {icon.icon}
+                        </span>
+                        <p className="text-center">{icon.text}</p>
+                      </div>
+                    ))
+                  }
                 </div>
               </div>
             </div>
-            <a href="tour" className="btn-flip" data-back="Have Fun" data-front="se more..."></a>
+            <hr />
+
+            <a href="#" className="btn-flip descripcion__button" data-back="Have Fun" data-front="see/ more..."></a>
+
           </div>
         </div>
       </div>

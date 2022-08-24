@@ -4,6 +4,7 @@
     width: 75%;
     // padding: 10px;
     margin-top: 1%;
+
     &__h2 {
         display: flex;
         text-align: center;
@@ -21,30 +22,36 @@
 }
 
 .carouselHouse {
+    display: flex;
+    justify-content: center; 
+    
     padding: 10px 10px;
     border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    box-shadow: -2px 0px 10px -7px rgba(0, 0, 0, 0.47);
-    height: 70vh;
+    border-top-right-radius: 1rem; 
+    height: 60vh;
+    background-color: white; 
 
     @media screen and (max-width: 992px) {
-        height: 50%;
-        height: 100%;
+        //height: 50%;
+        //height: 100%;
+         
     }
 
     &__image {
-        overflow: hidden;
-        margin: 0 auto;
-        height: 100%;
-        width: 80%;
 
+        overflow: hidden; 
+        height: 100%;
+        max-width: 100%; 
+        padding: 5px;
+        box-shadow: -3px 0px 25px -10px rgba(0, 0, 0, 0.47);
+        border-radius: 10px;
         cursor: pointer;
 
         @media screen and (max-width: 992px) {
-            height: 70%;
-            width: 100%;
+            //height: 70%;
+            //width: 100%;
 
-            height: 90vw;
+            //height: 90vw;
         }
 
         &-img {
@@ -54,7 +61,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            border-radius: 10px; 
+            border-radius: 10px;
         }
     }
 }
@@ -64,26 +71,31 @@
     border-left: 1px solid rgba(128, 128, 128, 0.096);
     border-right: 1px solid rgba(128, 128, 128, 0.096);
     border-bottom: 1px solid rgba(128, 128, 128, 0.096);
-    box-shadow: -3px 10px 25px -15px rgba(0, 0, 0, 0.47);
+    //box-shadow: -3px 10px 25px -15px rgba(0, 0, 0, 0.47);
     border-radius: 0;
     border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem; 
+    border-bottom-right-radius: 1rem;
+
+    background-color: rgb(255, 255, 255);
+    //border-radius: 10px;
+    
 
     @media screen and (max-width: 576px) {
         max-height: 12rem;
-        //overflow: hidden; 
-    } 
+        //overflow: hidden;
+    }
 
     &__imageSmall {
         cursor: pointer;
         transition: all 0.3s ease-in-out;
         overflow: hidden;
         width: 100%;
-        height: 100%;
+        height: 300px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-
+        //padding: 10px;
+        box-shadow: -3px 0px 25px -10px rgba(0, 0, 0, 0.47);
         &:hover {
             transform: scale(1.04);
         }
@@ -96,27 +108,27 @@
             background-position: center;
             background-repeat: no-repeat;
             object-fit: cover;
+            
         }
     }
-
-   
-
 
     //esto es para el slider acomodarlo como se desee
 
     .slick-slide {
         display: flex;
         align-items: center;
+        justify-content: center;
+        
     }
 
     .slick-list {
         height: 18rem;
         .slick-track {
             height: 100%;
-        } 
+        }
         @media screen and (max-width: 576px) {
             max-height: 10rem;
-        } 
+        }
     }
 
     .slick-arrow {
@@ -139,7 +151,6 @@
             padding-top: 6px;
             border-radius: 5px;
         }
-       
 
         @media screen and (max-width: 992px) {
             &:before {
