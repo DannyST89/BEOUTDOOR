@@ -8,7 +8,7 @@ import { adventures, hikings, about } from "../../data/navegacion";
 
 
 export const Navbar = () => {
- 
+
   return (
     <div className=''>
       <div id='invisible'>
@@ -42,7 +42,7 @@ export const Navbar = () => {
                 <ul className='navbar-nav '>
                   <li data-bs-dismiss="offcanvas" className='nav-item'><Button className='nav-link' redirection="" text="Inicio" scrollTop={true} ></Button></li>
                   <li className="nav-item dropdown" >
-                    <a className="nav-link dropdown-toggle" href="adventures" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a className="nav-link" role="button">
                       Adventures
                     </a>
                     <ul className='dropdown-menu'>
@@ -56,7 +56,7 @@ export const Navbar = () => {
                     </ul>
                   </li>
                   <li className='nav-item dropdown'>
-                    <a className="nav-link dropdown-toggle" href="hikings" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a className="nav-link dropdown-toggle" role="button"  >
                       Hikings
                     </a>
                     <ul className='dropdown-menu'>
@@ -70,7 +70,7 @@ export const Navbar = () => {
                     </ul>
                   </li>
                   <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a className="nav-link dropdown-toggle" role="button"  >
                       About
                     </a>
                     <ul className='dropdown-menu'>
