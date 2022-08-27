@@ -1,12 +1,14 @@
 {
   "name": "beoutdoors",
   "private": true,
+  "homepage":"http://DannyST89.github.io/BEOUTDOOR",
   "version": "0.0.0",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"    
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
