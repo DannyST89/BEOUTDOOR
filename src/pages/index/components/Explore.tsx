@@ -27,7 +27,7 @@ const sliderData = [
 
 export default function Explore() {
   return (
-    <div className="container">
+    <div className="container" id="explore">
       <div className="explore__container">
         <h1 className="explore__container--title">Explore</h1>
         <p>

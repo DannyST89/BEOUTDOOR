@@ -11,7 +11,7 @@ export const MainCarousel = () => {
   return (
     <div className={styles["main"]}>
       <div className={styles["overlay"]}></div>
-      <img src={images.hangingBridges} ></img>
+      <img src={images.rana2} ></img>
       <div className={styles["content"]}>
         <h1 className={styles["content-title"]}>Be Outdoors with us</h1>
         <p className={styles["content-p"]}>Discover La Fortuna</p>
