@@ -1,63 +1,23 @@
-import Carousel from "react-bootstrap/Carousel";
+import styles from "../../../styles/components/index/_MainCarousel.module.scss";
 import * as images from "../../../assets/images/Images";
+import video from "../../../assets/videos/video.mp4";
+
+import { useRef, useState } from "react";
+import { Scroll } from "../../../components/scroll/Scroll";
 
 export const MainCarousel = () => {
-
-  const dataCarousel = [{
-    urlImage: images.volcanArenal01,
-    titleAnimate: "Volcan Arenal",
-    title: "La Fortuna is",
-    scroller: ["Cool","Relaxing", "Adventure","Amazing"],
-    buttonInfo: "See more...",
-  },
-  {
-    urlImage: images.lagoArenal01,
-    titleAnimate: "Lago Arenal",
-    title: "La Fortuna is",
-    scroller: ["Cool","Relaxing", "Adventure","Amazing"],
-    buttonInfo: "See more...",
-  },
-  {
-    urlImage: images.rioCeleste01,
-    titleAnimate: "Rio Celeste",
-    title: "La Fortuna is",
-    scroller: ["Cool","Relaxing", "Adventure","Amazing"],
-    buttonInfo: "See more...",
-  }]
-
+  
+  const scrollDown = useRef(null)
   return (
-    <Carousel controls={false}>
-      {
-        dataCarousel.map((item) => (
-          <Carousel.Item key={item.urlImage} interval={10000}>
-            <img
-              className="carousel-img d-block w-100"
-              src={item.urlImage}
-            />            
-            <Carousel.Caption>
-              <h3 className="carousel-h3 animate-charcter">{item.titleAnimate}</h3>
-              <div className="cardCarousel">
-                <h1 className="carousel-h1"> 
-                  {item.title}
-                  <div className="scroller">
-                    <span>
-                      {
-                        item.scroller.map((item, index) => (
-                          <div key={index}>
-                          {item}
-                          <br />
-                          </div> 
-                        ))
-                      } 
-                    </span>
-                  </div>
-                </h1>
-              </div>
-              <button className="carousel-button">{item.buttonInfo}</button>
-            </Carousel.Caption>
-          </Carousel.Item>
-        ))
-      } 
-    </Carousel>
+    <div className={styles["main"]}>
+      <div className={styles["overlay"]}></div>
+      <img src={images.hangingBridges} ></img>
+      <div className={styles["content"]}>
+        <h1 className={styles["content-title"]}>Be Outdoors with us</h1>
+        <p className={styles["content-p"]}>Discover La Fortuna</p>
+        <button className={styles["btn"]}> Get in Touch</button>
+        <Scroll />
+      </div>
+    </div>
   );
 };
