@@ -19,7 +19,7 @@ type Props = {
     height?: string,
 }
 
-export const Button = ({ className, redirection, text, scrollId, scrollTop, classNameIcon, icon, width, height }: Props) => {
+export const Button = ({ className, redirection, text, scrollId, scrollTop, classNameIcon, icon, width, height }: Props) => { 
 
     return (
 
@@ -35,7 +35,7 @@ export const Button = ({ className, redirection, text, scrollId, scrollTop, clas
                     : () => { }
             }
             className={(className == undefined) ? "button" : className}
-            to={redirection === 'BEOUTDOOR' ? `${redirection}`: `BEOUTDOOR/${redirection}`}>
+            to={`/BEOUTDOOR/${redirection}`}>
             <div className={classNameIcon}>
 
                 {text +" "}

@@ -83,7 +83,7 @@ export const Navbar = () => {
                       }
                     </ul>
                   </li>
-                  <li data-bs-dismiss="offcanvas" className='nav-item'><Button className='nav-link' redirection="ContactUs" text="Contact us" scrollTop={true} ></Button> </li>
+                  <li data-bs-dismiss="offcanvas" className='nav-item'><Button className='nav-link' redirection={`ContactUs/${'newMessage'}`} text="Contact us" scrollTop={true} ></Button> </li>
                   <li data-bs-dismiss="offcanvas" className="nav-item">
                     <Button
                       className="nav-link"
