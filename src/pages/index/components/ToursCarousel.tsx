@@ -1,94 +1,93 @@
 import * as images from "../../../assets/images/Images";
+import * as icons from "../../../assets/icons/icons";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { BiDollar } from "react-icons/bi";
-import { Button } from "../../../components/Button/Button";
-import * as icons from "../../../assets/icons/icons";
-import { NavLink } from "react-router-dom";
+import { BiDollar, BiMap, BiTimeFive } from "react-icons/bi";
 import React from "react";
-
+import styles from "../../../styles/components/index/_ToursCarousel.module.scss";
+import { Button } from "../../../components/Button/Button";
 /*this sliderData is created to store the slider data them with a map we go over the array positions*/
 const sliderData = [
   {
     id: 1,
     title: "Volcan Arenal Hike",
-    priceDetails: "Price per person",
     price: "100",
-    dollarIcon: (
-      <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
-    ),
+    dollarIcon: <BiDollar style={{ color: "#97999B", fontSize: "1.5rem" }} />,
     urlImage: images.volcanArenal01,
-    description: "description for the arenal volcan hike very short",
+    hoursIcon: <BiTimeFive style={{ color: "#97999B", fontSize: "1.5rem" }} />,
+    hours: " 4 hours",
+    placeIcon: <BiMap style={{ color: "#726F6F", fontSize: "1.5rem" }}/>,
+    place: "La Fortuna"
   },
   {
     id: 2,
     title: "Rio Celeste Hike",
-    priceDetails: "Price per person",
     price: "100",
-    dollarIcon: (
-      <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
-    ),
+    dollarIcon: <BiDollar style={{ color: "#97999B", fontSize: "1.5rem" }} />,
     urlImage: images.rioCeleste02,
-    description: "description for the arenal volcan hike very short",
+    hoursIcon: <BiTimeFive style={{ color: "#97999B", fontSize:"1.5rem" }} />,
+    hours: " 8 hours",
+    placeIcon: <BiMap style={{ color: "#97999B", fontSize: "1.5rem" }}/>,
+    place: "Katira"
   },
   {
     id: 3,
     title: "Hanging Bridges",
-    priceDetails: "Price per person",
     price: "80",
-    dollarIcon: (
-      <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
-    ),
+    dollarIcon: <BiDollar style={{ color: "#97999B", fontSize:"1.5rem" }} />,
     urlImage: images.hangingBridges,
-    description: "description for the arenal volcan hike very short",
+    hoursIcon: <BiTimeFive style={{ color: "#97999B", fontSize: "1.5rem" }} />,
+    hours: " 4 hours",
+    placeIcon: <BiMap style={{ color: "#97999B", fontSize: "1.5rem" }}/>,
+    place: "La Fortuna"
   },
   {
     id: 4,
     title: "Fortuna Waterfall",
-    priceDetails: "Price per person",
     price: "70",
-    dollarIcon: (
-      <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
-    ),
+    dollarIcon: <BiDollar style={{ color: "#000", fontSize: "1.5rem"}} />,
     urlImage: images.rioCeleste01,
-    description: "description for the arenal volcan hike very short",
+    hoursIcon: <BiTimeFive style={{ color: "#000", fontSize: "1.5rem" }} />,
+    hours: " 4 hours",
+    placeIcon: <BiMap style={{ color: "#000", fontSize: "1.5rem" }}/>,
+    place: "La Fortuna"
   },
   {
     id: 5,
     title: "Safari Float and Wild Life Arenal",
-    priceDetails: "Price per person",
     price: "80",
-    dollarIcon: (
-      <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
-    ),
+    dollarIcon: <BiDollar style={{ color: "#000", fontSize: "1.5rem" }} />,
     urlImage: images.safariFloatWildLifeArenal,
-    description: "description for the arenal volcan hike very short",
+    hoursIcon: <BiTimeFive style={{ color: "#000", fontSize: "1.5rem" }} />,
+    hours: " 5 hours",
+    placeIcon: <BiMap style={{ color: "#000", fontSize: "1.5rem" }}/>,
+    place: "La Fortuna"
   },
   {
     id: 6,
     title: "Rafting",
-    priceDetails: "Price per person",
     price: "80",
-    dollarIcon: (
-      <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
-    ),
+    dollarIcon: <BiDollar style={{color: "#000", fontSize: "1.5rem"}} />,
     urlImage: images.rafting2,
-    description: "description for the arenal volcan hike very short",
+    hoursIcon: <BiTimeFive style={{ color: "#000", fontSize: "1.5rem" }} />,
+    hours: " 6 hours",
+    placeIcon: <BiMap style={{ color: "#000", fontSize: "1.5rem" }}/>,
+    place: "La Fortuna"
   },
 ];
-
 
 export default function ToursCarousel() {
   const settings = {
     dots: true,
     infinite: true,
+    adaptiveHeight: true,
     focusOnSelect: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
@@ -100,9 +99,9 @@ export default function ToursCarousel() {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 700,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -118,29 +117,49 @@ export default function ToursCarousel() {
   };
 
   return (
-    <div className="container mt-5">
-      <h1 className="tour-carousel-main-title" >Popular Tours</h1>
-      <Slider {...settings}>
-        {
-          React.Children.toArray(
+    <div className={styles["slide-container"]}>
+      <Slider {...settings} className={styles.sliderSlick}>
+        {React.Children.toArray(
           sliderData.map((item) => (
-            <div className="tour-carousel-card">
-              <div className="card-top">
-                <h1>{item.title}</h1>
-                <img src={item.urlImage} alt={item.title} className="card-top-img"/>
-                <h1>{item.priceDetails}</h1>
-              </div>
-              <div className="card-bottom">
-                <h3 className="card-bottom-price">
-                  <span className="card-bottom-price-span">{item.dollarIcon}{item.price}</span>                   
-                </h3>
-                <p className="card-description">{item.description}</p>               
-                <a href="tour" className="btn-flip" data-back="Have Fun" data-front="se more..."></a>                
+            <div>
+              <div className={styles["tour-carousel-card-padre"]}>
+
+                <div className={styles["tour-carousel-card"]}>
+
+                  <div className={styles["img-container"]}>
+                    <img src={item.urlImage} alt="" />
+                  </div>
+
+                  <div className={styles["details-container"]}>
+                    <div className={styles["title"]}>
+                      <h2>{item.title}</h2>
+                    </div>
+                    <div className={styles["details-info"]}>
+                      <span className={styles["details-price"]}>
+                      From {item.dollarIcon}
+                        {item.price}
+                      </span>                    
+                      <span className={styles["details-hour"]}>
+                        {item.hoursIcon}
+                        {item.hours}
+                      </span>
+                      <span className={styles["details-place"]}>
+                        {item.placeIcon}
+                        {item.place}
+                      </span>
+                    </div>
+                    <Button
+                      redirection={""}
+                      text={"See More..."}
+                      className="carousel-button"
+                    />
+                  </div>
+                </div>
+
               </div>
             </div>
           ))
-          )
-        }
+        )}
       </Slider>
     </div>
   );
