@@ -64,7 +64,7 @@ const DescriptionCard = () => {
                 <div className="descripcion__icon house-facilites">
                   {
                     icons.map(icon => (
-                      <div className="house-facilites-span-div">
+                      <div key={icon.text} className="house-facilites-span-div">
                         <span>
                           {icon.icon}
                         </span>

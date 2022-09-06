@@ -25,7 +25,6 @@ const sliderData = [
   },
 ];
 
-const animate = ["animate__fadeInDown", "animate__fadeInLeft","animate__fadeInRight","animate__fadeInUp","animate__fadeInBottomLeft","animate__fadeInBottomRight"]; 
 export default function Explore() {
   return (
     <div className="container" id="explore">

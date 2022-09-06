@@ -30,8 +30,8 @@ $link-color: #0042ac;
                 color: $h1-color;
     
                 a { 
-                    color: $link-color; 
-                }
+                    color: $link-color;  
+                }  
             }
         }
     }
@@ -77,6 +77,9 @@ $link-color: #0042ac;
 
             a { 
                 color: $link-color; 
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
     }

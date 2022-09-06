@@ -2,7 +2,7 @@
 import { Cards } from './components/Cards';
 import Explore from './components/Explore';
 import { Gallery } from './components/Gallery';
-import { MainCarousel } from './components/MainCarousel'  
+import { Hero } from './components/Hero'  
 import ToursCarousel from './components/ToursCarousel';
 
 
@@ -10,7 +10,7 @@ import ToursCarousel from './components/ToursCarousel';
 export const Index = () => {
   return (
     <div>
-      <MainCarousel />      
+      <Hero />      
       <Explore />
       <Cards/>    
       {/* <ToursCarousel/> */}
