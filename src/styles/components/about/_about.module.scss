@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.containerPadre{
+    max-width: 1500px;
+    margin: 0 auto; 
+
+    .imageAbout{
+        height: 90vh;
+        img{
+            height: 100%;
+        }
+    }
+
+    .fortuna{ 
+        max-width: 1300px;
+        margin: 0 auto;
+        margin-top: 4rem;
+        padding: .2rem; 
+    }
+
+    .company{
+        max-width: 1300px;
+        margin: 0 auto;
+        margin-top: 4rem;
+        padding: .2rem; 
+    }
+    h3{
+        //font-weight: 700; 
+        color: rgb(70, 70, 70);
+        font-size: 5rem;
+        font-family: 'Lobster', cursive;
+        font-style: italic;
+    }
+
+}
+
+.contenidoPrincipal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 1.5rem; 
+    p{
+        color: rgb(57, 57, 57);
+        font-weight: 400;
+        font-style: italic;
+        span{
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+    }
+    .left{
+        padding: .8rem;
+        padding-right: 0; 
+        grid-column: 1 / 2; 
+    }
+    .right{
+        padding: .8rem; 
+        padding-left: 0; 
+        grid-column: 2 / 3;   
+    }
+
+    @media screen and (max-width: 776px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        .left{
+            padding: 1rem; 
+        }
+        .right{
+            padding: 1rem;  
+            //word-wrap: break-word;
+        }
+    }
+
+}
+
+
+.title{
+    text-align: center;
+}
+

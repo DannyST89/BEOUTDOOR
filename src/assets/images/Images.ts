@@ -26,3 +26,5 @@ export { default as house7} from '../../assets/images/house7.webp'
 export { default as house8} from '../../assets/images/house8.webp'
 export { default as house9} from '../../assets/images/house9.webp'
 export { default as house10} from'../../assets/images/house10.webp'
+
+export { default as oficina} from'../../assets/images/oficina.jpg'

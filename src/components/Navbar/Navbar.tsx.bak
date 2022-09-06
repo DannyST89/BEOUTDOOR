@@ -69,6 +69,7 @@ export const Navbar = () => {
                       }
                     </ul>
                   </li>
+
                   <li data-bs-dismiss="offcanvas" className="nav-item">
                     <Button className='nav-link' redirection={"About"} text={"About"} scrollTop={true} ></Button>
                   </li>
@@ -80,7 +81,10 @@ export const Navbar = () => {
                       scrollTop={true}
                     ></Button>
                   </li>
-                  
+<<<<<<< HEAD
+=======
+                  <li data-bs-dismiss="offcanvas" className='nav-item'><Button className='nav-link' redirection={`ContactUs/${'newMessage'}`} text="Contact us" scrollTop={true} ></Button> </li>
+>>>>>>> main
                   <li data-bs-dismiss="offcanvas" className="nav-item">
                     <Button
                       className="nav-link"

@@ -15,7 +15,7 @@ export const LoadImages = (value:GalleryProps[]) => {
                     <div
                         onClick={() => item.openModal && item.openModal(`${item.urlImage}`)}
                         key={item.urlImage}
-                        className={`cardGallery animate__animated ${animate[index]}`}
+                        className={`cardGallery wow animate__animated ${animate[index]}`}
                         style={{ backgroundImage: `url(${item.urlImage})` }}
                     >
                         <div className="gallery-item-caption">
