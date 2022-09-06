@@ -7,8 +7,7 @@ import { Button } from "../../../components/Button/Button";
 import * as icons from "../../../assets/icons/icons";
 import { NavLink } from "react-router-dom";
 import React from "react";
-import  "../../../styles/components/index/_ToursCarousel.scss";
-import { Button } from "../../../components/Button/Button";
+import  "../../../styles/components/index/_ToursCarousel.scss"; 
 /*this sliderData is created to store the slider data them with a map we go over the array positions*/
 const sliderData = [
   {
@@ -21,7 +20,6 @@ const sliderData = [
       <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
     ),
     urlImage: images.volcanArenal01,
-    description?: "description for the arenal volcan hike very short",
 	hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     hours: " 4 hours",
     placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }}/>,
