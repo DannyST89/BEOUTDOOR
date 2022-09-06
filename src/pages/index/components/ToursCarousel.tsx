@@ -80,7 +80,18 @@ const sliderData = [
     hours: " 6 hours",
     placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }}/>,
     place: " La Fortuna"
-  },
+  }, {
+    id: 6,
+    title: "Tubing Rio Celeste",
+    price: "80",
+    info:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
+    dollarIcon: <BiDollar style={{color: "#FEC01B", fontSize: "1.5rem"}} />,
+    urlImage: images.tubing3,
+    hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+    hours: " 6 hours",
+    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }}/>,
+    place: " Rio Celeste"
+  }
 ];
 
 export default function ToursCarousel() {
