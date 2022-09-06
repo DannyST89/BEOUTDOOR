@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+$hero-font: 'Caveat', cursive;
+
+.hero-container {
+  height: 40rem;
+}
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+.info-container {
+  position: absolute;
+  top: 50%;
+  left: 5rem;
+  h1 {
+    font-family: $hero-font;
+    font-size: 7rem;
+    color:rgba(255, 237, 39, 0.8);
+    background:rgba(0,0,0,0.3);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  h2 {
+    font-size: 2rem;
+    color: #FFF;
+    text-transform: uppercase;
+  }
+}
+
+//Responsive
+@media  (min-width: 1200px) {
+  .info-container {
+    top: 30%;
+    left: 10rem;
+  }
+}
+@media  (max-width: 1200px) {
+  .info-container {
+    top: 30%;
+    left: 8rem;
+    h1 {
+      font-size: 5rem;
+    }
+  }
+}
+@media  (max-width: 900px) {
+  .hero-container {
+    height: 30rem;
+  }
+  .info-container {
+    top: 20%;
+    left: 4rem;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+@media  (max-width: 700px) {
+  .hero-container {
+    height: 20rem;
+  }
+  .info-container {
+    top: 15%;
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
+  
+}
+
+@media  (max-width: 500px) {
+  .hero-container {
+    height: 15rem;
+  }
+  .info-container {
+    top: 15%;
+    left: 2rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 0.8rem;
+    }
+  }
+}

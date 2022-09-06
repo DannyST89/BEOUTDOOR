@@ -5,8 +5,13 @@ import { useState } from "react";
 import "../../../styles/components/contactUs/_Formulario.scss";
 import Swal from "sweetalert2";
 import { ContactInfo } from "./ContactInfo";
+import { useParams } from "react-router-dom";
 
-export const Formulario = () => {
+type message = {
+  message: string;
+}
+
+export const Formulario = ({message}:message) => {
   //botonCheck para cambiar del theme de la pagina
   const [checked, setchecked] = useState(false);
 
@@ -119,6 +124,8 @@ export const Formulario = () => {
     }
   };
 
+
+  
   return (
     <div className="">
       <div className={`contact-container`} id={`${checked && "darkThemeForm"}`}>
@@ -134,6 +141,7 @@ export const Formulario = () => {
             <div className="theme-switch-wrapper">
               <Label className="theme-switch" for="checkbox">
                 <Input
+                className="inputForm"
                   checked={checked}
                   onChange={() => {
                     setchecked(!checked);
@@ -199,6 +207,8 @@ export const Formulario = () => {
                 id="message"
                 name="message"
                 type="textarea"
+                value={message}
+                onChange={()=>{}}
               />
 
               <button

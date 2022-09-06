@@ -1,0 +1,44 @@
+.titulo {
+    text-align: center;
+    padding-bottom: 1rem; 
+}
+.galeriaTours {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: center;  
+
+
+    @media screen and (max-width: 776px) { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 576px) { 
+        gap: .3rem;
+    }
+
+    img { 
+        
+        height: 100%;
+        width: 100%;
+        border-radius: 1rem;
+        max-height: 20rem;  
+        transition: all .3s ease;
+
+        
+
+
+        &:hover{
+            transform: scale(1.01);
+            cursor: pointer; 
+        }
+    }
+}
+.cardImage{  
+    max-height: 20rem;  
+}
