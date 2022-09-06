@@ -3,12 +3,10 @@ import * as img from '../../assets/images/Images'
 
 export const About = () => {
 
-
-
   return (
     <div className={styles.containerPadre}>
 
-      <div>
+      <div className={styles.imageAbout}>
         <img src={img.oficina} alt="About" />
       </div>
 
