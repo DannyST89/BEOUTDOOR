@@ -1,9 +1,6 @@
 import styles from "../../../styles/components/index/_MainCarousel.module.scss";
 import * as images from "../../../assets/images/Images";
 
-
-
-
 export const MainCarousel = () => {
   
   return (
