@@ -1,4 +1,4 @@
-$backgroundFondo: linear-gradient(180deg, #F5FFFE 0%, #F5FFFE 47.71%, rgba(255, 255, 255, 0) 100%);
+$backgroundFondo: linear-gradient(180deg, #ffffff 10%, #e8fefc 47.71%, rgba(255, 255, 255, 0) 100%);
 $backgroundFooter: linear-gradient(0deg, rgba(230, 255, 232, 0.9976365546218487) 11%, rgba(194, 237, 204, 0.49343487394957986) 78%, rgba(230, 255, 232, 0.07326680672268904) 100%);
 $backgroundFooterGradient: linear-gradient(0deg, rgba(0, 52, 20, 1) 12%, rgba(0, 52, 20, 1) 79%, rgba(0, 52, 20, 0.8) 80%, rgba(0, 52, 20, 0.6) 83%, rgba(0, 52, 20, 0.4) 90%, rgba(0, 52, 20, 0.0) 100%);
 $letraLinkColorHover: rgb(49, 245, 255);
@@ -14,8 +14,7 @@ $letraLinkColorHover: rgb(49, 245, 255);
 }
 
 .degradadoFooter {
-    position: absolute;
-    //z-index: -1;
+    position: absolute; 
     background: $backgroundFondo;
     width: 100%;
     height: 320px;

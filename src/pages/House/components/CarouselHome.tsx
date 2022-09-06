@@ -36,7 +36,7 @@ export const CarouselHome = () => {
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        initialSlide: 0,
+        initialSlide: 0, 
         responsive: [
             {
                 breakpoint: 992,

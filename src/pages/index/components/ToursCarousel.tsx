@@ -119,12 +119,12 @@ export default function ToursCarousel() {
 
   return (
     <div className="container mt-5">
-      <h1 className="tour-carousel-main-title" >Popular Tours</h1>
+      <h1 className="tour-carousel-main-title wow animate__animated animate__fadeInDown" >Popular Tours</h1>
       <Slider {...settings}>
         {
           React.Children.toArray(
           sliderData.map((item) => (
-            <div className="tour-carousel-card">
+            <div className="tour-carousel-card wow animate__animated animate__fadeInRight">
               <div className="card-top">
                 <h1>{item.title}</h1>
                 <img src={item.urlImage} alt={item.title} className="card-top-img"/>
