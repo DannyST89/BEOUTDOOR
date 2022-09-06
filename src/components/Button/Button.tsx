@@ -19,7 +19,7 @@ type Props = {
     height?: string,
 }
 
-export const Button = ({ className, redirection, text, scrollId, scrollTop, classNameIcon, icon, width, height }: Props) => { 
+export const Button = ({ className, redirection, text, scrollId, scrollTop, classNameIcon, icon, width, height }: Props) => {
 
     return (
 
