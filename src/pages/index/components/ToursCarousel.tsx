@@ -104,7 +104,7 @@ export default function ToursCarousel() {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 1024,
@@ -170,6 +170,8 @@ export default function ToursCarousel() {
                       redirection={""}
                       text={"See More..."}
                       className="carousel-button"
+                      height="2.5rem"
+                      width="8rem"
                     />
                   </div>
                 </div>
