@@ -1,15 +1,15 @@
 $primary-color: #010712;
 $secondary-color: #818386;
-$bg-color: #FCFDFD;
-$button-color: #3B3636;
-$h1-color: #3F444C;
+$bg-color: #fcfdfd;
+$button-color: #3b3636;
+$h1-color: #3f444c;
 
 [data-theme="dark"] {
-    $primary-color: #FCFDFD;
+    $primary-color: #fcfdfd;
     $secondary-color: #818386;
     $bg-color: #010712;
     $button-color: #818386;
-    $h1-color: #FCFDFD;
+    $h1-color: #fcfdfd;
 
     .contact-container {
         background: $bg-color;
@@ -17,34 +17,29 @@ $h1-color: #3F444C;
         .backgroundForm {
             background: $bg-color;
         }
-    }
+    } 
 
     .right-col {
-        background: $bg-color; 
-    }
-
-    .right-col { 
-
+        background: $bg-color;
         .h1Form {
-            color: $h1-color; 
+            color: $h1-color;
         }
 
         .textForm {
-            color: $secondary-color; 
+            color: $secondary-color;
         }
 
         .labelForm,
         .description {
-            color: $secondary-color; 
+            color: $secondary-color;
         }
 
         .description {
-            color: $secondary-color; 
+            color: $secondary-color;
         }
 
         #contact-form {
-
-            .inputForm::placeholder  {
+            .inputForm::placeholder {
                 color: $primary-color;
             }
 
@@ -56,17 +51,22 @@ $h1-color: #3F444C;
                 color: $primary-color;
                 border-bottom: 1px solid $primary-color;
                 background-color: $bg-color;
-            } 
+            }
 
             .btnForm {
                 background: $button-color;
                 color: $bg-color;
             }
-        } 
+        }
     }
 
-    .inputForm:checked+.slider {
+    //esto cambia cuando le doy click, cambia al otro tema
+    .inputForm:checked,
+    .slider {
         background-color: $button-color;
+        &:before {
+            transform: translateX(100%);
+        }
     }
 
     #error {
@@ -76,13 +76,11 @@ $h1-color: #3F444C;
     #success-msg {
         color: $secondary-color;
     }
-
-}//Fin de cambio de colores para tema oscuro
+} //Fin de cambio de colores para tema oscuro
 
 .contact-container {
-    height: 100%; 
-    
-    
+    height: 100%;
+
     .backgroundForm {
         display: flex;
         width: 100%;
@@ -104,59 +102,23 @@ $h1-color: #3F444C;
 .logoForm {
     width: 10rem;
     padding: 1.5rem;
-}
-
-.right-col {
-    background: $bg-color;
-    width: 50%;
-    height: 100vh;
-    padding: 4rem 2rem 0;
-}
-
-@media screen and (max-width: 992px) {
-    .left-col {
-        width: 40%;
-    }
-
-    .right-col {
-        width: 65%;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .backgroundForm {
-        flex-direction: column;
-    }
-
-    .left-col {
-        width: 90%;
-        height: 300px;
-        margin: 0 auto;
-        margin-top: 50px;
-        background-image: url("https://previews.123rf.com/images/marisha5/marisha51402/marisha5140200516/26214086-paisaje-hermoso-bosque-en-la-ma%C3%B1ana.jpg");
-    }
-
-    .right-col {
-        padding-top: 40px;
-        width: 100%;
-        margin-bottom: -40px;
-    }
-
-
-}
+} 
 
 .description {
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
     font-weight: 400;
     letter-spacing: 0.1rem;
 }
 
-
 .right-col {
+    
+    background: $bg-color; 
+    width: 50%;
+    height: 100vh;
+    padding: 4rem 2rem 0; 
 
     * {
-        font-family: 'Helvetica Neue', sans-serif;
+        font-family: "Helvetica Neue", sans-serif;
     }
 
     .h1Form {
@@ -173,6 +135,7 @@ $h1-color: #3F444C;
         letter-spacing: 0.01rem;
         width: 100%;
         margin: 0.25rem 0;
+        
     }
 
     .labelForm,
@@ -180,6 +143,7 @@ $h1-color: #3F444C;
         color: $secondary-color;
         text-transform: uppercase;
         font-size: 0.625rem;
+        
     }
 
     .description {
@@ -189,7 +153,6 @@ $h1-color: #3F444C;
     }
 
     #contact-form {
-
         width: 100%;
         position: relative;
         margin-top: 2rem;
@@ -197,6 +160,7 @@ $h1-color: #3F444C;
 
         .inputForm::placeholder {
             color: $primary-color;
+            
         }
 
         .labelForm {
@@ -204,6 +168,7 @@ $h1-color: #3F444C;
             color: $secondary-color;
             text-transform: uppercase;
             font-size: 1rem;
+            font-weight: 600;
         }
 
         .inputForm {
@@ -214,7 +179,7 @@ $h1-color: #3F444C;
             font-size: 0.9rem;
             transition: all 0.2s ease-in-out;
             background-color: $bg-color;
-
+             
             &:focus {
                 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.026) inset, 0 0 8px rgba(102, 102, 102, 0.021);
             }
@@ -237,8 +202,7 @@ $h1-color: #3F444C;
             outline: none;
             resize: none;
             transition: all 0.3s ease-in-out;
-            font-size: 0.9rem;
-
+            font-size: 0.9rem;  
             &:focus {
                 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.026) inset, 0 0 8px rgba(102, 102, 102, 0.021);
             }
@@ -266,13 +230,54 @@ $h1-color: #3F444C;
 
             &:active {
                 opacity: 0.8;
-            } 
-        } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .left-col {
+        width: 40%;
     }
 
+    .right-col {
+        width: 65%;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    .backgroundForm {
+        flex-direction: column;
+    }
 
+    .left-col {
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 50px;
+        background-image: url("https://previews.123rf.com/images/marisha5/marisha51402/marisha5140200516/26214086-paisaje-hermoso-bosque-en-la-ma%C3%B1ana.jpg");
+    }
+
+    .right-col {
+        padding-top: 40px;
+        width: 100%;
+        margin-bottom: -40px;
+    }
 } 
+// //mobile
+@media screen and (max-width: 576px) {
+    .left-col {
+        display: none;
+    } 
+    .right-col {
+        margin-top: 40px;
+        .h1Form {
+            font-size: 2.3rem;
+        }
+    }
+}
+
+
 
 /* Toggle Switch */
 
@@ -309,8 +314,9 @@ $h1-color: #3F444C;
     position: absolute;
     right: 0;
     top: 0;
-    transition: .4s;
-
+    transition: 0.4s;
+    border-radius: 34px;
+ 
     &:before {
         background-color: #fff;
         bottom: 0.25rem;
@@ -319,28 +325,23 @@ $h1-color: #3F444C;
         height: 26px;
         left: 0.25rem;
         position: absolute;
-        transition: .4s;
-    }
-}
-
-.inputForm:checked+.slider {
-    background-color: $button-color;
-
-    &:before {
-        transform: translateX(26px);
-    }
-}
-
-.slider.round {
-    border-radius: 34px;
-
-    &:before {
+        transition: 0.4s;
         border-radius: 50%;
     }
 }
 
-.errorInput { 
-   border-color: red !important;
+//esto cambia cuando se da click en el checked
+.inputForm:checked,
+.slider {
+    background-color: $button-color;
+    
+    &:before {
+        transform: translateX(0);
+    }
+} 
+
+.errorInput {
+    border-color: red !important;
 }
 
 #success-msg {
@@ -348,11 +349,10 @@ $h1-color: #3F444C;
     margin: 0.125rem 0;
     font-size: 0.75rem;
     text-transform: uppercase;
-    font-family: 'Jost';
+    font-family: "Jost";
     color: $secondary-color;
     transition-delay: 3s;
 }
-
 
 //tablet
 @media screen and (max-width: 992px) {
@@ -368,7 +368,7 @@ $h1-color: #3F444C;
         font-size: 0.7rem;
     }
 
-    .inputForm, 
+    .inputForm,
     .btnForm {
         font-size: 0.9rem;
     }
@@ -395,22 +395,21 @@ $h1-color: #3F444C;
         }
     }
 
-    .slider:before {
-        background-color: #fff;
-        bottom: 0.25rem;
-        content: "";
-        width: 20px;
-        height: 20px;
-        left: 0.25rem;
-        position: absolute;
-        transition: .4s;
-    }
+    .slider {
+        &:before {
+            background-color: #fff;
+            bottom: 0.25rem;
+            content: "";
+            width: 20px;
+            height: 20px;
+            left: 0.25rem;
+            position: absolute;
+            transition: 0.4s;
+        }
+    } 
 
-    .inputForm:checked+.slider:before {
-        transform: translateX(16px);
-    }
-
-    .slider.round {
+    .slider,
+    .round {
         border-radius: 15px;
 
         &:before {
@@ -424,23 +423,4 @@ $h1-color: #3F444C;
     .theme-switch-wrapper {
         display: none;
     }
-}
-
-// //mobile
-@media screen and (max-width: 576px) {
-
-    .left-col {
-        display: none;
-    }
-
-    .right-col {
-        margin-top: 40px;
-    }
-
-    .right-col {
-        .h1Form {
-            font-size: 2.3rem;
-        }
-    }
-
 }
