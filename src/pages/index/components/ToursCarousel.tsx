@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BiDollar, BiMap, BiTimeFive } from "react-icons/bi";
 import React from "react";
-import  "../../../styles/components/index/_ToursCarousel.scss";
+import "../../../styles/components/index/_ToursCarousel.scss";
 import { Button } from "../../../components/Button/Button";
 /*this sliderData is created to store the slider data them with a map we go over the array positions*/
 const sliderData = [
@@ -13,85 +13,86 @@ const sliderData = [
     id: 1,
     title: "Volcan Arenal Hike",
     price: "100",
-    info:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
+    info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.volcanArenal01,
     hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     hours: " 4 hours",
-    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }}/>,
-    place: " La Fortuna"
+    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+    place: " La Fortuna",
   },
   {
     id: 2,
     title: "Rio Celeste Hike",
     price: "100",
-    info:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
+    info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.rioCeleste02,
-    hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize:"1.5rem" }} />,
+    hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     hours: " 8 hours",
-    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }}/>,
-    place: " Katira"
+    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+    place: " Katira",
   },
   {
     id: 3,
     title: "Hanging Bridges",
     price: "80",
-    info:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
-    dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize:"1.5rem" }} />,
+    info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
+    dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.hangingBridges,
     hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     hours: " 4 hours",
-    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }}/>,
-    place: " La Fortuna"
+    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+    place: " La Fortuna",
   },
   {
     id: 4,
     title: "Fortuna Waterfall",
     price: "70",
-    info:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
-    dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem"}} />,
+    info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
+    dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.rioCeleste01,
     hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     hours: " 4 hours",
-    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }}/>,
-    place: " La Fortuna"
+    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+    place: " La Fortuna",
   },
   {
     id: 5,
     title: "Safari Float and Wild Life Arenal",
     price: "80",
-    info:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
+    info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.safariFloatWildLifeArenal,
     hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     hours: " 5 hours",
-    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }}/>,
-    place: " La Fortuna"
+    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+    place: " La Fortuna",
   },
   {
     id: 6,
     title: "Rafting",
     price: "80",
-    info:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
-    dollarIcon: <BiDollar style={{color: "#FEC01B", fontSize: "1.5rem"}} />,
+    info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
+    dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.rafting2,
     hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     hours: " 6 hours",
-    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }}/>,
-    place: " La Fortuna"
-  }, {
+    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+    place: " La Fortuna",
+  },
+  {
     id: 6,
     title: "Tubing Rio Celeste",
     price: "80",
-    info:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
-    dollarIcon: <BiDollar style={{color: "#FEC01B", fontSize: "1.5rem"}} />,
+    info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
+    dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.tubing3,
     hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     hours: " 6 hours",
-    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }}/>,
-    place: " Rio Celeste"
-  }
+    placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+    place: " Rio Celeste",
+  },
 ];
 
 export default function ToursCarousel() {
@@ -140,9 +141,7 @@ export default function ToursCarousel() {
           sliderData.map((item) => (
             <div>
               <div className="tour-carousel-card-padre">
-
                 <div className="tour-carousel-card">
-
                   <div className="img-container">
                     <img src={item.urlImage} alt="" />
                   </div>
@@ -153,9 +152,9 @@ export default function ToursCarousel() {
                     </div>
                     <div className="details-info">
                       <span className="details-price">
-                      {item.dollarIcon}
+                        {item.dollarIcon}
                         {item.price}
-                      </span>                    
+                      </span>
                       <span className="details-hour">
                         {item.hoursIcon}
                         {item.hours}
@@ -163,7 +162,7 @@ export default function ToursCarousel() {
                       <span className="details-place">
                         {item.placeIcon}
                         {item.place}
-                      </span>                     
+                      </span>
                     </div>
                     <span className="details-about">{item.info}</span>
                     <Button
@@ -175,7 +174,6 @@ export default function ToursCarousel() {
                     />
                   </div>
                 </div>
-
               </div>
             </div>
           ))
