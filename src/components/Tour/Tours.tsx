@@ -75,7 +75,7 @@ export const Tours = () => {
   return (
     (tourBase !== undefined) ?
       (
-        <div className={`${styles.padre} wow animate__animated animate__fadeIn`}>
+        <div className={`${styles.padre}`}>
 
           <div
             className={styles.sample_header}
