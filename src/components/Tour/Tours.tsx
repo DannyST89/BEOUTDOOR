@@ -37,18 +37,31 @@ export const Tours = () => {
   //revisa los valores del objeto, y si existe el nombre del objeto entra en el if y revisa el switch con el caso que sucedio para cargar el objeto hacia la pagina
   const rutaActual = window.location.pathname;
   const [tourBase, setTourBase] = useState<tour>()
+
+  var cantidad = Object.getOwnPropertyNames(dataTours).length
   useEffect(() => {
-    for (let i = 0; i < Object.getOwnPropertyNames(dataTours).length; i++) {
+    for (let i = 0; i < cantidad; i++) {
       if (rutaActual.includes(Object.getOwnPropertyNames(dataTours)[i])) {
         switch (Object.getOwnPropertyNames(dataTours)[i]) {
           case 'RioCeleste': setTourBase(dataTours.RioCeleste);
             break;
           case 'ArenalVolcano': setTourBase(dataTours.ArenalVolcano);
             break;
+          case 'FortunaWaterfall': setTourBase(dataTours.FortunaWaterfall);
+            break;
+          case 'HangingBridges': setTourBase(dataTours.HangingBridges);
+            break;
+          case 'CombinationTours': setTourBase(dataTours.CombinationTours);
+            break;
+          case 'Rafting': setTourBase(dataTours.Rafting);
+            break;
+          case 'Safari': setTourBase(dataTours.Safari);
+            break; 
         }
       }
     }
-  }, [rutaActual])
+
+  }, [rutaActual, tourBase])
 
   const arrayRight = [tourBase?.time, tourBase?.description, tourBase?.hour, tourBase?.price, tourBase?.shop]
   const iconos = [
@@ -60,98 +73,101 @@ export const Tours = () => {
   ]
 
   return (
-    <div className={styles.padre}>
+    (tourBase !== undefined) ?
+      (
+        <div className={`${styles.padre} wow animate__animated animate__fadeIn`}>
 
-      <div
-        className={styles.sample_header}
-        style={{ 'backgroundImage': `url(${tourBase?.backgroundImg})` }}
-      >
-        <div className={styles.sample_header_section}>
-          <div className={styles.sample_header_text}>
-            <h1>{tourBase?.tituloPrincipalImg}</h1>
-            <h2>{tourBase?.tituloSecondarioImg}</h2>
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.sample_section_wrap}>
-        <div className={styles.sample_section}>
-
-          <h1>{tourBase?.tituloPrincipal}</h1>
-          {
-            tourBase?.textoPrincipal != undefined
-            &&
-            tourBase?.textoPrincipal.map(item => (
-              <p key={`${item.split(' ').length}.${item.length}`}
-              >{item}</p>
-            ))
-          }
-
-        </div>
-
-        <div className={styles.sectionInfo}>
-          <h1>{tourBase?.tituloCards}</h1>
-          {/* section left */}
-          <div className={styles.sectionInfo__principal}>
-            <div className={styles.sectionInfo__principal_left}>
-
-              <div className={`${styles.headerCard}`}>
-                <BsChatText />
-                {tourBase?.titleLeft}
+          <div
+            className={styles.sample_header}
+            style={{ 'backgroundImage': `url(${tourBase?.backgroundImg})` }}
+          >
+            <div className={styles.sample_header_section}>
+              <div className={styles.sample_header_text}>
+                <h1 className='wow animate__animated animate__fadeIn'>{tourBase?.tituloPrincipalImg}</h1>
+                <h2 className='wow animate__animated animate__fadeIn'>{tourBase?.tituloSecondarioImg}</h2>
               </div>
-
-              <div className={`${styles.textCard}`}>
-                <h1>{tourBase?.textTitleLeft}</h1>
-
-                {
-                  tourBase?.textleft != undefined
-                  &&
-                  tourBase?.textleft.map(item => (
-                    <p
-                      key={`${item.split(' ').length}.${item.length}`}
-                    >{item}</p>
-                  ))
-                }
-
-              </div>
-
             </div>
+          </div>
 
-            {/* seccion de la zona derecha */}
-            <div className={styles.sectionInfo__principal_right}>
+          <div className={styles.sample_section_wrap}>
+            <div className={`${styles.sample_section} wow animate__animated animate__fadeInRight`}>
 
-              <div className={`${styles.headerCard}`}>
-                <AiOutlineInfoCircle />
-                {tourBase?.titleRight}
-              </div>
-
+              <h1>{tourBase?.tituloPrincipal}</h1>
               {
-                iconos.map((item, Index) => {
-
-                  return (
-                    <div
-                      key={Index}
-                      className={`${styles.textCard} ${styles.division}`}>
-                      {item}
-                      <p>{arrayRight[Index]}</p>
-                    </div>
-                  )
-                })
+                tourBase?.textoPrincipal != undefined
+                &&
+                tourBase?.textoPrincipal.map(item => (
+                  <p key={`${item.split(' ').length}.${item.length}`}
+                  >{item}</p>
+                ))
               }
-              <div className={`${styles.textCard} ${styles.division}`}>
-                <BsCalendar4Event />
-                <Button className={styles.buttonCard} redirection={`ContactUs/${tourBase?.tituloPrincipalImg}`} text="Contact" scrollTop={true} />
-              </div>
-            </div>
-          </div>
-        </div>{/*Fin de las secciones*/}
 
-        {
-          tourBase?.bibliotecaImg != undefined ?
-            <BibliotecaImagenes img={tourBase?.bibliotecaImg != undefined ? tourBase?.bibliotecaImg : []} />
-            : undefined
-        }
-      </div>
-    </div>
-  )
+            </div>
+
+            <div className={styles.sectionInfo}>
+              <h1>{tourBase?.tituloCards}</h1>
+              {/* section left */}
+              <div className={styles.sectionInfo__principal}>
+                <div className={`${styles.sectionInfo__principal_left}`}>
+
+                  <div className={`${styles.headerCard}`}>
+                    <BsChatText />
+                    {tourBase?.titleLeft}
+                  </div>
+
+                  <div className={`${styles.textCard}  wow animate__animated animate__fadeInLeft`}>
+                    <h1>{tourBase?.textTitleLeft}</h1>
+
+                    {
+                      tourBase?.textleft != undefined
+                      &&
+                      tourBase?.textleft.map(item => (
+                        <p
+                          key={`${item.split(' ').length}.${item.length}`}
+                        >{item}</p>
+                      ))
+                    }
+                  </div>
+
+                </div>
+
+                {/* seccion de la zona derecha */}
+                <div className={styles.sectionInfo__principal_right}>
+
+                  <div className={`${styles.headerCard}`}>
+                    <AiOutlineInfoCircle />
+                    {tourBase?.titleRight}
+                  </div>
+
+                  {
+                    iconos.map((item, Index) => {
+
+                      return (
+                        <div
+                          key={Index}
+                          className={`${styles.textCard} ${styles.division} wow animate__animated animate__fadeInRight`}>
+                          {item}
+                          <p>{arrayRight[Index]}</p>
+                        </div>
+                      )
+                    })
+                  }
+                  <div className={`${styles.textCard} ${styles.division} wow animate__animated animate__fadeInRight`}>
+                    <BsCalendar4Event />
+                    <Button className={styles.buttonCard} redirection={`ContactUs/${tourBase?.tituloPrincipalImg}`} text="Contact" scrollTop={true} />
+                  </div>
+                </div>
+              </div>
+            </div>{/*Fin de las secciones*/}
+
+            {
+              tourBase?.bibliotecaImg != undefined ?
+                <BibliotecaImagenes img={tourBase?.bibliotecaImg != undefined ? tourBase?.bibliotecaImg : []} />
+                : undefined
+            }
+          </div>
+        </div>)
+      :
+      <div></div> 
+  )    
 }

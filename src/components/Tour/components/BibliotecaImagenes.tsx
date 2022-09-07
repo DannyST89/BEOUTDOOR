@@ -22,13 +22,15 @@ export const BibliotecaImagenes = ({ img }: images) => {
         toggle();
     }
 
+    const animate = ["animate__fadeInDown", "animate__fadeInLeft","animate__fadeInRight","animate__fadeInUp","animate__fadeInBottomLeft","animate__fadeInBottomRight"]; 
+
     return (
         <div>
             <h1 className={styles.titulo}>Gallery Images</h1>
             <div className={styles.galeriaTours}>
                 {
                     img.map((item,index) => (
-                        <div key={index} className={styles.cardImage}>
+                        <div key={index} className={`${styles.cardImage} wow animate__animated ${animate[index]}`}>
                             <img onClick={() => { openModal(item) }} src={item} />
                         </div>
                     ))

@@ -20,7 +20,7 @@ $h1-color: #3f444c;
     } 
 
     .right-col {
-        background: $bg-color;
+        background: $bg-color; 
         .h1Form {
             color: $h1-color;
         }
@@ -112,10 +112,11 @@ $h1-color: #3f444c;
 
 .right-col {
     
-    background: $bg-color; 
+    background: $bg-color;
     width: 50%;
     height: 100vh;
-    padding: 4rem 2rem 0; 
+    padding: 4rem 2rem 0;
+    padding-bottom: 5rem;
 
     * {
         font-family: "Helvetica Neue", sans-serif;
@@ -134,8 +135,7 @@ $h1-color: #3f444c;
         font-size: 0.9rem;
         letter-spacing: 0.01rem;
         width: 100%;
-        margin: 0.25rem 0;
-        
+        margin: 0.25rem 0; 
     }
 
     .labelForm,
@@ -143,7 +143,6 @@ $h1-color: #3f444c;
         color: $secondary-color;
         text-transform: uppercase;
         font-size: 0.625rem;
-        
     }
 
     .description {
@@ -157,6 +156,10 @@ $h1-color: #3f444c;
         position: relative;
         margin-top: 2rem;
         padding: 1rem 0;
+
+        @media screen and (max-width: 576px) {
+            margin-top: 0;
+        }
 
         .inputForm::placeholder {
             color: $primary-color;
@@ -270,7 +273,7 @@ $h1-color: #3f444c;
         display: none;
     } 
     .right-col {
-        margin-top: 40px;
+        margin-bottom: 5rem;
         .h1Form {
             font-size: 2.3rem;
         }

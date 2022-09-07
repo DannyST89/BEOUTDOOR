@@ -4,7 +4,7 @@ export const dataTours = {
     RioCeleste: {
         backgroundImg: img.hangingBridges,
         tituloPrincipalImg: "Titulo Principal",
-        tituloSecondarioImg: "titulo2",
+        tituloSecondarioImg: "Rio Celeste",
         tituloPrincipal: "tituloBase",
         textoPrincipal: [`Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium`],
         tituloCards: "titulo3",
@@ -19,5 +19,10 @@ export const dataTours = {
         shop: "Camera, hiking shoes, light clothes, bathing suit.",
         bibliotecaImg: [img.hangingBridges, img.volcanArenal01, img.hikings, img.hikings2, img.house10, img.rioCeleste01]
     },
-    ArenalVolcano: {}
+    ArenalVolcano: {},
+    FortunaWaterfall:{},
+    HangingBridges:{},
+    CombinationTours:{},
+    Rafting:{},
+    Safari:{}
 }

@@ -57,8 +57,7 @@ export const About = () => {
             <p>
               sit amet consectetur adipisicing elit. Distinctio ipsum eaque, illo perspiciatis architecto eligendi pariatur odit maiores nemo vel accusantium excepturi obcaecati eius sunt nihil est et quod quas?
             </p>
-          </div>{/* fin de informacion base */}
-
+          </div>{/* fin de informacion base */} 
 
         </div>
       </div>
