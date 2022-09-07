@@ -19,7 +19,12 @@ export const dataTours = {
         shop: "Camera, hiking shoes, light clothes, bathing suit.",
         bibliotecaImg: [img.hangingBridges, img.volcanArenal01, img.hikings, img.hikings2, img.house10, img.rioCeleste01]
     },
-    ArenalVolcano: {},
+    ArenalVolcano: {
+        backgroundImg: img.hangingBridges,
+        tituloPrincipalImg: "Titulo Principal",
+        tituloSecondarioImg: "ArenalVolcano",
+        tituloPrincipal: "tituloBase",
+    },
     FortunaWaterfall:{},
     HangingBridges:{},
     CombinationTours:{},
