@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BiDollar, BiMap, BiTimeFive } from "react-icons/bi";
-import { Button } from "../../../components/Button/Button";
 import * as icons from "../../../assets/icons/icons";
 import { NavLink } from "react-router-dom";
 import React from "react";
@@ -21,7 +20,7 @@ const sliderData = [
       <BiDollar style={{ color: "#FFFFFF", fontSize: "1rem" }} />
     ),
     urlImage: images.volcanArenal01,
-    description?: "description for the arenal volcan hike very short",
+    description: "description for the arenal volcan hike very short",
 	hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     hours: " 4 hours",
     placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }}/>,

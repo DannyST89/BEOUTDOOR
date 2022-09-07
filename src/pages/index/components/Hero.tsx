@@ -1,11 +1,6 @@
 import styles from "../../../styles/components/index/_Hero.module.scss";
 import * as images from "../../../assets/images/Images";
-import * as icons from "../../../assets/icons/icons";
-
-
 import { Button } from "../../../components/Button/Button";
-import { BsFillArrowDownCircleFill } from "react-icons/bs";
-import React from "react";
 
 export const Hero = () => {
   return (
