@@ -69,21 +69,18 @@ export const Navbar = () => {
                       }
                     </ul>
                   </li>
-                  <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" role="button"  >
-                      About
-                    </a>
-                    <ul className='dropdown-menu'>
-                      {
-                        about.map((about, index) => (
-                          <li key={about.replace(/ /g, "")} data-bs-dismiss="offcanvas">
-                            <Button className='dropdown-item' redirection={about.replace(/ /g, "")} text={about} scrollTop={true} ></Button>
-                          </li>
-                        ))
-                      }
-                    </ul>
+                  <li data-bs-dismiss="offcanvas" className="nav-item">
+                    <Button className='nav-link' redirection={"About"} text={"About"} scrollTop={true} ></Button>
                   </li>
-                  <li data-bs-dismiss="offcanvas" className='nav-item'><Button className='nav-link' redirection={`ContactUs/${'newMessage'}`} text="Contact us" scrollTop={true} ></Button> </li>
+                  <li data-bs-dismiss="offcanvas" className='nav-item'>
+                    <Button
+                      className='nav-link'
+                      redirection="ContactUs"
+                      text="Contact us"
+                      scrollTop={true}
+                    ></Button>
+                  </li>
+                  
                   <li data-bs-dismiss="offcanvas" className="nav-item">
                     <Button
                       className="nav-link"

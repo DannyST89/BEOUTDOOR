@@ -25,12 +25,13 @@ const sliderData = [
   },
 ];
 
+const animate = ["animate__fadeInDown", "animate__fadeInLeft","animate__fadeInRight","animate__fadeInUp","animate__fadeInBottomLeft","animate__fadeInBottomRight"]; 
 export default function Explore() {
   return (
     <div className="container" id="explore">
       <div className="explore__container">
-        <h1 className="explore__container--title">Explore</h1>
-        <p>
+               <h1 className="explore__container--title wow animate__animated animate__fadeIn">Explore</h1>
+ <p className="wow animate__animated animate__fadeIn">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, alias
           aspernatur. Odit harum praesentium odio recusandae error quasi
           nesciunt eos ad! Dolorum ipsum voluptatibus fugit quis animi explicabo
@@ -40,7 +41,7 @@ export default function Explore() {
           {
           sliderData.map((item, index) => {
             return (
-              <div id={item.title.replace(/ /g,"")} key={index} className="explore__container--inner-card">
+                           <div id={item.title.replace(/ /g,"")} key={index} className={` wow animate__animated ${animate[index]} explore__container--inner-card`}>
                 <span className="exploreIconSize">{item.urlImage}</span>
                 <h2>{item.title}</h2>
               </div>

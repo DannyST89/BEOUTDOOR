@@ -2,6 +2,8 @@
 .backgroundGallery {
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .containerGallery {

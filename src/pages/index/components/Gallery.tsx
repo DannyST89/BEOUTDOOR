@@ -58,7 +58,7 @@ export const Gallery = ( ) => {
 
             {/* seccion de las imagenes carga que se selecciono de la navegacion */}
             <section>
-                <div className="backgroundGallery animate__animated animate__flipInX">
+                <div className="backgroundGallery">
                     {
                         navImages === 0
                             ?
