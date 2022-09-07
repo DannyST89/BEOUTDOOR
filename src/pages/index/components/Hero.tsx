@@ -20,13 +20,13 @@ export const Hero = () => {
         <h1>Be outDoors with us</h1>
         <p>Discover a city where the adventures never ends</p>
         <Button
-          className={"buttonCard"}
-          redirection={"ToursCarousel"}
+          className={"button__hero"}
+          redirection={"/"}
           text={"GET IN TOUCH"}
         />
         <Button
-          className={"buttonCard__flat"}
-          redirection={"Explore"}
+          className={"button__hero__flat"}
+          redirection={"/"}
           text={"READ MORE"}
         />
       </div>
