@@ -1,31 +1,33 @@
 import styles from "../../../styles/components/index/_Hero.module.scss";
 import * as images from "../../../assets/images/Images";
+import * as icons from "../../../assets/icons/icons";
 
-import { useRef, useState } from "react";
-import { Scroll } from "../../../components/scroll/Scroll";
+
 import { Button } from "../../../components/Button/Button";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
+import React from "react";
 
 export const Hero = () => {
   return (
     <div className={styles["hero-container"]}>
       <div className={styles["img-container"]}>
         <img
-          srcSet={`${images.frog1} 300w, ${images.frog2} 768w, ${images.frog3} 1280w`}
+          srcSet={`${images.heroSeccion} 300w, ${images.heroSeccion} 768w, ${images.heroSeccion} 1280w`}
           alt="frog nature Costa Rica Arenal tours"
         />
       </div>
       <div className={styles["info-container"]}>
         <h1>Be outDoors with us</h1>
-        <h2>Discover la fortuna</h2>
+        <p>Discover a city where the adventures never ends</p>
         <Button
-          redirection={""}
-          icon={{
-            height: "3rem",
-            width: "3rem",
-            className: "scroll-down",
-            src:"../../../assets/icons/arrow-down.png"
-          }}
+          className={"buttonCard"}
+          redirection={"ToursCarousel"}
+          text={"GET IN TOUCH"}
+        />
+        <Button
+          className={"buttonCard__flat"}
+          redirection={"Explore"}
+          text={"READ MORE"}
         />
       </div>
     </div>
