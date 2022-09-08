@@ -7,7 +7,7 @@ export const Hero = () => {
     <div className={styles["hero-container"]}>
       <div className={styles["img-container"]}>
         <img
-          srcSet={`${images.heroSeccion} 300w, ${images.heroSeccion} 768w, ${images.heroSeccion} 1280w`}
+          src={images.smilisca_phaeota} 
           alt="frog nature Costa Rica Arenal tours"
         />
       </div>
