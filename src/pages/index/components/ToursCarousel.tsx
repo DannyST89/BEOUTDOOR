@@ -11,7 +11,7 @@ const sliderData = [
   {
     id: 1,
     title: "Volcan Arenal Hike",
-    price: "100",
+    price: " 100",
     info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.volcanArenal01,
@@ -23,7 +23,7 @@ const sliderData = [
   {
     id: 2,
     title: "Rio Celeste Hike",
-    price: "100",
+    price: " 100",
     info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.rioCeleste02,
@@ -35,7 +35,7 @@ const sliderData = [
   {
     id: 3,
     title: "Hanging Bridges",
-    price: "80",
+    price: " 80",
     info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.hangingBridges,
@@ -47,7 +47,7 @@ const sliderData = [
   {
     id: 4,
     title: "Fortuna Waterfall",
-    price: "70",
+    price: " 70",
     info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.rioCeleste01,
@@ -59,7 +59,7 @@ const sliderData = [
   {
     id: 5,
     title: "Safari Float and Wild Life Arenal",
-    price: "80",
+    price: " 80",
     info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.safariFloatWildLifeArenal,
@@ -71,7 +71,7 @@ const sliderData = [
   {
     id: 6,
     title: "Rafting",
-    price: "80",
+    price: " 80",
     info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.rafting2,
@@ -83,7 +83,7 @@ const sliderData = [
   {
     id: 6,
     title: "Tubing Rio Celeste",
-    price: "80",
+    price: " 80",
     info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.tubing3,

@@ -68,20 +68,7 @@ $main-text-color: rgb(10, 158, 136);
       justify-content: center;
       width: 100%;
       padding: 0 1rem 0 1rem;
-      .details-price {
-        color: rgb(0, 0, 0);
-        font-size: 1rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-      }
-      .details-hour {
-        color: rgb(0, 0, 0);
-        font-size: 1rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-      }
-      .details-place {
-        display: flex;
+      .details-price, .details-hour,.details-place  {
         color: rgb(0, 0, 0);
         font-size: 1rem;
         margin-left: 0.5rem;
@@ -117,5 +104,18 @@ $main-text-color: rgb(10, 158, 136);
     background-color: transparent;
     border: solid 1px rgb(37, 156, 57);
     color: rgb(37, 156, 57);
+  }
+}
+
+// responsive seccion details-info
+@media (max-width: 800px){
+  .details-info {
+    .details-place, .details-hour, .details-price{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.5rem;
+    }
   }
 }
