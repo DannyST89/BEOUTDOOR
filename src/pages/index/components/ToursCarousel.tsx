@@ -1,12 +1,11 @@
 import * as images from "../../../assets/images/Images";
-import * as icons from "../../../assets/icons/icons";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BiDollar, BiMap, BiTimeFive } from "react-icons/bi";
-import React from "react";
 import "../../../styles/components/index/_ToursCarousel.scss";
-import { Button } from "../../../components/Button/Button";
+import React from "react";
+import { BsArrowRightShort } from "react-icons/bs";
 /*this sliderData is created to store the slider data them with a map we go over the array positions*/
 const sliderData = [
   {
@@ -165,13 +164,11 @@ export default function ToursCarousel() {
                       </span>
                     </div>
                     <span className="details-about">{item.info}</span>
-                    <Button
-                      redirection={""}
-                      text={"See More..."}
-                      className="carousel-button"
-                      height="2.5rem"
-                      width="8rem"
-                    />
+                    <div className="container__btn">
+                      <a className="btn__carousel__tours">
+                        READ MORE <span>{<BsArrowRightShort style={{ color: "#FEC01B", fontSize: "1.5rem" }} />}</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

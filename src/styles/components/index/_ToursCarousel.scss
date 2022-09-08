@@ -97,3 +97,25 @@ $main-text-color: rgb(10, 158, 136);
     }
   }
 }
+.container__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__carousel__tours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(37, 156, 57);
+  text-align: center;
+  padding: .3125rem;
+  width: 8rem; 
+  border-radius: 5px;
+  color: #ffffff;
+  transition: all ease 1s;
+  &:hover {
+    background-color: transparent;
+    border: solid 1px rgb(37, 156, 57);
+    color: rgb(37, 156, 57);
+  }
+}
