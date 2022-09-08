@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
 //imports
 
+.containerCard{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    overflow: hidden;
+ } 
 
 .blog-slider {
     width: 100%;
@@ -13,7 +19,7 @@
     border-radius: 25px;
     height: 100%;
     transition: all .3s;
-    margin-top: 3%;
+    margin-top: 3%; 
 
     //tablet
     @media screen and (max-width: 992px) {

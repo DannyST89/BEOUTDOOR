@@ -1,19 +1,14 @@
-import {
-  NavLink
-} from 'react-router-dom';
 import { Nav } from 'reactstrap';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Button } from '../Button/Button';
-import { adventures, hikings, about } from "../../data/navegacion";
+import { adventures, hikings } from "../../data/navegacion";
 
 
 export const Navbar = () => {
 
   return (
     <div className=''>
-      <div id='invisible'>
-
-      </div>
+      <div id='invisible'></div>
 
       <Nav id='navbar' className='navbar navbar-expand-lg backgroundNav'>
         <div className='container-fluid container justify-content-between'>
@@ -75,7 +70,7 @@ export const Navbar = () => {
                   <li data-bs-dismiss="offcanvas" className='nav-item'>
                     <Button
                       className='nav-link'
-                      redirection="ContactUs"
+                      redirection="ContactUs/newMessage"
                       text="Contact us"
                       scrollTop={true}
                     ></Button>

@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { BiDollar, BiMap, BiTimeFive } from "react-icons/bi";
 import "../../../styles/components/index/_ToursCarousel.scss";
 import React from "react";
+import  "../../../styles/components/index/_ToursCarousel.scss"; 
 import { BsArrowRightShort } from "react-icons/bs";
 /*this sliderData is created to store the slider data them with a map we go over the array positions*/
 const sliderData = [
@@ -15,7 +16,7 @@ const sliderData = [
     info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.volcanArenal01,
-    hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+	hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     hours: " 4 hours",
     placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     place: " La Fortuna",

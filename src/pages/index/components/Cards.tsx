@@ -6,11 +6,11 @@ export const Cards = () => {
     const [date, setDate] = useState<Date>(new Date());
 
     return (
-        <div className='container '>
+        <div className='containerCard'>
 
-            <div className="blog-slider wow animate__animated animate__backInLeft ">
+            <div className="blog-slider wow animate__animated animate__fadeInLeft ">
                 <div className="blog-slider__wrp swiper-wrapper">
-                    <div className="blog-slider__item swiper-slide">
+                    <div className="blog-slider__item swiper-slide animate__animated animate__fadeIn">
                         <div className="blog-slider__img">
                             <div className="cardIndex">
                                 <img src={images.rafting1} className="card-img rounded" alt="..." />
@@ -39,9 +39,9 @@ export const Cards = () => {
             </div>
 
 
-            <div className="blog-slider wow animate__animated animate__backInRight">
+            <div className="blog-slider wow animate__animated animate__fadeInRight">
                 <div className="blog-slider__wrp swiper-wrapper">
-                    <div className="blog-slider__item swiper-slide">
+                    <div className="blog-slider__item swiper-slide animate__animated animate__fadeIn">
 
                         <div className="blog-slider__img secondCardImage">
                             <div className="cardIndex">

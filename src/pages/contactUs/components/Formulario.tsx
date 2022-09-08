@@ -220,7 +220,9 @@ export const Formulario = ({message}:message) => {
                 Send
               </button>
             </form>
+
             <ContactInfo />
+            
           </div>
         </div>
       </div>

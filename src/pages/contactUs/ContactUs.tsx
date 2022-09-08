@@ -5,13 +5,13 @@ import { Formulario } from './components/Formulario'
 export const ContactUs = () => {
 
 
-  const { tour } = useParams();
+  const { tour } = useParams(); 
   
   const [messageBase, setMessageBase] = useState('')
 
   useEffect(() => { 
 
-    if (tour != "newMessage") {
+    if (tour !== "newMessage") {
       setMessageBase("Buenos dias/tardes/noches me gustaria obtener mas informacion sobre " + tour)
     }
 

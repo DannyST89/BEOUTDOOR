@@ -12,8 +12,7 @@ export const Index = () => {
     <div>
       <Hero />      
       <Explore />
-      <Cards/>    
-      {/* <ToursCarousel/> */}
+      <Cards/>     
       <ToursCarousel/>  
       <Gallery/>         
     </div>

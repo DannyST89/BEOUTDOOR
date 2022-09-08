@@ -54,8 +54,7 @@ $link-color: #0042ac;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
-
+    margin-top: 40px; 
 
     &__section {
         width: 100%;
@@ -63,8 +62,7 @@ $link-color: #0042ac;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-bottom: 30px;
-
+        margin-bottom: 30px; 
 
         svg {
             color: $h1-color;
