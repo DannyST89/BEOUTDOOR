@@ -78,7 +78,7 @@ export const Tours = () => {
 
       {/* base central de la informacion */}
       <div className={styles.sample_section_wrap}>
-        <div className={`${styles.sample_section} wow animate__animated animate__fadeInRight`}>
+        <div className={`${styles.sample_section}  wow animate__animated animate__fadeInRight`}>
 
           <h1>{tourBase?.tituloPrincipal}</h1>
           {

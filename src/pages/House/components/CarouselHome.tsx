@@ -20,6 +20,8 @@ const sliderData = [
 export const CarouselHome = () => {
 
 
+    console.log(sliderData.length)
+
     const [urlImage, setUrlImage] = useState(sliderData[0]);
 
     const [modal, setModal] = useState(false);

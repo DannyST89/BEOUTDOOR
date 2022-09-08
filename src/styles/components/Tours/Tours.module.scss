@@ -53,6 +53,7 @@ $colorPrimary: rgb(0, 123, 255);
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   font-family: "Montserrat", sans-serif;
 
+
   display: grid;
   align-items: flex-start;
   justify-content: center;
@@ -86,6 +87,7 @@ $colorPrimary: rgb(0, 123, 255);
 .sample_section_wrap {
   position: relative;
   background-color: rgb(255, 255, 255);
+  overflow: hidden;
 }
 .sample_section {
   position: relative;
