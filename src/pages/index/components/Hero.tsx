@@ -13,7 +13,7 @@ export const Hero = () => {
       </div>
       <div className={styles["info-container"]}>
         <h1>Be outDoors with us</h1>
-        <p>Discover a city where the adventures never ends</p>
+        <p>Discover la fortuna a city where the adventures never ends</p>
         <Button
           className={"button__hero"}
           redirection={"/"}

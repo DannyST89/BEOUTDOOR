@@ -32,10 +32,8 @@ export default function Explore() {
       <div className="explore__container">
                <h1 className="explore__container--title wow animate__animated animate__fadeIn">Explore</h1>
  <p className="wow animate__animated animate__fadeIn">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, alias
-          aspernatur. Odit harum praesentium odio recusandae error quasi
-          nesciunt eos ad! Dolorum ipsum voluptatibus fugit quis animi explicabo
-          quod labore.
+          Te gustaria conocer la fortuna? has llegado al mejor lugar, donde podras encontrar la guia para todos tus gustos y necesidades,
+          te ofrecemos una guia personalizada durante tu estadia en este maravilloso lugar. 
         </p>
         <div className="explore__container--inner">
           {
