@@ -7,7 +7,7 @@ export const About = () => {
     <div className={styles.containerPadre}>
 
       <div className={styles.imageAbout}>
-        <img src={img.oficina} alt="About" />
+        <img src={img.hikings} alt="About" />
       </div>
 
       <div className={styles.fortuna}>
