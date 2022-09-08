@@ -50,7 +50,7 @@ const sliderData = [
     price: " 70",
     info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
-    urlImage: images.rioCeleste01,
+    urlImage: images.catarata_fortuna,
     hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     hours: " 4 hours",
     placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
