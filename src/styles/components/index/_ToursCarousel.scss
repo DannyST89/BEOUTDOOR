@@ -34,7 +34,6 @@ $main-text-color: rgb(10, 158, 136);
   .img-container {
     width: 100%;
     height: 15rem;
-
     img {
       height: 100%;
       width: 100%;
@@ -51,6 +50,8 @@ $main-text-color: rgb(10, 158, 136);
     display: flex;
     flex-direction: column;
     height: 10rem;
+    justify-content: center;
+    align-items: center;
     .title {
       display: flex;
       justify-content: center;
