@@ -34,7 +34,9 @@ export const ContentPage = () => {
   return (
     <Routes>
       <Route path="BEOUTDOOR" element={<Index />} />
-       <Route path="BEOUTDOOR/ContactUs/:tour" element={<ContactUs />} />
+       <Route path="BEOUTDOOR/ContactUs" element={<ContactUs />} >
+        <Route path=":tour" element={<ContactUs />} />
+       </Route>
       <Route path="BEOUTDOOR/House" element={<House/>} />
       
       <Route path="BEOUTDOOR/About" element={<About/>} />

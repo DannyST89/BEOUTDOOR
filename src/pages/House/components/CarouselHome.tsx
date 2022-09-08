@@ -74,13 +74,13 @@ export const CarouselHome = () => {
         <div className="containerHouse">
             {/* <h2 className="containerHouse__h2">Airbnb</h2> */}
             <div className="carouselHouse">
-                <div onClick={() => { openModal(urlImage) }} className="carouselHouse__image">
+                <div onClick={() => { openModal(urlImage) }} className="carouselHouse__image  wow animate__animated animate__fadeIn">
                     <img className="carouselHouse__image-img animate__animated animate__fadeIn" src={urlImage} alt="img" />
                 </div>
             </div>
 
             <div className="">
-                <Slider {...settings} className='carouselHouseSlider'>
+                <Slider {...settings} className='carouselHouseSlider  wow animate__animated animate__fadeIn'>
                     {
                         React.Children.toArray(
                             sliderData.map((item) => (

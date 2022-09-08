@@ -2,6 +2,7 @@ import { Nav } from 'reactstrap';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Button } from '../Button/Button';
 import { adventures, hikings } from "../../data/navegacion";
+import { Link, NavLink } from 'react-router-dom';
 
 
 export const Navbar = () => {
@@ -35,7 +36,12 @@ export const Navbar = () => {
               </div>
               <div className='offcanvas-body'>
                 <ul className='navbar-nav '>
-                  <li data-bs-dismiss="offcanvas" className='nav-item'><Button className='nav-link' redirection="" text="Inicio" scrollTop={true} ></Button></li>
+                  <li data-bs-dismiss="offcanvas" className='nav-item'>
+                  {/* <Button className='nav-link' redirection="" text="Inicio" scrollTop={true} ></Button> */}
+                  {/* <NavLink className='nav-link btn' to={'/BEOUTDOOR'}>Inicio</NavLink> */}
+                  <a className='nav-link btn' href="/BEOUTDOOR/">Inicio</a>
+                  {/* <Link className='nav-link btn' to={'/BEOUTDOOR'}>Inicio</Link> */}
+                  </li>
                   <li className="nav-item dropdown" >
                     <a className="nav-link" role="button">
                       Adventures
@@ -44,7 +50,8 @@ export const Navbar = () => {
                       {
                         adventures.map((adventures, index) => (
                           <li key={adventures.replace(/ /g, "")} data-bs-dismiss="offcanvas">
-                            <Button className='dropdown-item' redirection={adventures.replace(/ /g, "")} text={adventures} scrollTop={true} ></Button>
+                            {/* <Button className='dropdown-item' redirection={adventures.replace(/ /g, "")} text={adventures} scrollTop={true} ></Button> */}
+                            <a className='dropdown-item btn' href={`/BEOUTDOOR/${adventures.replace(/ /g, "")}`}>{adventures}</a>
                           </li>
                         ))
                       }
@@ -58,7 +65,8 @@ export const Navbar = () => {
                       {
                         hikings.map((hiking, index) => (
                           <li key={hiking.replace(/ /g, "")} data-bs-dismiss="offcanvas">
-                            <Button className='dropdown-item' redirection={hiking.replace(/ /g, "")} text={hiking} scrollTop={true} ></Button>
+                            {/* <Button className='dropdown-item' redirection={hiking.replace(/ /g, "")} text={hiking} scrollTop={true} ></Button> */}
+                            <a className='dropdown-item btn' href={`/BEOUTDOOR/${hiking.replace(/ /g, "")}`}>{hiking}</a>
                           </li>
                         ))
                       }
@@ -68,21 +76,23 @@ export const Navbar = () => {
                     <Button className='nav-link' redirection={"About"} text={"About"} scrollTop={true} ></Button>
                   </li>
                   <li data-bs-dismiss="offcanvas" className='nav-item'>
-                    <Button
+                    {/* <Button
                       className='nav-link'
                       redirection="ContactUs/newMessage"
                       text="Contact us"
                       scrollTop={true}
-                    ></Button>
+                    ></Button> */}
+                    <a className='nav-link btn' href="/BEOUTDOOR/ContactUs/newMessage">Contact us</a>
                   </li>
                   
                   <li data-bs-dismiss="offcanvas" className="nav-item">
-                    <Button
+                    {/* <Button
                       className="nav-link"
                       redirection="House"
                       text="Airbnb House"
                       scrollTop={true}
-                    ></Button>
+                    ></Button> */}
+                    <a className='nav-link btn' href="/BEOUTDOOR/House">Airbnb House</a>
                   </li>
                 </ul>
               </div>
