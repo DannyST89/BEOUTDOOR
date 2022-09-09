@@ -8,30 +8,47 @@ $colorPrimary: rgb(0, 123, 255);
   }
 }
 
+.Padre_sample_header{
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  height: 80%;
+
+  @media screen and (max-width: 1300px) {
+    height: 60%;
+  } 
+  @media screen and (max-width: 992px) {
+    height: 50%;
+  }
+  @media screen and (max-width: 776px) {
+    height: 40%;
+  }
+  @media screen and (max-width: 476px) {
+    height: 35%;
+  }
+}
 //funciona de la siguiente manera,
 //deja la imagen arriba con una position absolute o
 //posicion que este quieta, despues al bajar
 //seria relative para que mantenga por encima
 //y que parezca que suba
-.sample_header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
+.sample_header { 
+ 
   height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-
-  @media screen and (max-width: 476px) {
-    height: auto;
-  }
+  background-size: 100%;  
+  img{
+    width: 100%;
+    height: 100%;
+  } 
 
   //acomode del texto dentro de la imagen
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
 //colocar un filto a la imagen
 .sample_header::before {
   content: "";
@@ -45,14 +62,15 @@ $colorPrimary: rgb(0, 123, 255);
 }
 //texto del header
 .sample_header_section {
-  position: relative;
-  padding: 15% 0 10%;
+  position: absolute; 
   max-width: 640px;
   height: 300px;
   color: white;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-  font-family: "Montserrat", sans-serif;
+  height: auto;
 
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+  font-family: "Montserrat", sans-serif;
 
   display: grid;
   align-items: flex-start;

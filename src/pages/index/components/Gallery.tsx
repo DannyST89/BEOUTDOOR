@@ -36,8 +36,9 @@ export const Gallery = ( ) => {
 
     return (
         <div>
+            <h1 className="tituloGallery">Animals</h1>
             {/* Navegacion para la seccion de galeria */}
-            <nav className="container navbar navbar-expand-lg mt-5">
+            <nav className="container navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav navbarGallery">
