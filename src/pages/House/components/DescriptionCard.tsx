@@ -30,7 +30,7 @@ const DescriptionCard = () => {
   ]
 
   return (
-    <div className="containerCardHouse">
+    <div className="containerCardHouse  wow animate__animated animate__fadeInLeft">
       <div className="col-lg-12 col-md-12 mt-5">
         <div className="card card-bordered">
           <div className="card-body">

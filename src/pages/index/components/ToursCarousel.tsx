@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { BiDollar, BiMap, BiTimeFive } from "react-icons/bi";
 import "../../../styles/components/index/_ToursCarousel.scss";
 import React from "react";
-import  "../../../styles/components/index/_ToursCarousel.scss"; 
+import "../../../styles/components/index/_ToursCarousel.scss";
 import { BsArrowRightShort } from "react-icons/bs";
 /*this sliderData is created to store the slider data them with a map we go over the array positions*/
 const sliderData = [
@@ -16,7 +16,7 @@ const sliderData = [
     info: "You want to learn about volcanoes, this tour has it all",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.volcanArenal01,
-	hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+    hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     hours: " 4 hours",
     placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     place: " La Fortuna",
@@ -139,7 +139,7 @@ export default function ToursCarousel() {
       <Slider {...settings}>
         {React.Children.toArray(
           sliderData.map((item) => (
-            <div>
+            <div className=" wow animate__animated animate__fadeInRight">
               <div className="tour-carousel-card-padre">
                 <div className="tour-carousel-card">
                   <div className="img-container">

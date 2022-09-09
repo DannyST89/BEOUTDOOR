@@ -138,7 +138,7 @@ export const Formulario = ({message}:message) => {
           </div>
 
           <div className="right-col">
-            <div className="theme-switch-wrapper">
+            <div className="theme-switch-wrapper wow animate__animated animate__fadeInLeft">
               <Label className="theme-switch" for="checkbox">
                 <Input
                 className="inputForm"
@@ -154,18 +154,18 @@ export const Formulario = ({message}:message) => {
               <div className="description">Dark Mode</div>
             </div>
 
-            <h1 className="h1Form">Contact us</h1>
-            <p className="textForm">
+            <h1 className="h1Form wow animate__animated animate__fadeInDown">Contact us</h1>
+            <p className="textForm wow animate__animated animate__fadeInDown">
               Planning to visit Indonesia soon? Get insider tips on where to go,
               things to do and find best deals for your next adventure.
             </p>
 
             <form onSubmit={onSubmit} id="contact-form" method="post">
-              <Label className="labelForm" for="name">
+              <Label className="labelForm wow animate__animated animate__fadeInLeft" for="name">
                 Full name
               </Label>
               <Input
-                className="inputForm"
+                className="inputForm wow animate__animated animate__fadeIn"
                 rows={6}
                 placeholder="Your Full Name"
                 id="name"
@@ -173,7 +173,7 @@ export const Formulario = ({message}:message) => {
                 type="text"
               />
 
-              <Label className="labelForm" for="telephone">
+              <Label className="labelForm wow animate__animated animate__fadeInLeft" for="telephone">
                 Telephone
               </Label>
               <Input
@@ -185,7 +185,7 @@ export const Formulario = ({message}:message) => {
                 type="tel"
               />
 
-              <Label className="labelForm" for="email">
+              <Label className="labelForm wow animate__animated animate__fadeInLeft" for="email">
                 Email
               </Label>
               <Input
@@ -197,7 +197,7 @@ export const Formulario = ({message}:message) => {
                 type="email"
               />
 
-              <Label className="labelForm" for="message">
+              <Label className="labelForm wow animate__animated animate__fadeInLeft" for="message">
                 Message
               </Label>
               <Input
@@ -212,7 +212,7 @@ export const Formulario = ({message}:message) => {
               />
 
               <button
-                className="btnForm btn-flip"
+                className="btnForm btn-flip wow animate__animated animate__fadeInUp"
                 type="submit"
                 id="submit"
                 name="submit"

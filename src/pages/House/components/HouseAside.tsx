@@ -6,14 +6,14 @@ export const HouseAside = () => {
 
 
   return (
-    <aside className={styles["home-aside"]}>
+    <aside className={`${styles["home-aside"]}  wow animate__animated animate__fadeIn`}>
       <Card>
-        <Card.Header className={styles["aside-card-header"]}>
+        <Card.Header className={`${styles["aside-card-header"]} wow animate__animated animate__fadeInRight`}>
           <div>
             Contact Agent
           </div>
         </Card.Header>
-        <Card.Body className="aside-card-body">
+        <Card.Body className="aside-card-body wow animate__animated animate__fadeInRight">
           <Form>
             <Form.Group className="mb-3 labelForm" controlId="formBasicEmail">
               <Form.Label>Your Full Name</Form.Label>

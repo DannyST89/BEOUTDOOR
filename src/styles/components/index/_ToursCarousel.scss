@@ -89,6 +89,9 @@ $main-text-color: rgb(10, 158, 136);
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover{
+    cursor: pointer;
+  }
 }
 .btn__carousel__tours {
   display: flex;
