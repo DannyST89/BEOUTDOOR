@@ -36,7 +36,7 @@ const sliderData = [
   {
     id: 3,
     title: "Hanging Bridges",
-    price: " 80",
+    price: " 70",
     info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.hangingBridges,
