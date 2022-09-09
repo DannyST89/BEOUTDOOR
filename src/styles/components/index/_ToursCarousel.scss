@@ -5,10 +5,29 @@ $main-text-color: rgb(10, 158, 136);
 // por eso cuando intento separarlos no se separan
 .slide-container {
   background-color: $background-card;
+  padding-top: 5rem;
   height: 35rem;
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1500px;
+  h2 {
+    color: #383b6e;
+    font-size: 3rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  p > span {
+    background-color: #ebed17;
+    padding: 0 5px;
+    border-radius: 5px;
+  }
 }
+
 //padre que maneja el espacio de dentro del archivo
 //el padding normal maneja el espacio de dentro de las card
 // el padding-top maneja el espacio que levantara y se mostrara de la card
@@ -69,7 +88,9 @@ $main-text-color: rgb(10, 158, 136);
       justify-content: center;
       width: 100%;
       padding: 0 1rem 0 1rem;
-      .details-price, .details-hour,.details-place  {
+      .details-price,
+      .details-hour,
+      .details-place {
         color: rgb(0, 0, 0);
         font-size: 1rem;
         margin-left: 0.5rem;
@@ -89,7 +110,7 @@ $main-text-color: rgb(10, 158, 136);
   display: flex;
   justify-content: center;
   align-items: center;
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 }
@@ -99,8 +120,8 @@ $main-text-color: rgb(10, 158, 136);
   align-items: center;
   background-color: rgb(37, 156, 57);
   text-align: center;
-  padding: .3125rem;
-  width: 8rem; 
+  padding: 0.3125rem;
+  width: 8rem;
   border-radius: 5px;
   color: #ffffff;
   cursor: pointer;
@@ -113,9 +134,11 @@ $main-text-color: rgb(10, 158, 136);
 }
 
 // responsive seccion details-info
-@media (max-width: 800px){
+@media (max-width: 800px) {
   .details-info {
-    .details-place, .details-hour, .details-price{
+    .details-place,
+    .details-hour,
+    .details-price {
       display: flex;
       flex-direction: column;
       justify-content: center;

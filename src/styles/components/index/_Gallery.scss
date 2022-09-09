@@ -1,10 +1,20 @@
 ///gallery
-.tituloGallery{
-    margin-top: 2rem;
-    text-align: center;
-    color: rgb(0, 158, 11);
-    text-decoration: underline;
+
+.gallery__info {
+
+    margin-top: 20rem;
+    background-color: #ebed17;
+    text-align: justify;
+    padding: 2rem;
+    max-width: 1500px;
+    .tituloGallery{
+        margin-top: 2rem;
+        margin-left: 2rem;
+        color: #383b6e;
+        font-size: 3rem;
+    }
 }
+
 
 .backgroundGallery {
     overflow: hidden;
