@@ -136,6 +136,9 @@ export default function ToursCarousel() {
 
   return (
     <div className="slide-container">
+      <h2>Popular Tours</h2>
+      <p>Choose what you are the most passionate about and be part of it,<span>ARE YOU READY?</span></p>
+     
       <Slider {...settings}>
         {React.Children.toArray(
           sliderData.map((item) => (

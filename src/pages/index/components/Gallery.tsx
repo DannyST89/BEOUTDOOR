@@ -41,9 +41,9 @@ export const Gallery = () => {
   return (
     <div>
       <div  className="container gallery__info">
-        <h1 className="tituloGallery">La Fortuna's Biodiversity</h1>
+        <h2 className="tituloGallery">La Fortuna's Biodiversity</h2>
         <p>
-        La Fortuna is the place where mother nature lets you see the children of the forest as monkeys, frogs      
+        La Fortuna is the place where mother nature lets you see the children of the forest, including monkeys, frogs,      
         sloths, iguanas, lizards, alligators and beautiful birds that offer a 
         melody of great satisfaction to the heart
         </p>
