@@ -105,7 +105,7 @@ export default function ToursCarousel() {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 6000,
     responsive: [
       {
         breakpoint: 1024,
