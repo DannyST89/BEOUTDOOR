@@ -2,7 +2,7 @@ import * as img from "../../assets/images/Images";
 
 export const dataTours = {
   RioCeleste: {
-    backgroundImg: img.catarata_fortuna,
+    backgroundImg: img.hikings1,
     tituloPrincipalImg: "Rio Celeste Hike",
     tituloSecondarioImg: "Katira, Guatuso",
     tituloPrincipal: "Rio Celeste Hike Tour",

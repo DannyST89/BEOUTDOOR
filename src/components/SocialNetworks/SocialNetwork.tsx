@@ -15,9 +15,11 @@ export const SocialNetwork = ({ classNameSocial, size }: SocialNetowksProps) => 
       <a href="https://www.facebook.com/" target="_blank" className='facebook'>
         <AiFillFacebook size={size} />
       </a>
+      {' '}
       <a href="https://www.instagram.com/"  target="_blank" className='instagram mt-1'>
         <BsInstagram size={size} />
       </a>
+      {' '}
       <a href="https://twitter.com/home"  target="_blank" className='twitter mt-1'>
         <BsTwitter size={size} />
       </a>
