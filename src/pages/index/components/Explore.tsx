@@ -41,9 +41,9 @@ export default function Explore() {
   return (
     <div className="container" id="explore">
       <div className="explore__container">
-        <h1 className="explore__container--title wow animate__animated animate__fadeIn">
+        <h2 className="explore__container--title wow animate__animated animate__fadeIn">
           Explore
-        </h1>
+        </h2>
         <p className="wow animate__animated animate__fadeIn">
           Would you like to know <strong>La Fortuna</strong>? you have arrived at the best
           place, where you can find the answer for all your needs, we

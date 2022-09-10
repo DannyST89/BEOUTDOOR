@@ -7,13 +7,17 @@ $exploreIconBottom: #0A9E88;
     justify-content: space-evenly;
     width: 100%;
     margin-bottom: 1.875rem;
-
+    .wow  {
+        letter-spacing: 3px;
+        font-size: 1.5rem;
+        text-align: justify;
+        padding: 1rem;
+    }
     .explore__container--title {
-        font-family: 'Rochester', cursive;
         text-transform: capitalize;
         font-size: 5rem;
         font-weight: 600;
-        color: rgb(10, 158, 136);
+        color: #383b6e;
         margin: 3.125rem 0;
         transition: all ease-in-out .2s;
 
