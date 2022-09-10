@@ -2,82 +2,91 @@ $card-Background: rgb(201, 206, 205);
 $house-facilites-icons: rgb(10, 158, 136);
 
 .descripcion {
-    padding-top: 1rem;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  text-align: justify;
+  .descripcion__texto {
+    padding: 1rem;
+  }
+  &__right {
+    width: 50%;
+  }
+  &__left {
+    width: 50%;
+    text-align: center;
+  }
+  &__button {
+    width: 100% !important;
+  }
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
 
-    
     &__right {
-        width: 50%;
+      width: 100%;
+      margin-bottom: 10px;
     }
     &__left {
-        width: 50%;
-        text-align: center;
+      width: 100%;
     }
-    &__button {
-        width: 100% !important;
-    }
-
-    @media screen and (max-width: 992px) {
-        flex-direction: column;
-
-        &__right {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-        &__left {
-            width: 100%;
-        }
-    }
+  }
 }
 
 .card-header {
-    height: 8rem;
+  height: 8rem;
+}
+.card-text-house {
+  color: #383b6e;
+  text-align: center;
+  font-size: 3rem;
+  background-color: #ebed17;
+  padding: 2rem;
+  border: 1.5px solid #383b6e;
+  border-radius: 5px;
 }
 .house-facilites {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 992px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  @media screen and (max-width: 576px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .house-facilites-span-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     @media screen and (max-width: 992px) {
-        display: flex;
-        justify-content: space-evenly;
+      padding: 10px;
     }
-
     @media screen and (max-width: 576px) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+      padding: 0;
     }
 
-    .house-facilites-span-div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        @media screen and (max-width: 992px) {
-            padding: 10px;
-        }
-        @media screen and (max-width: 576px) {
-            padding: 0;
-        }
-
-        span {
-            font-size: 2rem;
-            color: $house-facilites-icons;
-            transition: transform 0.3s ease-in-out;
-        }
-        &:last-child {
-            grid-column: 1 / 3;
-        }
-        &:hover {
-            span {
-                transform: scale(1.4);
-            }
-        }
+    span {
+      font-size: 2rem;
+      color: $house-facilites-icons;
+      transition: transform 0.3s ease-in-out;
     }
-
-    p {
-        font-size: 1rem;
+    &:last-child {
+      grid-column: 1 / 3;
     }
+    &:hover {
+      span {
+        transform: scale(1.4);
+      }
+    }
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }

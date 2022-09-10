@@ -92,7 +92,7 @@ export const Navbar = () => {
                       text="Airbnb House"
                       scrollTop={true}
                     ></Button> */}
-                    <a className='nav-link btn' href="/BEOUTDOOR/House">Airbnb House</a>
+                    <a className='nav-link btn' href="/BEOUTDOOR/House"> Casa Sunrise</a>
                   </li>
                 </ul>
               </div>
