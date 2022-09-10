@@ -35,10 +35,9 @@ const DescriptionCard = () => {
         <div className="card card-bordered">
           <div className="card-body">
             <div>
-              <h4 className="card-text mt-2 mb-4">
-                <span> {<ImLocation2 />} </span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h4>
+              <h2 className="card-text-house mt-2 mb-4">
+                Casa Sunrise.
+              </h2>
             </div>
 
             <hr />
@@ -51,10 +50,15 @@ const DescriptionCard = () => {
                 </div>
                 <div className="descripcion__texto">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Itaque, quia? Laborum, maxime perspiciatis! Aut iusto
-                    voluptatem repellat provident, perspiciatis eum est a vero
+                  Vacation House "Casa Sunrise " La Fortuna, Costa Rica awaits you                  
+                  and your family to our private house with the best location ever,
+                  10 minutes away from La Fortuna Downtown, 20 min from the Arenal
+                  Volcano National Park, 5 minutes away from Rio Fortuna. Confortable
+                  fully equipped house, arenal volcano view from all property, safe 
+                  neighborhood, close to severals hot spot and activities to do in
+                  the surrounding of the Arenal Volcano, Hotsprings, rivers and so much more.
                   </p>
+                  <h2>Price</h2>
                   <h4 className="text-danger">USD $69.96 per night </h4>
                 </div>
               </div>
@@ -76,9 +80,6 @@ const DescriptionCard = () => {
               </div>
             </div>
             <hr />
-
-            <a href="#" className="btn-flip descripcion__button" data-back="Have Fun" data-front="see/ more..."></a>
-
           </div>
         </div>
       </div>

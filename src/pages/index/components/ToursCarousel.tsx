@@ -65,7 +65,7 @@ const sliderData = [
     dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     urlImage: images.safariFloatWildLifeArenal,
     hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
-    hours: " 6 hours",
+    hours: " 4 hours",
     placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
     place: " La Fortuna",
   },
