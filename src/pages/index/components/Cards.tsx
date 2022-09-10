@@ -29,7 +29,7 @@ export const Cards = () => {
                                 <div className="blog-slider__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum recusandae doloremque, magnam officiis ipsum
                                     sint voluptatum architecto quos quibusdam velit! Placeat rerum culpa temporibus neque? Inventore odit similique suscipit voluptates. Lorem ipsum
-                                    dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?
+                                    dolor
                                 </div>
                             </div>
                             <Button className='buttonCard' redirection='/' text='READ MORE' scrollTop={true}></Button>
@@ -62,7 +62,7 @@ export const Cards = () => {
                                 <div className="blog-slider__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum recusandae doloremque, magnam officiis ipsum
                                     sint voluptatum architecto quos quibusdam velit! Placeat rerum culpa temporibus neque? Inventore odit similique suscipit voluptates. Lorem ipsum
-                                    dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?
+                                    dolor 
                                 </div>
                             </div>
                             <Button className='buttonCard' redirection='/' text='READ MORE' scrollTop={true}></Button>

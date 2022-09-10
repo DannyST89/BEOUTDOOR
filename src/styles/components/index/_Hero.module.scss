@@ -103,18 +103,18 @@ $hero-font: "Caveat", cursive;
 }
 @media (max-width: 600px) {
   .hero-container {
-    height: 15rem;
+    height: 30rem;
   }
   .info-container {
-    top: 17%;
+    top: 20%;
     left: 1.5rem;
 
     h1 {
-      font-size: 1rem;
-      width: 12rem;
+      font-size: 3rem;
+      width: 16rem;
     }
     p {
-      font-size: 0.5rem;
+      font-size: 1rem;
       padding-right: 2rem;
     }
   }
