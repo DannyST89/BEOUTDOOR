@@ -1,6 +1,6 @@
 import * as images from "../../../assets/images/Images";
 import { ImLocation2 } from "react-icons/im";
-import { GiGraveFlowers } from "react-icons/gi";
+import { GiFrozenOrb, GiGraveFlowers } from "react-icons/gi";
 import { FaMountain, FaWifi } from "react-icons/fa";
 import { TbToolsKitchen2 } from "react-icons/tb";
 import { AiFillCar } from "react-icons/ai";
@@ -26,6 +26,10 @@ const DescriptionCard = () => {
   {
     icon: <AiFillCar />,
     text: "Parking"
+  },
+  {
+    icon: <GiFrozenOrb/>,
+    text: "Central air conditioning"
   }
   ]
 
@@ -59,7 +63,7 @@ const DescriptionCard = () => {
                   the surrounding of the Arenal Volcano, Hotsprings, rivers and so much more.
                   </p>
                   <h2>Price</h2>
-                  <h4 className="text-danger">USD $69.96 per night </h4>
+                  <h4 className="text-danger">USD $70.02 per night </h4>
                 </div>
               </div>
 

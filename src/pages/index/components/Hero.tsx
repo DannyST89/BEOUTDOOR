@@ -21,7 +21,7 @@ export const Hero = () => {
         />
         <Button
           className={"button__hero__flat"}
-          redirection={"/"}
+          redirection={"Explore"}
           text={"READ MORE"}
         />
       </div>
