@@ -156,7 +156,7 @@ export const Formulario = ({message}:message) => {
 
             <h1 className="h1Form wow animate__animated animate__fadeInDown">Contact us</h1>
             <p className="textForm wow animate__animated animate__fadeInDown">
-              Planning to visit Indonesia soon? Get insider tips on where to go,
+              Planning to visit La Fortuna soon? Get insider tips on where to go,
               things to do and find best deals for your next adventure.
             </p>
 
