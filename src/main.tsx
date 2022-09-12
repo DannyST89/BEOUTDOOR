@@ -7,6 +7,7 @@ import { ContentPage } from './components/Navbar/components/ContentPage';
 import { Navbar } from './components/Navbar/Navbar'; 
 import "./styles/_main.scss";
 import 'animate.css'; 
+//import 'wowjs';
 
  
 //para que no muestre el error de que "no use el StrictMode "

@@ -135,7 +135,7 @@ export default function ToursCarousel() {
   };
 
   return (
-    <div className="slide-container">
+    <div className="slide-container wow animate__animated animate__fadeInRight">
       <h2>Popular Tours</h2>
       <p>Choose what you are the most passionate about and be part of it,<span>ARE YOU READY?</span></p>
      
