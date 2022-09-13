@@ -57,15 +57,7 @@ export const CarouselHome = () => {
                     initialSlide: 2,
                     dots: true,
                 },
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: true,
-                },
-            },
+            }, 
         ],
     };
 
@@ -84,7 +76,7 @@ export const CarouselHome = () => {
                     {
                         React.Children.toArray(
                             sliderData.map((item) => (
-                                <div className="">
+                                <div className="carouselSliderPadre">
                                     <div
                                         onClick={() => { setUrlImage(item) }} className="carouselHouseSlider__imageSmall">
                                         <img className="carouselHouseSlider__imageSmall-img" src={item} alt='Image House' />

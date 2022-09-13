@@ -14,14 +14,17 @@ $hero-font: "Caveat", cursive;
     object-fit: cover;
   }
 }
+ 
 .info-container {
   position: absolute;
   top: 50%;
   left: 4rem;
-  h1 {
+
+  h1 { 
     font-size: 5rem;
     color: rgba(255, 237, 39, 0.8);
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.342); 
+    border-radius: 1rem;
     padding-right: 1rem;
   }
   p {
@@ -30,6 +33,9 @@ $hero-font: "Caveat", cursive;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 3px;
+
+    // background: rgba(0, 0, 0, 0.342); 
+    // border-radius: 1rem;
   }
 }
 

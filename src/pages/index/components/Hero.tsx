@@ -7,12 +7,14 @@ export const Hero = () => {
     <div className={styles["hero-container"]}>
       <div className={styles["img-container"]}>
         <img
-          src={images.smilisca_phaeota} 
+          src={images.smilisca_phaeota}
           alt="frog nature Costa Rica Arenal tours"
         />
       </div>
       <div className={styles["info-container"]}>
+
         <h1>Be outDoors with us</h1>
+
         <p>Discover la fortuna a city where the adventures never ends</p>
         <Button
           className={"button__hero"}

@@ -269,12 +269,12 @@
 }
 
 //tablet grande
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     .secondCardImage {
-        transform: translateX(32rem);
+        transform: translateX(105%);
     }
     .secondCardContent {
-        transform: translateX(-28rem);
+        transform: translateX(-100%);
     }
 }
 
