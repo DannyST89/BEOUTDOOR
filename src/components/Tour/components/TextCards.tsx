@@ -58,9 +58,9 @@ export const TextCards = React.memo((tourBase:tour) => {
                         {
                             tourBase?.textleft != undefined
                             &&
-                            tourBase?.textleft.map(item => (
+                            tourBase?.textleft.map((item,index) => (
                                 <p
-                                    key={`${item.split(' ').length}.${item.length}`}
+                                    key={`${item.split(' ').length}.${item.length}${index}`}
                                 >{item}</p>
                             ))
                         }

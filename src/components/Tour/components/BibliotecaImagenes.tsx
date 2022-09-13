@@ -8,9 +8,7 @@ type images = {
 }
 
 export const BibliotecaImagenes = ({ img }: images) => {
-
-    //console.log(img);
-
+  
     const [modal, setModal] = useState(false);
 
     const toggle = () => setModal(!modal);
@@ -30,7 +28,7 @@ export const BibliotecaImagenes = ({ img }: images) => {
             <div className={styles.galeriaTours}>
                 {
                     img.map((item,index) => (
-                        <div key={index} className={`${styles.cardImage} wow animate__animated ${animate[index]}`}>
+                        <div key={index} className={`${styles.cardImage} animate__animated ${animate[index]}`}>
                             <img onClick={() => { openModal(item) }} src={item} />
                         </div>
                     ))

@@ -87,8 +87,8 @@ export const Tours = () => {
           {
             tourBase?.textoPrincipal != undefined
             &&
-            tourBase?.textoPrincipal.map(item => (
-              <p key={`${item.split(' ').length}.${item.length}`}
+            tourBase?.textoPrincipal.map((item,index) => (
+              <p key={`${item.split(' ').length}.${item.length}${index}`}
               >{item}</p>
             ))
           }
