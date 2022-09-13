@@ -9,19 +9,30 @@ $exploreIconBottom: #0A9E88;
     margin-bottom: 1.875rem;
 
     .explore__container--title {
-        font-family: 'Rochester', cursive;
         text-transform: capitalize;
-        font-size: 5rem;
+        background-color: #ebed17;
+        border-radius: 0 75px 75px 75px;
+        width: 10rem;
+        padding-left: 1rem;
+        font-size: 4rem;
         font-weight: 600;
-        color: rgb(10, 158, 136);
+        color: #383b6e;;
         margin: 3.125rem 0;
         transition: all ease-in-out .2s;
-
+        overflow: visible;
+        margin-right: 3.5rem;
+        
         &:hover {
             transform: translateY(-0.5rem);
         }
+        
     }
-
+    p {
+        letter-spacing: 3px;
+        font-size: 1.5rem;
+        text-align: justify;
+        padding: 1rem;
+    }
 
     &--inner {
         width: 100%;
