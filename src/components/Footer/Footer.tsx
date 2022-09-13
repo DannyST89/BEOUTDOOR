@@ -15,10 +15,6 @@ export const Footer = () => {
             </div>
 
             {/* imagen */}
-            <div className="imageFooter">
-                <img className="imageFooter-img" src={images.imageFooter} alt="Volcan arenal" />
-
-            </div>
 
             {/* footer */}
             <div className="footer">
