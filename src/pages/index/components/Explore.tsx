@@ -39,8 +39,8 @@ const animate = [
 ];
 export default function Explore() {
   return (
-    <div className="container" id="explore">
-      <div className="explore__container">
+    <div className="container" >
+      <div id='exploreIndexScroll' className="explore__container">
         <h1 className="explore__container--title wow animate__animated animate__fadeIn">
           Explore
         </h1>
