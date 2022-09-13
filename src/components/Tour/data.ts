@@ -17,7 +17,7 @@ export const dataTours = {
     titleLeft: "What includes",
     textTitleLeft: "textTitleLeft",
     textleft: [
-      "- Lunch - Water - Bilingual Tour Guide - Entrance to the park - Transportation from hotel  Back and forward",
+      "-Lunch", "-Water ","-Bilingual Tour Guide","-Entrance to the park ","-Transportation from hotel  Back and forward",
     ],
     titleRight: "Tour Info",
     hour: "Estimated Tour Time 8 hours.",
@@ -51,7 +51,7 @@ export const dataTours = {
     titleLeft: "What includes",
     textTitleLeft: "textTitleLeft",
     textleft: [
-      " - Water  - Bilingual Tour Guide -- Fruits  -Entrance to the place -Transportation from hotel  Back and forward",
+      "-Water"," -Bilingual Tour Guide", "-Fruits","-Entrance to the place","-Transportation from hotel  Back and forward",
     ],
     titleRight: "Tour Info",
     hour: "Estimated Tour Time 4 hour",
@@ -84,7 +84,7 @@ export const dataTours = {
     titleLeft: "What includes",
     textTitleLeft: "textTitleLeft",
     textleft: [
-      "- Bilingual Tour Guide - Entrance to the place - Transportation from hotel  Back and forward",
+      "-Bilingual Tour Guide","-Entrance to the place ","-Transportation from hotel Back and forward",
     ],
     titleRight: "Tour Info",
     hour: "Estimated Tour Time 2 to 3  hours",
@@ -119,7 +119,7 @@ export const dataTours = {
     titleLeft: "What includes",
     textTitleLeft: "textTitleLeft",
     textleft: [
-      "- Water - Fruits - Bilingual Tour Guide - Entrance to the place - Transportation from hotel  Back and forward",
+      "-Water","-Fruits","-Bilingual Tour Guide","-Entrance to the place","-Transportation from hotel Back and forward",
     ],
     titleRight: "Tour Info",
     hour: "Estimated Tour Time 3 to 4 hours ",
@@ -157,16 +157,12 @@ export const dataTours = {
     titleLeft: "What includes",
     textTitleLeft: "textTitleLeft",
     textleft: [
-    `- Water - Fruits - Bilingual Tour Guide - Towells - Lunch - Transportation from hotel  Back and forward      
-      
-     Additional Tour Info ❗❗
-	  ✔ River Length: 10 km (6.2mi)
-	  ✔ River Difficulty: Class II & III
-	  ✔ Knowledgeable and certified guides.
-	  ✔ Children must weigh at least 50 pounds to participate.
-    🔴NOTE: Tour depends on the quality of the weather.
-      In rare cases of poor weather, a tour may be rescheduled      
-      or refunded fully depending on your decision.`,
+    "-Water"," -Fruits -Bilingual Tour Guide -Towells -Lunch ","-Transportation from hotel Back and forward",
+    "Additional Tour Info ❗❗",
+    "✔ River Length: 10 km (6.2mi)",
+    "✔ River Difficulty: Class II & III",
+    "✔ Knowledgeable and certified guides.",
+    "✔ Children must weigh at least 50 pounds to participate.", "🔴NOTE: Tour depends on the quality of the weather.In rare cases of poor weather, a tour may be rescheduled or refunded fully depending on your decision" 
     ],
     titleRight: "Tour Info",
     hour: "Estimated Tour Time 6 hours ",
@@ -199,7 +195,7 @@ export const dataTours = {
     titleLeft: "What includes",
     textTitleLeft: "textTitleLeft",
     textleft: [
-      "- Water - Fruits - Bilingual Tour Guide - Entrance to the place - Transportation from hotel  Back and forward",
+      "-Water","-Fruits","-Bilingual Tour Guide","-Entrance to the place","-Transportation from hotel Back and forward",
     ],
     titleRight: "Tour Info",
     hour: "Estimated Tour Time 3 to 4 hours ",
