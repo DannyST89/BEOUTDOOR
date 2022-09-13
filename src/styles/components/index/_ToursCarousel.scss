@@ -5,10 +5,9 @@ $main-text-color: rgb(10, 158, 136);
 // por eso cuando intento separarlos no se separan
 .slide-container {
   background-color: $background-card;
-  padding-top: 5rem;
   height: 35rem;
   margin: 0 auto;
-  max-width: 1500px;
+ max-width: 1500px;
   h2 {
     color: #383b6e;
     font-size: 3rem;
@@ -26,17 +25,14 @@ $main-text-color: rgb(10, 158, 136);
     padding: 0 5px;
     border-radius: 5px;
   }
-}
-
-//padre que maneja el espacio de dentro del archivo
+ }//padre que maneja el espacio de dentro del archivo
 //el padding normal maneja el espacio de dentro de las card
 // el padding-top maneja el espacio que levantara y se mostrara de la card
 
 .tour-carousel-card-padre {
   padding: 1rem 1.5rem;
   padding-top: 110px;
-  transition: ease 1sec;
-}
+  transition: ease 1sec;}
 
 .tour-carousel-card {
   height: 100%;
@@ -53,6 +49,7 @@ $main-text-color: rgb(10, 158, 136);
   .img-container {
     width: 100%;
     height: 15rem;
+
     img {
       height: 100%;
       width: 100%;
@@ -68,9 +65,9 @@ $main-text-color: rgb(10, 158, 136);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
     flex-direction: column;
-    height: 10rem;
+    height: 15rem;    
     justify-content: center;
-    align-items: center;
+    align-items: center;   
     .title {
       display: flex;
       justify-content: center;
@@ -78,6 +75,7 @@ $main-text-color: rgb(10, 158, 136);
       text-align: center;
 
       h2 {
+		margin-top: 1rem;
         height: 3;
         font-size: 1rem;
         color: rgb(0, 0, 0);
@@ -99,6 +97,8 @@ $main-text-color: rgb(10, 158, 136);
     }
     .details-about {
       text-align: justify;
+	margin-top: 1rem;
+      margin-bottom: 1rem;
       padding: 0 1rem 0 1rem;
       opacity: 0.8;
       color: rgb(0, 0, 0);
@@ -110,7 +110,7 @@ $main-text-color: rgb(10, 158, 136);
   display: flex;
   justify-content: center;
   align-items: center;
-  &:hover {
+&:hover {
     cursor: pointer;
   }
 }
@@ -120,11 +120,11 @@ $main-text-color: rgb(10, 158, 136);
   align-items: center;
   background-color: rgb(37, 156, 57);
   text-align: center;
-  padding: 0.3125rem;
-  width: 8rem;
+  padding: .3125rem;
+  width: 8rem; 
   border-radius: 5px;
   color: #ffffff;
-  cursor: pointer;
+	cursor: pointer;
   transition: all ease 1s;
   &:hover {
     background-color: transparent;
@@ -134,9 +134,9 @@ $main-text-color: rgb(10, 158, 136);
 }
 
 // responsive seccion details-info
-@media (max-width: 800px) {
-  .details-info {
-    .details-place,
+@media (max-width: 800px){
+  .details-info {    
+	.details-place,
     .details-hour,
     .details-price {
       display: flex;
