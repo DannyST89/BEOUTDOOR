@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className={styles["img-container"]}>
         <img
           src={images.smilisca_phaeota}
-          alt="frog nature Costa Rica Arenal tours"
+          alt="Frog nature Costa Rica Arenal tours"
         />
       </div>
       <div className={styles["info-container"]}>
@@ -18,14 +18,16 @@ export const Hero = () => {
         <p>Discover la fortuna a city where the adventures never ends</p>
         <Button
           className={"button__hero"}
-          redirection={"/"}
+          redirection={"ContactUs"}
           text={"GET IN TOUCH"}
         />
         <Button
           className={"button__hero__flat"}
-          redirection={"/"}
+          redirection={""}
+          scrollId={'exploreIndexScroll'}
+          scrollTop={true}
           text={"READ MORE"}
-        />
+        /> 
       </div>
     </div>
   );

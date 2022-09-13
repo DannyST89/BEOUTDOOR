@@ -1,5 +1,6 @@
-
-
+import { BiDollar, BiMap, BiTimeFive } from "react-icons/bi";
+import { BsArrowRightShort } from "react-icons/bs";
+import * as images from "../../../assets/images/Images";
 
 //---------------------------------------------------------Informacion de la galeria------------------------------------------------------
 
@@ -104,3 +105,93 @@ export const  frequentlyAsked: accordionProps[]  = [
   
     },
   ]
+
+
+
+
+  export const sliderData = [
+    {
+      id: 1,
+      title: "Arenal Volcano",
+      price: " 65",
+      info: "You want to learn about volcanoes, this tour has it all",
+      dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      urlImage: images.volcanArenal01,
+      hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      hours: " 4 hours",
+      placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      place: " La Fortuna",
+    },
+    {
+      id: 2,
+      title: "Rio Celeste",
+      price: " 90",
+      info: "Celestial waterfall and magic ligth blue river, it is a walk for those who love good walking",
+      dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      urlImage: images.rioCeleste02,
+      hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      hours: " 8 hours",
+      placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      place: " Katira",
+    },
+    {
+      id: 3,
+      title: "Hanging Bridges",
+      price: " 70",
+      info: "Feel that you can touch the clouds from the highest",
+      dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      urlImage: images.hangingBridges,
+      hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      hours: " 4 hours",
+      placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      place: " La Fortuna",
+    },
+    {
+      id: 4,
+      title: "Fortuna Waterfall",
+      price: " 40",
+      info: "Get to know one of the most spectacular waterfalls in the territory of Costa Rica",
+      dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      urlImage: images.catarata_fortuna,
+      hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      hours: " 3 hours",
+      placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      place: " La Fortuna",
+    },
+    {
+      id: 5,
+      title: "Safari Float and Wild Life Arenal",
+      price: " 65",
+      info: "For those who love a pleasant and quiet trip",
+      dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      urlImage: images.safariFloatWildLifeArenal,
+      hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      hours: " 4 hours",
+      placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      place: " La Fortuna",
+    },
+    {
+      id: 6,
+      title: "Rafting",
+      price: " 75",
+      info: "Adventure and nature are ideally combined, don't you think? ",
+      dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      urlImage: images.rafting2,
+      hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      hours: " 6 hours",
+      placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      place: " La Fortuna",
+    },
+    {
+      id: 6,
+      title: "Tubing Rio Celeste",
+      price: " 130",
+      info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
+      dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      urlImage: images.tubing3,
+      hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      hours: " 6 hours",
+      placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
+      place: " Katira",
+    },
+  ];

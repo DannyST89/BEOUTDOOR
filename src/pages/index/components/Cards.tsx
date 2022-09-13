@@ -32,7 +32,7 @@ export const Cards = () => {
                                     dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?
                                 </div>
                             </div>
-                            <Button className='buttonCard' redirection='/' text='READ MORE' scrollTop={true}></Button>
+                            <a className='buttonCard' href='Rafting' >READ MORE</a>
                         </div>
                     </div>
                 </div>
@@ -65,13 +65,8 @@ export const Cards = () => {
                                     dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?
                                 </div>
                             </div>
-                            <Button className='buttonCard' redirection='/' text='READ MORE' scrollTop={true}></Button>
-                        </div>
-
-
-
-
-
+                            <a className='buttonCard' href='RioCeleste' >READ MORE</a>
+                        </div>  
                     </div>
                 </div>
             </div>
