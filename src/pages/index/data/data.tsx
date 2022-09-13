@@ -3,6 +3,8 @@
 
 //---------------------------------------------------------Informacion de la galeria------------------------------------------------------
 
+import React from "react";
+
 //esto es para cargar la nevegacion de la galeria de imagenes
 export const navGallery = ['All', 'Lizard', 'Snake']
 
@@ -74,3 +76,31 @@ export const gallerySnake: GalleryProps[] = [
         description: 'description',
     }
 ];
+export type accordionProps = {
+    question: string,
+    answer: string,
+}
+
+export const  frequentlyAsked: accordionProps[]  = [
+    {
+      question: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, explicabo?.",
+      answer: ` Placeholder content for this accordion, which is intended to
+      demonstrate the class. This is the
+      first item's accordion body.`
+  
+    },
+    {
+      question: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, explicabo?.",
+      answer: ` Placeholder content for this accordion, which is intended to
+      demonstrate the class. This is the
+      first item's accordion body.`
+  
+    },
+    {
+      question: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, explicabo?.",
+      answer: ` Placeholder content for this accordion, which is intended to
+      demonstrate the class. This is the
+      first item's accordion body.`
+  
+    },
+  ]
