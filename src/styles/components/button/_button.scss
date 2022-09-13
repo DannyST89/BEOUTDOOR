@@ -196,26 +196,13 @@ $speed: 0.5s;
       }
 }
 
-@media  (max-width: 800px) {
-    .button__hero {
-        padding: 7px 15px;
-         font-size: 10px;
-    }
-    .button__hero__flat {
-        padding: 7px 15px;
-        div {
-            font-size: 10px;
-        }
-    }
-}
 @media  (max-width: 600px) {
     .button__hero {
-        padding: 3px 8px;
-
+        padding: 10px 15px;
         font-size: 10px;
     }
     .button__hero__flat {
-        padding: 3px 8px;
+        padding: 10px 15px;
         font-size: 10px;
     }
 }
