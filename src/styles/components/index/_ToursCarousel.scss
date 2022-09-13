@@ -17,6 +17,7 @@ $main-text-color: rgb(10, 158, 136);
   padding: 1rem 1.5rem;
   padding-top: 110px;
   transition: ease 1sec;
+  height: 35rem;
 }
 
 .tour-carousel-card {
@@ -50,7 +51,8 @@ $main-text-color: rgb(10, 158, 136);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
     flex-direction: column;
-    height: 10rem;
+    height: 15rem;
+    overflow: visible;
     .title {
       display: flex;
       justify-content: center;
@@ -58,6 +60,7 @@ $main-text-color: rgb(10, 158, 136);
       text-align: center;
 
       h2 {
+        margin-top: 1rem;
         height: 3;
         font-size: 1rem;
         color: rgb(0, 0, 0);
@@ -77,6 +80,8 @@ $main-text-color: rgb(10, 158, 136);
     }
     .details-about {
       text-align: justify;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       padding: 0 1rem 0 1rem;
       opacity: 0.8;
       color: rgb(0, 0, 0);
