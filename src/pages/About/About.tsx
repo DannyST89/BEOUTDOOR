@@ -1,11 +1,11 @@
 import styles from "../../styles/components/about/_about.module.scss";
-import * as img from "../../assets/images/Images";
+import * as images from "../../assets/images/Images";
 
 export const About = () => {
   return (
     <div className={styles.containerPadre}>
       <div className={styles.imageAbout}>
-        <img src={img.hikings} alt="About" />
+        <img src={images.catarata_fortuna01} alt="About" />
       </div>
 
       <div className={styles.fortuna}>
