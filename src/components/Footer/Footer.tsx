@@ -60,8 +60,12 @@ export const Footer = () => {
                     </div>
                     <div className="footer-content-paginas">
                         <h3 id="pruebaFooterSocialeNetwork" className="h3Footer">Social Networks</h3>
-                        <SocialNetwork classNameSocial={""} size={"40px"} />
+                        <SocialNetwork classNameSocial={""} size={"40px"} />                        
                     </div>
+                    
+                </div>
+                <div className="copyright__text">
+                    <p className="copyright__p">© Copyright, BEOUTDOORS CR</p>
                 </div>
             </div>
         </footer>
