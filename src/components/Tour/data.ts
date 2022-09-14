@@ -17,7 +17,11 @@ export const dataTours = {
     titleLeft: "What includes",
     textTitleLeft: "textTitleLeft",
     textleft: [
-      "-Lunch", "-Water ","-Bilingual Tour Guide","-Entrance to the park ","-Transportation from hotel  Back and forward",
+      "-Lunch",
+      "-Water ",
+      "-Bilingual Tour Guide",
+      "-Entrance to the park ",
+      "-Transportation from hotel  Back and forward",
     ],
     titleRight: "Tour Info",
     hour: "Estimated Tour Time 8 hours.",
@@ -51,7 +55,11 @@ export const dataTours = {
     titleLeft: "What includes",
     textTitleLeft: "textTitleLeft",
     textleft: [
-      "-Water"," -Bilingual Tour Guide", "-Fruits","-Entrance to the place","-Transportation from hotel  Back and forward",
+      "-Water",
+      " -Bilingual Tour Guide",
+      "-Fruits",
+      "-Entrance to the place",
+      "-Transportation from hotel  Back and forward",
     ],
     titleRight: "Tour Info",
     hour: "Estimated Tour Time 4 hour",
@@ -84,7 +92,9 @@ export const dataTours = {
     titleLeft: "What includes",
     textTitleLeft: "textTitleLeft",
     textleft: [
-      "-Bilingual Tour Guide","-Entrance to the place ","-Transportation from hotel Back and forward",
+      "-Bilingual Tour Guide",
+      "-Entrance to the place ",
+      "-Transportation from hotel Back and forward",
     ],
     titleRight: "Tour Info",
     hour: "Estimated Tour Time 2 to 3  hours",
@@ -119,7 +129,11 @@ export const dataTours = {
     titleLeft: "What includes",
     textTitleLeft: "textTitleLeft",
     textleft: [
-      "-Water","-Fruits","-Bilingual Tour Guide","-Entrance to the place","-Transportation from hotel Back and forward",
+      "-Water",
+      "-Fruits",
+      "-Bilingual Tour Guide",
+      "-Entrance to the place",
+      "-Transportation from hotel Back and forward",
     ],
     titleRight: "Tour Info",
     hour: "Estimated Tour Time 3 to 4 hours ",
@@ -139,30 +153,40 @@ export const dataTours = {
   CombinationTours: {},
   Rafting: {
     backgroundImg: img.catarata_fortuna,
-    tituloPrincipalImg: "Rafting Tour",
+    tituloPrincipalImg: "White Water Rafting Tour",
     tituloSecondarioImg: "La Fortuna",
     tituloPrincipal: "Tour de Rafting clase  II y III ",
     textoPrincipal: [
-      `Your adventure begins with a brief from our professional guide who provides instructions and guidelines regarding the adventure. He or She will also advise on all the necessary safety procedures to be undertaken and adhered to. Part of this includes putting on the safety equipment. We have made your security our number one priority. Therefore, it is for this reason that we make available helmets and life jackets which you have to wear before setting out on the trip.
-      The guide then takes everyone through their paces, practicing and familiarizing themselves with all the necessary procedures. Then, your own adventure can begin.
-      On this 10-km tour, you can set out together with family and friends, creating beautiful memories that you can recall. While you're out, you may take in the sights as you navigate the bank rapids. The Class II and III are considered as intermediate rapids with medium-sized waves.
-      White water rafting in this part of Costa Rica will give you the best rafting experience. The rivers are ideal for water rafting as they maintain a suitable level through the course of the year; accompanied with good waves and challenging rapids. 
-      Also, our tours are designed to help you feel closer to nature. With the journey through the rainforest, you will be able to see many wildlife animals in their natural habitats. The Costa Rican landscapes are incredibly beautiful and the sights are sure to stay with you for a long time. 
-      Adventure and nature are ideally combined, don't you think? 
-      Lastly, your adventure is not complete until you've had a taste of the native delicacies. As you adventure down the river, we offer tropical fruits and a delicious lunch which is served at a special site to give you a complete experience.
-      To enjoy this ride and a view of a lifetime, book a space on our rafting class II & III tour right away.
+      `Your adventure begins with a brief from our professional guide who provides
+      instructions and guidelines regarding the adventure.
+      On this 10-km tour, you can set out together with family and friends, creating 
+      beautiful memories that you can recall. While you're out, you may take in the
+      sights as you navigate the bank rapids. The Class II and III are considered as
+      intermediate rapids with medium-sized waves.
+      White water rafting in this part of Costa Rica will give you the best rafting 
+      experience. The rivers are ideal for water rafting as they maintain a suitable 
+      level through the course of the year. Also, our tours are designed to help you feel
+      closer to nature. With the journey through the rainforest, you will be able to see many
+      wildlife animals in their natural habitats. Lastly, your adventure is not complete until
+      you've had a taste of the native delicacies. 
+      As you adventure down the river, we offer tropical fruits and a delicious lunch which is served
+      at a special site to give you a complete experience. To enjoy this ride and a view of a lifetime,
+      book a space on our rafting class II & III tour right away.
       `,
     ],
     tituloCards: "About the Tour",
     titleLeft: "What includes",
     textTitleLeft: "textTitleLeft",
     textleft: [
-    "-Water"," -Fruits -Bilingual Tour Guide -Towells -Lunch ","-Transportation from hotel Back and forward",
-    "Additional Tour Info ❗❗",
-    "✔ River Length: 10 km (6.2mi)",
-    "✔ River Difficulty: Class II & III",
-    "✔ Knowledgeable and certified guides.",
-    "✔ Children must weigh at least 50 pounds to participate.", "🔴NOTE: Tour depends on the quality of the weather.In rare cases of poor weather, a tour may be rescheduled or refunded fully depending on your decision" 
+      "-Water",
+      " -Fruits -Bilingual Tour Guide -Towells -Lunch ",
+      "-Transportation from hotel Back and forward",
+      "Additional Tour Info ❗❗",
+      "✔ River Length: 10 km (6.2mi)",
+      "✔ River Difficulty: Class II & III",
+      "✔ Knowledgeable and certified guides.",
+      "✔ Children must weigh at least 50 pounds to participate.",
+      "🔴NOTE: Tour depends on the quality of the weather.In rare cases of poor weather, a tour may be rescheduled or refunded fully depending on your decision",
     ],
     titleRight: "Tour Info",
     hour: "Estimated Tour Time 6 hours ",
@@ -195,7 +219,11 @@ export const dataTours = {
     titleLeft: "What includes",
     textTitleLeft: "textTitleLeft",
     textleft: [
-      "-Water","-Fruits","-Bilingual Tour Guide","-Entrance to the place","-Transportation from hotel Back and forward",
+      "-Water",
+      "-Fruits",
+      "-Bilingual Tour Guide",
+      "-Entrance to the place",
+      "-Transportation from hotel Back and forward",
     ],
     titleRight: "Tour Info",
     hour: "Estimated Tour Time 3 to 4 hours ",
