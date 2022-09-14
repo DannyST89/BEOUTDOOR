@@ -1,13 +1,12 @@
 import React from "react";
 import styles from "../../../styles/components/index/_FrequentlyAskedQuestions.module.scss";
-import { frequentlyAsked } from "../data/data";
 
 export const FrequentlyAskedQuestions = () => {
   return (
     <div className={`container accordion accordion-flush ${styles["questions__content"]}`} id="accordionFlushExample">
       <div className={styles["questions__title"]}>
       <h2 >Frequent Asked Questions</h2>
-        <span></span>
+        <span className={styles["span__yellow__line"]}></span>
       </div>     
       <div className="accordion-item">
         <h2 className="accordion-header" id="flush-headingOne">
