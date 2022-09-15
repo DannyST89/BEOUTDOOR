@@ -248,7 +248,7 @@ export const dataTours = {
     ],
   },
   Safari: {
-    backgroundImg: images.safari06,
+    backgroundImg: images.safari01,
     tituloPrincipalImg: "Safari Tour ",
     tituloSecondarioImg: "La Fortuna",
     tituloPrincipal: "Safari Tour",
