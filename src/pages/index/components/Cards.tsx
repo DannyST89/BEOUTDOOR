@@ -1,4 +1,8 @@
 import { useState } from 'react'
+import { FaHiking, FaWpexplorer } from 'react-icons/fa';
+import { GiHiking, GiMountainRoad, GiRiver } from 'react-icons/gi';
+import { MdKayaking, MdNaturePeople } from 'react-icons/md';
+import { TbKayak } from 'react-icons/tb';
 import * as images from '../../../assets/images/Images';
 import { Button } from '../../../components/Button/Button';
 
@@ -24,7 +28,11 @@ export const Cards = () => {
                         <div className="blog-slider__content">
                             <div className='blog-slider__content-content'>
                                 <div className="blog-slider__title animate-charcter"><h1>Adventure</h1></div>
-                                <span className="blog-slider__code">{`${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`}</span>
+                                <div className="blog-slider__code">
+                                    <span className="cards__icons">{<GiRiver />}</span>                                   
+                                    <span className="cards__icons">{<MdKayaking />}</span>                                   
+                                    <span className="cards__icons">{<TbKayak />}</span>                                   
+                                </div>
 
                                 <div className="blog-slider__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum recusandae doloremque, magnam officiis ipsum
@@ -39,7 +47,7 @@ export const Cards = () => {
             </div>
 
 
-            <div className="blog-slider wow animate__animated animate__fadeInRight">
+            <div className="blog-slider wow animate__animated animate__fadeInRight">wal
                 <div className="blog-slider__wrp swiper-wrapper">
                     <div className="blog-slider__item swiper-slide animate__animated animate__fadeIn">
 
@@ -57,7 +65,12 @@ export const Cards = () => {
                         <div className="blog-slider__content secondCardContent">
                             <div className='blog-slider__content-content'>
                                 <div className="blog-slider__title animate-charcter"><h1>Hikings</h1></div>
-                                <span className="blog-slider__code">{`${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`}</span>
+                                <div className="blog-slider__code">
+                                    <span className="cards__icons">{<FaHiking />}</span>
+                                    <span className="cards__icons">{<FaWpexplorer />}</span>
+                                    <span className="cards__icons">{<MdNaturePeople />}</span>
+                                    <span className="cards__icons">{<GiMountainRoad />}</span>
+                                </div>
 
                                 <div className="blog-slider__text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum recusandae doloremque, magnam officiis ipsum
