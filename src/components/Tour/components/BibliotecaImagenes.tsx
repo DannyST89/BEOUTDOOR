@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Modal, ModalBody, ModalHeader } from 'reactstrap';
 import styles from '../../../styles/components/Tours/_BibliotecaImg.module.scss'
+import { ModalImages } from '../../Modal/ModalImages';
 
 type images = {
     img: string[]
@@ -36,14 +37,7 @@ export const BibliotecaImagenes = ({ img }: images) => {
             </div>
 
             {/* modal para el uso de la galeria para verla la imagen mas completa */}
-            <Modal size="xl" centered isOpen={modal} toggle={toggle} className="modal-contentGallery">
-                <ModalHeader toggle={toggle}></ModalHeader>
-                <ModalBody>
-                    <div className="modalImage">
-                        <img src={url} alt="" />
-                    </div>
-                </ModalBody>
-            </Modal>
+           <ModalImages urlImage={url} modalActive={modal}/>
         </div>
     )
 }

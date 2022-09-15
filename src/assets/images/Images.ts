@@ -48,6 +48,11 @@ export { default as rafting7 } from '../../assets/images/Tour_Rafting/rafting07.
 // Images tour hanging bridges
 export { default as hangingBridges01 } from '../../assets/images/Tour_hanging_bridges/hangingbridges03.webp'
 export { default as hangingBridges02 } from '../../assets/images/Tour_hanging_bridges/hanging_bridges02.jpg'
+export { default as hangingBridges03 } from '../../assets/images/Tour_hanging_bridges/hanging_bridges03.jpg'
+export { default as hangingBridges04 } from '../../assets/images/Tour_hanging_bridges/hanging_bridges04.jpg'
+export { default as hangingBridges05 } from '../../assets/images/Tour_hanging_bridges/hanging_bridges05.jpg'
+export { default as hangingBridges06 } from '../../assets/images/Tour_hanging_bridges/hanging_bridges06.jpg'
+export { default as hangingBridges07 } from '../../assets/images/Tour_hanging_bridges/hanging_bridges07.jpg'
 
 
 // Images Casa Sunrise

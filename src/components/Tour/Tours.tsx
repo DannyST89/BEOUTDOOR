@@ -66,7 +66,7 @@ export const Tours = () => {
       <div className={styles.Padre_sample_header} >
         <div
           className={styles.sample_header}
-          //style={{ 'backgroundImage': `url(${tourBase?.backgroundImg})` }}
+        //style={{ 'backgroundImage': `url(${tourBase?.backgroundImg})` }}
         >
           <img src={`${tourBase?.backgroundImg}`} alt={tourBase?.tituloPrincipal} />
           <div className={styles.sample_header_section}>
@@ -87,7 +87,7 @@ export const Tours = () => {
           {
             tourBase?.textoPrincipal != undefined
             &&
-            tourBase?.textoPrincipal.map((item,index) => (
+            tourBase?.textoPrincipal.map((item, index) => (
               <p key={`${item.split(' ').length}.${item.length}${index}`}
               >{item}</p>
             ))
@@ -95,12 +95,12 @@ export const Tours = () => {
 
         </div>
 
-        
-        <TextCards  {...tourBase} />   
-        
+
+        <TextCards  {...tourBase} /> 
+
         <BibliotecaImagenes img={tourBase?.bibliotecaImg != undefined ? tourBase?.bibliotecaImg : []} />
-        
-            
+
+
       </div>{/* fin de base de informacion central */}
 
     </div>
