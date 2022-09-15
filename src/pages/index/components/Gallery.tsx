@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
+import { ModalImages } from "../../../components/Modal/ModalImages";
 import {
   galleryAll,
   galleryMamals,
@@ -102,21 +103,8 @@ export const Gallery = () => {
         </div>
       </section>
 
-      {/* modal para el uso de la galeria para verla la imagen mas completa */}
-      <Modal
-        size="xl"
-        centered
-        isOpen={modal}
-        toggle={toggle}
-        className="modal-contentGallery"
-      >
-        <ModalHeader toggle={toggle}></ModalHeader>
-        <ModalBody>
-          <div className="modalImage">
-            <img src={url} alt="" />
-          </div>
-        </ModalBody>
-      </Modal>
+      <ModalImages urlImage={url} modalActive={modal}/>
+ 
     </div>
   );
 };

@@ -145,10 +145,13 @@
 }
 
 .modal-contentGallery {
-    justify-content: center; 
+    justify-content: center;  
     .modal-content {
         background-color: rgba(0, 0, 0, 0.01); 
+        
         width: auto; 
+        
+        max-width: 1200px;
         @media screen and (max-width: 576px) {
             padding-left: 10px;
             padding-right: 10px;
@@ -162,6 +165,9 @@
 }
 .modal-header {
     max-width: 100%; 
+
+    width: auto;
+
     .btn-close { 
         margin-bottom: 1rem;
         background-color: #fff;
@@ -174,8 +180,11 @@
 .modal-body { 
     max-width: 100%; 
     display: flex;
-    justify-content: center; 
-    min-width: 100px;
+    justify-content: center;  
+    width: 100%;
+    
+    width: auto;
+
     @media screen and (max-width: 576px) {
         justify-content: flex-start;
     }
@@ -186,14 +195,13 @@
     max-width: 100%; 
     display: flex;
     justify-content: center;
+    width: auto; 
     img {
         max-height: 100%;
         max-width: 100%;  
-        object-fit: cover; //cover, contain, fill, none, scale-down
-    }
-    // @media screen and (max-width: 992px) {
-    //     max-height: 85vh;
-    // }
+        //object-fit: cover; //cover, contain, fill, none, scale-down 
+        width: auto;
+    } 
 }
 
 //MANEJO DE EL TEXTO DE LA IMAGEN

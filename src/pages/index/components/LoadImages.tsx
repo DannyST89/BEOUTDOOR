@@ -9,7 +9,7 @@ export const LoadImages = (value:GalleryProps[]) => {
     const animate = ["animate__fadeInDown", "animate__fadeInLeft","animate__fadeInRight","animate__fadeInUp","animate__fadeInBottomLeft","animate__fadeInBottomRight"]; 
      
     return (
-        <div className="containerGallery "  >
+        <div className="containerGallery">
             {
                 arrayImages.map((item, index) => (
                     <div
