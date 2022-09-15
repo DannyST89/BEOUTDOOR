@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import React, { useState } from "react";
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import DescriptionCard from "./DescriptionCard";
+import { ModalImages } from "../../../components/Modal/ModalImages";
 
 const sliderData = [
     images.house1,
@@ -20,7 +21,7 @@ const sliderData = [
 export const CarouselHome = () => {
 
 
-    console.log(sliderData.length)
+    const [url, setUrl] = useState('')
 
     const [urlImage, setUrlImage] = useState(sliderData[0]);
 
@@ -30,6 +31,7 @@ export const CarouselHome = () => {
 
     const openModal = (url: string) => {
         setUrlImage(url);
+        setUrl(url)
         toggle();
     }
 
@@ -89,14 +91,7 @@ export const CarouselHome = () => {
             </div>
 
             {/* modal para el uso de la galeria para verla la imagen mas completa */}
-            <Modal size="xl" centered isOpen={modal} toggle={toggle} className="modal-contentGallery">
-                <ModalHeader toggle={toggle}></ModalHeader>
-                <ModalBody>
-                    <div className="modalImage">
-                        <img src={urlImage} alt="" />
-                    </div>
-                </ModalBody>
-            </Modal>
+            <ModalImages urlImage={url} modalActive={modal}/>
 
             {/* aqui se coloca para cuando se haga el responsive aparezca
             la informacion importante antes que el aside 
