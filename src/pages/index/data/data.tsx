@@ -3,11 +3,9 @@ import { BsArrowRightShort } from "react-icons/bs";
 import * as images from "../../../assets/images/Images";
 
 //---------------------------------------------------------Informacion de la galeria------------------------------------------------------
-
-import React from "react";
-
+ 
 //esto es para cargar la nevegacion de la galeria de imagenes
-export const navGallery = ['All', 'Lizard', 'Snake']
+export const navGallery = ['All', 'Mamals', 'Frogs','Birds','Snakes','Insects']
 
 //los types para cargar las imagnes y su informacion
 export type GalleryProps = {
@@ -18,36 +16,37 @@ export type GalleryProps = {
 }
 
 //las zonas de la galeria
-export const galleryLizard: GalleryProps[] = [
-    {
-        urlImage: 'https://source.unsplash.com/random/4',
-        title: 'Title',
-        description: 'description',
-    }, {
-        urlImage: 'https://source.unsplash.com/random/5',
-        title: 'Title',
-        description: 'description',
-    }, {
-        urlImage: 'https://source.unsplash.com/random/6',
-        title: 'title',
-        description: 'description',
-    }
-];
-
+//Galeria de All
 export const galleryAll: GalleryProps[] = [
+  {
+      urlImage: 'https://source.unsplash.com/random/1',
+      title: 'Title',
+      description: 'description',
+  }, {
+      urlImage: 'https://source.unsplash.com/random/2',
+      title: 'Title',
+      description: 'description',
+  }, {
+      urlImage: 'https://source.unsplash.com/random/3',
+      title: 'title',
+      description: 'description',
+  }, {
+      urlImage: 'https://source.unsplash.com/random/4',
+      title: 'Title',
+      description: 'description',
+  }, {
+      urlImage: 'https://source.unsplash.com/random/5',
+      title: 'Title',
+      description: 'description',
+  }, {
+      urlImage: 'https://source.unsplash.com/random/6',
+      title: 'title',
+      description: 'description',
+  }
+];
+//Galeria de mamals
+export const galleryMamals: GalleryProps[] = [
     {
-        urlImage: 'https://source.unsplash.com/random/1',
-        title: 'Title',
-        description: 'description',
-    }, {
-        urlImage: 'https://source.unsplash.com/random/2',
-        title: 'Title',
-        description: 'description',
-    }, {
-        urlImage: 'https://source.unsplash.com/random/3',
-        title: 'title',
-        description: 'description',
-    }, {
         urlImage: 'https://source.unsplash.com/random/4',
         title: 'Title',
         description: 'description',
@@ -60,9 +59,41 @@ export const galleryAll: GalleryProps[] = [
         title: 'title',
         description: 'description',
     }
-];
-
-export const gallerySnake: GalleryProps[] = [
+]; 
+//Galeria de Frogs
+export const galleryFrogs: GalleryProps[] = [
+  {
+      urlImage: 'https://source.unsplash.com/random/4',
+      title: 'Title',
+      description: 'description',
+  }, {
+      urlImage: 'https://source.unsplash.com/random/5',
+      title: 'Title',
+      description: 'description',
+  }, {
+      urlImage: 'https://source.unsplash.com/random/6',
+      title: 'title',
+      description: 'description',
+  }
+]; 
+//Galeria de birds
+export const galleryBirds: GalleryProps[] = [
+  {
+      urlImage: 'https://source.unsplash.com/random/4',
+      title: 'Title',
+      description: 'description',
+  }, {
+      urlImage: 'https://source.unsplash.com/random/5',
+      title: 'Title',
+      description: 'description',
+  }, {
+      urlImage: 'https://source.unsplash.com/random/6',
+      title: 'title',
+      description: 'description',
+  }
+]; 
+//Galeria de Snakes
+export const gallerySnakes: GalleryProps[] = [
     {
         urlImage: 'https://source.unsplash.com/random/1',
         title: 'Title',
@@ -77,6 +108,25 @@ export const gallerySnake: GalleryProps[] = [
         description: 'description',
     }
 ];
+//Galeria de birds
+export const galleryInsects: GalleryProps[] = [
+  {
+      urlImage: 'https://source.unsplash.com/random/4',
+      title: 'Title',
+      description: 'description',
+  }, {
+      urlImage: 'https://source.unsplash.com/random/5',
+      title: 'Title',
+      description: 'description',
+  }, {
+      urlImage: 'https://source.unsplash.com/random/6',
+      title: 'title',
+      description: 'description',
+  }
+]; 
+
+
+//--------------------------------------Componenten Frecuently questions------------------------------
 export type accordionProps = {
     question: string,
     answer: string,
