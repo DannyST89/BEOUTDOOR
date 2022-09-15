@@ -226,10 +226,15 @@
     }
 
     &__code {
-        color: #7b7992;
+        color: #383b6e;
         margin-bottom: 15px;
         display: block;
         font-weight: 500;
+        font-size: 2rem;
+        padding: 0.5rem;
+        .cards__icons {
+            padding: 1rem;
+        }
     }
 
     &__title {
