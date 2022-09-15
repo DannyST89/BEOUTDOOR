@@ -10,7 +10,7 @@ export { default as volcanArenal07 } from '../../assets/images/Tour_Caminata_vol
 export { default as volcanArenal08 } from '../../assets/images/Tour_Caminata_volcan/arenalHike08.jpg'
 
 // Images tour Rio Celeste
-export { default as rioCeleste01 } from '../../assets/images/Tour_Rio_Celeste/rioCeleste01.webp'
+export { default as rioCeleste01 } from '../../assets/images/Tour_Rio_Celeste/rioCeleste14.webp'
 export { default as rioCeleste02 } from '../../assets/images/Tour_Rio_Celeste/rioCeleste02.jpg'
 export { default as rioCeleste03 } from '../../assets/images/Tour_Rio_Celeste/rioCeleste03.jpg'
 export { default as rioCeleste04 } from '../../assets/images/Tour_Rio_Celeste/rioCeleste04.jpg'
@@ -26,7 +26,7 @@ export { default as rioCeleste13 } from '../../assets/images/Tour_Rio_Celeste/ri
 
 
 // Images tour safari
-export { default as safari01 } from '../../assets/images/Tour_Safari/safari01.jpeg'
+export { default as safari01 } from '../../assets/images/Tour_Safari/safari07.webp'
 export { default as safari02 } from '../../assets/images/Tour_Safari/safari02.jpeg'
 export { default as safari03 } from '../../assets/images/Tour_Safari/safari03.jpg'
 export { default as safari04 } from '../../assets/images/Tour_Safari/safari04.jpg'
@@ -46,7 +46,7 @@ export { default as rafting7 } from '../../assets/images/Tour_Rafting/rafting07.
 
 
 // Images tour hanging bridges
-export { default as hangingBridges01 } from '../../assets/images/Tour_hanging_bridges/hanging_bridges01.jpg'
+export { default as hangingBridges01 } from '../../assets/images/Tour_hanging_bridges/hangingbridges03.webp'
 export { default as hangingBridges02 } from '../../assets/images/Tour_hanging_bridges/hanging_bridges02.jpg'
 export { default as hangingBridges03 } from '../../assets/images/Tour_hanging_bridges/hanging_bridges03.jpg'
 export { default as hangingBridges04 } from '../../assets/images/Tour_hanging_bridges/hanging_bridges04.jpg'
@@ -101,7 +101,7 @@ export { default as mamal03} from'../../assets/images/imagenes_Gallery_index/mam
 
 
 // Images tour catarata la fortuna
-export { default as catarata_fortuna01} from'../../assets/images/Tour_catara_La_Fortuna/catarata01.jpg'
+export { default as catarata_fortuna01} from'../../assets/images/Tour_catara_La_Fortuna/catarata10.webp'
 export { default as catarata_fortuna02} from'../../assets/images/Tour_catara_La_Fortuna/catarata02.jpg'
 export { default as catarata_fortuna03} from'../../assets/images/Tour_catara_La_Fortuna/catarata03.jpeg'
 export { default as catarata_fortuna04} from'../../assets/images/Tour_catara_La_Fortuna/catarata04.webp'
