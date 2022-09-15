@@ -6,6 +6,7 @@ import "../../../styles/components/contactUs/_Formulario.scss";
 import Swal from "sweetalert2";
 import { ContactInfo } from "./ContactInfo";
 import { useParams } from "react-router-dom";
+import * as images from "../../../assets/images/Images";
 
 type message = {
   message: string;
@@ -133,7 +134,7 @@ export const Formulario = ({message}:message) => {
           <div className="left-col">
             <img
               className="logoForm"
-              src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/logo.png"
+              src={images.rioCeleste01}
             />
           </div>
 

@@ -45,7 +45,7 @@ export const Cards = () => {
 
                         <div className="blog-slider__img secondCardImage">
                             <div className="cardIndex">
-                                <img src={images.hikings2} className="card-img rounded" alt="Fortuna Waterfall" />
+                                <img src={images.catarata_fortuna08} className="card-img rounded" alt="Fortuna Waterfall" />
                                 <div className="card-img-overlay blog-slider__card">
                                     <h1 className="card-title tituloImageCard ">It's Not The Mountain We Conquer</h1>
                                     <p className="card-text textImageCard">But Ourselves</p>
