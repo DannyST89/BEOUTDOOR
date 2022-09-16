@@ -236,7 +236,7 @@ export const  frequentlyAsked: accordionProps[]  = [
       id: 6,
       title: "Tubing Rio Celeste",
       price: " 130",
-      info: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam sint",
+      info: "This is  a different way for those who like to live different and unforgettable experiences all in one day",
       dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
       urlImage: images.tubing3,
       hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
