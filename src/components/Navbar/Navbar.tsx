@@ -77,16 +77,13 @@ export const Navbar = () => {
                     <a className='nav-link btn' href="/BEOUTDOOR/About">About</a>
                   </li>
                   <li data-bs-dismiss="offcanvas" className='nav-item'>
-                    {/* <Button
+                    <Button
                       className='nav-link'
                       redirection="ContactUs/newMessage"
                       text="Contact us"
                       scrollTop={true}
-                    ></Button> */}
-                    <a className='nav-link btn' href="/BEOUTDOOR/ContactUs/newMessage">Contact us</a>
-                    <a className='nav-link btn' href="/ContactUs/newMessage">Contact us</a>
-                    <a className='nav-link btn' href="/ContactUs">Contact us</a>
-                    <a className='nav-link btn' href="ContactUs">Contact us</a>
+                    ></Button>
+                    <a className='nav-link btn' href="/BEOUTDOOR/ContactUs/newMessage">Contact us</a> 
                   </li>
                   
                   <li data-bs-dismiss="offcanvas" className="nav-item">
