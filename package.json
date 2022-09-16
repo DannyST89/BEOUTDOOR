@@ -1,14 +1,12 @@
 {
   "name": "beoutdoors",
+  "homepage": "https://beoutdoorcr.com/",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "build": "tsc && vite build"
   },
-  "homepage": "https://beoutdoorcr.com/",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "animate.css": "^4.1.1",
