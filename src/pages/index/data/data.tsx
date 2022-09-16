@@ -1,5 +1,6 @@
 import { BiDollar, BiMap, BiTimeFive } from "react-icons/bi";
 import { BsArrowRightShort } from "react-icons/bs";
+
 import * as images from "../../../assets/images/Images";
 
 //---------------------------------------------------------Informacion de la galeria------------------------------------------------------
