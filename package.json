@@ -8,6 +8,7 @@
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://beoutdoorcr.com/",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "animate.css": "^4.1.1",
