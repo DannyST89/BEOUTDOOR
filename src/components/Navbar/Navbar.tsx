@@ -83,7 +83,8 @@ export const Navbar = () => {
                       text="Contact us"
                       scrollTop={true}
                     ></Button>
-                    <a className='nav-link btn' href="/BEOUTDOOR/ContactUs/newMessage">Contact us</a> 
+                    <Link to={'/BEOUTDOOR/ContactUs/'} >Contact US</Link>
+                    {/* <a className='nav-link btn' href="/BEOUTDOOR/ContactUs/">Contact us</a>  */}
                   </li>
                   
                   <li data-bs-dismiss="offcanvas" className="nav-item">
