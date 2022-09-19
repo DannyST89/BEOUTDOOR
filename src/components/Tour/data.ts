@@ -186,12 +186,12 @@ export const dataTours = {
     price: "130$ per person",
     shop: "Sunscreen, Repellent, Proper hiking shoes , Water Shoes, Raincoat, Camera, Changing clothes.",
     bibliotecaImg: [
-      images.hangingBridges02,
-      images.hangingBridges03,
-      images.hangingBridges04,
-      images.hangingBridges05,
-      images.hangingBridges06,
-      images.hangingBridges07,
+      images.rioCeleste13,
+      images.tubing1,
+      images.rioCeleste09,
+      images.tubing2,
+      images.rioCeleste11,
+      images.rioCeleste12,
     ],
   },
   Rafting: {
