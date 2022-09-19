@@ -5,10 +5,10 @@ import { MdOutlineEmail } from 'react-icons/md'
 export const ContactInfo = () => {
     return (
         <div className='contactInfoPadre'>
-            <h1 className='h1FormInfo  wow animate__animated animate__fadeInDown'>Informacion De Contacto</h1>
+            <h1 className='h1FormInfo animate__animated animate__fadeInDown'>Informacion De Contacto</h1>
             <div className='contactInfo'>
 
-                <div className="contactInfo__section wow animate__animated animate__fadeInUp">
+                <div className="contactInfo__section animate__animated animate__fadeInUp">
                     <BsWhatsapp size={'50px'} color={'GREEN'} />
                     <p className='contactInfo__section-text'>
 
@@ -20,7 +20,7 @@ export const ContactInfo = () => {
                     </p>
                 </div>
 
-                <div className="contactInfo__section wow animate__animated animate__fadeInUp">
+                <div className="contactInfo__section animate__animated animate__fadeInUp">
                     <MdOutlineEmail size={'50px'} />
                     <p className='contactInfo__section-text'>
                         Email: <a href="mailto:correo@correo.com" >email@gmail.com</a>

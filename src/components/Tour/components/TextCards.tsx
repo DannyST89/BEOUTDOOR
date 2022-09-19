@@ -1,13 +1,14 @@
-import React , { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import styles from '../../../styles/components/Tours/Tours.module.scss'
 import { GiBackwardTime } from 'react-icons/gi'
-import { BsCardList,BsChatText,BsCalendar4Event } from 'react-icons/bs'
+import { BsCardList, BsChatText, BsCalendar4Event } from 'react-icons/bs'
 import { BiTimeFive } from 'react-icons/bi'
 import { RiShoppingBasketLine } from 'react-icons/ri'
-import { IoLogoUsd } from 'react-icons/io'  
-import { AiOutlineInfoCircle } from 'react-icons/ai'  
+import { IoLogoUsd } from 'react-icons/io'
+import { AiOutlineInfoCircle } from 'react-icons/ai'
 import { Button } from '../../Button/Button'
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 type tour = {
     backgroundImg?: string,
@@ -28,16 +29,16 @@ type tour = {
     bibliotecaImg?: string[]
 }
 
-export const TextCards = React.memo((tourBase:tour) => { 
-     
-    var arrayRight = [tourBase?.time, tourBase?.description, tourBase?.hour, tourBase?.price, tourBase?.shop]; 
+export const TextCards = React.memo((tourBase: tour) => {
+
+    var arrayRight = [tourBase?.time, tourBase?.description, tourBase?.hour, tourBase?.price, tourBase?.shop];
 
     const iconos = [
-      <GiBackwardTime />,
-      <BsCardList />,
-      <BiTimeFive />,
-      <IoLogoUsd />,
-      <RiShoppingBasketLine />,
+        <GiBackwardTime />,
+        <BsCardList />,
+        <BiTimeFive />,
+        <IoLogoUsd />,
+        <RiShoppingBasketLine />,
     ]
 
     return (
@@ -52,20 +53,21 @@ export const TextCards = React.memo((tourBase:tour) => {
                         {tourBase?.titleLeft}
                     </div>
 
-                    <div className={`${styles.textCard}  wow animate__animated animate__fadeInLeft`}>
-                        <h1>{tourBase?.textTitleLeft}</h1>
+                    <AnimationOnScroll animateIn='animate__fadeInLeft'>
+                        <div className={`${styles.textCard} `}>
+                            <h1>{tourBase?.textTitleLeft}</h1>
 
-                        {
-                            tourBase?.textleft != undefined
-                            &&
-                            tourBase?.textleft.map((item,index) => (
-                                <p
-                                    key={`${item.split(' ').length}.${item.length}${index}`}
-                                >{item}</p>
-                            ))
-                        }
-                    </div>
-
+                            {
+                                tourBase?.textleft != undefined
+                                &&
+                                tourBase?.textleft.map((item, index) => (
+                                    <p
+                                        key={`${item.split(' ').length}.${item.length}${index}`}
+                                    >{item}</p>
+                                ))
+                            }
+                        </div>
+                    </AnimationOnScroll>
                 </div>
 
                 {/* seccion de la zona derecha */}
@@ -80,29 +82,33 @@ export const TextCards = React.memo((tourBase:tour) => {
                         iconos.map((item, Index) => {
 
                             return (
-                                <div
-                                    key={Index}
-                                    className={`${styles.textCard} ${styles.division} wow animate__animated animate__fadeInRight`}>
-                                    {item}
-                                    <p>{arrayRight[Index]}</p>
-                                </div>
+                                <AnimationOnScroll animateIn='animate__fadeInRight'>
+                                    <div
+                                        key={Index}
+                                        className={`${styles.textCard} ${styles.division} `}>
+                                        {item}
+                                        <p>{arrayRight[Index]}</p>
+                                    </div>
+                                </AnimationOnScroll>
                             )
                         })
                     }
-                    <div className={`${styles.textCard} ${styles.division} wow animate__animated animate__fadeInRight`}>
-                        <BsCalendar4Event />
+                    <AnimationOnScroll animateIn='animate__fadeInRight'>
+                        <div className={`${styles.textCard} ${styles.division}`}>
+                            <BsCalendar4Event />
 
-                        <Button 
-                        className={`${styles.buttonCard}`}
-                        redirection={`ContactUs/${tourBase?.tituloPrincipalImg}`} 
-                        text="Contact" 
-                        scrollTop={true} 
-                        />
+                            <Button
+                                className={`${styles.buttonCard}`}
+                                redirection={`ContactUs/${tourBase?.tituloPrincipalImg}`}
+                                text="Contact"
+                                scrollTop={true}
+                            />
 
-                    </div>
+                        </div>
+                    </AnimationOnScroll>
                 </div>
             </div>
-            {/*Fin de las secciones*/ }
+            {/*Fin de las secciones*/}
         </div>
-  )
+    )
 })
