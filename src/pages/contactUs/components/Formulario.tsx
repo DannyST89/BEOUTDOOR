@@ -5,14 +5,14 @@ import { useState } from "react";
 import "../../../styles/components/contactUs/_Formulario.scss";
 import Swal from "sweetalert2";
 import { ContactInfo } from "./ContactInfo";
-import { useParams } from "react-router-dom";
 import * as images from "../../../assets/images/Images";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 type message = {
   message: string;
 }
 
-export const Formulario = ({message}:message) => {
+export const Formulario = ({ message }: message) => {
   //botonCheck para cambiar del theme de la pagina
   const [checked, setchecked] = useState(false);
 
@@ -126,7 +126,7 @@ export const Formulario = ({message}:message) => {
   };
 
 
-  
+
   return (
     <div className="">
       <div className={`contact-container`} id={`${checked && "darkThemeForm"}`}>
@@ -139,34 +139,37 @@ export const Formulario = ({message}:message) => {
           </div>
 
           <div className="right-col">
-            <div className="theme-switch-wrapper animationLeft">
-              <Label className="theme-switch" for="checkbox">
-                <Input
-                className="inputForm"
-                  checked={checked}
-                  onChange={() => {
-                    setchecked(!checked);
-                  }}
-                  type="checkbox"
-                  id="checkbox"
-                />
-                <div className="slider round"></div>
-              </Label>
-              <div className="description">Dark Mode</div>
-            </div>
+             
+              <div className="theme-switch-wrapper animate__animated animate__fadeIn">
+                <Label className="theme-switch" for="checkbox">
+                  <Input
+                    className="inputForm"
+                    checked={checked}
+                    onChange={() => {
+                      setchecked(!checked);
+                    }}
+                    type="checkbox"
+                    id="checkbox"
+                  />
+                  <div className="slider round"></div>
+                </Label>
+                <div className="description">Dark Mode</div>
+              </div>
+             
 
-            <h1 className="h1Form animationFadeInDown">Contact us</h1>
-            <p className="textForm animationFadeInDown">
+
+            <h1 className="h1Form animate__animated animate__fadeInDown">Contact us</h1>
+            <p className="textForm animate__animated animate__fadeInDown">
               Planning to visit La Fortuna soon? Get insider tips on where to go,
               things to do and find best deals for your next adventure.
             </p>
 
             <form onSubmit={onSubmit} id="contact-form" method="post">
-              <Label className="labelForm animationLeft" for="name">
+              <Label className="labelForm animate__animated animate__fadeInLeft" for="name">
                 Full name
               </Label>
               <Input
-                className="inputForm animationFadeInUp"
+                className="inputForm animate__animated animate__fadeInUp"
                 rows={6}
                 placeholder="Your Full Name"
                 id="name"
@@ -174,7 +177,7 @@ export const Formulario = ({message}:message) => {
                 type="text"
               />
 
-              <Label className="labelForm animationLeft" for="telephone">
+              <Label className="labelForm animate__animated animate__fadeInLeft" for="telephone">
                 Telephone
               </Label>
               <Input
@@ -186,7 +189,7 @@ export const Formulario = ({message}:message) => {
                 type="tel"
               />
 
-              <Label className="labelForm animationLeft" for="email">
+              <Label className="labelForm animate__animated animate__fadeInLeft" for="email">
                 Email
               </Label>
               <Input
@@ -198,7 +201,7 @@ export const Formulario = ({message}:message) => {
                 type="email"
               />
 
-              <Label className="labelForm animationLeft" for="message">
+              <Label className="labelForm animate__animated animate__fadeInLeft" for="message">
                 Message
               </Label>
               <Input
@@ -209,11 +212,11 @@ export const Formulario = ({message}:message) => {
                 name="message"
                 type="textarea"
                 value={message}
-                onChange={()=>{}}
+                onChange={() => { }}
               />
 
               <button
-                className="btnForm btn-flip animationFadeInUp"
+                className="btnForm btn-flip animate__animated animate__fadeInUp"
                 type="submit"
                 id="submit"
                 name="submit"
@@ -223,7 +226,7 @@ export const Formulario = ({message}:message) => {
             </form>
 
             <ContactInfo />
-            
+
           </div>
         </div>
       </div>

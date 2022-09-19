@@ -5,7 +5,7 @@ import { FaMountain, FaWifi } from "react-icons/fa";
 import { TbToolsKitchen2 } from "react-icons/tb";
 import { AiFillCar } from "react-icons/ai";
 import { BsSnow2 } from "react-icons/bs";
-
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const DescriptionCard = () => {
 
@@ -35,7 +35,8 @@ const DescriptionCard = () => {
   ]
 
   return (
-    <div className="containerCardHouse  wow animate__animated animate__fadeInLeft">
+    <AnimationOnScroll animateIn="animate__fadeInLeft">
+    <div className="containerCardHouse">
       <div className="col-lg-12 col-md-12 mt-5">
         <div className="card card-bordered">
           <div className="card-body">
@@ -87,6 +88,7 @@ const DescriptionCard = () => {
         </div>
       </div> 
     </div>
+    </AnimationOnScroll>
   );
 };
 

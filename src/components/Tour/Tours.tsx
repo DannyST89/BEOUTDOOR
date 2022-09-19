@@ -4,6 +4,7 @@ import styles from '../../styles/components/Tours/Tours.module.scss'
 import { dataTours } from './data'
 import { BibliotecaImagenes } from './components/BibliotecaImagenes'
 import { TextCards } from './components/TextCards'
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 type tour = {
   backgroundImg?: string,
@@ -70,7 +71,8 @@ export const Tours = () => {
         >
           <img src={`${tourBase?.backgroundImg}`} alt={tourBase?.tituloPrincipal} />
           <div className={styles.sample_header_section}>
-            <div className={styles.sample_header_text}>
+            
+            <div className={styles.sample_header_text}> 
               <h1 className='wow animate__animated animate__fadeIn'>{tourBase?.tituloPrincipalImg}</h1>
               <h2 className='wow animate__animated animate__fadeIn'>{tourBase?.tituloSecondarioImg}</h2>
             </div>
@@ -81,6 +83,7 @@ export const Tours = () => {
 
       {/* base central de la informacion */}
       <div className={styles.sample_section_wrap}>
+        
         <div className={`${styles.sample_section}  wow animate__animated animate__fadeInRight`}>
 
           <h1>{tourBase?.tituloPrincipal}</h1>

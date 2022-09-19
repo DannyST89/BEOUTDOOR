@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../../../styles/components/index/_ToursCarousel.scss";
 import React, { useEffect } from "react";
 import "../../../styles/components/index/_ToursCarousel.scss";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import { sliderData } from "../data/data";
 
@@ -49,65 +50,69 @@ export default function ToursCarousel() {
 
 
   return (
-    <div className="slide-container">
-      <h2 className="animationLeft">Popular Tours</h2>
-      <p className="animationLeft">Choose what you are the most passionate about and be part of it,<span>ARE YOU READY?</span></p>
+    <div className="slide-container"> 
+      <AnimationOnScroll animateIn="animate__bounceIn">
+        <h2 className="">Popular Tours</h2>
+        <p className="">Choose what you are the most passionate about and be part of it,<span>ARE YOU READY?</span></p>
+      </AnimationOnScroll>
 
-      <Slider {...settings} className='animationFade'>
-        {React.Children.toArray(
-          sliderData.map((item) => {
+      <AnimationOnScroll animateIn="animate__fadeInLeft">
+        <Slider {...settings} className=''>
+          {React.Children.toArray(
+            sliderData.map((item) => {
 
-            var direction = '';
+              var direction = '';
 
-            if (item.title.includes('Safari')) {
-              direction = 'Safari'
-            } else if (item.title.includes('Tubing')) {
-              direction = 'CombinationTours'
-            } else {
-              direction = item.title.replace(/\s+/g, '')
-            }
-            return (
-              <div className="">
-                <div className="tour-carousel-card-padre">
-                  <div className="tour-carousel-card">
-                    <div className="img-container">
-                      <img src={item.urlImage} alt="" />
-                    </div>
-
-                    <div className="details-container">
-                      <div className="title">
-                        <h2>{item.title}</h2>
+              if (item.title.includes('Safari')) {
+                direction = 'Safari'
+              } else if (item.title.includes('Tubing')) {
+                direction = 'CombinationTours'
+              } else {
+                direction = item.title.replace(/\s+/g, '')
+              }
+              return (
+                <div className="">
+                  <div className="tour-carousel-card-padre">
+                    <div className="tour-carousel-card">
+                      <div className="img-container">
+                        <img src={item.urlImage} alt="" />
                       </div>
-                      <div className="details-info">
-                        <span className="details-price">
-                          {item.dollarIcon}
-                          {item.price}
-                        </span>
-                        <span className="details-hour">
-                          {item.hoursIcon}
-                          {item.hours}
-                        </span>
-                        <span className="details-place">
-                          {item.placeIcon}
-                          {item.place}
-                        </span>
-                      </div>
-                      <span className="details-about">{item.info}</span>
-                      <div className="container__btn">
-                        <a
-                          href={direction} className="btn__carousel__tours"
-                        >
-                          READ MORE
-                        </a>
+
+                      <div className="details-container">
+                        <div className="title">
+                          <h2>{item.title}</h2>
+                        </div>
+                        <div className="details-info">
+                          <span className="details-price">
+                            {item.dollarIcon}
+                            {item.price}
+                          </span>
+                          <span className="details-hour">
+                            {item.hoursIcon}
+                            {item.hours}
+                          </span>
+                          <span className="details-place">
+                            {item.placeIcon}
+                            {item.place}
+                          </span>
+                        </div>
+                        <span className="details-about">{item.info}</span>
+                        <div className="container__btn">
+                          <a
+                            href={direction} className="btn__carousel__tours"
+                          >
+                            READ MORE
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            )
-          })
-        )}
-      </Slider>
+              )
+            })
+          )}
+        </Slider>
+      </AnimationOnScroll>
     </div>
   );
 }

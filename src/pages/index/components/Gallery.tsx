@@ -11,6 +11,7 @@ import {
   navGallery,
 } from "../data/data";
 import { LoadImages } from "./LoadImages";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export const Gallery = () => {
   const [navImages, setNavImages] = useState(0);
@@ -54,6 +55,7 @@ export const Gallery = () => {
 
   return (
     <div>
+      <AnimationOnScroll animateIn="animate__fadeInLeft">
       <div  className="container gallery__info">
         <h2 className="tituloGallery">La Fortuna's Biodiversity</h2>
         <p>
@@ -62,6 +64,7 @@ export const Gallery = () => {
         melody of great satisfaction to the heart
         </p>
       </div>
+      </AnimationOnScroll>
       {/* Navegacion para la seccion de galeria */}
       <nav className="containerNavBarGallery navbar navbar-expand-lg">
         <div className="container-fluid">

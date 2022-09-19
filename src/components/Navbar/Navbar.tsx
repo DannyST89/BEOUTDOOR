@@ -1,23 +1,10 @@
 import { Nav } from 'reactstrap';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Button } from '../Button/Button';
-import { adventures, hikings } from "../../data/navegacion";
-import { Link, NavLink } from 'react-router-dom';
-import { useEffect } from 'react';
+import { adventures, hikings } from "../../data/navegacion"; 
 
 
-export const Navbar = () => {
-
-  useEffect(() => {
-    //La creacion de todas las animaciones aqui porque es donde se 
-    //encunetra el padre, o la mayor autoridad en la aplicacion
-    ScrollReveal().reveal('.animationLeft', { mobile:true, distance: '150%', origin: 'left', opacity: 0, reset: true, duration: 900 });
-    ScrollReveal().reveal('.animationRight', { mobile:true, distance: '150%', origin: 'right', opacity: 0, reset: true, duration: 900 });
-    ScrollReveal().reveal('.animationFade', {mobile: false, reset: true, duration: 900 });
-    ScrollReveal().reveal('.animationFadeInUp', { mobile:true, distance: '150%', origin: 'bottom', opacity: 0, reset: true, duration: 900});
-    ScrollReveal().reveal('.animationFadeInDown', { mobile:true, distance: '150%', origin: 'top', opacity: 0, reset: true, duration: 900});
-  }, [])
-
+export const Navbar = () => {  
 
   return (
     <div className=''>
