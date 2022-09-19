@@ -94,6 +94,7 @@ export { default as frog03} from'../../assets/images/imagenes_Gallery_index/frog
 export { default as frog04} from'../../assets/images/imagenes_Gallery_index/frog04.webp'
 export { default as frog05} from'../../assets/images/imagenes_Gallery_index/frog05.webp'
 export { default as frog06} from'../../assets/images/imagenes_Gallery_index/frog06.webp'
+export { default as frog07} from'../../assets/images/imagenes_Gallery_index/frog07.jpg'
 //-- mamals
 export { default as mamal01} from'../../assets/images/imagenes_Gallery_index/mamals01.webp'
 export { default as mamal02} from'../../assets/images/imagenes_Gallery_index/mamals03.webp'

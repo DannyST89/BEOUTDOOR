@@ -70,9 +70,9 @@ export const galleryMamals: GalleryProps[] = [
 //Galeria de Frogs
 export const galleryFrogs: GalleryProps[] = [
   {
-      urlImage: images.frog02,
-      title: '',
-      description: '',
+      urlImage: images.frog07,
+      title: 'ghost glass frog',
+      description: 'sachatamia ilex',
   },
   {
       urlImage: images.frog06,
