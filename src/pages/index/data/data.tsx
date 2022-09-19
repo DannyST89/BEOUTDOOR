@@ -1,6 +1,5 @@
 import { BiDollar, BiMap, BiTimeFive } from "react-icons/bi";
 import { BsArrowRightShort } from "react-icons/bs";
-
 import * as images from "../../../assets/images/Images";
 
 //---------------------------------------------------------Informacion de la galeria------------------------------------------------------
@@ -20,109 +19,147 @@ export type GalleryProps = {
 //Galeria de All
 export const galleryAll: GalleryProps[] = [
   {
-      urlImage: 'https://source.unsplash.com/random/1',
-      title: 'Title',
-      description: 'description',
+      urlImage: images.frog06,
+      title: 'Masked TreeFrog',
+      description: 'Smilisca phaeota' ,
   }, {
-      urlImage: 'https://source.unsplash.com/random/2',
-      title: 'Title',
-      description: 'description',
+      urlImage: images.mamal02,
+      title: 'white-throated capuchin monkey',
+      description: 'Cebus capucinus',
   }, {
-      urlImage: 'https://source.unsplash.com/random/3',
-      title: 'title',
-      description: 'description',
+      urlImage: images.birds02,
+      title: 'Roadside hawk',
+      description: 'rupornis magnirostris',
   }, {
-      urlImage: 'https://source.unsplash.com/random/4',
-      title: 'Title',
-      description: 'description',
+      urlImage: images.snakes01,
+      title: 'Eyelash Pitaviper',
+      description: 'Bothriechis  schlegelii',
   }, {
-      urlImage: 'https://source.unsplash.com/random/5',
-      title: 'Title',
-      description: 'description',
+      urlImage: images.insects02,
+      title: 'Golden Orb Sider',
+      description: 'nephila clavipes',
   }, {
-      urlImage: 'https://source.unsplash.com/random/6',
-      title: 'title',
-      description: 'description',
+    urlImage: images.mamal03,
+    title: 'Brown-Throated tree-toed sloth',
+    description: 'Bradypus variegatus',
   }
 ];
 //Galeria de mamals
 export const galleryMamals: GalleryProps[] = [
     {
-        urlImage: 'https://source.unsplash.com/random/4',
-        title: 'Title',
-        description: 'description',
-    }, {
-        urlImage: 'https://source.unsplash.com/random/5',
-        title: 'Title',
-        description: 'description',
-    }, {
-        urlImage: 'https://source.unsplash.com/random/6',
-        title: 'title',
-        description: 'description',
-    }
+        urlImage: images.mamal01,
+        title: 'white nosed coati',
+        description: 'nasua narica',
+    },
+    {
+        urlImage: images.mamal02,
+        title: 'white-throated capuchin monkey',
+        description: 'Cebus capucinus',
+    },
+    {
+        urlImage: images.mamal03,
+        title: 'Brown-Throated tree-toed sloth',
+        description: 'Bradypus variegatus',
+    },
+    {
+      urlImage: images.mamal05,
+      title: 'Alouatta Palliata',
+      description: 'Mantled Howler Monkey',
+  }
 ]; 
 //Galeria de Frogs
 export const galleryFrogs: GalleryProps[] = [
   {
-      urlImage: 'https://source.unsplash.com/random/4',
-      title: 'Title',
-      description: 'description',
-  }, {
-      urlImage: 'https://source.unsplash.com/random/5',
-      title: 'Title',
-      description: 'description',
-  }, {
-      urlImage: 'https://source.unsplash.com/random/6',
-      title: 'title',
-      description: 'description',
-  }
+      urlImage: images.frog02,
+      title: '',
+      description: '',
+  },
+  {
+      urlImage: images.frog06,
+      title: 'Masked TreeFrog',
+      description: 'Smilisca phaeota' ,
+  },  
+  {
+      urlImage: images.frog03,
+      title: 'brown foam frog',
+      description: "leptodactylus poecilochilus",
+  },
+  {
+    urlImage: images.frog05,
+    title: 'Red-eyed Leaf frog',
+    description: 'Agalychnis callidryas',
+  },
 ]; 
 //Galeria de birds
 export const galleryBirds: GalleryProps[] = [
   {
-      urlImage: 'https://source.unsplash.com/random/4',
-      title: 'Title',
-      description: 'description',
-  }, {
-      urlImage: 'https://source.unsplash.com/random/5',
-      title: 'Title',
-      description: 'description',
-  }, {
-      urlImage: 'https://source.unsplash.com/random/6',
-      title: 'title',
-      description: 'description',
-  }
+      urlImage: images.birds07,
+      title: 'crested caracara',
+      description: 'Caracara cheriway',
+  },
+  {
+      urlImage: images.birds02,
+      title: 'Roadside hawk',
+      description: 'rupornis magnirostris',
+  },
+  {
+      urlImage: images.birds08,
+      title: 'masked tityra',
+      description: 'tityra semifasciata',
+  },
+  {
+    urlImage: images.birds04,
+    title: 'agami heron',
+    description: 'agamia agamia',
+  },
+  {
+    urlImage: images.birds06,
+    title: 'Staly-tailed trogon',
+    description: 'Trogon massena',
+  },
+  {
+    urlImage: images.birds05,
+    title: 'golden-hooded tanager',
+    description: 'tangara larvata',
+  },
 ]; 
 //Galeria de Snakes
 export const gallerySnakes: GalleryProps[] = [
     {
-        urlImage: 'https://source.unsplash.com/random/1',
-        title: 'Title',
-        description: 'description',
+        urlImage: images.snakes01,
+        title: 'Eyelash Pitaviper',
+        description: 'Bothriechis  schlegelii',
     }, {
-        urlImage: 'https://source.unsplash.com/random/2',
-        title: 'Title',
-        description: 'description',
+        urlImage: images.snakes02,
+        title: 'Tiger Rat Snake',
+        description: 'Spilotes pullatus',
     }, {
-        urlImage: 'https://source.unsplash.com/random/3',
-        title: 'title',
-        description: 'description',
+        urlImage: images.snakes03,
+        title: 'Cloudy Snail-eater',
+        description: 'Sibon nebulatus',
     }
 ];
 //Galeria de birds
 export const galleryInsects: GalleryProps[] = [
   {
-      urlImage: 'https://source.unsplash.com/random/4',
-      title: 'Title',
-      description: 'description',
-  }, {
-      urlImage: 'https://source.unsplash.com/random/5',
-      title: 'Title',
-      description: 'description',
-  }, {
-      urlImage: 'https://source.unsplash.com/random/6',
-      title: 'title',
-      description: 'description',
+      urlImage: images.insects01,
+      title: 'katydid',
+      description: 'Pterophylla camellifolia',
+  },
+   {
+      urlImage: images.insects02,
+      title: 'Golden Orb Sider',
+      description: 'nephila clavipes',
+  },
+   {
+      urlImage: images.insects03,
+      title: '',
+      description: '',
+  },  
+  {
+    urlImage: images.insects04,
+    title: 'Praying Mantis',
+    description: 'stagmomantis carolina',
   }
 ]; 
 
