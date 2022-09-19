@@ -4,15 +4,18 @@ import { GiHiking, GiMountainRoad, GiRiver } from 'react-icons/gi';
 import { MdKayaking, MdNaturePeople } from 'react-icons/md';
 import { TbKayak } from 'react-icons/tb';
 import * as images from '../../../assets/images/Images';
-import { Button } from '../../../components/Button/Button';
+import { Button } from '../../../components/Button/Button'; 
 
-export const Cards = () => {
-    const [date, setDate] = useState<Date>(new Date());
-
+export const Cards = () => { 
+ 
+ 
+   
+  
+  
     return (
         <div className='containerCard'>
 
-            <div className="blog-slider wow animate__animated animate__fadeInLeft ">
+            <div className="blog-slider animationLeft">
                 <div className="blog-slider__wrp swiper-wrapper">
                     <div className="blog-slider__item swiper-slide animate__animated animate__fadeIn">
                         <div className="blog-slider__img">
@@ -40,14 +43,14 @@ export const Cards = () => {
                                     dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?
                                 </div>
                             </div>
-                            <a className='buttonCard' href='Rafting' >READ MORE</a>
+                            <Button className='buttonCard' scrollTop={true} text='READ MORE' redirection='Rafting' />
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div className="blog-slider wow animate__animated animate__fadeInRight">wal
+            <div className="blog-slider animationRight">
                 <div className="blog-slider__wrp swiper-wrapper">
                     <div className="blog-slider__item swiper-slide animate__animated animate__fadeIn">
 
@@ -77,8 +80,8 @@ export const Cards = () => {
                                     sint voluptatum architecto quos quibusdam velit! Placeat rerum culpa temporibus neque? Inventore odit similique suscipit voluptates. Lorem ipsum
                                     dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?
                                 </div>
-                            </div>
-                            <a className='buttonCard' href='RioCeleste' >READ MORE</a>
+                            </div> 
+                            <Button scrollTop={true} className='buttonCard' text='READ MORE' redirection='RioCeleste' />
                         </div>  
                     </div>
                 </div>

@@ -1,6 +1,6 @@
-import { 
-    Routes,
-    Route, 
+import {
+  Routes,
+  Route,
 } from 'react-router-dom';
 import { useEffect, useState } from 'react'
 import { About } from '../../../pages/About/About';
@@ -9,6 +9,7 @@ import { House } from '../../../pages/House/House';
 import { Index } from '../../../pages/index/Index';
 import { Tours } from '../../Tour/Tours';
 import { dataTours } from '../../Tour/data';
+import { NotFound } from '../../NotFound/NotFound';
 
 type tour = {
   backgroundImg?: string,
@@ -29,28 +30,33 @@ type tour = {
   bibliotecaImg?: string[]
 }
 
-export const ContentPage = () => { 
+export const ContentPage = () => {
 
   return (
     <Routes>
-      <Route path="BEOUTDOOR" element={<Index />} />
-       <Route path="BEOUTDOOR/ContactUs" element={<ContactUs />} >
+      <Route path="/" element={<Index />} />
+
+      <Route path="ContactUs" element={<ContactUs />} >
         <Route path=":tour" element={<ContactUs />} />
-       </Route>
-      <Route path="BEOUTDOOR/House" element={<House/>} />
-      
-      <Route path="BEOUTDOOR/About" element={<About/>} />
-      
-	    {/* adventures */}
-      <Route path="BEOUTDOOR/Rafting" element={<Tours/>} />
-      <Route path="BEOUTDOOR/Safari" element={<Tours/>} />
+      </Route>
+
+
+      <Route path="House" element={<House />} />
+
+      <Route path="About" element={<About />} />
+
+      {/* adventures */}
+      <Route path="Rafting" element={<Tours />} />
+      <Route path="Safari" element={<Tours />} />
 
       {/* hikings */}
-      <Route path="BEOUTDOOR/RioCeleste" element={<Tours/>} />
-      <Route path="BEOUTDOOR/ArenalVolcano" element={<Tours/>} />
-      <Route path="BEOUTDOOR/FortunaWaterfall" element={<Tours/>} />
-      <Route path="BEOUTDOOR/HangingBridges" element={<Tours/>} />
-      <Route path="BEOUTDOOR/CombinationTours" element={<Tours/>} /> 
+      <Route path="RioCeleste" element={<Tours />} />
+      <Route path="ArenalVolcano" element={<Tours />} />
+      <Route path="FortunaWaterfall" element={<Tours />} />
+      <Route path="HangingBridges" element={<Tours />} />
+      <Route path="CombinationTours" element={<Tours />} />
+      <Route path="*" element={<NotFound />} />
+      
     </Routes>
   )
 }

@@ -1,11 +1,11 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import "../../../styles/components/index/_ToursCarousel.scss";
-import React from "react";
+import React, { useEffect } from "react";
 import "../../../styles/components/index/_ToursCarousel.scss";
 
-import { sliderData } from "../data/data"; 
+import { sliderData } from "../data/data";
 
 export default function ToursCarousel() {
   const settings = {
@@ -46,63 +46,66 @@ export default function ToursCarousel() {
     ],
   };
 
+
+
   return (
     <div className="slide-container">
-      <h2  className=" wow animate__animated animate__fadeIn">Popular Tours</h2>
-      <p>Choose what you are the most passionate about and be part of it,<span>ARE YOU READY?</span></p>
+      <h2 className="animationLeft">Popular Tours</h2>
+      <p className="animationLeft">Choose what you are the most passionate about and be part of it,<span>ARE YOU READY?</span></p>
 
-      <Slider {...settings}>
+      <Slider {...settings} className='animationFade'>
         {React.Children.toArray(
           sliderData.map((item) => {
 
             var direction = '';
 
-            if(item.title.includes('Safari')){
+            if (item.title.includes('Safari')) {
               direction = 'Safari'
-            }else if(item.title.includes('Tubing')){
+            } else if (item.title.includes('Tubing')) {
               direction = 'CombinationTours'
-            }else{
+            } else {
               direction = item.title.replace(/\s+/g, '')
             }
             return (
-            <div className=" wow animate__animated animate__fadeIn">
-              <div className="tour-carousel-card-padre">
-                <div className="tour-carousel-card">
-                  <div className="img-container">
-                    <img src={item.urlImage} alt="" />
-                  </div>
+              <div className="">
+                <div className="tour-carousel-card-padre">
+                  <div className="tour-carousel-card">
+                    <div className="img-container">
+                      <img src={item.urlImage} alt="" />
+                    </div>
 
-                  <div className="details-container">
-                    <div className="title">
-                      <h2>{item.title}</h2>
-                    </div>
-                    <div className="details-info">
-                      <span className="details-price">
-                        {item.dollarIcon}
-                        {item.price}
-                      </span>
-                      <span className="details-hour">
-                        {item.hoursIcon}
-                        {item.hours}
-                      </span>
-                      <span className="details-place">
-                        {item.placeIcon}
-                        {item.place}
-                      </span>
-                    </div>
-                    <span className="details-about">{item.info}</span>
-                    <div className="container__btn">
-                      <a
-                        href={direction} className="btn__carousel__tours" 
-                      >
-                        READ MORE
-                        </a> 
+                    <div className="details-container">
+                      <div className="title">
+                        <h2>{item.title}</h2>
+                      </div>
+                      <div className="details-info">
+                        <span className="details-price">
+                          {item.dollarIcon}
+                          {item.price}
+                        </span>
+                        <span className="details-hour">
+                          {item.hoursIcon}
+                          {item.hours}
+                        </span>
+                        <span className="details-place">
+                          {item.placeIcon}
+                          {item.place}
+                        </span>
+                      </div>
+                      <span className="details-about">{item.info}</span>
+                      <div className="container__btn">
+                        <a
+                          href={direction} className="btn__carousel__tours"
+                        >
+                          READ MORE
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          )})
+            )
+          })
         )}
       </Slider>
     </div>

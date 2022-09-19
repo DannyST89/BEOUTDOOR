@@ -9,7 +9,7 @@ $borderNav: 1px solid rgba(103, 101, 101, 0.075);
 #invisible {
    position: absolute;
    top: 0;
-   transition: all 0.5s ease-in-out;
+   //transition: all 0.5s ease-in-out;
 }
 
 .backgroundNav {
@@ -70,7 +70,7 @@ $borderNav: 1px solid rgba(103, 101, 101, 0.075);
 
 .offcanvas {
    @media screen and (max-width: 992px) {
-      background-image: url("/src/assets/images/Tour_Rio_Celeste/rioCeleste13.jpg");
+      background-image: url("/src/assets/images/Tour_Rio_Celeste/rioCeleste13.webp");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -79,16 +79,14 @@ $borderNav: 1px solid rgba(103, 101, 101, 0.075);
    color: white;
 
    a {
-      color: white;
-      &:hover {
-         background-color: $navHover;
-      }
+      color: white; 
    }
 }
 
 /*Nav Item*/
 .nav-item {
    border: 1px solid transparent;
+   //
    &:hover {
       background-color: $navHover;
       border: $borderNav;
@@ -152,8 +150,8 @@ $borderNav: 1px solid rgba(103, 101, 101, 0.075);
 .dropdown-item.active,
 .dropdown-item:active {
    background: $dropdownBackground !important;
-   background-color: rgba(0, 0, 0, 0.049) !important;
-   color: rgb(0, 0, 0) !important;
+   background-color: #127a35a4 !important;
+   color: rgb(238, 238, 238) !important;
 }
 
 .dropdown-menu {
@@ -168,4 +166,12 @@ $borderNav: 1px solid rgba(103, 101, 101, 0.075);
 
 .dropdown-toggle::after {
    display: none;
+}
+
+
+.btnNavbar{ 
+   &:hover{ 
+      transition: all .3s ease;
+      background-color: #127a35;
+   }
 }
