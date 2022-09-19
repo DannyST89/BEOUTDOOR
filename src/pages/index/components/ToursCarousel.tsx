@@ -7,6 +7,7 @@ import "../../../styles/components/index/_ToursCarousel.scss";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import { sliderData } from "../data/data";
+import { Button } from "../../../components/Button/Button";
 
 export default function ToursCarousel() {
   const settings = {
@@ -98,11 +99,12 @@ export default function ToursCarousel() {
                         </div>
                         <span className="details-about">{item.info}</span>
                         <div className="container__btn">
-                          <a
-                            href={direction} className="btn__carousel__tours"
-                          >
-                            READ MORE
-                          </a>
+                          <Button
+                            redirection={direction} 
+                            className="btn__carousel__tours"
+                            text="READ MORE"
+                            scrollTop={true}
+                          /> 
                         </div>
                       </div>
                     </div>
