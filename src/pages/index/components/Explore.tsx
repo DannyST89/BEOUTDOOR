@@ -61,16 +61,16 @@ export default function Explore() {
         <div className="explore__container--inner">
           {sliderData.map((item, index) => {
             return (
-              <AnimationOnScroll key={index} animateIn={`${animate[index]}`}>
-                <div
+              <div
                   id={item.title.replace(/ /g, "")}
                   key={index}
                   className={`explore__container--inner-card`}
                 >
+              <AnimationOnScroll key={index} animateIn={`${animate[index]}`}>
                   <span className="exploreIconSize">{item.urlImage}</span>
                   <h2>{item.title}</h2>
-                </div>
               </AnimationOnScroll>
+                </div>
             );
           })}
         </div>

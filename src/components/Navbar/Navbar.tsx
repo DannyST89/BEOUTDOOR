@@ -14,7 +14,7 @@ export const Navbar = () => {
         <div className='container-fluid container justify-content-between'>
 
           <div className='logo'>
-            <h4><a href="/BEOUTDOOR/">BEOUTDOORS</a></h4>
+            <h4><Button className='nav-link' redirection="" text="BEOUTDOORS" scrollTop={true} ></Button></h4>
           </div>
 
           <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
