@@ -88,7 +88,7 @@ export { default as tubing6} from'../../assets/images/TourTubing/tubing06.webp'
 
 // Images gallery Index
 // -- frogs
-export { default as frog01} from'../../assets/images/imagenes_Gallery_index/frog01.webp'
+export { default as frog01} from'../../assets/images/imagenes_Gallery_index/frog01.jpg'
 export { default as frog02} from'../../assets/images/imagenes_Gallery_index/frog02.webp'
 export { default as frog03} from'../../assets/images/imagenes_Gallery_index/frog03.webp'
 export { default as frog04} from'../../assets/images/imagenes_Gallery_index/frog04.webp'
@@ -98,7 +98,25 @@ export { default as frog06} from'../../assets/images/imagenes_Gallery_index/frog
 export { default as mamal01} from'../../assets/images/imagenes_Gallery_index/mamals01.webp'
 export { default as mamal02} from'../../assets/images/imagenes_Gallery_index/mamals03.webp'
 export { default as mamal03} from'../../assets/images/imagenes_Gallery_index/mamals04.webp'
-
+export { default as mamal05} from'../../assets/images/imagenes_Gallery_index/mamals05.jpg'
+//-- birds
+export { default as birds01} from'../../assets/images/imagenes_Gallery_index/birds01.webp'
+export { default as birds02} from'../../assets/images/imagenes_Gallery_index/birds02.jpg'
+export { default as birds03} from'../../assets/images/imagenes_Gallery_index/birds03.webp'
+export { default as birds04} from'../../assets/images/imagenes_Gallery_index/birds04.jpg'
+export { default as birds05} from'../../assets/images/imagenes_Gallery_index/birds05.jpg'
+export { default as birds06} from'../../assets/images/imagenes_Gallery_index/birds06.jpg'
+export { default as birds07} from'../../assets/images/imagenes_Gallery_index/birds07.jpg'
+export { default as birds08} from'../../assets/images/imagenes_Gallery_index/birds08.jpg'
+//-- snakes
+export { default as snakes01} from'../../assets/images/imagenes_Gallery_index/snakes01.jpg'
+export { default as snakes02} from'../../assets/images/imagenes_Gallery_index/snakes02.jpg'
+export { default as snakes03} from'../../assets/images/imagenes_Gallery_index/snakes03.jpg'
+//-- Insects
+export { default as insects01} from'../../assets/images/imagenes_Gallery_index/insects01.webp'
+export { default as insects02} from'../../assets/images/imagenes_Gallery_index/insects02.png'
+export { default as insects03} from'../../assets/images/imagenes_Gallery_index/insects03.jpg'
+export { default as insects04} from'../../assets/images/imagenes_Gallery_index/insects04.jpg'
 
 // Images tour catarata la fortuna
 export { default as catarata_fortuna01} from '../../assets/images/Tour_catara_La_Fortuna/catarata10.webp'
