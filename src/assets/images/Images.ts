@@ -91,7 +91,7 @@ export { default as tubing6} from'../../assets/images/TourTubing/tubing06.webp'
 export { default as frog01} from'../../assets/images/imagenes_Gallery_index/frog01.jpg'
 export { default as frog02} from'../../assets/images/imagenes_Gallery_index/frog02.webp'
 export { default as frog03} from'../../assets/images/imagenes_Gallery_index/frog03.webp'
-export { default as frog04} from'../../assets/images/imagenes_Gallery_index/frog04.webp'
+export { default as frog04} from'../../assets/images/imagenes_Gallery_index/frog04.jpg'
 export { default as frog05} from'../../assets/images/imagenes_Gallery_index/frog05.webp'
 export { default as frog06} from'../../assets/images/imagenes_Gallery_index/frog06.webp'
 //-- mamals
