@@ -132,10 +132,7 @@ export const Formulario = ({ message }: message) => {
       <div className={`contact-container`} id={`${checked && "darkThemeForm"}`}>
         <div className="backgroundForm">
           <div className="left-col">
-            <img
-              className="logoForm"
-              src={images.rioCeleste01}
-            />
+            
           </div>
 
           <div className="right-col">

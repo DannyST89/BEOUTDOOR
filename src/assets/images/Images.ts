@@ -26,12 +26,12 @@ export { default as rioCeleste13 } from '../../assets/images/Tour_Rio_Celeste/ri
 
 
 // Images tour safari
-export { default as safari01 } from '../../assets/images/Tour_Safari/safari07.webp'
+export { default as safari01 } from '../../assets/images/Tour_Safari/safari07.jpg'
 export { default as safari02 } from '../../assets/images/Tour_Safari/safari02.webp'
 export { default as safari03 } from '../../assets/images/Tour_Safari/safari03.webp'
 export { default as safari04 } from '../../assets/images/Tour_Safari/safari04.webp'
 export { default as safari05 } from '../../assets/images/Tour_Safari/safari05.webp'
-export { default as safari06 } from '../../assets/images/Tour_Safari/safari06.webp'
+export { default as safari06 } from '../../assets/images/Tour_Safari/safari06.jpg'
 
 // Images tour rafting
 export { default as rafting1 } from '../../assets/images/Tour_Rafting/rafting01.jpg'

@@ -249,9 +249,9 @@ export const dataTours = {
   },
   Safari: {
     backgroundImg: images.safari01,
-    tituloPrincipalImg: "Safari Tour ",
+    tituloPrincipalImg: "Safari Float and Wild Life",
     tituloSecondarioImg: "La Fortuna",
-    tituloPrincipal: "Safari Tour",
+    tituloPrincipal: "Safari Float and Wild Life Arenal Tour",
     textoPrincipal: [
       `The perfect combination, of the water in the middle of the forest where you will be able to appreciate
       that contact of peace and tranquility while you get carried away on an inflatable boat, accompanied by      
