@@ -133,7 +133,8 @@ $letraLinkColorHover: rgb(255, 242, 0);
     display: flex;
     justify-content: space-between;
     align-items: center; 
-
+    gap: 1rem;
+    margin-top: 1rem;
     div{
         display: flex;
         flex-direction: column;
@@ -143,6 +144,7 @@ $letraLinkColorHover: rgb(255, 242, 0);
         }
         a{
             color: white !important;
+            font-style: italic;
             &:hover{
                 color: rgb(255, 221, 0) !important;
             }

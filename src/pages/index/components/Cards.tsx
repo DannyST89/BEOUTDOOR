@@ -24,7 +24,7 @@ export const Cards = () => {
                                 <div className="cardIndex">
                                     <img src={images.rafting1} className="card-img rounded" alt="..." />
                                     <div className="card-img-overlay blog-slider__card">
-                                        <h1 className="card-title tituloImageCard ">Adventure is waiting</h1>
+                                        {/* <h1 className="card-title tituloImageCard ">Adventure is waiting</h1> */}
                                         <p className="card-text"></p>
                                         <p className="card-text"></p>
                                     </div>
@@ -62,8 +62,8 @@ export const Cards = () => {
                                 <div className="cardIndex">
                                     <img src={images.catarata_fortuna08} className="card-img rounded" alt="Fortuna Waterfall" />
                                     <div className="card-img-overlay blog-slider__card">
-                                        <h1 className="card-title tituloImageCard ">It's Not The Mountain We Conquer</h1>
-                                        <p className="card-text textImageCard">But Ourselves</p>
+                                        {/* <h1 className="card-title tituloImageCard ">It's Not The Mountain We Conquer</h1>
+                                        <p className="card-text textImageCard">But Ourselves</p> */}
                                         <p className="card-text"></p>
                                     </div>
                                 </div>

@@ -83,6 +83,13 @@ $borderNav: 1px solid rgba(103, 101, 101, 0.075);
    }
 }
 
+#offcanvasNavbarLabel{
+   background-color: rgba(0, 0, 0, 0.35);
+   padding-left: 1rem;
+   padding-right: 1rem;
+   border-radius: .3rem;
+}
+
 /*Nav Item*/
 .nav-item {
    border: 1px solid transparent;

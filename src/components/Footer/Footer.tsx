@@ -64,8 +64,8 @@ export const Footer = () => {
                     <p className="copyright__p">© Copyright, BEOUTDOORS CR</p>
                     <div className="creators">
                         <h3>Creators</h3>
-                        <a href="">Alejandro Quintero</a>
-                        <a href="">Danny soto</a>
+                        <a href="#">Alejandro Quintero</a>
+                        <a href="#">Danny soto</a>
                     </div>
                 </div>
             </div>

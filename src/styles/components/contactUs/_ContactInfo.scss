@@ -3,7 +3,7 @@ $secondary-color: #818386;
 $bg-color: #FCFDFD;
 $button-color: #3B3636;
 $h1-color: #3F444C;
-$link-color: #0042ac;
+$link-color: #28920d;
 
 [data-theme="dark"] { 
     $h1-color: #FCFDFD;
@@ -48,6 +48,7 @@ $link-color: #0042ac;
     font-size: 1.5rem;
     font-weight: bold;
     color: $h1-color;
+    
 }
 
 .contactInfo {
@@ -72,9 +73,12 @@ $link-color: #0042ac;
             margin-top: 10px;
             font-weight: bold;
             color: $h1-color;
-
+            font-style: italic;
+            font-size: 1rem;
             a { 
+                font-style: normal;
                 color: $link-color; 
+                font-size: 1rem;
                 &:hover{
                     text-decoration: underline;
                 }
@@ -88,7 +92,7 @@ $link-color: #0042ac;
 
 
     .contactInfo {
-        margin-top: 0;
+        margin-top: 1rem;
 
         &__section {
 
@@ -108,7 +112,7 @@ $link-color: #0042ac;
             &-text {
                 margin-top: 30px;
                 font-weight: bold;
-
+                
                 a {
                     font-size: large;
                     font-weight: normal;

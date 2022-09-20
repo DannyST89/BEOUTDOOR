@@ -9,19 +9,19 @@ export const ContactInfo = () => {
             <div className='contactInfo'>
 
                 <div className="contactInfo__section animate__animated animate__fadeInUp">
-                    <BsWhatsapp size={'50px'} color={'GREEN'} />
+                    <BsWhatsapp size={'40px'} color={'black'} />
                     <p className='contactInfo__section-text'>
 
                         Whatsapp: <a
                             href="https://api.whatsapp.com/send?phone=50688488848&text=Hola,%20Me%20Gustaria%20Pedir%20Informacion%20Sobre%20Tu%20Negocio"
                             target={'_blank'}>
-                            88488848
+                            +506 88488848
                         </a>
                     </p>
                 </div>
 
                 <div className="contactInfo__section animate__animated animate__fadeInUp">
-                    <MdOutlineEmail size={'50px'} />
+                    <MdOutlineEmail size={'40px'} color={'black'}/>
                     <p className='contactInfo__section-text'>
                         Email: <a href="mailto:correo@correo.com" >email@gmail.com</a>
                     </p>
