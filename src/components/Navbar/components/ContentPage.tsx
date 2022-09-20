@@ -2,35 +2,14 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import { useEffect, useState } from 'react'
 import { About } from '../../../pages/About/About';
 import { ContactUs } from '../../../pages/contactUs/ContactUs';
 import { House } from '../../../pages/House/House';
 import { Index } from '../../../pages/index/Index';
 import { Tours } from '../../Tour/Tours';
-import { dataTours } from '../../Tour/data';
 import { NotFound } from '../../NotFound/NotFound';
-
-type tour = {
-  backgroundImg?: string,
-  tituloPrincipalImg?: string,
-  tituloSecondarioImg?: string,
-  tituloPrincipal?: string,
-  textoPrincipal?: string[],
-  tituloCards?: string,
-  titleLeft?: string,
-  textTitleLeft?: string,
-  textleft?: string[],
-  titleRight?: string,
-  hour?: string,
-  description?: string,
-  time?: string,
-  price?: string,
-  shop?: string,
-  bibliotecaImg?: string[]
-}
-
-export const ContentPage = () => {
+ 
+const ContentPage = () => {
 
   return (
     <Routes>
@@ -60,3 +39,6 @@ export const ContentPage = () => {
     </Routes>
   )
 }
+
+
+export default ContentPage;

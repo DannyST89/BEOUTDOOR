@@ -34,8 +34,8 @@ export default function ToursCarousel() {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {

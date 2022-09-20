@@ -1,4 +1,3 @@
-import { Nav } from 'reactstrap';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Button } from '../Button/Button';
 import { adventures, hikings } from "../../data/navegacion"; 

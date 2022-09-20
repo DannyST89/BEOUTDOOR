@@ -1,21 +1,25 @@
-import * as images from "../../../assets/images/Images";
+import {
+    house1,
+    house4,
+    house6,
+    house7,
+    house8,
+    house9,
+    house10,
+} from "../../../assets/images/Images";
 import Slider from "react-slick";
 import React, { useState } from "react";
-import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import DescriptionCard from "./DescriptionCard";
 import { ModalImages } from "../../../components/Modal/ModalImages";
 
 const sliderData = [
-    images.house1,
-    //images.house2,
-    //images.house3,
-    images.house4,
-    //images.house5,
-    images.house6,
-    images.house7,
-    images.house8,
-    images.house9,
-    images.house10,
+    house1,
+    house4, 
+    house6,
+    house7,
+    house8,
+    house9,
+    house10,
 ];
 
 export const CarouselHome = () => {
@@ -40,13 +44,13 @@ export const CarouselHome = () => {
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        initialSlide: 0, 
+        initialSlide: 0,
         responsive: [
             {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                     infinite: false,
                     dots: true,
                 },
@@ -55,11 +59,11 @@ export const CarouselHome = () => {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
                     dots: true,
                 },
-            }, 
+            },
         ],
     };
 
@@ -91,7 +95,7 @@ export const CarouselHome = () => {
             </div>
 
             {/* modal para el uso de la galeria para verla la imagen mas completa */}
-            <ModalImages urlImage={url} modalActive={modal} nombre={url}/>
+            <ModalImages urlImage={url} modalActive={modal} nombre={url} />
 
             {/* aqui se coloca para cuando se haga el responsive aparezca
             la informacion importante antes que el aside 
