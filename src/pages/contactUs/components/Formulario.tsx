@@ -1,12 +1,10 @@
-import { Form, Row, Col, FormGroup, Label, Input, Button } from "reactstrap";
+import { Label, Input } from "reactstrap";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 
 import "../../../styles/components/contactUs/_Formulario.scss";
 import Swal from "sweetalert2";
 import { ContactInfo } from "./ContactInfo";
-import * as images from "../../../assets/images/Images";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 type message = {
   message: string;
@@ -147,6 +145,7 @@ export const Formulario = ({ message }: message) => {
                     }}
                     type="checkbox"
                     id="checkbox"
+                    title="backgroundColor"
                   />
                   <div className="slider round"></div>
                 </Label>

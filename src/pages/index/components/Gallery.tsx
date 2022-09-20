@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Modal, ModalHeader, ModalBody } from "reactstrap";
+import { useState } from "react";
 import { ModalImages } from "../../../components/Modal/ModalImages";
 import {
   galleryAll,
@@ -106,7 +105,7 @@ export const Gallery = () => {
         </div>
       </section>
 
-      <ModalImages urlImage={url} modalActive={modal}/>
+      <ModalImages urlImage={url} modalActive={modal} nombre={active}/>
  
     </div>
   );

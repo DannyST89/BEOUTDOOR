@@ -1,4 +1,4 @@
-import React, { ReactElement, ReactNode } from "react";
+import { ReactNode } from "react";
 
 /*Este componente nos permite seleccionar el tamaño de texto necesitado en el componente llamado*/
 

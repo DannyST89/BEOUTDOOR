@@ -1,8 +1,6 @@
-import { NavLink } from "react-router-dom"
-import * as images from "../../assets/images/Images";
 import { SocialNetwork } from "../SocialNetworks/SocialNetwork";
 import { Button } from '../Button/Button';
-import { adventures, hikings, about } from "../../data/navegacion";
+import { adventures, hikings } from "../../data/navegacion";
 
 export const Footer = () => {
 

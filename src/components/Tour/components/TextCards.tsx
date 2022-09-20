@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 import styles from '../../../styles/components/Tours/Tours.module.scss'
 import { GiBackwardTime } from 'react-icons/gi'

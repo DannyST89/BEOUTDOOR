@@ -1,17 +1,12 @@
-import { useState } from 'react'
 import { FaHiking, FaWpexplorer } from 'react-icons/fa';
-import { GiHiking, GiMountainRoad, GiRiver } from 'react-icons/gi';
+import { GiMountainRoad, GiRiver } from 'react-icons/gi';
 import { MdKayaking, MdNaturePeople } from 'react-icons/md';
 import { TbKayak } from 'react-icons/tb';
-import * as images from '../../../assets/images/Images';
+import {rafting1,catarata_fortuna08} from '../../../assets/images/Images';
 import { Button } from '../../../components/Button/Button';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
-export const Cards = () => {
-
-
-
-
+export const Cards = () => { 
 
     return (
         <div className='containerCard'>
@@ -22,7 +17,7 @@ export const Cards = () => {
                         <div className="blog-slider__item swiper-slide">
                             <div className="blog-slider__img">
                                 <div className="cardIndex">
-                                    <img src={images.rafting1} className="card-img rounded" alt="..." />
+                                    <img src={rafting1} className="card-img rounded" alt="..." />
                                     <div className="card-img-overlay blog-slider__card">
                                         {/* <h1 className="card-title tituloImageCard ">Adventure is waiting</h1> */}
                                         <p className="card-text"></p>
@@ -60,7 +55,7 @@ export const Cards = () => {
 
                             <div className="blog-slider__img secondCardImage">
                                 <div className="cardIndex">
-                                    <img src={images.catarata_fortuna08} className="card-img rounded" alt="Fortuna Waterfall" />
+                                    <img src={catarata_fortuna08} className="card-img rounded" alt="Fortuna Waterfall" />
                                     <div className="card-img-overlay blog-slider__card">
                                         {/* <h1 className="card-title tituloImageCard ">It's Not The Mountain We Conquer</h1>
                                         <p className="card-text textImageCard">But Ourselves</p> */}

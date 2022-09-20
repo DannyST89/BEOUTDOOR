@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../../styles/components/index/_FrequentlyAskedQuestions.module.scss";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 

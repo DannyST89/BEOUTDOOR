@@ -1,11 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
 
 type dataImage = {
     urlImage: string;
     modalActive: boolean;
+    nombre: string
 }
-export const ModalImages = ({ urlImage,modalActive }: dataImage) => { 
+export const ModalImages = ({ urlImage,modalActive,nombre }: dataImage) => { 
 
     const [modal, setModal] = useState(modalActive);
 
@@ -33,7 +34,7 @@ export const ModalImages = ({ urlImage,modalActive }: dataImage) => {
                 <ModalHeader toggle={toggle}></ModalHeader>
                 <ModalBody >
                     <div onClick={() => { setModal(false) }} className="modalImage">
-                        <img src={urlImage} alt="" />
+                        <img src={urlImage} alt={nombre} />
                     </div>
                 </ModalBody>
             </Modal>

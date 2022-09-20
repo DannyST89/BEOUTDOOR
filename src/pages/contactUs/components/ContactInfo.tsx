@@ -1,4 +1,3 @@
-import React from 'react'
 import { BsWhatsapp } from 'react-icons/bs'
 import { MdOutlineEmail } from 'react-icons/md'
 

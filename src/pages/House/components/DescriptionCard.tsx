@@ -1,5 +1,3 @@
-import * as images from "../../../assets/images/Images";
-import { ImLocation2 } from "react-icons/im";
 import { GiGraveFlowers } from "react-icons/gi";
 import { FaMountain, FaWifi } from "react-icons/fa";
 import { TbToolsKitchen2 } from "react-icons/tb";

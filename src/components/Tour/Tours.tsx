@@ -1,10 +1,9 @@
-import { useEffect, useState, useMemo } from 'react'
+import { useEffect, useState } from 'react'
 
 import styles from '../../styles/components/Tours/Tours.module.scss'
 import { dataTours } from './data'
 import { BibliotecaImagenes } from './components/BibliotecaImagenes'
-import { TextCards } from './components/TextCards'
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { TextCards } from './components/TextCards' 
 
 type tour = {
   backgroundImg?: string,
