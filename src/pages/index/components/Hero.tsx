@@ -1,5 +1,5 @@
 import styles from "../../../styles/components/index/_Hero.module.scss";
-import * as images from "../../../assets/images/Images";
+import {frog06} from "../../../assets/images/Images";
 import { Button } from "../../../components/Button/Button";
 
 export const Hero = () => {
@@ -7,7 +7,7 @@ export const Hero = () => {
     <div className={styles["hero-container"]}>
       <div className={styles["img-container"]}>
         <img
-          src={images.frog06}
+          src={frog06}
           alt="Frog nature Costa Rica Arenal tours"
         />
       </div>

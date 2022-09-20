@@ -10,14 +10,14 @@ export const Navbar = () => {
     <div className=''>
       <div id='invisible'></div>
 
-      <Nav id='navbar' className='navbar navbar-expand-lg backgroundNav'>
+      <nav id='navbar' className='navbar navbar-expand-lg backgroundNav'>
         <div className='container-fluid container justify-content-between'>
 
           <div className='logo'>
-            <h4><Button className='nav-link' redirection="" text="BEOUTDOORS" scrollTop={true} ></Button></h4>
+            <h4><Button className='nav-link' redirection="/" text="BEOUTDOORS" scrollTop={true} ></Button></h4>
           </div>
 
-          <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <button title='Close' className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span className=""><GiHamburgerMenu color='white' size={"30px"} /></span>
           </button>
 
@@ -95,7 +95,7 @@ export const Navbar = () => {
             </div>
           </div>
         </div>
-      </Nav>
+      </nav>
 
       {/* Este div hace que las paginas se coloquen un poco 
                   abajo para que no afecten el diseño del navbar */}

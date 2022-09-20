@@ -12,16 +12,16 @@ export const SocialNetwork = ({ classNameSocial, size }: SocialNetowksProps) => 
 
   return (
     <div className={`${classNameSocial} iconsSocial`}>
-      <a href="https://www.facebook.com/" target="_blank" className='facebook'>
-        <AiFillFacebook size={size} />
+      <a href="https://www.facebook.com/" target="_blank" title='facebook' className='facebook'>
+      <AiFillFacebook size={size} />
       </a>
       {' '}
-      <a href="https://www.instagram.com/"  target="_blank" className='instagram mt-1'>
-        <BsInstagram size={size} />
+      <a href="https://www.instagram.com/"  target="_blank" title='instagram' className='instagram mt-1'>
+        <BsInstagram size={size} />{`${''}`}
       </a>
       {' '}
-      <a href="https://twitter.com/home"  target="_blank" className='twitter mt-1'>
-        <BsTwitter size={size} />
+      <a href="https://twitter.com/home"  target="_blank" title='twitter' className='twitter mt-1'>
+        <BsTwitter size={size} />{`${''}`}
       </a>
     </div>
   )

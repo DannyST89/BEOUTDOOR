@@ -91,7 +91,7 @@ export const CarouselHome = () => {
             </div>
 
             {/* modal para el uso de la galeria para verla la imagen mas completa */}
-            <ModalImages urlImage={url} modalActive={modal}/>
+            <ModalImages urlImage={url} modalActive={modal} nombre={url}/>
 
             {/* aqui se coloca para cuando se haga el responsive aparezca
             la informacion importante antes que el aside 

@@ -1,6 +1,5 @@
 
-import { useState } from 'react';
-import { Modal, ModalBody, ModalHeader } from 'reactstrap';
+import { useState } from 'react'; 
 import styles from '../../../styles/components/Tours/_BibliotecaImg.module.scss'
 import { ModalImages } from '../../Modal/ModalImages';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
@@ -32,7 +31,7 @@ export const BibliotecaImagenes = ({ img }: images) => {
                     img.map((item, index) => (
                         <AnimationOnScroll key={`${animate[index]}${index}`} animateIn={`${animate[index]}`}>
                             <div  className={`${styles.cardImage}`}>
-                                <img onClick={() => { openModal(item) }} src={item} />
+                                <img onClick={() => { openModal(item) }} src={item} alt={`${index}`}/>
                             </div>
                         </AnimationOnScroll>
                     ))
@@ -40,7 +39,7 @@ export const BibliotecaImagenes = ({ img }: images) => {
             </div>
 
             {/* modal para el uso de la galeria para verla la imagen mas completa */}
-            <ModalImages urlImage={url} modalActive={modal} />
+            <ModalImages urlImage={url} modalActive={modal} nombre={url} />
         </div>
     )
 }

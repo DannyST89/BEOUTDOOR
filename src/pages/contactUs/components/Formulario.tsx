@@ -147,6 +147,7 @@ export const Formulario = ({ message }: message) => {
                     }}
                     type="checkbox"
                     id="checkbox"
+                    title="backgroundColor"
                   />
                   <div className="slider round"></div>
                 </Label>

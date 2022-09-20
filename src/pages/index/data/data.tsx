@@ -1,6 +1,32 @@
 import { BiDollar, BiMap, BiTimeFive } from "react-icons/bi";
-import { BsArrowRightShort } from "react-icons/bs";
-import * as images from "../../../assets/images/Images";
+import {frog06,
+  mamal02,
+  birds02,
+  snakes01,
+  insects02,
+  mamal03,
+  mamal01, 
+  mamal05,
+  frog07,
+  frog03, 
+  frog05,
+  birds07, 
+  birds08,
+  insects04,
+  birds04,
+  birds06,
+  rafting2, 
+  tubing3,
+  insects03,
+  safari06,
+  birds05,
+  snakes03, 
+  volcanArenal01,
+  insects01,
+  catarata_fortuna05,
+  snakes02,
+  hangingBridges01,
+  rioCeleste04} from "../../../assets/images/Images";
 
 //---------------------------------------------------------Informacion de la galeria------------------------------------------------------
  
@@ -19,27 +45,27 @@ export type GalleryProps = {
 //Galeria de All
 export const galleryAll: GalleryProps[] = [
   {
-      urlImage: images.frog06,
+      urlImage: frog06,
       title: 'Masked TreeFrog',
       description: 'Smilisca phaeota' ,
   }, {
-      urlImage: images.mamal02,
+      urlImage: mamal02,
       title: 'white-throated capuchin monkey',
       description: 'Cebus capucinus',
   }, {
-      urlImage: images.birds02,
+      urlImage: birds02,
       title: 'Roadside hawk',
       description: 'rupornis magnirostris',
   }, {
-      urlImage: images.snakes01,
+      urlImage: snakes01,
       title: 'Eyelash Pitaviper',
       description: 'Bothriechis  schlegelii',
   }, {
-      urlImage: images.insects02,
+      urlImage: insects02,
       title: 'Golden Orb Sider',
       description: 'nephila clavipes',
   }, {
-    urlImage: images.mamal03,
+    urlImage: mamal03,
     title: 'Brown-Throated tree-toed sloth',
     description: 'Bradypus variegatus',
   }
@@ -47,22 +73,22 @@ export const galleryAll: GalleryProps[] = [
 //Galeria de mamals
 export const galleryMamals: GalleryProps[] = [
     {
-        urlImage: images.mamal01,
+        urlImage: mamal01,
         title: 'white nosed coati',
         description: 'nasua narica',
     },
     {
-        urlImage: images.mamal02,
+        urlImage: mamal02,
         title: 'white-throated capuchin monkey',
         description: 'Cebus capucinus',
     },
     {
-        urlImage: images.mamal03,
+        urlImage: mamal03,
         title: 'Brown-Throated tree-toed sloth',
         description: 'Bradypus variegatus',
     },
     {
-      urlImage: images.mamal05,
+      urlImage: mamal05,
       title: 'Alouatta Palliata',
       description: 'Mantled Howler Monkey',
   }
@@ -70,22 +96,22 @@ export const galleryMamals: GalleryProps[] = [
 //Galeria de Frogs
 export const galleryFrogs: GalleryProps[] = [
   {
-      urlImage: images.frog07,
+      urlImage: frog07,
       title: 'ghost glass frog',
       description: 'sachatamia ilex',
   },
   {
-      urlImage: images.frog06,
+      urlImage: frog06,
       title: 'Masked TreeFrog',
       description: 'Smilisca phaeota' ,
   },  
   {
-      urlImage: images.frog03,
+      urlImage: frog03,
       title: 'brown foam frog',
       description: "leptodactylus poecilochilus",
   },
   {
-    urlImage: images.frog05,
+    urlImage: frog05,
     title: 'Red-eyed Leaf frog',
     description: 'Agalychnis callidryas',
   },
@@ -93,32 +119,32 @@ export const galleryFrogs: GalleryProps[] = [
 //Galeria de birds
 export const galleryBirds: GalleryProps[] = [
   {
-      urlImage: images.birds07,
+      urlImage: birds07,
       title: 'crested caracara',
       description: 'Caracara cheriway',
   },
   {
-      urlImage: images.birds02,
+      urlImage: birds02,
       title: 'Roadside hawk',
       description: 'rupornis magnirostris',
   },
   {
-      urlImage: images.birds08,
+      urlImage: birds08,
       title: 'masked tityra',
       description: 'tityra semifasciata',
   },
   {
-    urlImage: images.birds04,
+    urlImage: birds04,
     title: 'agami heron',
     description: 'agamia agamia',
   },
   {
-    urlImage: images.birds06,
+    urlImage: birds06,
     title: 'Staly-tailed trogon',
     description: 'Trogon massena',
   },
   {
-    urlImage: images.birds05,
+    urlImage: birds05,
     title: 'golden-hooded tanager',
     description: 'tangara larvata',
   },
@@ -126,15 +152,15 @@ export const galleryBirds: GalleryProps[] = [
 //Galeria de Snakes
 export const gallerySnakes: GalleryProps[] = [
     {
-        urlImage: images.snakes01,
+        urlImage: snakes01,
         title: 'Eyelash Pitaviper',
         description: 'Bothriechis  schlegelii',
     }, {
-        urlImage: images.snakes02,
+        urlImage: snakes02,
         title: 'Tiger Rat Snake',
         description: 'Spilotes pullatus',
     }, {
-        urlImage: images.snakes03,
+        urlImage: snakes03,
         title: 'Cloudy Snail-eater',
         description: 'Sibon nebulatus',
     }
@@ -142,22 +168,22 @@ export const gallerySnakes: GalleryProps[] = [
 //Galeria de birds
 export const galleryInsects: GalleryProps[] = [
   {
-      urlImage: images.insects01,
+      urlImage: insects01,
       title: 'katydid',
       description: 'Pterophylla camellifolia',
   },
    {
-      urlImage: images.insects02,
+      urlImage: insects02,
       title: 'Golden Orb Sider',
       description: 'nephila clavipes',
   },
    {
-      urlImage: images.insects03,
+      urlImage: insects03,
       title: '',
       description: '',
   },  
   {
-    urlImage: images.insects04,
+    urlImage: insects04,
     title: 'Praying Mantis',
     description: 'stagmomantis carolina',
   }
@@ -204,7 +230,7 @@ export const  frequentlyAsked: accordionProps[]  = [
       price: " 65",
       info: "You want to learn about volcanoes, this tour has it all",
       dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
-      urlImage: images.volcanArenal01,
+      urlImage: volcanArenal01,
       hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
       hours: " 4 hours",
       placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
@@ -216,7 +242,7 @@ export const  frequentlyAsked: accordionProps[]  = [
       price: " 90",
       info: "Celestial waterfall and magic ligth blue river, it is a walk for those who love good walking",
       dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
-      urlImage: images.rioCeleste04,
+      urlImage: rioCeleste04,
       hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
       hours: " 8 hours",
       placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
@@ -228,7 +254,7 @@ export const  frequentlyAsked: accordionProps[]  = [
       price: " 70",
       info: "Feel that you can touch the clouds from the highest",
       dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
-      urlImage: images.hangingBridges01,
+      urlImage: hangingBridges01,
       hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
       hours: " 4 hours",
       placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
@@ -240,7 +266,7 @@ export const  frequentlyAsked: accordionProps[]  = [
       price: " 40",
       info: "Get to know one of the most spectacular waterfalls in the territory of Costa Rica",
       dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
-      urlImage: images.catarata_fortuna05,
+      urlImage: catarata_fortuna05,
       hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
       hours: " 3 hours",
       placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
@@ -252,7 +278,7 @@ export const  frequentlyAsked: accordionProps[]  = [
       price: " 65",
       info: "For those who love a pleasant and quiet trip",
       dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
-      urlImage: images.safari06,
+      urlImage: safari06,
       hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
       hours: " 4 hours",
       placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
@@ -264,7 +290,7 @@ export const  frequentlyAsked: accordionProps[]  = [
       price: " 75",
       info: "Adventure and nature are ideally combined, don't you think? ",
       dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
-      urlImage: images.rafting2,
+      urlImage: rafting2,
       hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
       hours: " 6 hours",
       placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
@@ -276,7 +302,7 @@ export const  frequentlyAsked: accordionProps[]  = [
       price: " 130",
       info: "This is  a different way for those who like to live different and unforgettable experiences all in one day",
       dollarIcon: <BiDollar style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
-      urlImage: images.tubing3,
+      urlImage: tubing3,
       hoursIcon: <BiTimeFive style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,
       hours: " 6 hours",
       placeIcon: <BiMap style={{ color: "#FEC01B", fontSize: "1.5rem" }} />,

@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../../styles/components/index/_ToursCarousel.scss";
-import React, { useEffect } from "react";
+import React from "react";
 import "../../../styles/components/index/_ToursCarousel.scss";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
