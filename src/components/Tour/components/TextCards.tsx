@@ -53,8 +53,8 @@ export const TextCards = React.memo((tourBase: tour) => {
                         {tourBase?.titleLeft}
                     </div>
 
-                    <AnimationOnScroll animateIn='animate__fadeInLeft'>
-                        <div className={`${styles.textCard} `}>
+                    <div className={`${styles.textCard} `}>
+                        <AnimationOnScroll animateIn='animate__fadeInLeft'>
                             <h1>{tourBase?.textTitleLeft}</h1>
 
                             {
@@ -62,12 +62,12 @@ export const TextCards = React.memo((tourBase: tour) => {
                                 &&
                                 tourBase?.textleft.map((item, index) => (
                                     <p
-                                        key={`${item.split(' ').length}.${item.length}${index}`}
+                                        key={`${item.split(' ').length}.${item.length - index}${index}`}
                                     >{item}</p>
                                 ))
                             }
-                        </div>
-                    </AnimationOnScroll>
+                        </AnimationOnScroll>
+                    </div>
                 </div>
 
                 {/* seccion de la zona derecha */}
@@ -82,9 +82,8 @@ export const TextCards = React.memo((tourBase: tour) => {
                         iconos.map((item, Index) => {
 
                             return (
-                                <AnimationOnScroll animateIn='animate__fadeInRight'>
+                                <AnimationOnScroll key={Index} animateIn='animate__fadeInRight'>
                                     <div
-                                        key={Index}
                                         className={`${styles.textCard} ${styles.division} `}>
                                         {item}
                                         <p>{arrayRight[Index]}</p>

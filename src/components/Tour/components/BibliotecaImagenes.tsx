@@ -30,7 +30,7 @@ export const BibliotecaImagenes = ({ img }: images) => {
             <div className={styles.galeriaTours}>
                 {
                     img.map((item, index) => (
-                        <AnimationOnScroll key={index} animateIn={`${animate[index]}`}>
+                        <AnimationOnScroll key={`${animate[index]}${index}`} animateIn={`${animate[index]}`}>
                             <div  className={`${styles.cardImage}`}>
                                 <img onClick={() => { openModal(item) }} src={item} />
                             </div>
