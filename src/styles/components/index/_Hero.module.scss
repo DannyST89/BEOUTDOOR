@@ -38,7 +38,31 @@ $hero-font: "Caveat", cursive;
     // border-radius: 1rem;
   }
 }
-
+.Whatsapp__floating {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:35px;
+  z-index:100;
+  -webkit-animation: Whatsapp__floating .5s infinite alternate;
+  -moz-animation: Whatsapp__floating .5s infinite alternate;
+  animation: Whatsapp__floating .5s infinite alternate;
+}
+@-webkit-keyframes Whatsapp__floating {
+  to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes Whatsapp__floating {
+  to { -moz-transform: scale(1.2); }
+}
+@keyframes Whatsapp__floating {
+  to { transform: scale(1.2); }
+}
 //Responsive
 @media (min-width: 1200px) {
   .info-container {
