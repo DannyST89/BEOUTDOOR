@@ -2,10 +2,21 @@
 
 .containerPadre{
     //max-width: 1500px;
-    //margin: 0 auto; 
-
+    //margin: 0 auto;  
     .imageAbout{
         height: 90vh;
+        @media screen and (max-width:992px) {
+            height: 80vh;
+        }
+        @media screen and (max-width:776px) {
+            height: 70vh;
+        }
+        @media screen and (max-width:576px) {
+            height: 60vh;
+        }
+        @media screen and (max-width:400px) {
+            height: 50vh;
+        }
         img{
             height: 100%;
         }

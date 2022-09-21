@@ -10,12 +10,8 @@ export const About = () => {
       </div>
 
       <div className={styles.fortuna}>
-        <AnimationOnScroll animateIn="animate__fadeInDown">
-          <h3
-            className={`${styles.title}`}
-          >
-            Fortuna
-          </h3>
+          <h3 className={`${styles.title} animate__animated animate__fadeInDown`}>Fortuna</h3>
+        <AnimationOnScroll animateIn="animate__fadeIn" animateOut="animate__fadeIn" duration={1}>
         </AnimationOnScroll>
 
         <div className={styles.contenidoPrincipal}>
@@ -23,13 +19,13 @@ export const About = () => {
           <div
             className={`${styles.left}`}
           >
-            <AnimationOnScroll animateIn="animate__fadeInLeft">
-              <p>
+            {/* <AnimationOnScroll animateIn="animate__fadeInLeft"> */}
+              <p className="animate__animated animate__fadeInLeft">
                 <span>"</span>
                 La Fortuna is a dreamy place to visit
                 <span>"</span>
               </p>
-            </AnimationOnScroll>
+            {/* </AnimationOnScroll> */}
           </div>
 
           <div></div>
