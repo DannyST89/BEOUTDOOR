@@ -130,4 +130,5 @@ export { default as catarata_fortuna07} from '../../assets/images/Tour_catara_La
 export { default as catarata_fortuna08} from '../../assets/images/Tour_catara_La_Fortuna/catarata08.jpeg'
 export { default as catarata_fortuna09} from '../../assets/images/Tour_catara_La_Fortuna/catarata09.jpeg'
 
-// Images 
+// Images about
+export { default as about01} from '../../assets/images/about.webp'

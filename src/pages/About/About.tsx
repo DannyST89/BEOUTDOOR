@@ -1,12 +1,12 @@
 import styles from "../../styles/components/about/_about.module.scss";
-import {catarata_fortuna01} from "../../assets/images/Images";
+import {about01} from "../../assets/images/Images";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export const About = () => {
   return (
     <div className={styles.containerPadre}>
       <div className={styles.imageAbout}>
-        <img src={catarata_fortuna01} alt="About" />
+        <img src={about01} alt="About" />
       </div>
 
       <div className={styles.fortuna}>
